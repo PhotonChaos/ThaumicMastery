@@ -1,0 +1,16 @@
+[
+{
+  "modid": "thaumicmastery",
+  "name": "Thaumic Mastery",
+  "description": "End Game spells for Thaumcraft",
+  "version": "${version}",
+  "mcversion": "${mcversion}",
+  "url": "",
+  "updateUrl": "",
+  "authorList": ["Carbon"],
+  "credits": "Carbon, Bookwormking101, Infinidoge",
+  "logoFile": "",
+  "screenshots": [],
+  "dependencies": []
+}
+]

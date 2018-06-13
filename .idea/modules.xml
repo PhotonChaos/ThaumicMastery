@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/Thaumic Mastery.iml" filepath="$PROJECT_DIR$/.idea/modules/Thaumic Mastery.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/Thaumic_Mastery_api.iml" filepath="$PROJECT_DIR$/.idea/modules/Thaumic_Mastery_api.iml" group="Thaumic Mastery" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/Thaumic_Mastery_main.iml" filepath="$PROJECT_DIR$/.idea/modules/Thaumic_Mastery_main.iml" group="Thaumic Mastery" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/Thaumic_Mastery_test.iml" filepath="$PROJECT_DIR$/.idea/modules/Thaumic_Mastery_test.iml" group="Thaumic Mastery" />
+    </modules>
+  </component>
+</project>
