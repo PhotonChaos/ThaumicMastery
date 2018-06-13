@@ -28,6 +28,7 @@ public class ThaumicMastery {
 	@SidedProxy(clientSide = clientProxyPath, serverSide = serverProxyPath)
 	public static CommonProxy proxy;
 
+	//
 	public static Block blockDecay;
 
     @EventHandler
