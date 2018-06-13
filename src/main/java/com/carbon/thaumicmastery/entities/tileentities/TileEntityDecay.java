@@ -14,6 +14,7 @@ public class TileEntityDecay extends TileEntity {
 	private boolean counterEnabled = true;
 	public static boolean isOrigin = true;
 	private int decay = 10;
+	private int decayTime = 5;
 	public static boolean doDecay = true;
 
 
@@ -26,7 +27,7 @@ public class TileEntityDecay extends TileEntity {
 		if(counterEnabled) {
 			counter++;
 
-			if (counter % 10 == 0) {
+			if (counter % decayTime == 0) {
 				if (doDecay) {
 					for (int[] i : getSurroundingBlocks()) {
 						int newX = i[0];

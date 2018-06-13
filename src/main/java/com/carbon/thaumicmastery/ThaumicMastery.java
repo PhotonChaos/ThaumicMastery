@@ -2,26 +2,17 @@ package com.carbon.thaumicmastery;
 
 import com.carbon.thaumicmastery.blocks.*;
 import com.carbon.thaumicmastery.entities.tileentities.TileEntityDecay;
-import com.thaumcraft.ThaumcraftApi;
-import com.thaumcraft.ThaumcraftApiHelper;
+import cpw.mods.fml.common.SidedProxy;
 import cpw.mods.fml.common.registry.GameRegistry;
 import net.minecraft.block.Block;
 import net.minecraft.block.material.Material;
-import net.minecraft.creativetab.CreativeTabs;
-import net.minecraft.init.Blocks;
 import cpw.mods.fml.common.Mod;
 import cpw.mods.fml.common.Mod.EventHandler;
 import cpw.mods.fml.common.event.FMLPreInitializationEvent;
 import cpw.mods.fml.common.event.FMLInitializationEvent;
 import cpw.mods.fml.common.event.FMLPostInitializationEvent;
-import net.minecraft.init.Items;
-import net.minecraft.item.Item;
-import net.minecraft.item.ItemFood;
-import net.minecraft.item.ItemStack;
 import net.minecraftforge.common.config.Configuration;
 import net.minecraftforge.common.config.Property;
-import org.apache.commons.logging.impl.Jdk13LumberjackLogger;
-import org.apache.logging.log4j.Level;
 
 @Mod(modid = ThaumicMastery.MODID, version = ThaumicMastery.VERSION, name = ThaumicMastery.NAME)
 public class ThaumicMastery {
@@ -29,6 +20,13 @@ public class ThaumicMastery {
     public static final String VERSION = "0.1";
     public static final String NAME = "Thaumic Mastery";
     public static Configuration config;
+
+    // proxies
+    private static final String clientProxyPath = "com.carbon.thaumicmastery.ClientProxy";
+	private static final String serverProxyPath = "com.carbon.thaumicmastery.CommonProxy";
+
+	@SidedProxy(clientSide = clientProxyPath, serverSide = serverProxyPath)
+	public static CommonProxy proxy;
 
 	public static Block blockDecay;
 
