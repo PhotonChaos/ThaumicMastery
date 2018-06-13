@@ -25,8 +25,8 @@ public class ThaumicMastery {
     private static final String clientProxyPath = "com.carbon.thaumicmastery.ClientProxy";
 	private static final String serverProxyPath = "com.carbon.thaumicmastery.CommonProxy";
 
-	@SidedProxy(clientSide = clientProxyPath, serverSide = serverProxyPath)
-	public static CommonProxy proxy;
+	//@SidedProxy(clientSide = clientProxyPath, serverSide = serverProxyPath)
+	//public static CommonProxy proxy;
 
 	//
 	public static Block blockDecay;

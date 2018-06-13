@@ -1,90 +1,11 @@
-[00:28:21] [Server thread/INFO]: Starting minecraft server version 1.7.10
-[00:28:28] [Server thread/INFO]: Loading properties
-[00:28:28] [Server thread/INFO]: Default game type: SURVIVAL
-[00:28:28] [Server thread/INFO]: Generating keypair
-[00:28:28] [Server thread/INFO]: Starting Minecraft server on *:25565
-[00:28:29] [Server thread/WARN]: Failed to load user banlist: 
-java.io.FileNotFoundException: banned-players.json (The system cannot find the file specified)
-	at java.io.FileInputStream.open0(Native Method) ~[?:1.8.0_131]
-	at java.io.FileInputStream.open(FileInputStream.java:195) ~[?:1.8.0_131]
-	at java.io.FileInputStream.<init>(FileInputStream.java:138) ~[?:1.8.0_131]
-	at com.google.common.io.Files.newReader(Files.java:86) ~[guava-17.0.jar:?]
-	at net.minecraft.server.management.UserList.func_152679_g(UserList.java:195) ~[UserList.class:?]
-	at net.minecraft.server.dedicated.DedicatedPlayerList.func_152620_y(DedicatedPlayerList.java:124) [DedicatedPlayerList.class:?]
-	at net.minecraft.server.dedicated.DedicatedPlayerList.<init>(DedicatedPlayerList.java:31) [DedicatedPlayerList.class:?]
-	at net.minecraft.server.dedicated.DedicatedServer.startServer(DedicatedServer.java:214) [DedicatedServer.class:?]
-	at net.minecraft.server.MinecraftServer.run(MinecraftServer.java:445) [MinecraftServer.class:?]
-	at net.minecraft.server.MinecraftServer$2.run(MinecraftServer.java:752) [MinecraftServer$2.class:?]
-[00:28:29] [Server thread/WARN]: Failed to load ip banlist: 
-java.io.FileNotFoundException: banned-ips.json (The system cannot find the file specified)
-	at java.io.FileInputStream.open0(Native Method) ~[?:1.8.0_131]
-	at java.io.FileInputStream.open(FileInputStream.java:195) ~[?:1.8.0_131]
-	at java.io.FileInputStream.<init>(FileInputStream.java:138) ~[?:1.8.0_131]
-	at com.google.common.io.Files.newReader(Files.java:86) ~[guava-17.0.jar:?]
-	at net.minecraft.server.management.UserList.func_152679_g(UserList.java:195) ~[UserList.class:?]
-	at net.minecraft.server.dedicated.DedicatedPlayerList.func_152619_x(DedicatedPlayerList.java:112) [DedicatedPlayerList.class:?]
-	at net.minecraft.server.dedicated.DedicatedPlayerList.<init>(DedicatedPlayerList.java:33) [DedicatedPlayerList.class:?]
-	at net.minecraft.server.dedicated.DedicatedServer.startServer(DedicatedServer.java:214) [DedicatedServer.class:?]
-	at net.minecraft.server.MinecraftServer.run(MinecraftServer.java:445) [MinecraftServer.class:?]
-	at net.minecraft.server.MinecraftServer$2.run(MinecraftServer.java:752) [MinecraftServer$2.class:?]
-[00:28:29] [Server thread/WARN]: Failed to load operators list: 
-java.io.FileNotFoundException: ops.json (The system cannot find the file specified)
-	at java.io.FileInputStream.open0(Native Method) ~[?:1.8.0_131]
-	at java.io.FileInputStream.open(FileInputStream.java:195) ~[?:1.8.0_131]
-	at java.io.FileInputStream.<init>(FileInputStream.java:138) ~[?:1.8.0_131]
-	at com.google.common.io.Files.newReader(Files.java:86) ~[guava-17.0.jar:?]
-	at net.minecraft.server.management.UserList.func_152679_g(UserList.java:195) ~[UserList.class:?]
-	at net.minecraft.server.dedicated.DedicatedPlayerList.loadOpsList(DedicatedPlayerList.java:136) [DedicatedPlayerList.class:?]
-	at net.minecraft.server.dedicated.DedicatedPlayerList.<init>(DedicatedPlayerList.java:35) [DedicatedPlayerList.class:?]
-	at net.minecraft.server.dedicated.DedicatedServer.startServer(DedicatedServer.java:214) [DedicatedServer.class:?]
-	at net.minecraft.server.MinecraftServer.run(MinecraftServer.java:445) [MinecraftServer.class:?]
-	at net.minecraft.server.MinecraftServer$2.run(MinecraftServer.java:752) [MinecraftServer$2.class:?]
-[00:28:29] [Server thread/WARN]: Failed to load white-list: 
-java.io.FileNotFoundException: whitelist.json (The system cannot find the file specified)
-	at java.io.FileInputStream.open0(Native Method) ~[?:1.8.0_131]
-	at java.io.FileInputStream.open(FileInputStream.java:195) ~[?:1.8.0_131]
-	at java.io.FileInputStream.<init>(FileInputStream.java:138) ~[?:1.8.0_131]
-	at com.google.common.io.Files.newReader(Files.java:86) ~[guava-17.0.jar:?]
-	at net.minecraft.server.management.UserList.func_152679_g(UserList.java:195) ~[UserList.class:?]
-	at net.minecraft.server.dedicated.DedicatedPlayerList.readWhiteList(DedicatedPlayerList.java:160) [DedicatedPlayerList.class:?]
-	at net.minecraft.server.dedicated.DedicatedPlayerList.<init>(DedicatedPlayerList.java:36) [DedicatedPlayerList.class:?]
-	at net.minecraft.server.dedicated.DedicatedServer.startServer(DedicatedServer.java:214) [DedicatedServer.class:?]
-	at net.minecraft.server.MinecraftServer.run(MinecraftServer.java:445) [MinecraftServer.class:?]
-	at net.minecraft.server.MinecraftServer$2.run(MinecraftServer.java:752) [MinecraftServer$2.class:?]
-[00:28:29] [Server thread/INFO]: Preparing level "world"
-[00:28:29] [Server thread/INFO]: Preparing start region for level 0
-[00:28:30] [Server thread/INFO]: Preparing spawn area: 16%
-[00:28:31] [Server thread/INFO]: Preparing spawn area: 33%
-[00:28:32] [Server thread/INFO]: Preparing spawn area: 56%
-[00:28:33] [Server thread/INFO]: Preparing spawn area: 77%
-[00:28:34] [Server thread/INFO]: Preparing spawn area: 96%
-[00:28:35] [Server thread/INFO]: Done (5.592s)! For help, type "help" or "?"
-[00:29:09] [Server thread/INFO]: --- Showing help page 1 of 7 (/help <page>) ---
-[00:29:09] [Server thread/INFO]: /achievement give <stat_name> [player]
-[00:29:09] [Server thread/INFO]: /ban <name> [reason ...]
-[00:29:09] [Server thread/INFO]: /ban-ip <address|name> [reason ...]
-[00:29:09] [Server thread/INFO]: /banlist [ips|players]
-[00:29:09] [Server thread/INFO]: /clear <player> [item] [data]
-[00:29:09] [Server thread/INFO]: /debug <start|stop>
-[00:29:09] [Server thread/INFO]: /defaultgamemode <mode>
-[00:29:13] [Server thread/INFO]: Unknown command. Try /help for a list of commands
-[00:29:18] [Server thread/INFO]: Unknown command. Try /help for a list of commands
-[00:31:29] [Server thread/INFO]: com.mojang.authlib.GameProfile@de41333[id=<null>,name=Player897,properties={},legacy=false] (/192.168.0.21:56132) lost connection: Disconnected
-[00:32:13] [User Authenticator #1/INFO]: UUID of player CalumGC is b149a376-fb8f-4ee0-a09c-ce7e1ac98b6b
-[00:32:14] [Server thread/INFO]: CalumGC[/192.168.0.21:56258] logged in with entity id 2597 at (-20.5, 71.0, 260.5)
-[00:32:14] [Server thread/INFO]: CalumGC joined the game
-[00:32:24] [Server thread/INFO]: Unknown command. Try /help for a list of commands
-[00:32:31] [Server thread/INFO]: /op <player>
-[00:32:41] [Server thread/INFO]: CalumGC has just earned the achievement [Taking Inventory]
-[00:32:59] [Server thread/INFO]: <CalumGC> owo
-[00:33:10] [Server thread/INFO]: Unknown command. Try /help for a list of commands
-[00:33:13] [Server thread/INFO]: [Server] whats this
-[00:33:29] [Server thread/INFO]: That player cannot be found
-[00:33:37] [Server thread/INFO]: CalumGC lost connection: TextComponent{text='Disconnected', siblings=[], style=Style{hasParent=false, color=null, bold=null, italic=null, underlined=null, obfuscated=null, clickEvent=null, hoverEvent=null}}
-[00:33:37] [Server thread/INFO]: CalumGC left the game
-[00:34:04] [Server thread/INFO]: Stopping server
-[00:34:04] [Server thread/INFO]: Saving players
-[00:34:04] [Server thread/INFO]: Saving worlds
-[00:34:04] [Server thread/INFO]: Saving chunks for level 'world'/Overworld
-[00:34:04] [Server thread/INFO]: Saving chunks for level 'world'/Nether
-[00:34:04] [Server thread/INFO]: Saving chunks for level 'world'/The End
+[15:49:31] [main/INFO]: Setting user: Player426
+[15:49:33] [Client thread/INFO]: LWJGL Version: 2.9.1
+[15:49:51] [Client thread/INFO]: Reloading ResourceManager: Default, FMLFileResourcePack:Forge Mod Loader, FMLFileResourcePack:Minecraft Forge, FMLFileResourcePack:Thaumic Mastery, FMLFileResourcePack:Thaumcraft, FMLFileResourcePack:Baubles
+[15:49:54] [Sound Library Loader/INFO]: Sound engine started
+[15:49:55] [Client thread/INFO]: Created: 16x16 textures/blocks-atlas
+[15:49:55] [Client thread/INFO]: Created: 16x16 textures/items-atlas
+[15:49:56] [Client thread/INFO]: Reloading ResourceManager: Default, FMLFileResourcePack:Forge Mod Loader, FMLFileResourcePack:Minecraft Forge, FMLFileResourcePack:Thaumic Mastery, FMLFileResourcePack:Thaumcraft, FMLFileResourcePack:Baubles
+[15:49:58] [Client thread/INFO]: Created: 512x512 textures/blocks-atlas
+[15:49:58] [Client thread/INFO]: Created: 512x512 textures/items-atlas
+[15:49:59] [Sound Library Loader/INFO]: Sound engine started
+[15:50:10] [Client thread/INFO]: Stopping!
