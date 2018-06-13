@@ -1,7 +1,7 @@
-/.idea/
-/.gradle/
-/build/
-/out/
-eclipse/saves
-eclipse/world
+*
 
+!src/
+!.gitignore
+!gradle
+!README
+!eclipse/
