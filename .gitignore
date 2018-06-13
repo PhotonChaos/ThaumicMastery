@@ -1,7 +1,1 @@
-*
-
-!src/
-!.gitignore
-!gradle
-!README
-!eclipse/
+.idea
