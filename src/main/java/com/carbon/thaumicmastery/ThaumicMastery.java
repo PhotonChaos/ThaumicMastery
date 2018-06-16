@@ -1,6 +1,7 @@
 package com.carbon.thaumicmastery;
 
 import com.carbon.thaumicmastery.blocks.*;
+import com.carbon.thaumicmastery.entities.EntityMirrorDimension;
 import com.carbon.thaumicmastery.entities.tileentities.TileEntityDecay;
 import cpw.mods.fml.common.SidedProxy;
 import cpw.mods.fml.common.registry.GameRegistry;
@@ -11,6 +12,8 @@ import cpw.mods.fml.common.Mod.EventHandler;
 import cpw.mods.fml.common.event.FMLPreInitializationEvent;
 import cpw.mods.fml.common.event.FMLInitializationEvent;
 import cpw.mods.fml.common.event.FMLPostInitializationEvent;
+import net.minecraft.entity.Entity;
+import net.minecraft.entity.EntityList;
 import net.minecraftforge.common.config.Configuration;
 import net.minecraftforge.common.config.Property;
 
@@ -21,12 +24,14 @@ public class ThaumicMastery {
     public static final String NAME = "Thaumic Mastery";
     public static Configuration config;
 
+    static int startEntityId = 300;
+
     // proxies
     private static final String clientProxyPath = "com.carbon.thaumicmastery.ClientProxy";
 	private static final String serverProxyPath = "com.carbon.thaumicmastery.CommonProxy";
 
-	//@SidedProxy(clientSide = clientProxyPath, serverSide = serverProxyPath)
-	//public static CommonProxy proxy;
+	@SidedProxy(clientSide = clientProxyPath, serverSide = serverProxyPath)
+	public static CommonProxy proxy;
 
 	//
 	public static Block blockDecay;
@@ -36,6 +41,10 @@ public class ThaumicMastery {
 		// item, block, and registering
 	    // config handling
 	    config = new Configuration(event.getSuggestedConfigurationFile());
+
+	    // Items
+	    // Spawn Eggs
+	    registerEntityEgg(EntityMirrorDimension.class, 0xd3fff1, 0x42f471);
 
 	    // Blocks
 	    blockDecay = new BlockDecay(Material.rock, 10);
@@ -48,6 +57,8 @@ public class ThaumicMastery {
 		// proxy, crafting recipes, tile entity, entity, GUI, Packet Register
 
 	    // Crafting
+	    // Entities
+
 
     }
 
@@ -66,5 +77,20 @@ public class ThaumicMastery {
 	    } finally {
     		if(config.hasChanged()) config.save();
 	    }
+	}
+
+	@SuppressWarnings("unchecked")
+	public static void registerEntityEgg(Class<? extends Entity> entity, int primary, int secondary) {
+    	int id = getUniqueEntityId();
+		EntityList.IDtoClassMapping.put(id, entity);
+		EntityList.entityEggs.put(id, new EntityList.EntityEggInfo(id, primary, secondary));
+	}
+
+	public static int getUniqueEntityId() {
+    	do {
+    		startEntityId++;
+	    } while(EntityList.getStringFromID(startEntityId) != null);
+
+    	return startEntityId;
 	}
 }

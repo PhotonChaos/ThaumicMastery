@@ -1,11 +1,27 @@
-[15:49:31] [main/INFO]: Setting user: Player426
-[15:49:33] [Client thread/INFO]: LWJGL Version: 2.9.1
-[15:49:51] [Client thread/INFO]: Reloading ResourceManager: Default, FMLFileResourcePack:Forge Mod Loader, FMLFileResourcePack:Minecraft Forge, FMLFileResourcePack:Thaumic Mastery, FMLFileResourcePack:Thaumcraft, FMLFileResourcePack:Baubles
-[15:49:54] [Sound Library Loader/INFO]: Sound engine started
-[15:49:55] [Client thread/INFO]: Created: 16x16 textures/blocks-atlas
-[15:49:55] [Client thread/INFO]: Created: 16x16 textures/items-atlas
-[15:49:56] [Client thread/INFO]: Reloading ResourceManager: Default, FMLFileResourcePack:Forge Mod Loader, FMLFileResourcePack:Minecraft Forge, FMLFileResourcePack:Thaumic Mastery, FMLFileResourcePack:Thaumcraft, FMLFileResourcePack:Baubles
-[15:49:58] [Client thread/INFO]: Created: 512x512 textures/blocks-atlas
-[15:49:58] [Client thread/INFO]: Created: 512x512 textures/items-atlas
-[15:49:59] [Sound Library Loader/INFO]: Sound engine started
-[15:50:10] [Client thread/INFO]: Stopping!
+[01:03:27] [main/INFO]: Setting user: Player449
+[01:03:28] [Client thread/INFO]: LWJGL Version: 2.9.1
+[01:03:35] [Client thread/INFO]: Reloading ResourceManager: Default, FMLFileResourcePack:Forge Mod Loader, FMLFileResourcePack:Minecraft Forge, FMLFileResourcePack:Thaumic Mastery
+[01:03:36] [Sound Library Loader/INFO]: Sound engine started
+[01:03:37] [Client thread/INFO]: Created: 16x16 textures/blocks-atlas
+[01:03:37] [Client thread/INFO]: Created: 16x16 textures/items-atlas
+[01:03:37] [Client thread/INFO]: Reloading ResourceManager: Default, FMLFileResourcePack:Forge Mod Loader, FMLFileResourcePack:Minecraft Forge, FMLFileResourcePack:Thaumic Mastery
+[01:03:37] [Client thread/INFO]: Created: 512x256 textures/blocks-atlas
+[01:03:37] [Client thread/INFO]: Created: 256x256 textures/items-atlas
+[01:03:38] [Sound Library Loader/INFO]: Sound engine started
+[01:03:45] [Server thread/INFO]: Starting integrated minecraft server version 1.7.10
+[01:03:45] [Server thread/INFO]: Generating keypair
+[01:03:45] [Server thread/INFO]: Preparing start region for level 0
+[01:03:46] [Server thread/INFO]: Changing view distance to 12, from 10
+[01:03:46] [Server thread/INFO]: Player449[local:E:a252d3a0] logged in with entity id 163 at (-282.54966058936407, 75.0, 536.7307021501767)
+[01:03:46] [Server thread/INFO]: Player449 joined the game
+[01:03:56] [Server thread/INFO]: Saving and pausing game...
+[01:03:56] [Server thread/INFO]: Saving chunks for level 'New World'/Overworld
+[01:03:56] [Server thread/INFO]: Saving chunks for level 'New World'/Nether
+[01:03:56] [Server thread/INFO]: Saving chunks for level 'New World'/The End
+[01:04:03] [Server thread/INFO]: Stopping server
+[01:04:03] [Server thread/INFO]: Saving players
+[01:04:03] [Server thread/INFO]: Saving worlds
+[01:04:03] [Server thread/INFO]: Saving chunks for level 'New World'/Overworld
+[01:04:03] [Server thread/INFO]: Saving chunks for level 'New World'/Nether
+[01:04:03] [Server thread/INFO]: Saving chunks for level 'New World'/The End
+[01:11:53] [Client thread/INFO]: Stopping!
