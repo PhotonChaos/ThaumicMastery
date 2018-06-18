@@ -20,13 +20,13 @@ import net.minecraft.world.World;
 public class BlockDecay extends BlockContainer {
 	// Required Variables
 	private String name = "decayblock";
-	private IIcon[] icons;
+	//private IIcon[] icons;
 
 	// custom variables
 	//private static int decayLevel;
 
 
-	public BlockDecay(Material material, int decay) {
+	public BlockDecay(Material material) {
 		super(material);
 		setBlockName("BlockDecay");
 		setCreativeTab(CreativeTabs.tabDecorations);
@@ -35,23 +35,9 @@ public class BlockDecay extends BlockContainer {
 		setStepSound(soundTypeStone);
 		setBlockTextureName(ThaumicMastery.MODID+":BlockDecay");
 		setHarvestLevel("", 100);
-
-		// custom parts
-		//decayLevel = decay;
 	}
 
 	public TileEntity createNewTileEntity(World world, int var2) {
 		return new TileEntityDecay();
 	}
-
-
-
-/*
-	public int getDecayLevel() {
-		return decayLevel;
-	}
-
-	public void setDecayLevel(int level) {
-		decayLevel = level;
-	}*/
 }

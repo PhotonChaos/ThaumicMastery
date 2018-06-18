@@ -1,7 +1,6 @@
 package com.carbon.thaumicmastery;
 
 import com.carbon.thaumicmastery.blocks.*;
-import com.carbon.thaumicmastery.entities.EntityMirrorDimension;
 import com.carbon.thaumicmastery.entities.tileentities.TileEntityDecay;
 import cpw.mods.fml.common.SidedProxy;
 import cpw.mods.fml.common.registry.GameRegistry;
@@ -33,8 +32,9 @@ public class ThaumicMastery {
 	@SidedProxy(clientSide = clientProxyPath, serverSide = serverProxyPath)
 	public static CommonProxy proxy;
 
-	//
+	// blocks
 	public static Block blockDecay;
+	public static Block blockMirrorDim;
 
     @EventHandler
     public void preInit(FMLPreInitializationEvent event) {
@@ -44,11 +44,13 @@ public class ThaumicMastery {
 
 	    // Items
 	    // Spawn Eggs
-	    registerEntityEgg(EntityMirrorDimension.class, 0xd3fff1, 0x42f471);
+	    //registerEntityEgg(EntityMirrorDimension.class, 0xd3fff1, 0x42f471);
 
 	    // Blocks
 	    blockDecay = new BlockDecay(Material.rock, 10);
 	    GameRegistry.registerBlock(blockDecay, blockDecay.getUnlocalizedName().substring(5));
+
+	    blockMirrorDim = new BlockMirrorDimension(Material.air);
 
     }
 
@@ -58,7 +60,7 @@ public class ThaumicMastery {
 
 	    // Crafting
 	    // Entities
-
+	    //EntityRegistry.registerGlobalEntityID(EntityMirrorDimension.class, "MirrorDimension", getUniqueEntityId());
 
     }
 
