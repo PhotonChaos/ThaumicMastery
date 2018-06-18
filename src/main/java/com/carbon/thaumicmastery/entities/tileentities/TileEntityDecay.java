@@ -5,6 +5,7 @@ import com.carbon.thaumicmastery.blocks.BlockDecay;
 import net.minecraft.block.Block;
 import net.minecraft.block.material.Material;
 import net.minecraft.init.Blocks;
+import net.minecraft.nbt.NBTTagCompound;
 import net.minecraft.tileentity.TileEntity;
 import org.lwjgl.Sys;
 
@@ -14,7 +15,7 @@ public class TileEntityDecay extends TileEntity {
 	private boolean counterEnabled = true;
 	public static boolean isOrigin = true;
 	private int decay = 10;
-	private int decayTime = 5;
+	private static int decayTime = 5;
 	public static boolean doDecay = true;
 
 
@@ -35,7 +36,6 @@ public class TileEntityDecay extends TileEntity {
 						int newZ = i[2];
 
 						Block b = worldObj.getBlock(newX, newY, newZ);
-						//System.out.println(newX + " " + newY + " " + newZ);
 
 						if (!(b instanceof BlockDecay) && decay > 0 && !b.isAir(worldObj, newX, newY, newZ)) {
 							worldObj.setBlock(newX, newY, newZ, ThaumicMastery.blockDecay);
@@ -62,6 +62,24 @@ public class TileEntityDecay extends TileEntity {
 			}
 		}
 		super.updateEntity();
+	}
+
+	@Override
+	public void readFromNBT(NBTTagCompound tag) {
+		super.readFromNBT(tag);
+
+		counter = tag.getInteger("counter");
+		decay = tag.getInteger("decayLevel");
+		counterEnabled = tag.getBoolean("counterEnabled");
+	}
+
+	@Override
+	public void writeToNBT(NBTTagCompound tag) {
+		super.writeToNBT(tag);
+
+		tag.setInteger("counter", counter);
+		tag.setInteger("decayLevel", decay);
+		tag.setBoolean("counterEnabled", counterEnabled);
 	}
 
 	public void setDecayLevel(int d) {
