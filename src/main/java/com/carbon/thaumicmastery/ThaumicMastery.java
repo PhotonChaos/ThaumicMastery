@@ -2,7 +2,9 @@ package com.carbon.thaumicmastery;
 
 import com.carbon.thaumicmastery.blocks.*;
 import com.carbon.thaumicmastery.entities.tileentities.TileEntityDecay;
+import com.carbon.thaumicmastery.entities.tileentities.TileEntityMirrorDimension;
 import cpw.mods.fml.common.SidedProxy;
+import cpw.mods.fml.common.registry.EntityRegistry;
 import cpw.mods.fml.common.registry.GameRegistry;
 import net.minecraft.block.Block;
 import net.minecraft.block.material.Material;
@@ -47,10 +49,11 @@ public class ThaumicMastery {
 	    //registerEntityEgg(EntityMirrorDimension.class, 0xd3fff1, 0x42f471);
 
 	    // Blocks
-	    blockDecay = new BlockDecay(Material.rock, 10);
+	    blockDecay = new BlockDecay(Material.rock);
 	    GameRegistry.registerBlock(blockDecay, blockDecay.getUnlocalizedName().substring(5));
 
-	    blockMirrorDim = new BlockMirrorDimension(Material.air);
+	    blockMirrorDim = new BlockMirrorDimension();
+	    GameRegistry.registerBlock(blockMirrorDim, blockMirrorDim.getUnlocalizedName().substring(5));
 
     }
 
@@ -60,8 +63,10 @@ public class ThaumicMastery {
 
 	    // Crafting
 	    // Entities
-	    //EntityRegistry.registerGlobalEntityID(EntityMirrorDimension.class, "MirrorDimension", getUniqueEntityId());
 
+	    // Tile Entities
+	    GameRegistry.registerTileEntity(TileEntityMirrorDimension.class, "MirrorDimension");
+	    GameRegistry.registerTileEntity(TileEntityDecay.class, "decay");
     }
 
     @EventHandler

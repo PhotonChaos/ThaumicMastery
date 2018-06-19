@@ -1,6 +1,23 @@
-[20:50:50] [main/INFO]: Setting user: Player645
-[20:50:51] [Client thread/INFO]: LWJGL Version: 2.9.1
-[20:50:58] [Client thread/INFO]: Reloading ResourceManager: Default, FMLFileResourcePack:Forge Mod Loader, FMLFileResourcePack:Minecraft Forge, FMLFileResourcePack:Thaumic Mastery
-[20:50:59] [Sound Library Loader/INFO]: Sound engine started
-[20:51:00] [Client thread/INFO]: Created: 16x16 textures/blocks-atlas
-[20:51:00] [Client thread/INFO]: Created: 16x16 textures/items-atlas
+[18:10:06] [main/INFO]: Setting user: Player700
+[18:10:07] [Client thread/INFO]: LWJGL Version: 2.9.1
+[18:10:14] [Client thread/INFO]: Reloading ResourceManager: Default, FMLFileResourcePack:Forge Mod Loader, FMLFileResourcePack:Minecraft Forge, FMLFileResourcePack:Thaumic Mastery
+[18:10:15] [Sound Library Loader/INFO]: Sound engine started
+[18:10:15] [Client thread/INFO]: Created: 16x16 textures/blocks-atlas
+[18:10:15] [Client thread/INFO]: Created: 16x16 textures/items-atlas
+[18:10:15] [Client thread/INFO]: Reloading ResourceManager: Default, FMLFileResourcePack:Forge Mod Loader, FMLFileResourcePack:Minecraft Forge, FMLFileResourcePack:Thaumic Mastery
+[18:10:16] [Client thread/INFO]: Created: 512x256 textures/blocks-atlas
+[18:10:16] [Client thread/INFO]: Created: 256x256 textures/items-atlas
+[18:10:16] [Sound Library Loader/INFO]: Sound engine started
+[18:11:19] [Server thread/INFO]: Starting integrated minecraft server version 1.7.10
+[18:11:19] [Server thread/INFO]: Generating keypair
+[18:11:19] [Server thread/INFO]: Preparing start region for level 0
+[18:11:20] [Server thread/INFO]: Changing view distance to 12, from 10
+[18:11:20] [Server thread/INFO]: Player700[local:E:b381c597] logged in with entity id 164 at (6.404491602653746, 92.25, -44.6782561507027)
+[18:11:20] [Server thread/INFO]: Player700 joined the game
+[18:11:40] [Client thread/INFO]: [CHAT] /setblock, /setworldspawn
+[18:11:42] [Server thread/INFO]: [Player700: Block placed]
+[18:11:43] [Client thread/INFO]: [CHAT] Block placed
+[18:12:08] [Server thread/INFO]: Saving and pausing game...
+[18:12:08] [Server thread/INFO]: Saving chunks for level 'New World'/Overworld
+[18:12:08] [Server thread/INFO]: Saving chunks for level 'New World'/Nether
+[18:12:08] [Server thread/INFO]: Saving chunks for level 'New World'/The End

@@ -6,6 +6,8 @@ import net.minecraft.block.Block;
 import net.minecraft.block.material.Material;
 import net.minecraft.init.Blocks;
 import net.minecraft.nbt.NBTTagCompound;
+import net.minecraft.network.Packet;
+import net.minecraft.network.play.server.S35PacketUpdateTileEntity;
 import net.minecraft.tileentity.TileEntity;
 import org.lwjgl.Sys;
 
@@ -80,6 +82,13 @@ public class TileEntityDecay extends TileEntity {
 		tag.setInteger("counter", counter);
 		tag.setInteger("decayLevel", decay);
 		tag.setBoolean("counterEnabled", counterEnabled);
+	}
+
+	@Override
+	public Packet getDescriptionPacket() {
+		NBTTagCompound nbt = new NBTTagCompound();
+		this.writeToNBT(nbt);
+		return new S35PacketUpdateTileEntity(xCoord, yCoord, zCoord, 1, nbt);
 	}
 
 	public void setDecayLevel(int d) {

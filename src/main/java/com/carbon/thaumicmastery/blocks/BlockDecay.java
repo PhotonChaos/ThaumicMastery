@@ -20,11 +20,6 @@ import net.minecraft.world.World;
 public class BlockDecay extends BlockContainer {
 	// Required Variables
 	private String name = "decayblock";
-	//private IIcon[] icons;
-
-	// custom variables
-	//private static int decayLevel;
-
 
 	public BlockDecay(Material material) {
 		super(material);
@@ -37,6 +32,7 @@ public class BlockDecay extends BlockContainer {
 		setHarvestLevel("", 100);
 	}
 
+	@Override
 	public TileEntity createNewTileEntity(World world, int var2) {
 		return new TileEntityDecay();
 	}
