@@ -8,5 +8,6 @@ public class ClientProxy extends CommonProxy {
 	@Override
 	public void registerRendering() {
 		ClientRegistry.bindTileEntitySpecialRenderer(TileEntityMirrorDimension.class, new RenderMirrorDim());
+		System.out.println("===========!!!!!!!!!!!!!!!! CLIENT PROXY !!!!!!!!!!!!!!!!===========");
 	}
 }

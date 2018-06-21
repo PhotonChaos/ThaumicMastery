@@ -24,6 +24,7 @@ public class TileEntityMirrorDimension extends TileEntity {
 	private boolean scaleAnimationFinished = false;
 	private boolean counterEnabled = true;
 	private boolean casterExited = false;
+	private boolean startupComplete = false;
 
 /*
 	public TileEntityMirrorDimension(String username) {
@@ -57,6 +58,7 @@ public class TileEntityMirrorDimension extends TileEntity {
 			d = dist(xCoord, yCoord, zCoord, (int)position.xCoord, (int)position.yCoord, (int)position.zCoord);
 
 			if(!(d > maxDistance)) {
+				if(startupComplete) casterExited = true;
 				if ((player.getDisplayName().equals(caster) || player.getDisplayName().equals(player.getDisplayName())) && casterExited) {
 					// if it is the caster
 					casterExited = false;
