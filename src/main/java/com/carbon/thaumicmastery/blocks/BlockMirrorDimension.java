@@ -60,7 +60,7 @@ public class BlockMirrorDimension extends BlockContainer {
 	@Override
 	public TileEntity createNewTileEntity(World world, int n) {
 		TileEntityMirrorDimension md = new TileEntityMirrorDimension();
-		md.setCasterName("test");
+		md.setCasterName("decay");
 		return md;
 	}
 

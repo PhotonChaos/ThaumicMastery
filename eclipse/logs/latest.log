@@ -1,29 +1,27 @@
-[18:39:36] [main/INFO]: Setting user: Player594
-[18:39:37] [Client thread/INFO]: LWJGL Version: 2.9.1
-[18:39:45] [Client thread/INFO]: Reloading ResourceManager: Default, FMLFileResourcePack:Forge Mod Loader, FMLFileResourcePack:Minecraft Forge, FMLFileResourcePack:Thaumic Mastery
-[18:39:46] [Sound Library Loader/INFO]: Sound engine started
-[18:39:46] [Client thread/INFO]: Created: 16x16 textures/blocks-atlas
-[18:39:46] [Client thread/INFO]: Created: 16x16 textures/items-atlas
-[18:39:46] [Client thread/INFO]: Reloading ResourceManager: Default, FMLFileResourcePack:Forge Mod Loader, FMLFileResourcePack:Minecraft Forge, FMLFileResourcePack:Thaumic Mastery
-[18:39:47] [Client thread/INFO]: Created: 512x256 textures/blocks-atlas
-[18:39:47] [Client thread/INFO]: Created: 256x256 textures/items-atlas
-[18:39:48] [Sound Library Loader/INFO]: Sound engine started
-[18:42:13] [Server thread/INFO]: Starting integrated minecraft server version 1.7.10
-[18:42:13] [Server thread/INFO]: Generating keypair
-[18:42:13] [Server thread/INFO]: Preparing start region for level 0
-[18:42:14] [Server thread/INFO]: Changing view distance to 12, from 10
-[18:42:14] [Server thread/INFO]: Player594[local:E:7376e5fb] logged in with entity id 156 at (25.421018844704722, 13.539028704510132, -394.4567031184324)
-[18:42:14] [Server thread/INFO]: Player594 joined the game
-[18:42:35] [Server thread/INFO]: Player594 has just earned the achievement [Taking Inventory]
-[18:42:35] [Client thread/INFO]: [CHAT] Player594 has just earned the achievement [Taking Inventory]
-[18:42:43] [Server thread/INFO]: Saving and pausing game...
-[18:42:43] [Server thread/INFO]: Saving chunks for level 'Flat'/Overworld
-[18:42:43] [Server thread/INFO]: Saving chunks for level 'Flat'/Nether
-[18:42:43] [Server thread/INFO]: Saving chunks for level 'Flat'/The End
-[18:42:46] [Client thread/INFO]: Stopping!
-[18:42:46] [Server thread/INFO]: Stopping server
-[18:42:46] [Server thread/INFO]: Saving players
-[18:42:46] [Server thread/INFO]: Saving worlds
-[18:42:46] [Server thread/INFO]: Saving chunks for level 'Flat'/Overworld
-[18:42:46] [Server thread/INFO]: Saving chunks for level 'Flat'/Nether
-[18:42:46] [Server thread/INFO]: Saving chunks for level 'Flat'/The End
+[19:07:07] [main/INFO]: Setting user: Player126
+[19:07:08] [Client thread/INFO]: LWJGL Version: 2.9.1
+[19:07:16] [Client thread/INFO]: Reloading ResourceManager: Default, FMLFileResourcePack:Forge Mod Loader, FMLFileResourcePack:Minecraft Forge, FMLFileResourcePack:Thaumic Mastery
+[19:07:17] [Sound Library Loader/INFO]: Sound engine started
+[19:07:18] [Client thread/INFO]: Created: 16x16 textures/blocks-atlas
+[19:07:18] [Client thread/INFO]: Created: 16x16 textures/items-atlas
+[19:07:18] [Client thread/INFO]: Reloading ResourceManager: Default, FMLFileResourcePack:Forge Mod Loader, FMLFileResourcePack:Minecraft Forge, FMLFileResourcePack:Thaumic Mastery
+[19:07:18] [Client thread/INFO]: Created: 512x256 textures/blocks-atlas
+[19:07:18] [Client thread/INFO]: Created: 256x256 textures/items-atlas
+[19:07:19] [Sound Library Loader/INFO]: Sound engine started
+[19:07:22] [Server thread/INFO]: Starting integrated minecraft server version 1.7.10
+[19:07:22] [Server thread/INFO]: Generating keypair
+[19:07:22] [Server thread/INFO]: Preparing start region for level 0
+[19:07:23] [Server thread/INFO]: Changing view distance to 12, from 10
+[19:07:23] [Server thread/INFO]: Player126[local:E:3b6acf29] logged in with entity id 155 at (25.521691522235987, 10.0, -395.91317813784013)
+[19:07:23] [Server thread/INFO]: Player126 joined the game
+[19:07:42] [Server thread/INFO]: Saving and pausing game...
+[19:07:42] [Server thread/INFO]: Saving chunks for level 'Flat'/Overworld
+[19:07:42] [Server thread/INFO]: Saving chunks for level 'Flat'/Nether
+[19:07:42] [Server thread/INFO]: Saving chunks for level 'Flat'/The End
+[19:07:43] [Client thread/INFO]: Stopping!
+[19:07:43] [Server thread/INFO]: Stopping server
+[19:07:43] [Server thread/INFO]: Saving players
+[19:07:43] [Server thread/INFO]: Saving worlds
+[19:07:43] [Server thread/INFO]: Saving chunks for level 'Flat'/Overworld
+[19:07:43] [Server thread/INFO]: Saving chunks for level 'Flat'/Nether
+[19:07:43] [Server thread/INFO]: Saving chunks for level 'Flat'/The End
