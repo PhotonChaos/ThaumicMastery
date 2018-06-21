@@ -26,10 +26,10 @@ public class BlockMirrorDimension extends BlockContainer {
 		setBlockBounds(0,0,0,1F,1F,1F);
 	}
 
-	/*@Override
+	@Override
 	public boolean isNormalCube() {
 		return false;
-	}*/
+	}
 
 	@Override
 	public boolean isOpaqueCube() {
@@ -42,15 +42,14 @@ public class BlockMirrorDimension extends BlockContainer {
 	}
 
 	@Override
-	public boolean shouldSideBeRendered(IBlockAccess world, int x, int y, int z, int side)
-	{
+	public boolean shouldSideBeRendered(IBlockAccess world, int x, int y, int z, int side) {
 		return false;
 	}
-/*
+
 	@Override
 	public AxisAlignedBB getCollisionBoundingBoxFromPool(World world, int p_149668_2_, int p_149668_3_, int p_149668_4_) {
 		return null;
-	}*/
+	}
 
 	@Override
 	public void dropBlockAsItemWithChance(World p_149690_1_, int p_149690_2_, int p_149690_3_, int p_149690_4_, int p_149690_5_, float p_149690_6_, int p_149690_7_) {

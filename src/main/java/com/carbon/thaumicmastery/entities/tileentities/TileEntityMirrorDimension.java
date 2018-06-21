@@ -7,13 +7,12 @@ import net.minecraft.network.play.server.S35PacketUpdateTileEntity;
 import net.minecraft.tileentity.TileEntity;
 import net.minecraft.util.Vec3;
 
-import java.util.Collection;
-import java.util.Collections;
-
 public class TileEntityMirrorDimension extends TileEntity {
 	private final int maxDistance = 10;
 	private final int ticksToReset = 40; // the number of ticks until the counter resets
 	private final int animationLengthTicks = 40;
+
+	public static String mCaster;
 
 	public boolean isActive = true;
 
@@ -26,10 +25,10 @@ public class TileEntityMirrorDimension extends TileEntity {
 	private boolean casterExited = false;
 	private boolean startupComplete = false;
 
-/*
-	public TileEntityMirrorDimension(String username) {
-		caster = username;
-	}*/
+
+	public TileEntityMirrorDimension() {
+		//caster = worldObj.getClosestPlayer(xCoord, yCoord, zCoord, 10).getDisplayName();
+	}
 
 	@Override
 	public void updateEntity() {
@@ -59,18 +58,19 @@ public class TileEntityMirrorDimension extends TileEntity {
 
 			if(!(d > maxDistance)) {
 				if(startupComplete) casterExited = true;
-				if ((player.getDisplayName().equals(caster) || player.getDisplayName().equals(player.getDisplayName())) && casterExited) {
+				if (player.getDisplayName().equals(caster) && casterExited && !player.capabilities.isCreativeMode) {
 					// if it is the caster
 					casterExited = false;
 					// apply effects
 					player.capabilities.allowFlying = true;
+					player.heal(player.getMaxHealth());
 
 				} else {
 					// if it is not the caster
 
 				}
 			} else {
-				if ((player.getDisplayName().equals(caster) || player.getDisplayName().equals(player.getDisplayName())) && !player.capabilities.isCreativeMode && !casterExited) {
+				if (player.getDisplayName().equals(caster) && !player.capabilities.isCreativeMode && !casterExited) {
 					casterExited = true;
 
 					player.capabilities.allowFlying = false;
@@ -117,6 +117,7 @@ public class TileEntityMirrorDimension extends TileEntity {
 	// setters
 	public void setCasterName(String name) {
 		caster = name;
+		mCaster = name;
 	}
 
 	// getters

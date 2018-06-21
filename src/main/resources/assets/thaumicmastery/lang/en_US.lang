@@ -1,3 +1,7 @@
 item.ItemTest.name=Test
 
 tile.BlockDecay.name=Decay
+
+key.decay=Use World Eater
+
+key.categories.thaumicmastery=Thaumic Mastery

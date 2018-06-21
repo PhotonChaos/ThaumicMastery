@@ -3,6 +3,8 @@ package com.carbon.thaumicmastery;
 import com.carbon.thaumicmastery.blocks.*;
 import com.carbon.thaumicmastery.entities.tileentities.TileEntityDecay;
 import com.carbon.thaumicmastery.entities.tileentities.TileEntityMirrorDimension;
+import com.carbon.thaumicmastery.eventhandlers.KeyInputHandler;
+import com.carbon.thaumicmastery.keybinds.Keybinds;
 import cpw.mods.fml.common.SidedProxy;
 import cpw.mods.fml.common.registry.EntityRegistry;
 import cpw.mods.fml.common.registry.GameRegistry;
@@ -15,6 +17,7 @@ import cpw.mods.fml.common.event.FMLInitializationEvent;
 import cpw.mods.fml.common.event.FMLPostInitializationEvent;
 import net.minecraft.entity.Entity;
 import net.minecraft.entity.EntityList;
+import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.common.config.Configuration;
 import net.minecraftforge.common.config.Property;
 
@@ -55,6 +58,9 @@ public class ThaumicMastery {
 	    blockMirrorDim = new BlockMirrorDimension();
 	    GameRegistry.registerBlock(blockMirrorDim, blockMirrorDim.getUnlocalizedName().substring(5));
 
+	    // Keybinds
+	    Keybinds.register();
+	    MinecraftForge.EVENT_BUS.register(new KeyInputHandler());
     }
 
     @EventHandler

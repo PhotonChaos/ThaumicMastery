@@ -5,6 +5,7 @@ import cpw.mods.fml.client.FMLClientHandler;
 import net.minecraft.client.Minecraft;
 import net.minecraft.client.renderer.OpenGlHelper;
 import net.minecraft.client.renderer.tileentity.TileEntitySpecialRenderer;
+import net.minecraft.init.Blocks;
 import net.minecraft.tileentity.TileEntity;
 import net.minecraft.util.ResourceLocation;
 import net.minecraftforge.client.model.AdvancedModelLoader;
@@ -16,7 +17,7 @@ import org.lwjgl.opengl.GL12;
 public class RenderMirrorDim extends TileEntitySpecialRenderer {
 	//private static final ResourceLocation model_texture = new ResourceLocation(ThaumicMastery.MODID, "textures/models/MirrorDimensionUV.png"); // model texture
 	private IModelCustom model;
-	private float sScale = 2;
+	private float sScale = 10;
 
 	public RenderMirrorDim() {
 		model = AdvancedModelLoader.loadModel(new ResourceLocation(ThaumicMastery.MODID, "/models/MD_NEW.obj"));
@@ -24,7 +25,7 @@ public class RenderMirrorDim extends TileEntitySpecialRenderer {
 
 	@Override
 	public void renderTileEntityAt(TileEntity tile, double x, double y, double z, float timeSinceLastTick) {
-		if (tile == null || !(tile instanceof TileEntityMirrorDimension)) return;
+		if (tile  == null || !(tile instanceof TileEntityMirrorDimension)) return;
 		TileEntityMirrorDimension mirrorDimension = (TileEntityMirrorDimension) tile;
 		if (!mirrorDimension.isActive) return;
 
@@ -39,8 +40,9 @@ public class RenderMirrorDim extends TileEntitySpecialRenderer {
 
 
 		GL11.glDisable(GL11.GL_TEXTURE_2D);
+		//GL11.glDisable(GL11.GL_LIGHTING);
 
-		GL11.glColor4f(0.8F, 1.0F, 0.99F, 0.5F);
+		GL11.glColor4f(0.8F, 1.0F, 0.99F, 0.2F);
 
 		GL11.glBlendFunc(GL11.GL_SRC_ALPHA, GL11.GL_ONE_MINUS_SRC_ALPHA);
 
