@@ -60,7 +60,7 @@ public class ThaumicMastery {
 
 	    // Keybinds
 	    Keybinds.register();
-	    MinecraftForge.EVENT_BUS.register(new KeyInputHandler());
+	    MinecraftForge.EVENT_BUS.register(KeyInputHandler.class);
     }
 
     @EventHandler

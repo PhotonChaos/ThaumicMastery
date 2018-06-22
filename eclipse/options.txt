@@ -1,6 +1,6 @@
 invertYMouse:false
 mouseSensitivity:0.5
-fov:0.0
+fov:1.0
 gamma:0.0
 saturation:0.0
 renderDistance:12
@@ -85,7 +85,12 @@ key_key.hotbar.6:7
 key_key.hotbar.7:8
 key_key.hotbar.8:9
 key_key.hotbar.9:10
-key_key.decay:25
+key_key.decay:45
+key_key.mirrordimension:25
+key_key.novablast:49
+key_key.airteleport:50
+key_key.vistoessentia:35
+key_key.spawngolem:34
 soundCategory_master:0.38410595
 soundCategory_music:1.0
 soundCategory_record:1.0

@@ -1,8 +1,13 @@
 # Thaumic Mastery
 
-Progress: 10%
+Progress: 20%
 
 ## Things left to do
-- mirror dimension model render
-- mirror dimension functionality
-- other stuff
+- Mirror dimension functionality
+  - Fix the flying
+  - Set the caster
+- Other spells
+
+## Important Dev Notes:
+- All GUI textures MUST be 256x256
+- 

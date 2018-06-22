@@ -1,28 +1,61 @@
-[12:35:43] [main/INFO]: Setting user: Player531
-[12:35:44] [Client thread/INFO]: LWJGL Version: 2.9.1
-[12:35:51] [Client thread/INFO]: Reloading ResourceManager: Default, FMLFileResourcePack:Forge Mod Loader, FMLFileResourcePack:Minecraft Forge, FMLFileResourcePack:Thaumic Mastery
-[12:36:15] [Sound Library Loader/INFO]: Sound engine started
-[12:36:16] [Client thread/INFO]: Created: 16x16 textures/blocks-atlas
-[12:36:16] [Client thread/INFO]: Created: 16x16 textures/items-atlas
-[12:36:16] [Client thread/INFO]: Reloading ResourceManager: Default, FMLFileResourcePack:Forge Mod Loader, FMLFileResourcePack:Minecraft Forge, FMLFileResourcePack:Thaumic Mastery
-[12:36:16] [Client thread/INFO]: Created: 512x256 textures/blocks-atlas
-[12:36:16] [Client thread/INFO]: Created: 256x256 textures/items-atlas
-[12:36:17] [Sound Library Loader/INFO]: Sound engine started
-[12:36:24] [Server thread/INFO]: Starting integrated minecraft server version 1.7.10
-[12:36:24] [Server thread/INFO]: Generating keypair
-[12:36:24] [Server thread/INFO]: Preparing start region for level 0
-[12:36:25] [Server thread/INFO]: Changing view distance to 12, from 10
-[12:36:25] [Server thread/INFO]: Player531[local:E:32665eee] logged in with entity id 155 at (28.168681286609132, 10.0, -389.79900492438156)
-[12:36:25] [Server thread/INFO]: Player531 joined the game
-[12:37:07] [Server thread/INFO]: Saving and pausing game...
-[12:37:07] [Server thread/INFO]: Saving chunks for level 'Flat'/Overworld
-[12:37:07] [Server thread/INFO]: Saving chunks for level 'Flat'/Nether
-[12:37:07] [Server thread/INFO]: Saving chunks for level 'Flat'/The End
-[12:37:41] [Server thread/INFO]: Saving and pausing game...
-[12:37:41] [Server thread/INFO]: Saving chunks for level 'Flat'/Overworld
-[12:37:41] [Server thread/INFO]: Saving chunks for level 'Flat'/Nether
-[12:37:41] [Server thread/INFO]: Saving chunks for level 'Flat'/The End
-[12:37:44] [Server thread/INFO]: Saving and pausing game...
-[12:37:44] [Server thread/INFO]: Saving chunks for level 'Flat'/Overworld
-[12:37:44] [Server thread/INFO]: Saving chunks for level 'Flat'/Nether
-[12:37:44] [Server thread/INFO]: Saving chunks for level 'Flat'/The End
+[12:44:32] [main/INFO]: Setting user: Player390
+[12:44:33] [Client thread/INFO]: LWJGL Version: 2.9.1
+[12:44:40] [Client thread/INFO]: Reloading ResourceManager: Default, FMLFileResourcePack:Forge Mod Loader, FMLFileResourcePack:Minecraft Forge, FMLFileResourcePack:Thaumic Mastery
+[12:44:41] [Sound Library Loader/INFO]: Sound engine started
+[12:44:41] [Client thread/INFO]: Created: 16x16 textures/blocks-atlas
+[12:44:41] [Client thread/INFO]: Created: 16x16 textures/items-atlas
+[12:44:41] [Client thread/INFO]: Reloading ResourceManager: Default, FMLFileResourcePack:Forge Mod Loader, FMLFileResourcePack:Minecraft Forge, FMLFileResourcePack:Thaumic Mastery
+[12:44:42] [Client thread/INFO]: Created: 512x256 textures/blocks-atlas
+[12:44:42] [Client thread/INFO]: Created: 256x256 textures/items-atlas
+[12:44:42] [Sound Library Loader/INFO]: Sound engine started
+[12:44:59] [Server thread/INFO]: Starting integrated minecraft server version 1.7.10
+[12:44:59] [Server thread/INFO]: Generating keypair
+[12:44:59] [Server thread/INFO]: Preparing start region for level 0
+[12:44:59] [Server thread/INFO]: Changing view distance to 12, from 10
+[12:45:00] [Server thread/INFO]: Player390[local:E:a5082ad5] logged in with entity id 155 at (21.549293497875965, 14.777753992230636, -408.6220723407831)
+[12:45:00] [Server thread/INFO]: Player390 joined the game
+[12:45:00] [Server thread/INFO]: Saving and pausing game...
+[12:45:00] [Server thread/INFO]: Saving chunks for level 'Flat'/Overworld
+[12:45:00] [Server thread/INFO]: Saving chunks for level 'Flat'/Nether
+[12:45:00] [Server thread/INFO]: Saving chunks for level 'Flat'/The End
+[12:45:22] [Server thread/INFO]: [Player390: Set own game mode to Survival Mode]
+[12:45:22] [Client thread/INFO]: [CHAT] Your game mode has been updated
+[12:45:45] [Server thread/INFO]: Saving and pausing game...
+[12:45:45] [Server thread/INFO]: Saving chunks for level 'Flat'/Overworld
+[12:45:45] [Server thread/INFO]: Saving chunks for level 'Flat'/Nether
+[12:45:45] [Server thread/INFO]: Saving chunks for level 'Flat'/The End
+[12:45:56] [Server thread/INFO]: [Player390: Set own game mode to Creative Mode]
+[12:45:56] [Client thread/INFO]: [CHAT] Your game mode has been updated
+[12:46:47] [Server thread/INFO]: [Player390: Set own game mode to Survival Mode]
+[12:46:47] [Client thread/INFO]: [CHAT] Your game mode has been updated
+[12:47:08] [Server thread/INFO]: Saving and pausing game...
+[12:47:08] [Server thread/INFO]: Saving chunks for level 'Flat'/Overworld
+[12:47:08] [Server thread/INFO]: Saving chunks for level 'Flat'/Nether
+[12:47:08] [Server thread/INFO]: Saving chunks for level 'Flat'/The End
+[12:47:11] [Server thread/INFO]: Saving and pausing game...
+[12:47:11] [Server thread/INFO]: Saving chunks for level 'Flat'/Overworld
+[12:47:11] [Server thread/INFO]: Saving chunks for level 'Flat'/Nether
+[12:47:11] [Server thread/INFO]: Saving chunks for level 'Flat'/The End
+[12:47:16] [Server thread/INFO]: Player390 has just earned the achievement [Taking Inventory]
+[12:47:16] [Client thread/INFO]: [CHAT] Player390 has just earned the achievement [Taking Inventory]
+[12:47:17] [Server thread/INFO]: Saving and pausing game...
+[12:47:17] [Server thread/INFO]: Saving chunks for level 'Flat'/Overworld
+[12:47:17] [Server thread/INFO]: Saving chunks for level 'Flat'/Nether
+[12:47:17] [Server thread/INFO]: Saving chunks for level 'Flat'/The End
+[12:47:22] [Server thread/INFO]: Saving and pausing game...
+[12:47:22] [Server thread/INFO]: Saving chunks for level 'Flat'/Overworld
+[12:47:22] [Server thread/INFO]: Saving chunks for level 'Flat'/Nether
+[12:47:22] [Server thread/INFO]: Saving chunks for level 'Flat'/The End
+[12:47:44] [Server thread/INFO]: [Player390: Set own game mode to Creative Mode]
+[12:47:44] [Client thread/INFO]: [CHAT] Your game mode has been updated
+[12:49:37] [Server thread/INFO]: Saving and pausing game...
+[12:49:37] [Server thread/INFO]: Saving chunks for level 'Flat'/Overworld
+[12:49:37] [Server thread/INFO]: Saving chunks for level 'Flat'/Nether
+[12:49:37] [Server thread/INFO]: Saving chunks for level 'Flat'/The End
+[12:49:40] [Server thread/INFO]: Stopping server
+[12:49:40] [Server thread/INFO]: Saving players
+[12:49:40] [Server thread/INFO]: Saving worlds
+[12:49:40] [Server thread/INFO]: Saving chunks for level 'Flat'/Overworld
+[12:49:40] [Server thread/INFO]: Saving chunks for level 'Flat'/Nether
+[12:49:40] [Server thread/INFO]: Saving chunks for level 'Flat'/The End
+[12:49:41] [Client thread/INFO]: Stopping!
