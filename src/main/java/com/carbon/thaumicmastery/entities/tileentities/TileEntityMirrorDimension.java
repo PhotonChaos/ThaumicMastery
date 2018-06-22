@@ -5,6 +5,7 @@ import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.nbt.NBTTagCompound;
 import net.minecraft.network.Packet;
 import net.minecraft.network.play.server.S35PacketUpdateTileEntity;
+import net.minecraft.potion.PotionEffect;
 import net.minecraft.tileentity.TileEntity;
 import net.minecraft.util.Vec3;
 
@@ -15,7 +16,7 @@ public class TileEntityMirrorDimension extends TileEntity {
 
 	public static String mCaster;
 
-	public boolean isActive = true;
+	boolean isActive = true;
 
 	private String caster;
 	private int counter;
@@ -33,7 +34,6 @@ public class TileEntityMirrorDimension extends TileEntity {
 	// TODO: Add vis cost reduction
 
 	public TileEntityMirrorDimension() {
-		//caster = worldObj.getClosestPlayer(xCoord, yCoord, zCoord, 10).getDisplayName();
 
 	}
 
@@ -87,6 +87,7 @@ public class TileEntityMirrorDimension extends TileEntity {
 
 				} else {
 					// if it is not the caster
+					player.addPotionEffect(new PotionEffect(1, 1, 1));
 
 				}
 			} else {
