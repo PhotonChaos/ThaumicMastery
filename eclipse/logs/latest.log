@@ -1,61 +1,45 @@
-[12:44:32] [main/INFO]: Setting user: Player390
-[12:44:33] [Client thread/INFO]: LWJGL Version: 2.9.1
-[12:44:40] [Client thread/INFO]: Reloading ResourceManager: Default, FMLFileResourcePack:Forge Mod Loader, FMLFileResourcePack:Minecraft Forge, FMLFileResourcePack:Thaumic Mastery
-[12:44:41] [Sound Library Loader/INFO]: Sound engine started
-[12:44:41] [Client thread/INFO]: Created: 16x16 textures/blocks-atlas
-[12:44:41] [Client thread/INFO]: Created: 16x16 textures/items-atlas
-[12:44:41] [Client thread/INFO]: Reloading ResourceManager: Default, FMLFileResourcePack:Forge Mod Loader, FMLFileResourcePack:Minecraft Forge, FMLFileResourcePack:Thaumic Mastery
-[12:44:42] [Client thread/INFO]: Created: 512x256 textures/blocks-atlas
-[12:44:42] [Client thread/INFO]: Created: 256x256 textures/items-atlas
-[12:44:42] [Sound Library Loader/INFO]: Sound engine started
-[12:44:59] [Server thread/INFO]: Starting integrated minecraft server version 1.7.10
-[12:44:59] [Server thread/INFO]: Generating keypair
-[12:44:59] [Server thread/INFO]: Preparing start region for level 0
-[12:44:59] [Server thread/INFO]: Changing view distance to 12, from 10
-[12:45:00] [Server thread/INFO]: Player390[local:E:a5082ad5] logged in with entity id 155 at (21.549293497875965, 14.777753992230636, -408.6220723407831)
-[12:45:00] [Server thread/INFO]: Player390 joined the game
-[12:45:00] [Server thread/INFO]: Saving and pausing game...
-[12:45:00] [Server thread/INFO]: Saving chunks for level 'Flat'/Overworld
-[12:45:00] [Server thread/INFO]: Saving chunks for level 'Flat'/Nether
-[12:45:00] [Server thread/INFO]: Saving chunks for level 'Flat'/The End
-[12:45:22] [Server thread/INFO]: [Player390: Set own game mode to Survival Mode]
-[12:45:22] [Client thread/INFO]: [CHAT] Your game mode has been updated
-[12:45:45] [Server thread/INFO]: Saving and pausing game...
-[12:45:45] [Server thread/INFO]: Saving chunks for level 'Flat'/Overworld
-[12:45:45] [Server thread/INFO]: Saving chunks for level 'Flat'/Nether
-[12:45:45] [Server thread/INFO]: Saving chunks for level 'Flat'/The End
-[12:45:56] [Server thread/INFO]: [Player390: Set own game mode to Creative Mode]
-[12:45:56] [Client thread/INFO]: [CHAT] Your game mode has been updated
-[12:46:47] [Server thread/INFO]: [Player390: Set own game mode to Survival Mode]
-[12:46:47] [Client thread/INFO]: [CHAT] Your game mode has been updated
-[12:47:08] [Server thread/INFO]: Saving and pausing game...
-[12:47:08] [Server thread/INFO]: Saving chunks for level 'Flat'/Overworld
-[12:47:08] [Server thread/INFO]: Saving chunks for level 'Flat'/Nether
-[12:47:08] [Server thread/INFO]: Saving chunks for level 'Flat'/The End
-[12:47:11] [Server thread/INFO]: Saving and pausing game...
-[12:47:11] [Server thread/INFO]: Saving chunks for level 'Flat'/Overworld
-[12:47:11] [Server thread/INFO]: Saving chunks for level 'Flat'/Nether
-[12:47:11] [Server thread/INFO]: Saving chunks for level 'Flat'/The End
-[12:47:16] [Server thread/INFO]: Player390 has just earned the achievement [Taking Inventory]
-[12:47:16] [Client thread/INFO]: [CHAT] Player390 has just earned the achievement [Taking Inventory]
-[12:47:17] [Server thread/INFO]: Saving and pausing game...
-[12:47:17] [Server thread/INFO]: Saving chunks for level 'Flat'/Overworld
-[12:47:17] [Server thread/INFO]: Saving chunks for level 'Flat'/Nether
-[12:47:17] [Server thread/INFO]: Saving chunks for level 'Flat'/The End
-[12:47:22] [Server thread/INFO]: Saving and pausing game...
-[12:47:22] [Server thread/INFO]: Saving chunks for level 'Flat'/Overworld
-[12:47:22] [Server thread/INFO]: Saving chunks for level 'Flat'/Nether
-[12:47:22] [Server thread/INFO]: Saving chunks for level 'Flat'/The End
-[12:47:44] [Server thread/INFO]: [Player390: Set own game mode to Creative Mode]
-[12:47:44] [Client thread/INFO]: [CHAT] Your game mode has been updated
-[12:49:37] [Server thread/INFO]: Saving and pausing game...
-[12:49:37] [Server thread/INFO]: Saving chunks for level 'Flat'/Overworld
-[12:49:37] [Server thread/INFO]: Saving chunks for level 'Flat'/Nether
-[12:49:37] [Server thread/INFO]: Saving chunks for level 'Flat'/The End
-[12:49:40] [Server thread/INFO]: Stopping server
-[12:49:40] [Server thread/INFO]: Saving players
-[12:49:40] [Server thread/INFO]: Saving worlds
-[12:49:40] [Server thread/INFO]: Saving chunks for level 'Flat'/Overworld
-[12:49:40] [Server thread/INFO]: Saving chunks for level 'Flat'/Nether
-[12:49:40] [Server thread/INFO]: Saving chunks for level 'Flat'/The End
-[12:49:41] [Client thread/INFO]: Stopping!
+[14:20:25] [main/INFO]: Setting user: Player218
+[14:20:25] [Client thread/INFO]: LWJGL Version: 2.9.1
+[14:20:32] [Client thread/INFO]: Reloading ResourceManager: Default, FMLFileResourcePack:Forge Mod Loader, FMLFileResourcePack:Minecraft Forge, FMLFileResourcePack:Thaumic Mastery
+[14:20:33] [Sound Library Loader/INFO]: Sound engine started
+[14:20:33] [Client thread/INFO]: Created: 16x16 textures/blocks-atlas
+[14:20:33] [Client thread/INFO]: Created: 16x16 textures/items-atlas
+[14:20:34] [Client thread/INFO]: Reloading ResourceManager: Default, FMLFileResourcePack:Forge Mod Loader, FMLFileResourcePack:Minecraft Forge, FMLFileResourcePack:Thaumic Mastery
+[14:20:34] [Client thread/INFO]: Created: 512x256 textures/blocks-atlas
+[14:20:34] [Client thread/INFO]: Created: 256x256 textures/items-atlas
+[14:20:35] [Sound Library Loader/INFO]: Sound engine started
+[14:20:37] [Server thread/INFO]: Starting integrated minecraft server version 1.7.10
+[14:20:37] [Server thread/INFO]: Generating keypair
+[14:20:37] [Server thread/INFO]: Preparing start region for level 0
+[14:20:38] [Server thread/INFO]: Changing view distance to 12, from 10
+[14:20:38] [Server thread/INFO]: Player218[local:E:07c39dc6] logged in with entity id 154 at (27.640788770134545, 10.0, -389.12241450023595)
+[14:20:38] [Server thread/INFO]: Player218 joined the game
+[14:20:39] [Server thread/INFO]: Stopping server
+[14:20:39] [Server thread/INFO]: Saving players
+[14:20:39] [Server thread/INFO]: Saving worlds
+[14:20:39] [Server thread/INFO]: Saving chunks for level 'Flat'/Overworld
+[14:20:39] [Server thread/INFO]: Saving chunks for level 'Flat'/Nether
+[14:20:39] [Server thread/INFO]: Saving chunks for level 'Flat'/The End
+[14:20:39] [Client thread/FATAL]: Unreported exception thrown!
+java.lang.NullPointerException
+	at com.carbon.thaumicmastery.entities.tileentities.TileEntityMirrorDimension.<init>(TileEntityMirrorDimension.java:40) ~[TileEntityMirrorDimension.class:?]
+	at com.carbon.thaumicmastery.blocks.BlockMirrorDimension.createNewTileEntity(BlockMirrorDimension.java:62) ~[BlockMirrorDimension.class:?]
+	at net.minecraft.block.Block.createTileEntity(Block.java:1775) ~[Block.class:?]
+	at net.minecraft.world.chunk.Chunk.func_150806_e(Chunk.java:933) ~[Chunk.class:?]
+	at net.minecraft.world.World.getTileEntity(World.java:2808) ~[World.class:?]
+	at net.minecraft.client.network.NetHandlerPlayClient.handleUpdateTileEntity(NetHandlerPlayClient.java:1268) ~[NetHandlerPlayClient.class:?]
+	at net.minecraft.network.play.server.S35PacketUpdateTileEntity.processPacket(S35PacketUpdateTileEntity.java:61) ~[S35PacketUpdateTileEntity.class:?]
+	at net.minecraft.network.play.server.S35PacketUpdateTileEntity.processPacket(S35PacketUpdateTileEntity.java:69) ~[S35PacketUpdateTileEntity.class:?]
+	at net.minecraft.network.NetworkManager.processReceivedPackets(NetworkManager.java:241) ~[NetworkManager.class:?]
+	at net.minecraft.client.Minecraft.runTick(Minecraft.java:2152) ~[Minecraft.class:?]
+	at net.minecraft.client.Minecraft.runGameLoop(Minecraft.java:1039) ~[Minecraft.class:?]
+	at net.minecraft.client.Minecraft.run(Minecraft.java:962) [Minecraft.class:?]
+	at net.minecraft.client.main.Main.main(Main.java:164) [Main.class:?]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:1.8.0_131]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[?:1.8.0_131]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:1.8.0_131]
+	at java.lang.reflect.Method.invoke(Method.java:498) ~[?:1.8.0_131]
+	at net.minecraft.launchwrapper.Launch.launch(Launch.java:135) [launchwrapper-1.12.jar:?]
+	at net.minecraft.launchwrapper.Launch.main(Launch.java:28) [launchwrapper-1.12.jar:?]
+	at net.minecraftforge.gradle.GradleStartCommon.launch(Unknown Source) [start/:?]
+	at GradleStart.main(Unknown Source) [start/:?]

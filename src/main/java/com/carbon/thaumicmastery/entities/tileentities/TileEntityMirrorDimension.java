@@ -1,5 +1,6 @@
 package com.carbon.thaumicmastery.entities.tileentities;
 
+import com.carbon.thaumicmastery.ThaumicMastery;
 import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.nbt.NBTTagCompound;
 import net.minecraft.network.Packet;
@@ -33,10 +34,24 @@ public class TileEntityMirrorDimension extends TileEntity {
 
 	public TileEntityMirrorDimension() {
 		//caster = worldObj.getClosestPlayer(xCoord, yCoord, zCoord, 10).getDisplayName();
+
 	}
 
 	@Override
 	public void updateEntity() {
+		if (!ThaumicMastery.isSpellActive) {
+			ThaumicMastery.isSpellActive = true;
+
+			ThaumicMastery.activeSpellCoords[0] = xCoord;
+			ThaumicMastery.activeSpellCoords[1] = yCoord;
+			ThaumicMastery.activeSpellCoords[2] = zCoord;
+		} else {
+			if (!(ThaumicMastery.activeSpellCoords[0] == xCoord && ThaumicMastery.activeSpellCoords[1] == yCoord && ThaumicMastery.activeSpellCoords[2] == zCoord)) {
+				worldObj.setBlockToAir(xCoord, yCoord, zCoord);
+				worldObj.removeTileEntity(xCoord, yCoord, zCoord);
+			}
+		}
+
 		// Rendering
 		if (counter == animationLengthTicks && !scaleAnimationFinished) scaleAnimationFinished = true;
 

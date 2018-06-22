@@ -28,6 +28,9 @@ public class ThaumicMastery {
     public static final String NAME = "Thaumic Mastery";
     public static Configuration config;
 
+    public static boolean isSpellActive = false;
+    public static int[] activeSpellCoords = new int[3];
+
     static int startEntityId = 300;
 
     // proxies
