@@ -25,6 +25,11 @@ public class TileEntityMirrorDimension extends TileEntity {
 	private boolean casterExited = false;
 	private boolean startupComplete = false;
 
+	// TODO: Add checking for other spells
+	// TODO: Fix Flying code
+	// TODO: Set the Caster
+	// TODO: Add potion effects
+	// TODO: Add vis cost reduction
 
 	public TileEntityMirrorDimension() {
 		//caster = worldObj.getClosestPlayer(xCoord, yCoord, zCoord, 10).getDisplayName();
