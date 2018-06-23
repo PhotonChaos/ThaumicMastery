@@ -51,8 +51,6 @@ public class ThaumicMastery {
 	    config = new Configuration(event.getSuggestedConfigurationFile());
 
 	    // Items
-	    // Spawn Eggs
-	    //registerEntityEgg(EntityMirrorDimension.class, 0xd3fff1, 0x42f471);
 
 	    // Blocks
 	    blockDecay = new BlockDecay(Material.rock);
