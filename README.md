@@ -17,4 +17,9 @@ Thaumic Mastery is an addon for Thaumcraft which adds endgame spells.
 
 ## Important Dev Notes:
 - All GUI textures MUST be 256x256
-- 
+- All Thaumonomicon backgrounds must be 512x512
+- Style guide for adding research pages:
+  - `new ResearchPage()`
+  - `.noParameterMethods()`
+  - `.setPages()`
+  - `.registerResearchItem()`

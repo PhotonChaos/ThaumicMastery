@@ -5,7 +5,7 @@ import com.carbon.thaumicmastery.blocks.BlockMirrorDimension;
 import com.carbon.thaumicmastery.entities.tileentities.TileEntityDecay;
 import com.carbon.thaumicmastery.entities.tileentities.TileEntityMirrorDimension;
 import com.carbon.thaumicmastery.eventhandlers.KeyInputHandler;
-import com.carbon.thaumicmastery.helpers.ThaumcraftHelper;
+import com.carbon.thaumicmastery.helpers.ModHelperManager;
 import com.carbon.thaumicmastery.keybinds.Keybinds;
 import cpw.mods.fml.common.Mod;
 import cpw.mods.fml.common.Mod.EventHandler;
@@ -41,6 +41,9 @@ public class ThaumicMastery {
 	@SidedProxy(clientSide = clientProxyPath, serverSide = serverProxyPath)
 	public static CommonProxy proxy;
 
+	// Mod Helper
+	ModHelperManager helper = new ModHelperManager();
+
 	// blocks
 	public static Block blockDecay;
 	public static Block blockMirrorDim;
@@ -63,6 +66,9 @@ public class ThaumicMastery {
 	    // Keybinds
 	    Keybinds.register();
 	    MinecraftForge.EVENT_BUS.register(KeyInputHandler.class);
+
+	    // Mod helpers
+	    helper.preInit();
     }
 
     @EventHandler
@@ -77,11 +83,13 @@ public class ThaumicMastery {
         proxy.registerRendering();
 
         // TC
+	    helper.init();
     }
 
     @EventHandler
 	public void postInit(FMLPostInitializationEvent event) {
 	    //ThaumcraftHelper.init();
+	    helper.postInit();
 
     }
 

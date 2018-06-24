@@ -1,6 +1,8 @@
 package com.carbon.thaumicmastery.helpers;
 
 import com.carbon.thaumicmastery.ThaumicMastery;
+import com.sun.org.apache.regexp.internal.RE;
+import com.thaumcraft.*;
 import com.thaumcraft.aspects.AspectList;
 import com.thaumcraft.research.ResearchCategories;
 import com.thaumcraft.research.ResearchItem;
@@ -27,10 +29,16 @@ public class ThaumcraftHelper implements IModHelper{
 	private static void initResearch() {
 		String category = "THAUMICMASTERY";
 
-		ResearchCategories.registerCategory(category, new ResourceLocation(ThaumicMastery.MODID, "textures/research/category/thaumicmastery.png"), new ResourceLocation(ThaumicMastery.MODID, "textures/research/category/background.png"));
+		ResourceLocation bg   = new ResourceLocation(ThaumicMastery.MODID, "textures/research/category/background.png");
+		ResourceLocation logo = new ResourceLocation(ThaumicMastery.MODID, "textures/research/category/thaumicmastery.png");
 
-		new ResearchItem("TM_root", category, new AspectList(), 0, 0, 3, new ResourceLocation(ThaumicMastery.MODID, "textures/research/category/thaumicmastery.png"))
-				.setSpecial().setStub().setAutoUnlock().setPages(new ResearchPage("THIS IS A TEST PAGE"));
+
+		ResearchCategories.registerCategory(category, logo, bg);
+
+		new ResearchItem("TM_root", category, new AspectList(), 0, 0, 3, logo)
+				.setSpecial().setStub().setAutoUnlock()
+				.setPages(new ResearchPage("THIS IS A TEST PAGE"))
+				.registerResearchItem();
 	}
 
 	private static void initRecipes() {

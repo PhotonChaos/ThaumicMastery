@@ -3,7 +3,7 @@ package com.carbon.thaumicmastery.helpers;
 import java.util.ArrayList;
 
 public class ModHelperManager {
-	private ArrayList<IModHelper> helpers;
+	private ArrayList<IModHelper> helpers = new ArrayList<IModHelper>();
 
 	public ModHelperManager() {
 		// manually add all helpers
