@@ -11,15 +11,21 @@ public class ModHelperManager {
 	}
 
 	public void preInit() {
-
+		for (IModHelper helper : helpers) {
+			helper.preInit();
+		}
 	}
 
 	public void init() {
-
+		for (IModHelper helper : helpers) {
+			helper.init();
+		}
 	}
 
 	public void postInit() {
-
+		for (IModHelper helper : helpers) {
+			helper.postInit();
+		}
 	}
 
 }
