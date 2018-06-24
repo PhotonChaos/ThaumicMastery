@@ -11,6 +11,4 @@ public class RCThaumicMastery extends ResearchCategoryList {
 	public RCThaumicMastery(ResourceLocation icon, ResourceLocation background) {
 		super(icon, background);
 	}
-
-
 }

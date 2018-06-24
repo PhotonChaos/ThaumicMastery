@@ -5,6 +5,7 @@ import com.carbon.thaumicmastery.blocks.BlockMirrorDimension;
 import com.carbon.thaumicmastery.entities.tileentities.TileEntityDecay;
 import com.carbon.thaumicmastery.entities.tileentities.TileEntityMirrorDimension;
 import com.carbon.thaumicmastery.eventhandlers.KeyInputHandler;
+import com.carbon.thaumicmastery.helpers.ThaumcraftHelper;
 import com.carbon.thaumicmastery.keybinds.Keybinds;
 import cpw.mods.fml.common.Mod;
 import cpw.mods.fml.common.Mod.EventHandler;
@@ -74,11 +75,14 @@ public class ThaumicMastery {
 	    // Tile Entities
 	    GameRegistry.registerTileEntity(TileEntityMirrorDimension.class, "MirrorDimension");
         proxy.registerRendering();
+
+        // TC
     }
 
     @EventHandler
 	public void postInit(FMLPostInitializationEvent event) {
-		//
+	    //ThaumcraftHelper.init();
+
     }
 
     public static void syncConfig() {
