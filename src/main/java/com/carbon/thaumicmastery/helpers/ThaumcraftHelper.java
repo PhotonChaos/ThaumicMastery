@@ -1,6 +1,8 @@
 package com.carbon.thaumicmastery.helpers;
 
 import com.carbon.thaumicmastery.ThaumicMastery;
+import com.carbon.thaumicmastery.lib.LibResearchKeys;
+import com.carbon.thaumicmastery.research.nodes.MasterResearch;
 import com.sun.org.apache.regexp.internal.RE;
 import com.thaumcraft.*;
 import com.thaumcraft.aspects.AspectList;
@@ -9,6 +11,7 @@ import com.thaumcraft.research.ResearchItem;
 import com.thaumcraft.research.ResearchPage;
 import net.minecraft.item.ItemStack;
 import net.minecraft.util.ResourceLocation;
+import net.minecraft.util.StatCollector;
 
 public class ThaumcraftHelper implements IModHelper{
 	@Override
@@ -29,14 +32,15 @@ public class ThaumcraftHelper implements IModHelper{
 	private static void initResearch() {
 		String category = "THAUMICMASTERY";
 		ResourceLocation bg   = new ResourceLocation(ThaumicMastery.MODID, "textures/research/category/background.png");
-		ResourceLocation logo = new ResourceLocation(ThaumicMastery.MODID, "textures/research/category/thaumicmastery.png");
+		ResourceLocation logo = ThaumicMastery.logo;
 
 		ResearchCategories.registerCategory(category, logo, bg);
 
-		new ResearchItem("TM_root", category, new AspectList(), 0, 0, 3, logo)
-				.setSpecial().setStub().setAutoUnlock()
-				.setPages(new ResearchPage("THIS IS A TEST PAGE"))
+		(new ResearchItem(LibResearchKeys.KEY_ROOT, category, new AspectList(), 0, 0, 0, logo))
+				.setAutoUnlock().setRound().setStub()
+				.setPages(getPage("TM_Root.1"))
 				.registerResearchItem();
+
 	}
 
 	private static void initRecipes() {
@@ -44,6 +48,6 @@ public class ThaumcraftHelper implements IModHelper{
 	}
 
 	private static ResearchPage getPage(String ident) {
-		return new ResearchPage("TEST");
+		return new ResearchPage(StatCollector.translateToLocal("thaumicmastery.research_text." + ident));
 	}
 }
