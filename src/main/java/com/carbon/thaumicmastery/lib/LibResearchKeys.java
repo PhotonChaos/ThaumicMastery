@@ -9,5 +9,4 @@ public class LibResearchKeys {
 	public static final String KEY_ENTROPY = "";
 	public static final String KEY_FIRE = "";
 	public static final String KEY_EARTH = "";
-
 }

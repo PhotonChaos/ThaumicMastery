@@ -28,7 +28,6 @@ public class ThaumcraftHelper implements IModHelper{
 
 	private static void initResearch() {
 		String category = "THAUMICMASTERY";
-
 		ResourceLocation bg   = new ResourceLocation(ThaumicMastery.MODID, "textures/research/category/background.png");
 		ResourceLocation logo = new ResourceLocation(ThaumicMastery.MODID, "textures/research/category/thaumicmastery.png");
 
