@@ -26,8 +26,6 @@ These spells require you to press a hotkey while holding a wand or staff.
 - World Eater
 - Vis to Essentia
 
-
-
 ### Cleanliness
 - Massive Refactor
 
