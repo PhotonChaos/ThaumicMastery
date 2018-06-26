@@ -13,18 +13,16 @@ import net.minecraft.item.ItemStack;
 import net.minecraft.util.ResourceLocation;
 import net.minecraft.util.StatCollector;
 
-public class ThaumcraftHelper implements IModHelper{
-	@Override
-	public void preInit() {
+public class ThaumcraftHelper {
+	public static void preInit() {
 
 	}
 
-	@Override
-	public void init() {
+	public static void init() {
 
 	}
 
-	public void postInit() {
+	public static void postInit() {
 		initRecipes();
 		initResearch();
 	}
