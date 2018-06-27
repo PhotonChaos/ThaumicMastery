@@ -338,3 +338,461 @@ Details:
 [18:31:10] [Client thread/DEBUG] [FML/]: The mod container vecmath-1.3.1.jar appears to be missing an mcmod.info file
 [18:31:10] [Client thread/DEBUG] [FML/]: Examining file trove4j-3.0.3.jar for potential mods
 [18:31:10] [Client thread/DEBUG] [FML/]: The mod container trove4j-3.0.3.jar appears to be missing an mcmod.info file
+[18:31:11] [Client thread/DEBUG] [FML/]: Examining file icu4j-core-mojang-51.2.jar for potential mods
+[18:31:11] [Client thread/DEBUG] [FML/]: The mod container icu4j-core-mojang-51.2.jar appears to be missing an mcmod.info file
+[18:31:11] [Client thread/DEBUG] [FML/]: Examining file codecjorbis-20101023.jar for potential mods
+[18:31:11] [Client thread/DEBUG] [FML/]: The mod container codecjorbis-20101023.jar appears to be missing an mcmod.info file
+[18:31:11] [Client thread/DEBUG] [FML/]: Examining file codecwav-20101023.jar for potential mods
+[18:31:11] [Client thread/DEBUG] [FML/]: The mod container codecwav-20101023.jar appears to be missing an mcmod.info file
+[18:31:11] [Client thread/DEBUG] [FML/]: Examining file libraryjavasound-20101123.jar for potential mods
+[18:31:11] [Client thread/DEBUG] [FML/]: The mod container libraryjavasound-20101123.jar appears to be missing an mcmod.info file
+[18:31:11] [Client thread/DEBUG] [FML/]: Examining file librarylwjglopenal-20100824.jar for potential mods
+[18:31:11] [Client thread/DEBUG] [FML/]: The mod container librarylwjglopenal-20100824.jar appears to be missing an mcmod.info file
+[18:31:11] [Client thread/DEBUG] [FML/]: Examining file soundsystem-20120107.jar for potential mods
+[18:31:11] [Client thread/DEBUG] [FML/]: The mod container soundsystem-20120107.jar appears to be missing an mcmod.info file
+[18:31:11] [Client thread/DEBUG] [FML/]: Examining file netty-all-4.0.10.Final.jar for potential mods
+[18:31:11] [Client thread/DEBUG] [FML/]: The mod container netty-all-4.0.10.Final.jar appears to be missing an mcmod.info file
+[18:31:11] [Client thread/DEBUG] [FML/]: Examining file guava-17.0.jar for potential mods
+[18:31:11] [Client thread/DEBUG] [FML/]: The mod container guava-17.0.jar appears to be missing an mcmod.info file
+[18:31:12] [Client thread/DEBUG] [FML/]: Examining file commons-lang3-3.3.2.jar for potential mods
+[18:31:12] [Client thread/DEBUG] [FML/]: The mod container commons-lang3-3.3.2.jar appears to be missing an mcmod.info file
+[18:31:12] [Client thread/DEBUG] [FML/]: Examining file commons-io-2.4.jar for potential mods
+[18:31:12] [Client thread/DEBUG] [FML/]: The mod container commons-io-2.4.jar appears to be missing an mcmod.info file
+[18:31:12] [Client thread/DEBUG] [FML/]: Examining file commons-codec-1.9.jar for potential mods
+[18:31:12] [Client thread/DEBUG] [FML/]: The mod container commons-codec-1.9.jar appears to be missing an mcmod.info file
+[18:31:12] [Client thread/DEBUG] [FML/]: Examining file jinput-2.0.5.jar for potential mods
+[18:31:12] [Client thread/DEBUG] [FML/]: The mod container jinput-2.0.5.jar appears to be missing an mcmod.info file
+[18:31:12] [Client thread/DEBUG] [FML/]: Examining file jutils-1.0.0.jar for potential mods
+[18:31:12] [Client thread/DEBUG] [FML/]: The mod container jutils-1.0.0.jar appears to be missing an mcmod.info file
+[18:31:12] [Client thread/DEBUG] [FML/]: Examining file gson-2.2.4.jar for potential mods
+[18:31:12] [Client thread/DEBUG] [FML/]: The mod container gson-2.2.4.jar appears to be missing an mcmod.info file
+[18:31:12] [Client thread/DEBUG] [FML/]: Examining file authlib-1.5.16.jar for potential mods
+[18:31:12] [Client thread/DEBUG] [FML/]: The mod container authlib-1.5.16.jar appears to be missing an mcmod.info file
+[18:31:12] [Client thread/DEBUG] [FML/]: Examining file log4j-api-2.0-beta9.jar for potential mods
+[18:31:12] [Client thread/DEBUG] [FML/]: The mod container log4j-api-2.0-beta9.jar appears to be missing an mcmod.info file
+[18:31:12] [Client thread/DEBUG] [FML/]: Examining file log4j-core-2.0-beta9.jar for potential mods
+[18:31:12] [Client thread/DEBUG] [FML/]: The mod container log4j-core-2.0-beta9.jar appears to be missing an mcmod.info file
+[18:31:12] [Client thread/DEBUG] [FML/]: Examining file lwjgl-2.9.1.jar for potential mods
+[18:31:12] [Client thread/DEBUG] [FML/]: The mod container lwjgl-2.9.1.jar appears to be missing an mcmod.info file
+[18:31:13] [Client thread/DEBUG] [FML/]: Examining file lwjgl_util-2.9.1.jar for potential mods
+[18:31:13] [Client thread/DEBUG] [FML/]: The mod container lwjgl_util-2.9.1.jar appears to be missing an mcmod.info file
+[18:31:13] [Client thread/DEBUG] [FML/]: Examining file twitch-5.16.jar for potential mods
+[18:31:13] [Client thread/DEBUG] [FML/]: The mod container twitch-5.16.jar appears to be missing an mcmod.info file
+[18:31:13] [Client thread/DEBUG] [FML/]: Examining file scala-actors-2.11.0.jar for potential mods
+[18:31:13] [Client thread/DEBUG] [FML/]: The mod container scala-actors-2.11.0.jar appears to be missing an mcmod.info file
+[18:31:13] [Client thread/DEBUG] [FML/]: Examining file scala-xml_2.11-1.0.2.jar for potential mods
+[18:31:13] [Client thread/DEBUG] [FML/]: The mod container scala-xml_2.11-1.0.2.jar appears to be missing an mcmod.info file
+[18:31:13] [Client thread/DEBUG] [FML/]: Examining file scala-parser-combinators_2.11-1.0.1.jar for potential mods
+[18:31:13] [Client thread/DEBUG] [FML/]: The mod container scala-parser-combinators_2.11-1.0.1.jar appears to be missing an mcmod.info file
+[18:31:13] [Client thread/DEBUG] [FML/]: Examining file jinput-platform-2.0.5-natives-linux.jar for potential mods
+[18:31:13] [Client thread/DEBUG] [FML/]: The mod container jinput-platform-2.0.5-natives-linux.jar appears to be missing an mcmod.info file
+[18:31:13] [Client thread/DEBUG] [FML/]: Examining file jinput-platform-2.0.5-natives-windows.jar for potential mods
+[18:31:13] [Client thread/DEBUG] [FML/]: The mod container jinput-platform-2.0.5-natives-windows.jar appears to be missing an mcmod.info file
+[18:31:13] [Client thread/DEBUG] [FML/]: Examining file jinput-platform-2.0.5-natives-osx.jar for potential mods
+[18:31:13] [Client thread/DEBUG] [FML/]: The mod container jinput-platform-2.0.5-natives-osx.jar appears to be missing an mcmod.info file
+[18:31:13] [Client thread/DEBUG] [FML/]: Examining file twitch-platform-5.16-natives-windows-32.jar for potential mods
+[18:31:13] [Client thread/DEBUG] [FML/]: The mod container twitch-platform-5.16-natives-windows-32.jar appears to be missing an mcmod.info file
+[18:31:13] [Client thread/DEBUG] [FML/]: Examining file twitch-platform-5.16-natives-windows-64.jar for potential mods
+[18:31:13] [Client thread/DEBUG] [FML/]: The mod container twitch-platform-5.16-natives-windows-64.jar appears to be missing an mcmod.info file
+[18:31:13] [Client thread/DEBUG] [FML/]: Examining file twitch-platform-5.16-natives-osx.jar for potential mods
+[18:31:13] [Client thread/DEBUG] [FML/]: The mod container twitch-platform-5.16-natives-osx.jar appears to be missing an mcmod.info file
+[18:31:13] [Client thread/DEBUG] [FML/]: Examining file twitch-external-platform-4.5-natives-windows-32.jar for potential mods
+[18:31:13] [Client thread/DEBUG] [FML/]: The mod container twitch-external-platform-4.5-natives-windows-32.jar appears to be missing an mcmod.info file
+[18:31:13] [Client thread/DEBUG] [FML/]: Examining file twitch-external-platform-4.5-natives-windows-64.jar for potential mods
+[18:31:13] [Client thread/DEBUG] [FML/]: The mod container twitch-external-platform-4.5-natives-windows-64.jar appears to be missing an mcmod.info file
+[18:31:13] [Client thread/DEBUG] [FML/]: Examining file lwjgl-platform-2.9.1-natives-windows.jar for potential mods
+[18:31:13] [Client thread/DEBUG] [FML/]: The mod container lwjgl-platform-2.9.1-natives-windows.jar appears to be missing an mcmod.info file
+[18:31:13] [Client thread/DEBUG] [FML/]: Examining file lwjgl-platform-2.9.1-natives-linux.jar for potential mods
+[18:31:13] [Client thread/DEBUG] [FML/]: The mod container lwjgl-platform-2.9.1-natives-linux.jar appears to be missing an mcmod.info file
+[18:31:13] [Client thread/DEBUG] [FML/]: Examining file lwjgl-platform-2.9.1-natives-osx.jar for potential mods
+[18:31:13] [Client thread/DEBUG] [FML/]: The mod container lwjgl-platform-2.9.1-natives-osx.jar appears to be missing an mcmod.info file
+[18:31:13] [Client thread/DEBUG] [FML/]: Examining directory start for potential mods
+[18:31:13] [Client thread/DEBUG] [FML/]: No mcmod.info file found in directory start
+[18:31:13] [Client thread/TRACE] [FML/]: Recursing into package net
+[18:31:13] [Client thread/TRACE] [FML/]: Recursing into package net.minecraftforge
+[18:31:13] [Client thread/TRACE] [FML/]: Recursing into package net.minecraftforge.gradle
+[18:31:13] [Client thread/TRACE] [FML/]: Recursing into package net.minecraftforge.gradle.tweakers
+[18:31:13] [Client thread/DEBUG] [FML/]: Examining file idea_rt.jar for potential mods
+[18:31:13] [Client thread/DEBUG] [FML/]: The mod container idea_rt.jar appears to be missing an mcmod.info file
+[18:31:13] [Client thread/DEBUG] [FML/]: Examining directory 1.7.10 for potential mods
+[18:31:13] [Client thread/DEBUG] [FML/]: No mcmod.info file found in directory 1.7.10
+[18:31:13] [Client thread/DEBUG] [FML/]: Examining file Thaumcraft-1.7.10-4.2.3.5-deobf.jar for potential mods
+[18:31:13] [Client thread/TRACE] [FML/]: Located mcmod.info file in file Thaumcraft-1.7.10-4.2.3.5-deobf.jar
+[18:31:13] [Client thread/DEBUG] [FML/]: Identified a mod of type Lcpw/mods/fml/common/Mod; (thaumcraft.common.Thaumcraft) - loading
+[18:31:13] [Client thread/TRACE] [Thaumcraft/]: Parsed dependency info : [Forge@[10.13.2,), Baubles@[1.0.1.10,)] [Forge@[10.13.2,), Baubles@[1.0.1.10,)] []
+[18:31:13] [Client thread/DEBUG] [FML/]: Examining file Baubles-1.7.10-1.0.1.10-deobf.jar for potential mods
+[18:31:13] [Client thread/TRACE] [FML/]: Located mcmod.info file in file Baubles-1.7.10-1.0.1.10-deobf.jar
+[18:31:13] [Client thread/DEBUG] [FML/]: Identified a mod of type Lcpw/mods/fml/common/Mod; (baubles.common.Baubles) - loading
+[18:31:13] [Client thread/TRACE] [Baubles/]: Parsed dependency info : [Forge@[10.13.2,)] [Forge@[10.13.2,)] []
+[18:31:13] [Client thread/INFO] [FML/]: Forge Mod Loader has identified 6 mods to load
+[18:31:13] [Client thread/DEBUG] [FML/]: Found API baubles.api (owned by Baubles providing Baubles|API) embedded in Baubles
+[18:31:13] [Client thread/DEBUG] [FML/]: Found API thaumcraft.api (owned by Thaumcraft providing Thaumcraft|API) embedded in Thaumcraft
+[18:31:13] [Client thread/DEBUG] [FML/]: Creating API container dummy for API Baubles|API: owner: Baubles, dependents: []
+[18:31:13] [Client thread/DEBUG] [FML/]: Creating API container dummy for API Thaumcraft|API: owner: Thaumcraft, dependents: []
+[18:31:13] [Client thread/TRACE] [FML/]: Received a system property request ''
+[18:31:13] [Client thread/TRACE] [FML/]: System property request managing the state of 0 mods
+[18:31:13] [Client thread/DEBUG] [FML/]: After merging, found state information for 0 mods
+[18:31:13] [Client thread/DEBUG] [FML/]: Found translations in forgeSrc-1.7.10-10.13.4.1558-1.7.10.jar [en_US, af_ZA, ar_SA, br_FR, ca_ES, cs_CZ, da_DK, de_DE, el_GR, en_US, es_ES, fa_IR, fi_FI, fr_FR, he_IL, hu_HU, it_IT, ja_JP, ko_KR, lt_LT, nb_NO, nl_NL, nn_NO, no_NO, pl_PL, pt_BR, pt_PT, ro_RO, ru_RU, sl_SI, sr_SP, sv_SE, tr_TR, uk_UA, vi_VN, zh_CN, zh_TW, en_US]
+[18:31:14] [Client thread/DEBUG] [FML/]: Found translations in forgeSrc-1.7.10-10.13.4.1558-1.7.10.jar [en_US, af_ZA, ar_SA, br_FR, ca_ES, cs_CZ, da_DK, de_DE, el_GR, en_US, es_ES, fa_IR, fi_FI, fr_FR, he_IL, hu_HU, it_IT, ja_JP, ko_KR, lt_LT, nb_NO, nl_NL, nn_NO, no_NO, pl_PL, pt_BR, pt_PT, ro_RO, ru_RU, sl_SI, sr_SP, sv_SE, tr_TR, uk_UA, vi_VN, zh_CN, zh_TW, en_US]
+[18:31:14] [Client thread/DEBUG] [thaumicmastery/]: Enabling mod thaumicmastery
+[18:31:14] [Client thread/DEBUG] [FML/]: Injecting found translation assets for lang en_US at assets/thaumicmastery/lang/en_US.lang into language system
+[18:31:14] [Client thread/DEBUG] [Thaumcraft/]: Enabling mod Thaumcraft
+[18:31:14] [Client thread/DEBUG] [FML/]: Found translations in Thaumcraft-1.7.10-4.2.3.5-deobf.jar [ko_KR, nl_NL, fr_FR, ja_JP, et_EE, es_UY, en_US, es_ES, es_VE, zh_TW, zh_CN, es_MX, ca_ES, pt_BR, de_DE, it_IT, ru_RU, pt_PT, sv_SE, fi_FI, cs_CZ, es_AR]
+[18:31:14] [Client thread/DEBUG] [Baubles/]: Enabling mod Baubles
+[18:31:14] [Client thread/DEBUG] [FML/]: Found translations in Baubles-1.7.10-1.0.1.10-deobf.jar [de_DE, et_EE, ar_SA, pt_BR, fi_FI, fr_FR, it_IT, pl_PL, nl_NL, ru_RU, en_US, zh_TW, zh_CN, ko_KR, no_NO, da_DK, cs_CZ]
+[18:31:14] [Client thread/TRACE] [FML/]: Verifying mod requirements are satisfied
+[18:31:14] [Client thread/TRACE] [FML/]: All mod requirements are satisfied
+[18:31:14] [Client thread/TRACE] [FML/]: Sorting mods into an ordered list
+[18:31:14] [Client thread/TRACE] [FML/]: Mod sorting completed successfully
+[18:31:14] [Client thread/DEBUG] [FML/]: Mod sorting data
+[18:31:14] [Client thread/DEBUG] [FML/]: 	thaumicmastery(Thaumic Mastery:0.1): main ()
+[18:31:14] [Client thread/DEBUG] [FML/]: 	Baubles(Baubles:1.0.1.10): Baubles-1.7.10-1.0.1.10-deobf.jar (required-after:Forge@[10.13.2,);)
+[18:31:14] [Client thread/DEBUG] [FML/]: 	Thaumcraft(Thaumcraft:4.2.3.5): Thaumcraft-1.7.10-4.2.3.5-deobf.jar (required-after:Forge@[10.13.2,);required-after:Baubles@[1.0.1.10,))
+[18:31:14] [Client thread/DEBUG] [FML/]: 	Baubles|API(API: Baubles|API:1.0.1.10): Baubles-1.7.10-1.0.1.10-deobf.jar ()
+[18:31:14] [Client thread/DEBUG] [FML/]: 	Thaumcraft|API(API: Thaumcraft|API:4.2.2.0): Thaumcraft-1.7.10-4.2.3.5-deobf.jar ()
+[18:31:14] [Client thread/TRACE] [mcp/mcp]: Sending event FMLConstructionEvent to mod mcp
+[18:31:14] [Client thread/TRACE] [mcp/mcp]: Sent event FMLConstructionEvent to mod mcp
+[18:31:14] [Client thread/DEBUG] [FML/]: Bar Step: Construction - Minecraft Coder Pack took 0.004s
+[18:31:14] [Client thread/TRACE] [FML/FML]: Sending event FMLConstructionEvent to mod FML
+[18:31:14] [Client thread/TRACE] [FML/FML]: Mod FML is using network checker : Invoking method checkModLists
+[18:31:14] [Client thread/TRACE] [FML/FML]: Testing mod FML to verify it accepts its own version in a remote connection
+[18:31:14] [Client thread/TRACE] [FML/FML]: The mod FML accepts its own version (7.10.99.99)
+[18:31:14] [Client thread/INFO] [FML/FML]: Attempting connection with missing mods [mcp, FML, Forge, thaumicmastery, Thaumcraft, Baubles] at CLIENT
+[18:31:14] [Client thread/INFO] [FML/FML]: Attempting connection with missing mods [mcp, FML, Forge, thaumicmastery, Thaumcraft, Baubles] at SERVER
+[18:31:15] [Client thread/TRACE] [FML/FML]: Sent event FMLConstructionEvent to mod FML
+[18:31:15] [Client thread/DEBUG] [FML/]: Bar Step: Construction - Forge Mod Loader took 0.813s
+[18:31:15] [Client thread/TRACE] [Forge/Forge]: Sending event FMLConstructionEvent to mod Forge
+[18:31:15] [Client thread/TRACE] [FML/Forge]: Mod Forge is using network checker : No network checking performed
+[18:31:15] [Client thread/TRACE] [FML/Forge]: Testing mod Forge to verify it accepts its own version in a remote connection
+[18:31:15] [Client thread/TRACE] [FML/Forge]: The mod Forge accepts its own version (10.13.4.1558)
+[18:31:15] [Client thread/TRACE] [Forge/Forge]: Sent event FMLConstructionEvent to mod Forge
+[18:31:15] [Client thread/DEBUG] [FML/]: Bar Step: Construction - Minecraft Forge took 0.014s
+[18:31:15] [Client thread/TRACE] [thaumicmastery/thaumicmastery]: Sending event FMLConstructionEvent to mod thaumicmastery
+[18:31:15] [Client thread/TRACE] [FML/thaumicmastery]: Mod thaumicmastery is using network checker : Accepting version 0.1
+[18:31:15] [Client thread/TRACE] [FML/thaumicmastery]: Testing mod thaumicmastery to verify it accepts its own version in a remote connection
+[18:31:15] [Client thread/TRACE] [FML/thaumicmastery]: The mod thaumicmastery accepts its own version (0.1)
+[18:31:15] [Client thread/DEBUG] [FML/thaumicmastery]: Attempting to inject @SidedProxy classes into thaumicmastery
+[18:31:15] [Client thread/TRACE] [thaumicmastery/thaumicmastery]: Sent event FMLConstructionEvent to mod thaumicmastery
+[18:31:15] [Client thread/DEBUG] [FML/]: Bar Step: Construction - Thaumic Mastery took 0.048s
+[18:31:15] [Client thread/TRACE] [Baubles/Baubles]: Sending event FMLConstructionEvent to mod Baubles
+[18:31:15] [Client thread/TRACE] [FML/Baubles]: Mod Baubles is using network checker : Accepting version 1.0.1.10
+[18:31:15] [Client thread/TRACE] [FML/Baubles]: Testing mod Baubles to verify it accepts its own version in a remote connection
+[18:31:15] [Client thread/TRACE] [FML/Baubles]: The mod Baubles accepts its own version (1.0.1.10)
+[18:31:15] [Client thread/DEBUG] [FML/Baubles]: Attempting to inject @SidedProxy classes into Baubles
+[18:31:15] [Client thread/TRACE] [Baubles/Baubles]: Sent event FMLConstructionEvent to mod Baubles
+[18:31:15] [Client thread/DEBUG] [FML/]: Bar Step: Construction - Baubles took 0.024s
+[18:31:15] [Client thread/TRACE] [Thaumcraft/Thaumcraft]: Sending event FMLConstructionEvent to mod Thaumcraft
+[18:31:15] [Client thread/TRACE] [FML/Thaumcraft]: Mod Thaumcraft is using network checker : Accepting version 4.2.3.5
+[18:31:15] [Client thread/TRACE] [FML/Thaumcraft]: Testing mod Thaumcraft to verify it accepts its own version in a remote connection
+[18:31:15] [Client thread/TRACE] [FML/Thaumcraft]: The mod Thaumcraft accepts its own version (4.2.3.5)
+[18:31:15] [Client thread/DEBUG] [FML/Thaumcraft]: Attempting to inject @SidedProxy classes into Thaumcraft
+[18:31:16] [Client thread/TRACE] [Thaumcraft/Thaumcraft]: Sent event FMLConstructionEvent to mod Thaumcraft
+[18:31:16] [Client thread/DEBUG] [FML/]: Bar Step: Construction - Thaumcraft took 1.213s
+[18:31:16] [Client thread/DEBUG] [FML/]: Bar Finished: Construction took 2.115s
+[18:31:16] [Client thread/DEBUG] [FML/]: Mod signature data
+[18:31:16] [Client thread/DEBUG] [FML/]:  	Valid Signatures:
+[18:31:16] [Client thread/DEBUG] [FML/]:  	Missing Signatures:
+[18:31:16] [Client thread/DEBUG] [FML/]: 		mcp	(Minecraft Coder Pack	9.05)	minecraft.jar
+[18:31:16] [Client thread/DEBUG] [FML/]: 		FML	(Forge Mod Loader	7.10.99.99)	forgeSrc-1.7.10-10.13.4.1558-1.7.10.jar
+[18:31:16] [Client thread/DEBUG] [FML/]: 		Forge	(Minecraft Forge	10.13.4.1558)	forgeSrc-1.7.10-10.13.4.1558-1.7.10.jar
+[18:31:16] [Client thread/DEBUG] [FML/]: 		thaumicmastery	(Thaumic Mastery	0.1)	main
+[18:31:16] [Client thread/DEBUG] [FML/]: 		Baubles	(Baubles	1.0.1.10)	Baubles-1.7.10-1.0.1.10-deobf.jar
+[18:31:16] [Client thread/DEBUG] [FML/]: 		Thaumcraft	(Thaumcraft	4.2.3.5)	Thaumcraft-1.7.10-4.2.3.5-deobf.jar
+[18:31:16] [Client thread/DEBUG] [FML/]: Bar Step: Loading Resources - Default took 0.006s
+[18:31:16] [Client thread/DEBUG] [FML/]: Bar Step: Loading Resources - FMLFileResourcePack:Forge Mod Loader took 0.023s
+[18:31:16] [Client thread/DEBUG] [FML/]: Bar Step: Loading Resources - FMLFileResourcePack:Minecraft Forge took 0.010s
+[18:31:16] [Client thread/DEBUG] [FML/]: Bar Step: Loading Resources - FMLFileResourcePack:Thaumic Mastery took 0.004s
+[18:31:16] [Client thread/DEBUG] [FML/]: Bar Step: Loading Resources - FMLFileResourcePack:Thaumcraft took 0.012s
+[18:31:16] [Client thread/DEBUG] [FML/]: Bar Step: Loading Resources - FMLFileResourcePack:Baubles took 0.001s
+[18:31:16] [Client thread/DEBUG] [FML/]: Bar Finished: Reloading - LanguageManager took 0.052s
+[18:31:16] [Client thread/DEBUG] [FML/]: Bar Step: Loading Resources - Reloading listeners took 0.055s
+[18:31:16] [Client thread/DEBUG] [FML/]: Bar Finished: Loading Resources took 0.111s
+[18:31:16] [Client thread/DEBUG] [Forge Mod Loader/]: Mod Forge Mod Loader is missing a pack.mcmeta file, substituting a dummy one
+[18:31:16] [Client thread/DEBUG] [Minecraft Forge/]: Mod Minecraft Forge is missing a pack.mcmeta file, substituting a dummy one
+[18:31:16] [Client thread/DEBUG] [Thaumic Mastery/]: Mod Thaumic Mastery is missing a pack.mcmeta file, substituting a dummy one
+[18:31:16] [Client thread/INFO] [FML/]: Processing ObjectHolder annotations
+[18:31:16] [Client thread/INFO] [FML/]: Found 341 ObjectHolder annotations
+[18:31:16] [Client thread/INFO] [FML/]: Identifying ItemStackHolder annotations
+[18:31:16] [Client thread/INFO] [FML/]: Found 0 ItemStackHolder annotations
+[18:31:16] [Client thread/TRACE] [mcp/mcp]: Sending event FMLPreInitializationEvent to mod mcp
+[18:31:16] [Client thread/TRACE] [mcp/mcp]: Sent event FMLPreInitializationEvent to mod mcp
+[18:31:16] [Client thread/DEBUG] [FML/]: Bar Step: PreInitialization - Minecraft Coder Pack took 0.001s
+[18:31:16] [Client thread/TRACE] [FML/FML]: Sending event FMLPreInitializationEvent to mod FML
+[18:31:16] [Client thread/TRACE] [FML/FML]: Sent event FMLPreInitializationEvent to mod FML
+[18:31:16] [Client thread/DEBUG] [FML/]: Bar Step: PreInitialization - Forge Mod Loader took 0.001s
+[18:31:16] [Client thread/TRACE] [Forge/Forge]: Sending event FMLPreInitializationEvent to mod Forge
+[18:31:16] [Client thread/INFO] [FML/Forge]: Configured a dormant chunk cache size of 0
+[18:31:16] [Client thread/TRACE] [Forge/Forge]: Sent event FMLPreInitializationEvent to mod Forge
+[18:31:16] [Client thread/DEBUG] [FML/]: Bar Step: PreInitialization - Minecraft Forge took 0.062s
+[18:31:16] [Client thread/TRACE] [thaumicmastery/thaumicmastery]: Sending event FMLPreInitializationEvent to mod thaumicmastery
+[18:31:16] [Client thread/TRACE] [thaumicmastery/thaumicmastery]: Sent event FMLPreInitializationEvent to mod thaumicmastery
+[18:31:16] [Client thread/DEBUG] [FML/]: Bar Step: PreInitialization - Thaumic Mastery took 0.027s
+[18:31:16] [Client thread/TRACE] [Baubles/Baubles]: Sending event FMLPreInitializationEvent to mod Baubles
+[18:31:16] [Client thread/TRACE] [Baubles/Baubles]: Sent event FMLPreInitializationEvent to mod Baubles
+[18:31:16] [Client thread/DEBUG] [FML/]: Bar Step: PreInitialization - Baubles took 0.065s
+[18:31:16] [Client thread/TRACE] [Thaumcraft/Thaumcraft]: Sending event FMLPreInitializationEvent to mod Thaumcraft
+[18:31:17] [Client thread/DEBUG] [FML/Thaumcraft]: Method thaumcraft.common.tiles.TileCrucible.fill(Lnet/minecraftforge/common/util/ForgeDirection;Lnet/minecraftforge/fluids/FluidStack;Z)I: Replacing GETFIELD fluidID with INVOKEVIRTUAL getFluidID
+[18:31:19] [Client thread/DEBUG] [FML/Thaumcraft]: Method thaumcraft.common.entities.golems.EntityGolemBase.updateCarried()V: Replacing GETFIELD fluidID with INVOKEVIRTUAL getFluidID
+[18:31:19] [Client thread/TRACE] [Thaumcraft/Thaumcraft]: Sent event FMLPreInitializationEvent to mod Thaumcraft
+[18:31:19] [Client thread/DEBUG] [FML/]: Bar Step: PreInitialization - Thaumcraft took 2.807s
+[18:31:19] [Client thread/DEBUG] [FML/]: Bar Finished: PreInitialization took 2.962s
+[18:31:19] [Client thread/INFO] [FML/]: Applying holder lookups
+[18:31:19] [Client thread/INFO] [FML/]: Holder lookups applied
+[18:31:19] [Client thread/INFO] [FML/]: Injecting itemstacks
+[18:31:19] [Client thread/INFO] [FML/]: Itemstack injection complete
+[18:31:19] [Client thread/DEBUG] [FML/]: Bar Finished: Loading Resource - TextureManager took 0.000s
+[18:31:19] [Sound Library Loader/INFO] [STDOUT/]: [paulscode.sound.SoundSystemLogger:message:69]: 
+[18:31:19] [Sound Library Loader/INFO] [STDOUT/]: [paulscode.sound.SoundSystemLogger:message:69]: Starting up SoundSystem...
+[18:31:19] [Thread-7/INFO] [STDOUT/]: [paulscode.sound.SoundSystemLogger:message:69]: Initializing LWJGL OpenAL
+[18:31:19] [Thread-7/INFO] [STDOUT/]: [paulscode.sound.SoundSystemLogger:message:69]:     (The LWJGL binding of OpenAL.  For more information, see http://www.lwjgl.org)
+[18:31:20] [Thread-7/INFO] [STDOUT/]: [paulscode.sound.SoundSystemLogger:message:69]: OpenAL initialized.
+[18:31:20] [Sound Library Loader/INFO] [STDOUT/]: [paulscode.sound.SoundSystemLogger:message:69]: 
+[18:31:21] [Client thread/DEBUG] [FML/]: Bar Finished: Loading Resource - SoundHandler took 1.972s
+[18:31:21] [Client thread/DEBUG] [FML/]: Bar Finished: Loading Resource - FontRenderer took 0.007s
+[18:31:21] [Client thread/DEBUG] [FML/]: Bar Finished: Loading Resource - FontRenderer took 0.007s
+[18:31:21] [Client thread/DEBUG] [FML/]: Bar Finished: Loading Resource - GrassColorReloadListener took 0.013s
+[18:31:21] [Client thread/DEBUG] [FML/]: Bar Finished: Loading Resource - FoliageColorReloadListener took 0.020s
+[18:31:22] [Client thread/DEBUG] [FML/]: Bar Step: Rendering Setup - Loading Render Manager took 0.581s
+[18:31:22] [Client thread/DEBUG] [FML/]: Bar Finished: Loading Resource - EntityRenderer took 0.000s
+[18:31:22] [Client thread/DEBUG] [FML/]: Bar Step: Rendering Setup - Loading Entity Renderer took 0.018s
+[18:31:22] [Client thread/DEBUG] [FML/]: Bar Step: Rendering Setup - Loading GL properties took 0.002s
+[18:31:22] [Client thread/DEBUG] [FML/]: Bar Step: Rendering Setup - Render Global instance took 0.123s
+[18:31:22] [Client thread/DEBUG] [FML/]: Bar Step: Rendering Setup - Building Blocks Texture took 0.046s
+[18:31:22] [Client thread/DEBUG] [FML/]: Bar Step: Rendering Setup - Anisotropy and Mipmaps took 0.000s
+[18:31:22] [Client thread/DEBUG] [FML/]: Bar Finished: Texture stitching - missingno took 0.002s
+[18:31:22] [Client thread/DEBUG] [FML/]: Bar Finished: Texture creation took 0.004s
+[18:31:22] [Client thread/DEBUG] [FML/]: Bar Step: Rendering Setup - Loading Blocks Texture took 0.014s
+[18:31:22] [Client thread/DEBUG] [FML/]: Bar Finished: Texture stitching - missingno took 0.000s
+[18:31:22] [Client thread/DEBUG] [FML/]: Bar Finished: Texture creation took 0.001s
+[18:31:22] [Client thread/DEBUG] [FML/]: Bar Step: Rendering Setup - Loading Items Texture took 0.042s
+[18:31:22] [Client thread/DEBUG] [FML/]: Bar Step: Rendering Setup - Viewport took 0.001s
+[18:31:22] [Client thread/DEBUG] [FML/]: Bar Finished: Rendering Setup took 0.828s
+[18:31:22] [Client thread/TRACE] [mcp/mcp]: Sending event FMLInitializationEvent to mod mcp
+[18:31:22] [Client thread/TRACE] [mcp/mcp]: Sent event FMLInitializationEvent to mod mcp
+[18:31:22] [Client thread/DEBUG] [FML/]: Bar Step: Initialization - Minecraft Coder Pack took 0.001s
+[18:31:22] [Client thread/TRACE] [FML/FML]: Sending event FMLInitializationEvent to mod FML
+[18:31:22] [Client thread/TRACE] [FML/FML]: Sent event FMLInitializationEvent to mod FML
+[18:31:22] [Client thread/DEBUG] [FML/]: Bar Step: Initialization - Forge Mod Loader took 0.001s
+[18:31:22] [Client thread/TRACE] [Forge/Forge]: Sending event FMLInitializationEvent to mod Forge
+[18:31:22] [Client thread/TRACE] [Forge/Forge]: Sent event FMLInitializationEvent to mod Forge
+[18:31:22] [Client thread/DEBUG] [FML/]: Bar Step: Initialization - Minecraft Forge took 0.001s
+[18:31:22] [Client thread/TRACE] [thaumicmastery/thaumicmastery]: Sending event FMLInitializationEvent to mod thaumicmastery
+[18:31:22] [Client thread/INFO] [STDOUT/thaumicmastery]: [com.carbon.thaumicmastery.ClientProxy:registerRendering:11]: ===========!!!!!!!!!!!!!!!! CLIENT PROXY !!!!!!!!!!!!!!!!===========
+[18:31:22] [Client thread/TRACE] [thaumicmastery/thaumicmastery]: Sent event FMLInitializationEvent to mod thaumicmastery
+[18:31:22] [Client thread/DEBUG] [FML/]: Bar Step: Initialization - Thaumic Mastery took 0.172s
+[18:31:22] [Client thread/TRACE] [Baubles/Baubles]: Sending event FMLInitializationEvent to mod Baubles
+[18:31:22] [Client thread/TRACE] [Baubles/Baubles]: Sent event FMLInitializationEvent to mod Baubles
+[18:31:22] [Client thread/DEBUG] [FML/]: Bar Step: Initialization - Baubles took 0.034s
+[18:31:22] [Client thread/TRACE] [Thaumcraft/Thaumcraft]: Sending event FMLInitializationEvent to mod Thaumcraft
+[18:31:23] [Client thread/TRACE] [FML/Thaumcraft]: Automatically registered mod Thaumcraft entity SpecialItem as Thaumcraft.SpecialItem
+[18:31:23] [Client thread/TRACE] [FML/Thaumcraft]: Automatically registered mod Thaumcraft entity PermanentItem as Thaumcraft.PermanentItem
+[18:31:23] [Client thread/TRACE] [FML/Thaumcraft]: Automatically registered mod Thaumcraft entity FollowItem as Thaumcraft.FollowItem
+[18:31:23] [Client thread/TRACE] [FML/Thaumcraft]: Automatically registered mod Thaumcraft entity AspectOrb as Thaumcraft.AspectOrb
+[18:31:23] [Client thread/TRACE] [FML/Thaumcraft]: Automatically registered mod Thaumcraft entity FallingTaint as Thaumcraft.FallingTaint
+[18:31:23] [Client thread/TRACE] [FML/Thaumcraft]: Automatically registered mod Thaumcraft entity Alumentum as Thaumcraft.Alumentum
+[18:31:23] [Client thread/TRACE] [FML/Thaumcraft]: Automatically registered mod Thaumcraft entity PrimalOrb as Thaumcraft.PrimalOrb
+[18:31:23] [Client thread/TRACE] [FML/Thaumcraft]: Automatically registered mod Thaumcraft entity FrostShard as Thaumcraft.FrostShard
+[18:31:23] [Client thread/TRACE] [FML/Thaumcraft]: Automatically registered mod Thaumcraft entity Dart as Thaumcraft.Dart
+[18:31:23] [Client thread/TRACE] [FML/Thaumcraft]: Automatically registered mod Thaumcraft entity PrimalArrow as Thaumcraft.PrimalArrow
+[18:31:23] [Client thread/TRACE] [FML/Thaumcraft]: Automatically registered mod Thaumcraft entity PechBlast as Thaumcraft.PechBlast
+[18:31:23] [Client thread/TRACE] [FML/Thaumcraft]: Automatically registered mod Thaumcraft entity EldritchOrb as Thaumcraft.EldritchOrb
+[18:31:23] [Client thread/TRACE] [FML/Thaumcraft]: Automatically registered mod Thaumcraft entity BottleTaint as Thaumcraft.BottleTaint
+[18:31:23] [Client thread/TRACE] [FML/Thaumcraft]: Automatically registered mod Thaumcraft entity GolemOrb as Thaumcraft.GolemOrb
+[18:31:23] [Client thread/TRACE] [FML/Thaumcraft]: Automatically registered mod Thaumcraft entity ShockOrb as Thaumcraft.ShockOrb
+[18:31:23] [Client thread/TRACE] [FML/Thaumcraft]: Automatically registered mod Thaumcraft entity ExplosiveOrb as Thaumcraft.ExplosiveOrb
+[18:31:23] [Client thread/TRACE] [FML/Thaumcraft]: Automatically registered mod Thaumcraft entity Ember as Thaumcraft.Ember
+[18:31:23] [Client thread/TRACE] [FML/Thaumcraft]: Automatically registered mod Thaumcraft entity Golem as Thaumcraft.Golem
+[18:31:23] [Client thread/TRACE] [FML/Thaumcraft]: Automatically registered mod Thaumcraft entity TravelingTrunk as Thaumcraft.TravelingTrunk
+[18:31:23] [Client thread/TRACE] [FML/Thaumcraft]: Automatically registered mod Thaumcraft entity BrainyZombie as Thaumcraft.BrainyZombie
+[18:31:23] [Client thread/TRACE] [FML/Thaumcraft]: Automatically registered mod Thaumcraft entity GiantBrainyZombie as Thaumcraft.GiantBrainyZombie
+[18:31:23] [Client thread/TRACE] [FML/Thaumcraft]: Automatically registered mod Thaumcraft entity Wisp as Thaumcraft.Wisp
+[18:31:23] [Client thread/TRACE] [FML/Thaumcraft]: Automatically registered mod Thaumcraft entity Firebat as Thaumcraft.Firebat
+[18:31:23] [Client thread/TRACE] [FML/Thaumcraft]: Automatically registered mod Thaumcraft entity Pech as Thaumcraft.Pech
+[18:31:23] [Client thread/TRACE] [FML/Thaumcraft]: Automatically registered mod Thaumcraft entity MindSpider as Thaumcraft.MindSpider
+[18:31:23] [Client thread/TRACE] [FML/Thaumcraft]: Automatically registered mod Thaumcraft entity EldritchGuardian as Thaumcraft.EldritchGuardian
+[18:31:23] [Client thread/TRACE] [FML/Thaumcraft]: Automatically registered mod Thaumcraft entity EldritchWarden as Thaumcraft.EldritchWarden
+[18:31:23] [Client thread/TRACE] [FML/Thaumcraft]: Automatically registered mod Thaumcraft entity CultistKnight as Thaumcraft.CultistKnight
+[18:31:23] [Client thread/TRACE] [FML/Thaumcraft]: Automatically registered mod Thaumcraft entity CultistCleric as Thaumcraft.CultistCleric
+[18:31:23] [Client thread/TRACE] [FML/Thaumcraft]: Automatically registered mod Thaumcraft entity CultistLeader as Thaumcraft.CultistLeader
+[18:31:23] [Client thread/TRACE] [FML/Thaumcraft]: Automatically registered mod Thaumcraft entity CultistPortal as Thaumcraft.CultistPortal
+[18:31:23] [Client thread/TRACE] [FML/Thaumcraft]: Automatically registered mod Thaumcraft entity EldritchGolem as Thaumcraft.EldritchGolem
+[18:31:23] [Client thread/TRACE] [FML/Thaumcraft]: Automatically registered mod Thaumcraft entity EldritchCrab as Thaumcraft.EldritchCrab
+[18:31:23] [Client thread/TRACE] [FML/Thaumcraft]: Automatically registered mod Thaumcraft entity InhabitedZombie as Thaumcraft.InhabitedZombie
+[18:31:23] [Client thread/TRACE] [FML/Thaumcraft]: Automatically registered mod Thaumcraft entity ThaumSlime as Thaumcraft.ThaumSlime
+[18:31:23] [Client thread/TRACE] [FML/Thaumcraft]: Automatically registered mod Thaumcraft entity TaintSpider as Thaumcraft.TaintSpider
+[18:31:23] [Client thread/TRACE] [FML/Thaumcraft]: Automatically registered mod Thaumcraft entity Taintacle as Thaumcraft.Taintacle
+[18:31:23] [Client thread/TRACE] [FML/Thaumcraft]: Automatically registered mod Thaumcraft entity TaintacleTiny as Thaumcraft.TaintacleTiny
+[18:31:23] [Client thread/TRACE] [FML/Thaumcraft]: Automatically registered mod Thaumcraft entity TaintSpore as Thaumcraft.TaintSpore
+[18:31:23] [Client thread/TRACE] [FML/Thaumcraft]: Automatically registered mod Thaumcraft entity TaintSwarmer as Thaumcraft.TaintSwarmer
+[18:31:23] [Client thread/TRACE] [FML/Thaumcraft]: Automatically registered mod Thaumcraft entity TaintSwarm as Thaumcraft.TaintSwarm
+[18:31:23] [Client thread/TRACE] [FML/Thaumcraft]: Automatically registered mod Thaumcraft entity TaintedChicken as Thaumcraft.TaintedChicken
+[18:31:23] [Client thread/TRACE] [FML/Thaumcraft]: Automatically registered mod Thaumcraft entity TaintedCow as Thaumcraft.TaintedCow
+[18:31:23] [Client thread/TRACE] [FML/Thaumcraft]: Automatically registered mod Thaumcraft entity TaintedCreeper as Thaumcraft.TaintedCreeper
+[18:31:23] [Client thread/TRACE] [FML/Thaumcraft]: Automatically registered mod Thaumcraft entity TaintedPig as Thaumcraft.TaintedPig
+[18:31:23] [Client thread/TRACE] [FML/Thaumcraft]: Automatically registered mod Thaumcraft entity TaintedSheep as Thaumcraft.TaintedSheep
+[18:31:23] [Client thread/TRACE] [FML/Thaumcraft]: Automatically registered mod Thaumcraft entity TaintedVillager as Thaumcraft.TaintedVillager
+[18:31:23] [Client thread/TRACE] [FML/Thaumcraft]: Automatically registered mod Thaumcraft entity TaintacleGiant as Thaumcraft.TaintacleGiant
+[18:31:23] [Client thread/TRACE] [FML/Thaumcraft]: Automatically registered mod Thaumcraft entity SpecialItemGrate as Thaumcraft.SpecialItemGrate
+[18:31:23] [Client thread/TRACE] [FML/Thaumcraft]: Automatically registered mod Thaumcraft entity GolemBobber as Thaumcraft.GolemBobber
+[18:31:23] [Client thread/TRACE] [Thaumcraft/Thaumcraft]: Sent event FMLInitializationEvent to mod Thaumcraft
+[18:31:23] [Client thread/DEBUG] [FML/]: Bar Step: Initialization - Thaumcraft took 0.435s
+[18:31:23] [Client thread/DEBUG] [FML/]: Bar Finished: Initialization took 0.643s
+[18:31:23] [Client thread/TRACE] [FML/]: Attempting to deliver 0 IMC messages to mod mcp
+[18:31:23] [Client thread/TRACE] [mcp/mcp]: Sending event IMCEvent to mod mcp
+[18:31:23] [Client thread/TRACE] [mcp/mcp]: Sent event IMCEvent to mod mcp
+[18:31:23] [Client thread/DEBUG] [FML/]: Bar Step: InterModComms$IMC - Minecraft Coder Pack took 0.006s
+[18:31:23] [Client thread/TRACE] [FML/]: Attempting to deliver 0 IMC messages to mod FML
+[18:31:23] [Client thread/TRACE] [FML/FML]: Sending event IMCEvent to mod FML
+[18:31:23] [Client thread/TRACE] [FML/FML]: Sent event IMCEvent to mod FML
+[18:31:23] [Client thread/DEBUG] [FML/]: Bar Step: InterModComms$IMC - Forge Mod Loader took 0.001s
+[18:31:23] [Client thread/TRACE] [FML/]: Attempting to deliver 0 IMC messages to mod Forge
+[18:31:23] [Client thread/TRACE] [Forge/Forge]: Sending event IMCEvent to mod Forge
+[18:31:23] [Client thread/TRACE] [Forge/Forge]: Sent event IMCEvent to mod Forge
+[18:31:23] [Client thread/DEBUG] [FML/]: Bar Step: InterModComms$IMC - Minecraft Forge took 0.001s
+[18:31:23] [Client thread/TRACE] [FML/]: Attempting to deliver 0 IMC messages to mod thaumicmastery
+[18:31:23] [Client thread/TRACE] [thaumicmastery/thaumicmastery]: Sending event IMCEvent to mod thaumicmastery
+[18:31:23] [Client thread/TRACE] [thaumicmastery/thaumicmastery]: Sent event IMCEvent to mod thaumicmastery
+[18:31:23] [Client thread/DEBUG] [FML/]: Bar Step: InterModComms$IMC - Thaumic Mastery took 0.000s
+[18:31:23] [Client thread/TRACE] [FML/]: Attempting to deliver 0 IMC messages to mod Baubles
+[18:31:23] [Client thread/TRACE] [Baubles/Baubles]: Sending event IMCEvent to mod Baubles
+[18:31:23] [Client thread/TRACE] [Baubles/Baubles]: Sent event IMCEvent to mod Baubles
+[18:31:23] [Client thread/DEBUG] [FML/]: Bar Step: InterModComms$IMC - Baubles took 0.000s
+[18:31:23] [Client thread/TRACE] [FML/]: Attempting to deliver 0 IMC messages to mod Thaumcraft
+[18:31:23] [Client thread/TRACE] [Thaumcraft/Thaumcraft]: Sending event IMCEvent to mod Thaumcraft
+[18:31:23] [Client thread/TRACE] [Thaumcraft/Thaumcraft]: Sent event IMCEvent to mod Thaumcraft
+[18:31:23] [Client thread/DEBUG] [FML/]: Bar Step: InterModComms$IMC - Thaumcraft took 0.000s
+[18:31:23] [Client thread/DEBUG] [FML/]: Bar Finished: InterModComms$IMC took 0.008s
+[18:31:23] [Client thread/INFO] [FML/]: Injecting itemstacks
+[18:31:23] [Client thread/INFO] [FML/]: Itemstack injection complete
+[18:31:23] [Client thread/TRACE] [mcp/mcp]: Sending event FMLPostInitializationEvent to mod mcp
+[18:31:23] [Client thread/TRACE] [mcp/mcp]: Sent event FMLPostInitializationEvent to mod mcp
+[18:31:23] [Client thread/DEBUG] [FML/]: Bar Step: PostInitialization - Minecraft Coder Pack took 0.000s
+[18:31:23] [Client thread/TRACE] [FML/FML]: Sending event FMLPostInitializationEvent to mod FML
+[18:31:23] [Client thread/TRACE] [FML/FML]: Sent event FMLPostInitializationEvent to mod FML
+[18:31:23] [Client thread/DEBUG] [FML/]: Bar Step: PostInitialization - Forge Mod Loader took 0.001s
+[18:31:23] [Client thread/TRACE] [Forge/Forge]: Sending event FMLPostInitializationEvent to mod Forge
+[18:31:23] [Client thread/TRACE] [Forge/Forge]: Sent event FMLPostInitializationEvent to mod Forge
+[18:31:23] [Client thread/DEBUG] [FML/]: Bar Step: PostInitialization - Minecraft Forge took 0.002s
+[18:31:23] [Client thread/TRACE] [thaumicmastery/thaumicmastery]: Sending event FMLPostInitializationEvent to mod thaumicmastery
+[18:31:23] [Client thread/TRACE] [thaumicmastery/thaumicmastery]: Sent event FMLPostInitializationEvent to mod thaumicmastery
+[18:31:23] [Client thread/DEBUG] [FML/]: Bar Step: PostInitialization - Thaumic Mastery took 0.022s
+[18:31:23] [Client thread/TRACE] [Baubles/Baubles]: Sending event FMLPostInitializationEvent to mod Baubles
+[18:31:23] [Client thread/TRACE] [Baubles/Baubles]: Sent event FMLPostInitializationEvent to mod Baubles
+[18:31:23] [Client thread/DEBUG] [FML/]: Bar Step: PostInitialization - Baubles took 0.001s
+[18:31:23] [Client thread/TRACE] [Thaumcraft/Thaumcraft]: Sending event FMLPostInitializationEvent to mod Thaumcraft
+[18:31:23] [Client thread/INFO] [THAUMCRAFT/Thaumcraft]: Found potion array with a size of 32
+[18:31:23] [Client thread/INFO] [THAUMCRAFT/Thaumcraft]: Extending Potion.potionTypes array to 40
+[18:31:23] [Client thread/INFO] [THAUMCRAFT/Thaumcraft]: Initializing PotionFluxTaint with id 31
+[18:31:23] [Client thread/INFO] [THAUMCRAFT/Thaumcraft]: Initializing PotionVisExhaust with id 32
+[18:31:23] [Client thread/INFO] [THAUMCRAFT/Thaumcraft]: Initializing PotionInfectiousVisExhaust with id 33
+[18:31:23] [Client thread/INFO] [THAUMCRAFT/Thaumcraft]: Initializing PotionUnnaturalHunger with id 34
+[18:31:23] [Client thread/INFO] [THAUMCRAFT/Thaumcraft]: Initializing PotionWarpWard with id 35
+[18:31:23] [Client thread/INFO] [THAUMCRAFT/Thaumcraft]: Initializing PotionDeathGaze with id 36
+[18:31:23] [Client thread/INFO] [THAUMCRAFT/Thaumcraft]: Initializing PotionBlurredVision with id 37
+[18:31:23] [Client thread/INFO] [THAUMCRAFT/Thaumcraft]: Initializing PotionSunScorned with id 38
+[18:31:23] [Client thread/INFO] [THAUMCRAFT/Thaumcraft]: Initializing PotionThaumarhia with id 39
+[18:31:23] [Client thread/INFO] [THAUMCRAFT/Thaumcraft]: Adding entities to MFR safari net blacklist.
+[18:31:23] [Client thread/WARN] [THAUMCRAFT/Thaumcraft]: Whitelisting [Zombie] to spawn champion mobs at level [0]
+[18:31:23] [Client thread/WARN] [THAUMCRAFT/Thaumcraft]: Whitelisting [Spider] to spawn champion mobs at level [0]
+[18:31:23] [Client thread/WARN] [THAUMCRAFT/Thaumcraft]: Whitelisting [Blaze] to spawn champion mobs at level [0]
+[18:31:23] [Client thread/WARN] [THAUMCRAFT/Thaumcraft]: Whitelisting [Enderman] to spawn champion mobs at level [0]
+[18:31:23] [Client thread/WARN] [THAUMCRAFT/Thaumcraft]: Whitelisting [Skeleton] to spawn champion mobs at level [0]
+[18:31:23] [Client thread/WARN] [THAUMCRAFT/Thaumcraft]: Whitelisting [Witch] to spawn champion mobs at level [1]
+[18:31:23] [Client thread/WARN] [THAUMCRAFT/Thaumcraft]: Whitelisting [Thaumcraft.EldritchCrab] to spawn champion mobs at level [0]
+[18:31:23] [Client thread/WARN] [THAUMCRAFT/Thaumcraft]: Whitelisting [Thaumcraft.Taintacle] to spawn champion mobs at level [2]
+[18:31:23] [Client thread/WARN] [THAUMCRAFT/Thaumcraft]: Whitelisting [Thaumcraft.Wisp] to spawn champion mobs at level [1]
+[18:31:23] [Client thread/WARN] [THAUMCRAFT/Thaumcraft]: Whitelisting [Thaumcraft.InhabitedZombie] to spawn champion mobs at level [3]
+[18:31:23] [Client thread/TRACE] [Thaumcraft/Thaumcraft]: Sent event FMLPostInitializationEvent to mod Thaumcraft
+[18:31:23] [Client thread/DEBUG] [FML/]: Bar Step: PostInitialization - Thaumcraft took 0.697s
+[18:31:23] [Client thread/DEBUG] [FML/]: Bar Finished: PostInitialization took 0.723s
+[18:31:23] [Client thread/TRACE] [mcp/mcp]: Sending event FMLLoadCompleteEvent to mod mcp
+[18:31:23] [Client thread/TRACE] [mcp/mcp]: Sent event FMLLoadCompleteEvent to mod mcp
+[18:31:23] [Client thread/DEBUG] [FML/]: Bar Step: LoadComplete - Minecraft Coder Pack took 0.001s
+[18:31:23] [Client thread/TRACE] [FML/FML]: Sending event FMLLoadCompleteEvent to mod FML
+[18:31:23] [Client thread/TRACE] [FML/FML]: Sent event FMLLoadCompleteEvent to mod FML
+[18:31:23] [Client thread/DEBUG] [FML/]: Bar Step: LoadComplete - Forge Mod Loader took 0.001s
+[18:31:23] [Client thread/TRACE] [Forge/Forge]: Sending event FMLLoadCompleteEvent to mod Forge
+[18:31:23] [Client thread/DEBUG] [FML/Forge]: Forge RecipeSorter Baking:
+[18:31:23] [Client thread/DEBUG] [FML/Forge]:   14: RecipeEntry("Before", UNKNOWN, )
+[18:31:23] [Client thread/DEBUG] [FML/Forge]:   13: RecipeEntry("minecraft:shaped", SHAPED, net.minecraft.item.crafting.ShapedRecipes) Before: minecraft:shapeless
+[18:31:23] [Client thread/DEBUG] [FML/Forge]:   12: RecipeEntry("forge:shapedore", SHAPED, net.minecraftforge.oredict.ShapedOreRecipe) Before: minecraft:shapeless After: minecraft:shaped
+[18:31:23] [Client thread/DEBUG] [FML/Forge]:   11: RecipeEntry("minecraft:mapextending", SHAPED, net.minecraft.item.crafting.RecipesMapExtending) Before: minecraft:shapeless After: minecraft:shaped
+[18:31:23] [Client thread/DEBUG] [FML/Forge]:   10: RecipeEntry("minecraft:shapeless", SHAPELESS, net.minecraft.item.crafting.ShapelessRecipes) After: minecraft:shaped
+[18:31:23] [Client thread/DEBUG] [FML/Forge]:   9: RecipeEntry("forge:shapelessore", SHAPELESS, net.minecraftforge.oredict.ShapelessOreRecipe) After: minecraft:shapeless
+[18:31:23] [Client thread/DEBUG] [FML/Forge]:   8: RecipeEntry("minecraft:armordyes", SHAPELESS, net.minecraft.item.crafting.RecipesArmorDyes) After: minecraft:shapeless
+[18:31:23] [Client thread/DEBUG] [FML/Forge]:   7: RecipeEntry("minecraft:fireworks", SHAPELESS, net.minecraft.item.crafting.RecipeFireworks) After: minecraft:shapeless
+[18:31:23] [Client thread/DEBUG] [FML/Forge]:   6: RecipeEntry("forge:shapelessorenbt", SHAPELESS, thaumcraft.common.lib.crafting.ShapelessNBTOreRecipe) After: forge:shapelessore
+[18:31:23] [Client thread/DEBUG] [FML/Forge]:   5: RecipeEntry("forge:robearmordye", SHAPELESS, thaumcraft.common.items.armor.RecipesRobeArmorDyes) After: forge:shapelessorenbt
+[18:31:23] [Client thread/DEBUG] [FML/Forge]:   4: RecipeEntry("minecraft:bookcloning", SHAPELESS, net.minecraft.item.crafting.RecipeBookCloning) After: minecraft:shapeless
+[18:31:23] [Client thread/DEBUG] [FML/Forge]:   3: RecipeEntry("forge:voidrobearmordye", SHAPELESS, thaumcraft.common.items.armor.RecipesVoidRobeArmorDyes) After: forge:robearmordye
+[18:31:23] [Client thread/DEBUG] [FML/Forge]:   2: RecipeEntry("minecraft:mapcloning", SHAPELESS, net.minecraft.item.crafting.RecipesMapCloning) After: minecraft:shapeless
+[18:31:23] [Client thread/DEBUG] [FML/Forge]:   1: RecipeEntry("After", UNKNOWN, )
+[18:31:23] [Client thread/DEBUG] [FML/Forge]: Sorting recipies
+[18:31:24] [Client thread/TRACE] [Forge/Forge]: Sent event FMLLoadCompleteEvent to mod Forge
+[18:31:24] [Client thread/DEBUG] [FML/]: Bar Step: LoadComplete - Minecraft Forge took 0.017s
+[18:31:24] [Client thread/TRACE] [thaumicmastery/thaumicmastery]: Sending event FMLLoadCompleteEvent to mod thaumicmastery
+[18:31:24] [Client thread/TRACE] [thaumicmastery/thaumicmastery]: Sent event FMLLoadCompleteEvent to mod thaumicmastery
+[18:31:24] [Client thread/DEBUG] [FML/]: Bar Step: LoadComplete - Thaumic Mastery took 0.001s
+[18:31:24] [Client thread/TRACE] [Baubles/Baubles]: Sending event FMLLoadCompleteEvent to mod Baubles
+[18:31:24] [Client thread/TRACE] [Baubles/Baubles]: Sent event FMLLoadCompleteEvent to mod Baubles
+[18:31:24] [Client thread/DEBUG] [FML/]: Bar Step: LoadComplete - Baubles took 0.004s
+[18:31:24] [Client thread/TRACE] [Thaumcraft/Thaumcraft]: Sending event FMLLoadCompleteEvent to mod Thaumcraft
+[18:31:24] [Client thread/TRACE] [Thaumcraft/Thaumcraft]: Sent event FMLLoadCompleteEvent to mod Thaumcraft
+[18:31:24] [Client thread/DEBUG] [FML/]: Bar Step: LoadComplete - Thaumcraft took 0.002s
+[18:31:24] [Client thread/DEBUG] [FML/]: Bar Finished: LoadComplete took 0.025s
+[18:31:24] [Client thread/DEBUG] [FML/]: Freezing block and item id maps
+[18:31:24] [Client thread/DEBUG] [FML/]: Registry consistency check successful
+[18:31:24] [Client thread/DEBUG] [FML/]: Registry consistency check successful
+[18:31:24] [Client thread/INFO] [FML/]: Forge Mod Loader has successfully loaded 6 mods
+[18:31:24] [Client thread/DEBUG] [FML/]: Bar Step: Loading Resources - Default took 0.000s
+[18:31:24] [Client thread/DEBUG] [FML/]: Bar Step: Loading Resources - FMLFileResourcePack:Forge Mod Loader took 0.010s
+[18:31:24] [Client thread/DEBUG] [FML/]: Bar Step: Loading Resources - FMLFileResourcePack:Minecraft Forge took 0.012s
+[18:31:24] [Client thread/DEBUG] [FML/]: Bar Step: Loading Resources - FMLFileResourcePack:Thaumic Mastery took 0.001s
+[18:31:24] [Client thread/DEBUG] [FML/]: Bar Step: Loading Resources - FMLFileResourcePack:Thaumcraft took 0.008s
+[18:31:24] [Client thread/DEBUG] [FML/]: Bar Step: Loading Resources - FMLFileResourcePack:Baubles took 0.000s
+[18:31:24] [Client thread/DEBUG] [FML/]: Bar Finished: Texture Loading took 0.596s
+[18:31:25] [Client thread/DEBUG] [FML/]: Bar Finished: Mipmap generation took 0.319s
+[18:31:25] [Client thread/DEBUG] [FML/]: Bar Finished: Texture stitching took 0.040s
+[18:31:25] [Client thread/DEBUG] [FML/]: Bar Finished: Texture creation took 0.064s
+[18:31:25] [Client thread/DEBUG] [FML/]: Bar Step: Reloading Texture Manager - minecraft:textures/atlas/blocks.png took 0.981s
+[18:31:25] [Client thread/DEBUG] [FML/]: Bar Step: Reloading Texture Manager - minecraft:textures/font/ascii.png took 0.033s
+[18:31:25] [Client thread/DEBUG] [FML/]: Bar Step: Reloading Texture Manager - minecraft:dynamic/lightMap_1 took 0.000s
+[18:31:25] [Client thread/DEBUG] [FML/]: Bar Step: Reloading Texture Manager - minecraft:textures/font/ascii_sga.png took 0.007s
+[18:31:25] [Client thread/DEBUG] [FML/]: Bar Finished: Texture Loading took 0.326s
+[18:31:25] [Client thread/DEBUG] [FML/]: Bar Finished: Mipmap generation took 0.009s
+[18:31:25] [Client thread/DEBUG] [FML/]: Bar Finished: Texture stitching took 0.041s
+[18:31:25] [Client thread/DEBUG] [FML/]: Bar Finished: Texture creation took 0.045s
+[18:31:25] [Client thread/DEBUG] [FML/]: Bar Step: Reloading Texture Manager - minecraft:textures/atlas/items.png took 0.382s
+[18:31:25] [Client thread/DEBUG] [FML/]: Bar Finished: Reloading Texture Manager took 1.403s
+[18:31:25] [Client thread/INFO] [STDOUT/]: [paulscode.sound.SoundSystemLogger:message:69]: 
+[18:31:25] [Client thread/INFO] [STDOUT/]: [paulscode.sound.SoundSystemLogger:message:69]: SoundSystem shutting down...
+[18:31:25] [Client thread/INFO] [STDOUT/]: [paulscode.sound.SoundSystemLogger:importantMessage:90]:     Author: Paul Lamb, www.paulscode.com
+[18:31:25] [Client thread/INFO] [STDOUT/]: [paulscode.sound.SoundSystemLogger:message:69]: 
+[18:31:25] [Sound Library Loader/INFO] [STDOUT/]: [paulscode.sound.SoundSystemLogger:message:69]: 
+[18:31:25] [Sound Library Loader/INFO] [STDOUT/]: [paulscode.sound.SoundSystemLogger:message:69]: Starting up SoundSystem...
+[18:31:25] [Thread-9/INFO] [STDOUT/]: [paulscode.sound.SoundSystemLogger:message:69]: Initializing LWJGL OpenAL
+[18:31:25] [Thread-9/INFO] [STDOUT/]: [paulscode.sound.SoundSystemLogger:message:69]:     (The LWJGL binding of OpenAL.  For more information, see http://www.lwjgl.org)
+[18:31:25] [Thread-9/INFO] [STDOUT/]: [paulscode.sound.SoundSystemLogger:message:69]: OpenAL initialized.
+[18:31:26] [Sound Library Loader/INFO] [STDOUT/]: [paulscode.sound.SoundSystemLogger:message:69]: 
+[18:31:26] [Client thread/DEBUG] [FML/]: Bar Finished: Reloading took 2.341s
+[18:31:26] [Client thread/DEBUG] [FML/]: Bar Step: Loading Resources - Reloading listeners took 2.342s
+[18:31:26] [Client thread/DEBUG] [FML/]: Bar Finished: Loading Resources took 2.374s
+[18:31:26] [Client thread/DEBUG] [Forge Mod Loader/]: Mod Forge Mod Loader is missing a pack.mcmeta file, substituting a dummy one
+[18:31:26] [Client thread/DEBUG] [Minecraft Forge/]: Mod Minecraft Forge is missing a pack.mcmeta file, substituting a dummy one
+[18:31:26] [Client thread/DEBUG] [Thaumic Mastery/]: Mod Thaumic Mastery is missing a pack.mcmeta file, substituting a dummy one
+[18:31:26] [Client thread/DEBUG] [FML/]: Bar Finished: Loading took 28.942s
+[18:31:26] [Client thread/ERROR] [TEXTURE ERRORS/]: +=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=
+[18:31:26] [Client thread/ERROR] [TEXTURE ERRORS/]: The following texture errors were found.
+[18:31:26] [Client thread/ERROR] [TEXTURE ERRORS/]: ==================================================
+[18:31:26] [Client thread/ERROR] [TEXTURE ERRORS/]:   DOMAIN thaumicmastery
+[18:31:26] [Client thread/ERROR] [TEXTURE ERRORS/]: --------------------------------------------------
+[18:31:26] [Client thread/ERROR] [TEXTURE ERRORS/]:   domain thaumicmastery is missing 1 texture
+[18:31:26] [Client thread/ERROR] [TEXTURE ERRORS/]:     domain thaumicmastery has 1 location:
+[18:31:26] [Client thread/ERROR] [TEXTURE ERRORS/]:       mod thaumicmastery resources at /Users/calum/IdeaProjects/ThaumicMastery/build/classes/main
+[18:31:26] [Client thread/ERROR] [TEXTURE ERRORS/]: -------------------------
+[18:31:26] [Client thread/ERROR] [TEXTURE ERRORS/]:     The missing resources for domain thaumicmastery are:
+[18:31:26] [Client thread/ERROR] [TEXTURE ERRORS/]:       textures/items/tm_logo.png
+[18:31:26] [Client thread/ERROR] [TEXTURE ERRORS/]: -------------------------
+[18:31:26] [Client thread/ERROR] [TEXTURE ERRORS/]:     No other errors exist for domain thaumicmastery
+[18:31:26] [Client thread/ERROR] [TEXTURE ERRORS/]: ==================================================
+[18:31:26] [Client thread/ERROR] [TEXTURE ERRORS/]: +=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=
