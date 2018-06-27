@@ -5,7 +5,7 @@ import com.carbon.thaumicmastery.blocks.BlockMirrorDimension;
 import com.carbon.thaumicmastery.entities.tileentities.TileEntityDecay;
 import com.carbon.thaumicmastery.entities.tileentities.TileEntityMirrorDimension;
 import com.carbon.thaumicmastery.eventhandlers.KeyInputHandler;
-import com.carbon.thaumicmastery.helpers.ModHelperManager;
+import com.carbon.thaumicmastery.helpers.ThaumcraftHelper;
 import com.carbon.thaumicmastery.items.ModItems;
 import com.carbon.thaumicmastery.keybinds.Keybinds;
 import cpw.mods.fml.common.FMLCommonHandler;
@@ -60,9 +60,6 @@ public class ThaumicMastery {
 	@SidedProxy(clientSide = clientProxyPath, serverSide = serverProxyPath)
 	public static CommonProxy proxy;
 
-	// Mod Helper
-	ModHelperManager helper = new ModHelperManager();
-
 	// blocks
 	public static Block blockDecay;
 	public static Block blockMirrorDim;
@@ -89,7 +86,7 @@ public class ThaumicMastery {
 	    GameRegistry.registerBlock(blockMirrorDim, blockMirrorDim.getUnlocalizedName().substring(5));
 
 	    // Mod helpers
-	    helper.preInit();
+	    ThaumcraftHelper.preInit();
     }
 
     @EventHandler
@@ -111,13 +108,13 @@ public class ThaumicMastery {
 	    FMLCommonHandler.instance().bus().register(events);
 
         // TC
-	    helper.init();
+	    ThaumcraftHelper.init();
     }
 
     @EventHandler
 	public void postInit(FMLPostInitializationEvent event) {
 	    //ThaumcraftHelper.init();
-	    helper.postInit();
+	    ThaumcraftHelper.postInit();
 
 
     }
