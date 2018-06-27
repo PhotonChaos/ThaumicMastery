@@ -1,17 +1,2 @@
-[18:46:49] [main/INFO]: Setting user: Player403
-[18:46:54] [Client thread/INFO]: LWJGL Version: 2.9.1
-[18:47:31] [Client thread/INFO]: Reloading ResourceManager: Default, FMLFileResourcePack:Forge Mod Loader, FMLFileResourcePack:Minecraft Forge, FMLFileResourcePack:Thaumic Mastery, FMLFileResourcePack:Thaumcraft, FMLFileResourcePack:Baubles
-[18:47:37] [Sound Library Loader/INFO]: Sound engine started
-[18:47:40] [Client thread/INFO]: Created: 16x16 textures/blocks-atlas
-[18:47:40] [Client thread/INFO]: Created: 16x16 textures/items-atlas
-[18:47:41] [Client thread/INFO]: Reloading ResourceManager: Default, FMLFileResourcePack:Forge Mod Loader, FMLFileResourcePack:Minecraft Forge, FMLFileResourcePack:Thaumic Mastery, FMLFileResourcePack:Thaumcraft, FMLFileResourcePack:Baubles
-[18:47:42] [Client thread/INFO]: Created: 512x512 textures/blocks-atlas
-[18:47:43] [Client thread/INFO]: Created: 512x512 textures/items-atlas
-[18:47:44] [Sound Library Loader/INFO]: Sound engine started
-[18:48:49] [Server thread/INFO]: Starting integrated minecraft server version 1.7.10
-[18:48:49] [Server thread/INFO]: Generating keypair
-[18:48:50] [Server thread/INFO]: Preparing start region for level 0
-[18:48:51] [Server thread/INFO]: Preparing spawn area: 44%
-[18:48:51] [Server thread/INFO]: Changing view distance to 12, from 10
-[18:48:52] [Server thread/INFO]: Player403[local:E:f6ee2439] logged in with entity id 162 at (11.311987918454312, 96.58987359070122, -85.22899543068776)
-[18:48:52] [Server thread/INFO]: Player403 joined the game
+[18:30:53] [main/INFO]: Setting user: Player273
+[18:30:55] [Client thread/INFO]: LWJGL Version: 2.9.1
