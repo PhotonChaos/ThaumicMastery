@@ -10,7 +10,7 @@ import thaumcraft.api.ThaumcraftApiHelper;
 import thaumcraft.api.aspects.Aspect;
 import thaumcraft.api.aspects.AspectList;
 
-public class KeyInputHandler {
+public class MainEventHandler {
 	@SubscribeEvent
 	public void onKeyInput(KeyInputEvent key) {
 		if (Keybinds.decay.isPressed()) {

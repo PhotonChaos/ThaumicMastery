@@ -27,12 +27,18 @@ public class ThaumcraftHelper {
 		String category = "THAUMICMASTERY";
 		ResourceLocation bg   = new ResourceLocation(ThaumicMastery.MODID, "textures/research/category/background.png");
 		ResourceLocation logo = ThaumicMastery.logo;
+		ResourceLocation ordo = new ResourceLocation("textures/items/ordo.png");
 
 		ResearchCategories.registerCategory(category, logo, bg);
 
 		(new ResearchItem(LibResearchKeys.KEY_ROOT, category, new AspectList(), 0, 0, 0, logo))
 				.setAutoUnlock().setRound().setStub()
 				.setPages(getPage("TM_Root.1"))
+				.registerResearchItem();
+
+		(new ResearchItem(LibResearchKeys.KEY_ORDER, category, new AspectList(), 1, 1, 3, ordo))
+				.setSpecial().setConcealed().setParents(LibResearchKeys.KEY_ROOT)
+				.setPages(getPage("TM_Ordo.1"))
 				.registerResearchItem();
 
 	}

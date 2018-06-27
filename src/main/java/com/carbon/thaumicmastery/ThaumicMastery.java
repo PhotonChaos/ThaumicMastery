@@ -4,7 +4,7 @@ import com.carbon.thaumicmastery.blocks.BlockDecay;
 import com.carbon.thaumicmastery.blocks.BlockMirrorDimension;
 import com.carbon.thaumicmastery.entities.tileentities.TileEntityDecay;
 import com.carbon.thaumicmastery.entities.tileentities.TileEntityMirrorDimension;
-import com.carbon.thaumicmastery.eventhandlers.KeyInputHandler;
+import com.carbon.thaumicmastery.eventhandlers.MainEventHandler;
 import com.carbon.thaumicmastery.helpers.ThaumcraftHelper;
 import com.carbon.thaumicmastery.items.ModItems;
 import com.carbon.thaumicmastery.keybinds.Keybinds;
@@ -42,7 +42,7 @@ public class ThaumicMastery {
     public static CreativeTabs tab = new CreativeTabs("ThaumicMastery") {
 	    @Override
 	    public Item getTabIconItem() {
-		    return ModItems.logo_item;
+		    return ModItems.mirrordim_item;
 	    }
     };
 
@@ -64,10 +64,7 @@ public class ThaumicMastery {
 	public static Block blockDecay;
 	public static Block blockMirrorDim;
 
-	// Event Handler
-	public static KeyInputHandler events;
-
-    @EventHandler
+	@EventHandler
     public void preInit(FMLPreInitializationEvent event) {
     	instance = this;
 
@@ -102,7 +99,7 @@ public class ThaumicMastery {
 
         // Events
 	    Keybinds.register();
-	    events = new KeyInputHandler();
+	    MainEventHandler events = new MainEventHandler();
 
 	    MinecraftForge.EVENT_BUS.register(events);
 	    FMLCommonHandler.instance().bus().register(events);
@@ -113,10 +110,7 @@ public class ThaumicMastery {
 
     @EventHandler
 	public void postInit(FMLPostInitializationEvent event) {
-	    //ThaumcraftHelper.init();
 	    ThaumcraftHelper.postInit();
-
-
     }
 
     public static void syncConfig() {

@@ -6,14 +6,14 @@ import net.minecraft.creativetab.CreativeTabs;
 import net.minecraft.item.Item;
 
 public class ModItems {
-	public static Item logo_item;
+	public static Item mirrordim_item;
 
 	public static void init() {
-		logo_item = new Item()
-				.setUnlocalizedName("tm_logo")
-				.setTextureName(ThaumicMastery.MODID + ":tm_logo")
-				.setCreativeTab(CreativeTabs.tabMaterials);
+		mirrordim_item = new Item()
+				.setUnlocalizedName("tm_mirrordim_discover")
+				.setTextureName(ThaumicMastery.MODID + ":ordo")
+				.setCreativeTab(ThaumicMastery.tab);
 
-		GameRegistry.registerItem(logo_item, logo_item.getUnlocalizedName());
+		GameRegistry.registerItem(mirrordim_item, mirrordim_item.getUnlocalizedName());
 	}
 }
