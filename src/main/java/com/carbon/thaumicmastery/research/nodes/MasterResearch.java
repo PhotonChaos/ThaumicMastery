@@ -1,7 +1,7 @@
 package com.carbon.thaumicmastery.research.nodes;
 
-import com.thaumcraft.aspects.AspectList;
-import com.thaumcraft.research.ResearchItem;
+import thaumcraft.api.aspects.AspectList;
+import thaumcraft.api.research.ResearchItem;
 import cpw.mods.fml.relauncher.Side;
 import cpw.mods.fml.relauncher.SideOnly;
 import net.minecraft.item.ItemStack;

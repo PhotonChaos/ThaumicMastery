@@ -1,7 +1,7 @@
 package com.carbon.thaumicmastery.research.catagories;
 
 import com.carbon.thaumicmastery.ThaumicMastery;
-import com.thaumcraft.research.ResearchCategoryList;
+import thaumcraft.api.research.ResearchCategoryList;
 import net.minecraft.util.ResourceLocation;
 
 public class RCThaumicMastery extends ResearchCategoryList {

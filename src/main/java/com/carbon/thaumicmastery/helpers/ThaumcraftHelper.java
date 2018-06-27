@@ -2,14 +2,10 @@ package com.carbon.thaumicmastery.helpers;
 
 import com.carbon.thaumicmastery.ThaumicMastery;
 import com.carbon.thaumicmastery.lib.LibResearchKeys;
-import com.carbon.thaumicmastery.research.nodes.MasterResearch;
-import com.sun.org.apache.regexp.internal.RE;
-import com.thaumcraft.*;
-import com.thaumcraft.aspects.AspectList;
-import com.thaumcraft.research.ResearchCategories;
-import com.thaumcraft.research.ResearchItem;
-import com.thaumcraft.research.ResearchPage;
-import net.minecraft.item.ItemStack;
+import thaumcraft.api.aspects.AspectList;
+import thaumcraft.api.research.ResearchCategories;
+import thaumcraft.api.research.ResearchItem;
+import thaumcraft.api.research.ResearchPage;
 import net.minecraft.util.ResourceLocation;
 import net.minecraft.util.StatCollector;
 
