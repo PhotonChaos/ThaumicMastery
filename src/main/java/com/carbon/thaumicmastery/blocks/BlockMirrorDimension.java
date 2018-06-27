@@ -11,8 +11,9 @@ import net.minecraft.tileentity.TileEntity;
 import net.minecraft.util.AxisAlignedBB;
 import net.minecraft.world.IBlockAccess;
 import net.minecraft.world.World;
+import thaumcraft.api.crafting.IInfusionStabiliser;
 
-public class BlockMirrorDimension extends BlockContainer {
+public class BlockMirrorDimension extends BlockContainer implements IInfusionStabiliser {
 	private String casterName;
 
 	public BlockMirrorDimension() {
@@ -65,4 +66,8 @@ public class BlockMirrorDimension extends BlockContainer {
 	}
 
 
+	@Override
+	public boolean canStabaliseInfusion(World world, int x, int y, int z) {
+		return true;
+	}
 }

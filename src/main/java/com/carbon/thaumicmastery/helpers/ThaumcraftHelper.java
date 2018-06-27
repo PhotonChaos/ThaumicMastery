@@ -3,16 +3,25 @@ package com.carbon.thaumicmastery.helpers;
 import com.carbon.thaumicmastery.ThaumicMastery;
 import com.carbon.thaumicmastery.items.ModItems;
 import com.carbon.thaumicmastery.lib.LibResearchKeys;
+import net.minecraft.init.Items;
 import net.minecraft.item.ItemStack;
+import thaumcraft.api.ThaumcraftApi;
 import thaumcraft.api.aspects.Aspect;
 import thaumcraft.api.aspects.AspectList;
+import thaumcraft.api.crafting.IArcaneRecipe;
+import thaumcraft.api.crafting.InfusionRecipe;
 import thaumcraft.api.research.ResearchCategories;
 import thaumcraft.api.research.ResearchItem;
 import thaumcraft.api.research.ResearchPage;
 import net.minecraft.util.ResourceLocation;
 import net.minecraft.util.StatCollector;
 
+import java.util.HashMap;
+
 public class ThaumcraftHelper {
+	private static HashMap recipes = new HashMap();
+	public static Object recipeOrder;
+
 	public static void preInit() {
 
 	}
@@ -36,12 +45,12 @@ public class ThaumcraftHelper {
 
 		(new ResearchItem(LibResearchKeys.KEY_ROOT, category, new AspectList(), 0, 0, 0, logo))
 				.setAutoUnlock().setRound().setStub()
-				.setPages(getPage("TM_Root.1"))
+				.setPages(getPage("TM_Root.1"), new ResearchPage((InfusionRecipe) recipeOrder))
 				.registerResearchItem();
 
 		(new ResearchItem(LibResearchKeys.KEY_ORDER, category, new AspectList().add(Aspect.AIR, 1).add(Aspect.ORDER, 2), 0, -2, 3, new ItemStack(ModItems.mirrordim_item)))
 				.setSpecial().setConcealed().setParents(LibResearchKeys.KEY_ROOT)
-				.setPages(getPage("TM_Ordo.1"))
+				.setPages(getPage("TM_Ordo.1"), getPage("TM_Ordo.2"))
 				.registerResearchItem();
 
 		(new ResearchItem(LibResearchKeys.KEY_ENTROPY, category, new AspectList().add(Aspect.ENTROPY, 1), 0, 2, 3, new ItemStack(ModItems.worldeater_item)))
@@ -51,8 +60,9 @@ public class ThaumcraftHelper {
 
 	}
 
+	@SuppressWarnings("unchecked")
 	private static void initRecipes() {
-
+		recipeOrder = ThaumcraftApi.addInfusionCraftingRecipe(LibResearchKeys.KEY_ORDER, new ItemStack(ModItems.mirrordim_item), 12, new AspectList().add(Aspect.ORDER, 128).add(Aspect.MAGIC, 64), new ItemStack(Items.blaze_powder), new ItemStack[]{new ItemStack(Items.blaze_powder)});
 	}
 
 	private static ResearchPage getPage(String ident) {
