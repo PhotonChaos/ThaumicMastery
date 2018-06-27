@@ -1,50 +1,53 @@
-[18:30:53] [main/INFO]: Setting user: Player273
-[18:30:55] [Client thread/INFO]: LWJGL Version: 2.9.1
-[18:31:16] [Client thread/INFO]: Reloading ResourceManager: Default, FMLFileResourcePack:Forge Mod Loader, FMLFileResourcePack:Minecraft Forge, FMLFileResourcePack:Thaumic Mastery, FMLFileResourcePack:Thaumcraft, FMLFileResourcePack:Baubles
-[18:31:20] [Sound Library Loader/INFO]: Sound engine started
-[18:31:22] [Client thread/INFO]: Created: 16x16 textures/blocks-atlas
-[18:31:22] [Client thread/INFO]: Created: 16x16 textures/items-atlas
-[18:31:24] [Client thread/INFO]: Reloading ResourceManager: Default, FMLFileResourcePack:Forge Mod Loader, FMLFileResourcePack:Minecraft Forge, FMLFileResourcePack:Thaumic Mastery, FMLFileResourcePack:Thaumcraft, FMLFileResourcePack:Baubles
-[18:31:25] [Client thread/INFO]: Created: 512x512 textures/blocks-atlas
-[18:31:25] [Client thread/INFO]: Created: 512x512 textures/items-atlas
-[18:31:26] [Sound Library Loader/INFO]: Sound engine started
-[18:31:52] [Server thread/INFO]: Starting integrated minecraft server version 1.7.10
-[18:31:52] [Server thread/INFO]: Generating keypair
-[18:31:53] [Server thread/INFO]: Preparing start region for level 0
-[18:31:54] [Server thread/INFO]: Preparing spawn area: 57%
-[18:31:55] [Server thread/INFO]: Changing view distance to 12, from 10
-[18:31:55] [Server thread/INFO]: Player273[local:E:9e5768c6] logged in with entity id 162 at (11.311987918454312, 96.58987359070122, -85.22899543068776)
-[18:31:55] [Server thread/INFO]: Player273 joined the game
-[18:32:34] [Server thread/INFO]: <Player273> t
-[18:32:34] [Client thread/INFO]: [CHAT] <Player273> t
-[18:32:44] [Client thread/INFO]: [CHAT] §5Player273 has given you all research.
-[18:32:44] [Client thread/INFO]: [CHAT] §5Success!
-[18:32:55] [Server thread/INFO]: [Player273: Given [Stone] * 1 to Player273]
-[18:32:55] [Client thread/INFO]: [CHAT] Warning: Using numeric IDs will not be supported in the future. Please use names, such as 'minecraft:stone'
-[18:32:55] [Client thread/INFO]: [CHAT] Given [Stone] * 1 to Player273
-[18:32:58] [Server thread/INFO]: [Player273: Given [Mushroom] * 1 to Player273]
-[18:32:58] [Client thread/INFO]: [CHAT] Warning: Using numeric IDs will not be supported in the future. Please use names, such as 'minecraft:red_mushroom_block'
-[18:32:58] [Client thread/INFO]: [CHAT] Given [Mushroom] * 1 to Player273
-[18:33:01] [Client thread/INFO]: [CHAT] There is no such item with ID 63
-[18:33:03] [Client thread/INFO]: [CHAT] There is no such item with ID 64
-[18:33:08] [Server thread/INFO]: [Player273: Given [Acacia Wood Stairs] * 1 to Player273]
-[18:33:08] [Client thread/INFO]: [CHAT] Warning: Using numeric IDs will not be supported in the future. Please use names, such as 'minecraft:acacia_stairs'
-[18:33:08] [Client thread/INFO]: [CHAT] Given [Acacia Wood Stairs] * 1 to Player273
-[18:33:10] [Server thread/INFO]: [Player273: Given [Dark Oak Wood Stairs] * 1 to Player273]
-[18:33:10] [Client thread/INFO]: [CHAT] Warning: Using numeric IDs will not be supported in the future. Please use names, such as 'minecraft:dark_oak_stairs'
-[18:33:10] [Client thread/INFO]: [CHAT] Given [Dark Oak Wood Stairs] * 1 to Player273
-[18:33:11] [Server thread/INFO]: Player273 has just earned the achievement [Taking Inventory]
-[18:33:11] [Client thread/INFO]: [CHAT] Player273 has just earned the achievement [Taking Inventory]
-[18:34:18] [Server thread/INFO]: Saving and pausing game...
-[18:34:18] [Server thread/INFO]: Saving chunks for level 'New World'/Overworld
-[18:34:18] [Server thread/INFO]: Saving chunks for level 'New World'/Nether
-[18:34:18] [Server thread/INFO]: Saving chunks for level 'New World'/The End
-[18:34:18] [Server thread/INFO]: Saving chunks for level 'New World'/The Outer Lands
-[18:34:18] [Server thread/INFO]: Stopping server
-[18:34:18] [Server thread/INFO]: Saving players
-[18:34:18] [Server thread/INFO]: Saving worlds
-[18:34:18] [Server thread/INFO]: Saving chunks for level 'New World'/Overworld
-[18:34:18] [Server thread/INFO]: Saving chunks for level 'New World'/Nether
-[18:34:18] [Server thread/INFO]: Saving chunks for level 'New World'/The End
-[18:34:18] [Server thread/INFO]: Saving chunks for level 'New World'/The Outer Lands
-[18:34:21] [Client thread/INFO]: Stopping!
+[18:43:33] [main/INFO]: Setting user: Player931
+[18:43:34] [Client thread/INFO]: LWJGL Version: 2.9.1
+[18:43:50] [Client thread/INFO]: Reloading ResourceManager: Default, FMLFileResourcePack:Forge Mod Loader, FMLFileResourcePack:Minecraft Forge, FMLFileResourcePack:Thaumic Mastery, FMLFileResourcePack:Thaumcraft, FMLFileResourcePack:Baubles
+[18:43:53] [Sound Library Loader/INFO]: Sound engine started
+[18:43:54] [Client thread/INFO]: Created: 16x16 textures/blocks-atlas
+[18:43:54] [Client thread/INFO]: Created: 16x16 textures/items-atlas
+[18:43:55] [Client thread/INFO]: Reloading ResourceManager: Default, FMLFileResourcePack:Forge Mod Loader, FMLFileResourcePack:Minecraft Forge, FMLFileResourcePack:Thaumic Mastery, FMLFileResourcePack:Thaumcraft, FMLFileResourcePack:Baubles
+[18:43:56] [Client thread/INFO]: Created: 512x512 textures/blocks-atlas
+[18:43:57] [Client thread/INFO]: Created: 512x512 textures/items-atlas
+[18:43:58] [Sound Library Loader/INFO]: Sound engine started
+[18:44:04] [Server thread/INFO]: Starting integrated minecraft server version 1.7.10
+[18:44:04] [Server thread/INFO]: Generating keypair
+[18:44:05] [Server thread/INFO]: Preparing start region for level 0
+[18:44:06] [Server thread/INFO]: Preparing spawn area: 66%
+[18:44:06] [Server thread/INFO]: Changing view distance to 12, from 10
+[18:44:06] [Server thread/INFO]: Player931[local:E:1de67708] logged in with entity id 162 at (4.41636503378804, 100.9992598022825, -40.20690299253658)
+[18:44:06] [Server thread/INFO]: Player931 joined the game
+[18:44:11] [Server thread/INFO]: <Player931> Wolf x Fox is the best ship
+[18:44:12] [Client thread/INFO]: [CHAT] <Player931> Wolf x Fox is the best ship
+[18:44:13] [Server thread/INFO]: <Player931> Wolf x Fox is the best ship
+[18:44:13] [Client thread/INFO]: [CHAT] <Player931> Wolf x Fox is the best ship
+[18:44:15] [Server thread/INFO]: <Player931> Wolf x Fox is the best ship
+[18:44:15] [Client thread/INFO]: [CHAT] <Player931> Wolf x Fox is the best ship
+[18:44:15] [Server thread/INFO]: <Player931> Wolf x Fox is the best ship
+[18:44:15] [Client thread/INFO]: [CHAT] <Player931> Wolf x Fox is the best ship
+[18:44:16] [Server thread/INFO]: <Player931> Wolf x Fox is the best ship
+[18:44:16] [Client thread/INFO]: [CHAT] <Player931> Wolf x Fox is the best ship
+[18:44:17] [Server thread/INFO]: <Player931> Wolf x Fox is the best ship
+[18:44:17] [Client thread/INFO]: [CHAT] <Player931> Wolf x Fox is the best ship
+[18:44:22] [Server thread/INFO]: [Player931: Set own game mode to Survival Mode]
+[18:44:22] [Client thread/INFO]: [CHAT] Your game mode has been updated
+[18:44:23] [Server thread/INFO]: <Player931> Wolf x Fox is the best ship
+[18:44:23] [Client thread/INFO]: [CHAT] <Player931> Wolf x Fox is the best ship
+[18:44:24] [Server thread/INFO]: <Player931> Wolf x Fox is the best ship
+[18:44:24] [Client thread/INFO]: [CHAT] <Player931> Wolf x Fox is the best ship
+[18:44:24] [Server thread/INFO]: <Player931> Wolf x Fox is the best ship
+[18:44:24] [Client thread/INFO]: [CHAT] <Player931> Wolf x Fox is the best ship
+[18:44:25] [Server thread/INFO]: <Player931> Wolf x Fox is the best ship
+[18:44:25] [Client thread/INFO]: [CHAT] <Player931> Wolf x Fox is the best ship
+[18:44:29] [Server thread/INFO]: [Player931: Set own game mode to Creative Mode]
+[18:44:29] [Client thread/INFO]: [CHAT] Your game mode has been updated
+[18:44:29] [Server thread/INFO]: Player931 has just earned the achievement [Taking Inventory]
+[18:44:29] [Client thread/INFO]: [CHAT] Player931 has just earned the achievement [Taking Inventory]
+[18:44:43] [Client thread/INFO]: Stopping!
+[18:44:43] [Server thread/INFO]: Stopping server
+[18:44:43] [Server thread/INFO]: Saving players
+[18:44:44] [Server thread/INFO]: Saving worlds
+[18:44:44] [Server thread/INFO]: Saving chunks for level 'New World'/Overworld
+[18:44:44] [Server thread/INFO]: Saving chunks for level 'New World'/Nether
+[18:44:44] [Server thread/INFO]: Saving chunks for level 'New World'/The End
+[18:44:44] [Server thread/INFO]: Saving chunks for level 'New World'/The Outer Lands
+[18:44:44] [Client Shutdown Thread/INFO]: Stopping server
+[18:44:44] [Client Shutdown Thread/INFO]: Saving players
