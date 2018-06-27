@@ -1,7 +1,10 @@
 package com.carbon.thaumicmastery.helpers;
 
 import com.carbon.thaumicmastery.ThaumicMastery;
+import com.carbon.thaumicmastery.items.ModItems;
 import com.carbon.thaumicmastery.lib.LibResearchKeys;
+import net.minecraft.item.ItemStack;
+import thaumcraft.api.aspects.Aspect;
 import thaumcraft.api.aspects.AspectList;
 import thaumcraft.api.research.ResearchCategories;
 import thaumcraft.api.research.ResearchItem;
@@ -27,7 +30,7 @@ public class ThaumcraftHelper {
 		String category = "THAUMICMASTERY";
 		ResourceLocation bg   = new ResourceLocation(ThaumicMastery.MODID, "textures/research/category/background.png");
 		ResourceLocation logo = ThaumicMastery.logo;
-		ResourceLocation ordo = new ResourceLocation("textures/items/ordo.png");
+		//ResourceLocation ordo = new ResourceLocation("textures/items/ordo.png");
 
 		ResearchCategories.registerCategory(category, logo, bg);
 
@@ -36,9 +39,14 @@ public class ThaumcraftHelper {
 				.setPages(getPage("TM_Root.1"))
 				.registerResearchItem();
 
-		(new ResearchItem(LibResearchKeys.KEY_ORDER, category, new AspectList(), 1, 1, 3, ordo))
+		(new ResearchItem(LibResearchKeys.KEY_ORDER, category, new AspectList().add(Aspect.AIR, 1).add(Aspect.ORDER, 2), 0, -2, 3, new ItemStack(ModItems.mirrordim_item)))
 				.setSpecial().setConcealed().setParents(LibResearchKeys.KEY_ROOT)
 				.setPages(getPage("TM_Ordo.1"))
+				.registerResearchItem();
+
+		(new ResearchItem(LibResearchKeys.KEY_ENTROPY, category, new AspectList().add(Aspect.ENTROPY, 1), 0, 2, 3, new ItemStack(ModItems.worldeater_item)))
+				.setSpecial().setConcealed().setLost().setParents(LibResearchKeys.KEY_ROOT)
+				.setPages(getPage("TM_Perditio.1"))
 				.registerResearchItem();
 
 	}

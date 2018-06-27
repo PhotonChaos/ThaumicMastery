@@ -1,7 +1,10 @@
+# items
 item.ItemTest.name=Test
-
+#
+# blocks
 tile.BlockDecay.name=Decay
-
+#
+# Keybinds
 key.decay=Use World Eater
 key.mirrordimension=Use Mirror Dimension
 key.novablast=Cast Novablast
@@ -15,6 +18,9 @@ tc.research_category.THAUMICMASTERY=Thaumic Mastery
 
 tc.research_name.TM_root=The Legend
 tc.research_text.TM_root=[TM] The power of the Master Thaumaturge
-
 thaumicmastery.research_text.TM_Root.1=It's time to see how far you can push this school of magic.
-thaumicmastery.research_text.TM_Ordo.1=ORDO TEST
+
+tc.research_name.TM_Ordo=Mirror Dimension
+tc.research_text.TM_Ordo=[TM] Perfect balance
+thaumicmastery.research_text.TM_Ordo.1=Among your vast interdimensional research, you have discovered out a new mechanic that had never even crossed the minds of the eldritch: Pseudo-dimensions. What if, instead of travelling to a whole other dimension just to get it’s environmental benefits, you brought that dimension to you. Now of course, this won’t work with every dimension. Actually, it only works with one, the only “stable” pseudo-dimension: The Mirror Dimension. This name is slightly deceiving, as this dimension is not a mirror replica of any world. This dimension is not solid, and contains no matter. One thing that this dimension does contain however, is immense magical strength, and some interesting effects. You have found a way to bring a small part of this dimension to you, through a spell. When you bring this dimension into your world, it will only stay for a few seconds, before disappearing to wherever it goes.
+
