@@ -1,5 +1,6 @@
 # items
-item.ItemTest.name=Test
+item.tm_mirrordim_discover.name=Mirror of Balance
+item.tm_worldeater_discover.name=Fractured Mirror
 #
 # blocks
 tile.BlockDecay.name=Decay

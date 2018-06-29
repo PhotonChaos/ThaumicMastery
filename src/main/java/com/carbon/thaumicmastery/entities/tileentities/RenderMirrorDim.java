@@ -20,7 +20,7 @@ public class RenderMirrorDim extends TileEntitySpecialRenderer {
 	private float sScale = 10;
 
 	public RenderMirrorDim() {
-		model = AdvancedModelLoader.loadModel(new ResourceLocation(ThaumicMastery.MODID, "/models/MD_NEW.obj"));
+		model = AdvancedModelLoader.loadModel(new ResourceLocation(ThaumicMastery.MODID, "models/MD_NEW.obj"));
 	}
 
 	@Override

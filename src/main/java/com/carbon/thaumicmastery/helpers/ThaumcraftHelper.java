@@ -3,8 +3,10 @@ package com.carbon.thaumicmastery.helpers;
 import com.carbon.thaumicmastery.ThaumicMastery;
 import com.carbon.thaumicmastery.items.ModItems;
 import com.carbon.thaumicmastery.lib.LibResearchKeys;
+import cpw.mods.fml.common.registry.GameRegistry;
 import net.minecraft.init.Items;
 import net.minecraft.item.ItemStack;
+import thaumcraft.api.ItemApi;
 import thaumcraft.api.ThaumcraftApi;
 import thaumcraft.api.aspects.Aspect;
 import thaumcraft.api.aspects.AspectList;
@@ -20,7 +22,6 @@ import java.util.HashMap;
 
 public class ThaumcraftHelper {
 	private static HashMap recipes = new HashMap();
-	public static Object recipeOrder;
 
 	public static void preInit() {
 
@@ -45,7 +46,7 @@ public class ThaumcraftHelper {
 
 		(new ResearchItem(LibResearchKeys.KEY_ROOT, category, new AspectList(), 0, 0, 0, logo))
 				.setAutoUnlock().setRound().setStub()
-				.setPages(getPage("TM_Root.1"), new ResearchPage((InfusionRecipe) recipeOrder))
+				.setPages(getPage("TM_Root.1"), new ResearchPage((InfusionRecipe) recipes.get("orderDiscover")))
 				.registerResearchItem();
 
 		(new ResearchItem(LibResearchKeys.KEY_ORDER, category, new AspectList().add(Aspect.AIR, 1).add(Aspect.ORDER, 2), 0, -2, 3, new ItemStack(ModItems.mirrordim_item)))
@@ -62,7 +63,10 @@ public class ThaumcraftHelper {
 
 	@SuppressWarnings("unchecked")
 	private static void initRecipes() {
-		recipeOrder = ThaumcraftApi.addInfusionCraftingRecipe(LibResearchKeys.KEY_ORDER, new ItemStack(ModItems.mirrordim_item), 12, new AspectList().add(Aspect.ORDER, 128).add(Aspect.MAGIC, 64), new ItemStack(Items.blaze_powder), new ItemStack[]{new ItemStack(Items.blaze_powder)});
+		recipes.put("orderDiscover", ThaumcraftApi.addInfusionCraftingRecipe(LibResearchKeys.KEY_ORDER, new ItemStack(ModItems.mirrordim_item), 12,
+		new AspectList().add(Aspect.ORDER, 128).add(Aspect.MAGIC, 64),
+				ItemApi.getItem("itemEldritchObject", 3),
+				new ItemStack[]{new ItemStack(Items.blaze_powder)/*, new ItemStack(GameRegistry.findItem("ThaumicTinkerer", ""))*/}));
 	}
 
 	private static ResearchPage getPage(String ident) {

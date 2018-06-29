@@ -15,6 +15,7 @@ public class MainEventHandler {
 	public void onKeyInput(KeyInputEvent key) {
 		if (Keybinds.decay.isPressed()) {
 			EntityClientPlayerMP player = Minecraft.getMinecraft().thePlayer;
+
 			try {
 				ThaumcraftApiHelper.consumeVisFromWand(player.getHeldItem(), player, new AspectList().add(Aspect.AIR, 10), true, false);
 			} catch (NullPointerException e) {
@@ -22,6 +23,8 @@ public class MainEventHandler {
 			} finally {
 				player.sendChatMessage("Wolf x Fox is the best ship");
 			}
+
+			player.sendChatMessage(player.getHeldItem().getUnlocalizedName());
 		}
 	}
 

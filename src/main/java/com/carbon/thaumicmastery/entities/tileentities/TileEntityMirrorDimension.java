@@ -10,13 +10,13 @@ import net.minecraft.tileentity.TileEntity;
 import net.minecraft.util.Vec3;
 
 public class TileEntityMirrorDimension extends TileEntity {
-	private final int maxDistance = 10;
+	private final int MAX_DISTANCE = 11;
 	private final int ticksToReset = 40; // the number of ticks until the counter resets
 	private final int animationLengthTicks = 40;
 
 	public static String mCaster;
 
-	boolean isActive = true;
+	public static boolean isActive = true;
 
 	private String caster;
 	private int counter;
@@ -24,8 +24,9 @@ public class TileEntityMirrorDimension extends TileEntity {
 	private int scale = 0;
 	private boolean scaleAnimationFinished = false;
 	private boolean counterEnabled = true;
-	private boolean casterExited = false;
+	private boolean casterExited = true;
 	private boolean startupComplete = false;
+	private boolean delete = false;
 
 	// TODO: Add checking for other spells
 	// TODO: Fix Flying code
@@ -34,7 +35,7 @@ public class TileEntityMirrorDimension extends TileEntity {
 	// TODO: Add vis cost reduction
 
 	public TileEntityMirrorDimension() {
-
+		delete = isActive;
 	}
 
 	@Override
@@ -69,6 +70,11 @@ public class TileEntityMirrorDimension extends TileEntity {
 	}
 
 	private void processFunctionality() {
+		if (delete) {
+			deleteThis();
+			return;
+		}
+
 		int d;
 		for (int i = 0; i < worldObj.playerEntities.size(); i++) {
 			EntityPlayer player = (EntityPlayer) worldObj.playerEntities.get(i);
@@ -76,7 +82,7 @@ public class TileEntityMirrorDimension extends TileEntity {
 			Vec3 position = player.getPosition(1.0F);
 			d = dist(xCoord, yCoord, zCoord, (int)position.xCoord, (int)position.yCoord, (int)position.zCoord);
 
-			if(!(d > maxDistance)) {
+			if(!(d > MAX_DISTANCE)) {
 				if(startupComplete) casterExited = true;
 				if (player.getDisplayName().equals(caster) && casterExited && !player.capabilities.isCreativeMode) {
 					// if it is the caster
@@ -99,6 +105,11 @@ public class TileEntityMirrorDimension extends TileEntity {
 				}
 			}
 		}
+	}
+
+	private void deleteThis() {
+		worldObj.setBlockToAir(xCoord, yCoord, zCoord);
+		worldObj.removeTileEntity(xCoord, yCoord, zCoord);
 	}
 
 	@Override
