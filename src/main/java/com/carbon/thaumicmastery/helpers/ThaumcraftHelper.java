@@ -2,9 +2,11 @@ package com.carbon.thaumicmastery.helpers;
 
 import com.carbon.thaumicmastery.ThaumicMastery;
 import com.carbon.thaumicmastery.items.ModItems;
+import com.carbon.thaumicmastery.lib.LibMisc;
 import com.carbon.thaumicmastery.lib.LibResearchKeys;
 import cpw.mods.fml.common.registry.GameRegistry;
 import net.minecraft.init.Items;
+import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
 import thaumcraft.api.ItemApi;
 import thaumcraft.api.ThaumcraftApi;
@@ -56,7 +58,7 @@ public class ThaumcraftHelper {
 
 		(new ResearchItem(LibResearchKeys.KEY_ENTROPY, category, new AspectList().add(Aspect.ENTROPY, 1), 0, 2, 3, new ItemStack(ModItems.worldeater_item)))
 				.setSpecial().setConcealed().setLost().setParents(LibResearchKeys.KEY_ROOT)
-				.setPages(getPage("TM_Perditio.1"))
+				.setPages(getPage("TM_Perditio.1"), new ResearchPage((InfusionRecipe) recipes.get("entropyDiscover")))
 				.registerResearchItem();
 
 	}
@@ -64,9 +66,19 @@ public class ThaumcraftHelper {
 	@SuppressWarnings("unchecked")
 	private static void initRecipes() {
 		recipes.put("orderDiscover", ThaumcraftApi.addInfusionCraftingRecipe(LibResearchKeys.KEY_ORDER, new ItemStack(ModItems.mirrordim_item), 12,
-		new AspectList().add(Aspect.ORDER, 128).add(Aspect.MAGIC, 64),
+		new AspectList().add(Aspect.MAGIC, 64).add(Aspect.ORDER, 128),
 				ItemApi.getItem("itemEldritchObject", 3),
-				new ItemStack[]{new ItemStack(Items.blaze_powder)/*, new ItemStack(GameRegistry.findItem("ThaumicTinkerer", ""))*/}));
+				new ItemStack[]{new ItemStack(Items.blaze_powder)}));
+
+		recipes.put("entropyDiscover", ThaumcraftApi.addInfusionCraftingRecipe(LibResearchKeys.KEY_ENTROPY, new ItemStack(ModItems.worldeater_item), 12,
+				new AspectList().add(Aspect.MAGIC, 64).add(Aspect.ENTROPY, 128),
+				ItemApi.getBlock("blockMirror", 0),
+				new ItemStack[]{
+				ItemApi.getItem("itemShard", 6),
+						ItemApi.getItem("itemShard", 6),
+						new ItemStack(Items.nether_star),
+						GameRegistry.findItemStack(LibMisc.ThaumicTinkerer_MODID, "kamiResource", 1)
+				}));
 	}
 
 	private static ResearchPage getPage(String ident) {

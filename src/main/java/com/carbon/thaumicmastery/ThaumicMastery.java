@@ -95,6 +95,7 @@ public class ThaumicMastery {
 
 	    // Tile Entities
 	    GameRegistry.registerTileEntity(TileEntityMirrorDimension.class, "MirrorDimension");
+	    GameRegistry.registerTileEntity(TileEntityDecay.class, "decay");
         proxy.registerRendering();
 
         // Events

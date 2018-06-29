@@ -26,3 +26,6 @@ tc.research_text.TM_order=[TM] Perfect balance
 thaumicmastery.research_text.TM_Ordo.1=Among your vast interdimensional research, you have discovered out a new mechanic that had never even crossed the minds of the eldritch: Pseudo-dimensions. What if, instead of travelling to a whole other dimension just to get it’s environmental benefits, you brought that dimension to you. Now of course, this won’t work with every dimension. Actually, it only works with one, the only “stable” pseudo-dimension: The Mirror Dimension. This name is slightly deceiving, as this dimension is not a mirror replica of any world. This dimension is not solid, and contains no matter. One thing that this dimension does contain however, is immense magical strength, and some interesting effects.
 thaumicmastery.research_text.TM_Ordo.2=You have found a way to bring a small part of this dimension to you, through a spell. When you bring this dimension into your world, it will only stay for a few seconds, before disappearing to wherever it goes.
 
+tc.research_name.TM_entropy=World Eater
+tc.research_text.TM_entropy=[TM] The End of the World
+# thaumicmastery.research_text.TM_Perditio.1=

@@ -89,7 +89,8 @@ public class TileEntityMirrorDimension extends TileEntity {
 					casterExited = false;
 					// apply effects
 					player.capabilities.allowFlying = true;
-					player.heal(player.getMaxHealth());
+					player.addPotionEffect(new PotionEffect(10, 3, 2));
+					player.setAbsorptionAmount(3.0F);
 
 				} else {
 					// if it is not the caster
