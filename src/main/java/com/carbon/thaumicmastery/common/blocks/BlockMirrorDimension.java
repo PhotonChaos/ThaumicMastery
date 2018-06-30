@@ -59,7 +59,6 @@ public class BlockMirrorDimension extends BlockContainer implements IInfusionSta
 	@Override
 	public TileEntity createNewTileEntity(World world, int n) {
 		TileEntityMirrorDimension md = new TileEntityMirrorDimension();
-		md.setCasterName("decay");
 		return md;
 	}
 

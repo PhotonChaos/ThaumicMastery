@@ -13,7 +13,7 @@ public class TileEntityDecay extends TileEntity {
 	private int metadata;
 	private boolean counterEnabled = true;
 	public static boolean isOrigin = true;
-	private int decay = 10;
+	private int decay;
 	private static int decayTime = 5;
 	public static boolean doDecay = true;
 

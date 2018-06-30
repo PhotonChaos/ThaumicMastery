@@ -112,6 +112,7 @@ public class TileEntityMirrorDimension extends TileEntity {
 	private void deleteThis() {
 		worldObj.setBlockToAir(xCoord, yCoord, zCoord);
 		worldObj.removeTileEntity(xCoord, yCoord, zCoord);
+		Core.isSpellActive = false;
 	}
 
 	@Override

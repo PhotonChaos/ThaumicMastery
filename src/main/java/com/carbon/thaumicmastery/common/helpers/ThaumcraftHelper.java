@@ -32,8 +32,8 @@ public class ThaumcraftHelper {
 	}
 
 	public static void postInit() {
-		initRecipes();
-		initResearch();
+		//initRecipes();
+		//initResearch();
 	}
 
 	private static void initResearch() {
