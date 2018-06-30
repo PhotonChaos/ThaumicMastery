@@ -1,13 +1,13 @@
 package com.carbon.thaumicmastery;
 
-import com.carbon.thaumicmastery.blocks.BlockDecay;
-import com.carbon.thaumicmastery.blocks.BlockMirrorDimension;
-import com.carbon.thaumicmastery.entities.tileentities.TileEntityDecay;
-import com.carbon.thaumicmastery.entities.tileentities.TileEntityMirrorDimension;
-import com.carbon.thaumicmastery.eventhandlers.MainEventHandler;
-import com.carbon.thaumicmastery.helpers.ThaumcraftHelper;
-import com.carbon.thaumicmastery.items.ModItems;
-import com.carbon.thaumicmastery.keybinds.Keybinds;
+import com.carbon.thaumicmastery.common.blocks.BlockDecay;
+import com.carbon.thaumicmastery.common.blocks.BlockMirrorDimension;
+import com.carbon.thaumicmastery.common.entities.tileentities.TileEntityDecay;
+import com.carbon.thaumicmastery.common.entities.tileentities.TileEntityMirrorDimension;
+import com.carbon.thaumicmastery.common.eventhandlers.MainEventHandler;
+import com.carbon.thaumicmastery.common.helpers.ThaumcraftHelper;
+import com.carbon.thaumicmastery.common.items.ModItems;
+import com.carbon.thaumicmastery.common.keybinds.Keybinds;
 import cpw.mods.fml.common.FMLCommonHandler;
 import cpw.mods.fml.common.Mod;
 import cpw.mods.fml.common.Mod.EventHandler;

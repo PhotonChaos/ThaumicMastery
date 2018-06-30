@@ -1,7 +1,7 @@
 package com.carbon.thaumicmastery;
 
-import com.carbon.thaumicmastery.entities.tileentities.RenderMirrorDim;
-import com.carbon.thaumicmastery.entities.tileentities.TileEntityMirrorDimension;
+import com.carbon.thaumicmastery.client.render.RenderMirrorDim;
+import com.carbon.thaumicmastery.common.entities.tileentities.TileEntityMirrorDimension;
 import cpw.mods.fml.client.registry.ClientRegistry;
 
 public class ClientProxy extends CommonProxy {
