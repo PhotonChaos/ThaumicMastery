@@ -1,6 +1,7 @@
 package com.carbon.thaumicmastery.common.entities.tileentities;
 
 import com.carbon.thaumicmastery.ThaumicMastery;
+import com.carbon.thaumicmastery.core.Core;
 import com.carbon.thaumicmastery.core.Utils;
 import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.nbt.NBTTagCompound;
@@ -14,14 +15,15 @@ import java.util.UUID;
 
 public class TileEntityMirrorDimension extends TileEntity {
 	private final int MAX_DISTANCE = 11;
-	private final int ticksToReset = 40; // the number of ticks until the counter resets
-	private final int animationLengthTicks = 40;
+	private final int ticksToReset = 20; // the number of ticks until the counter resets
+	private final int DURATION = 10; // seconds
 
 	public static boolean isActive = true;
 
 	private static String caster;
 
 	private int counter;
+	private int seconds = 0;
 	private int updateSpeed = 10; // every 5 ticks = 4 times a second
 	private int scale = 0;
 	private boolean scaleAnimationFinished = false;
@@ -42,21 +44,17 @@ public class TileEntityMirrorDimension extends TileEntity {
 
 	@Override
 	public void updateEntity() {
-		if (!ThaumicMastery.isSpellActive) {
-			ThaumicMastery.isSpellActive = true;
+		if (!Core.isSpellActive) {
+			Core.isSpellActive = true;
 
-			ThaumicMastery.activeSpellCoords[0] = xCoord;
-			ThaumicMastery.activeSpellCoords[1] = yCoord;
-			ThaumicMastery.activeSpellCoords[2] = zCoord;
+			Core.activeSpellCoords[0] = xCoord;
+			Core.activeSpellCoords[1] = yCoord;
+			Core.activeSpellCoords[2] = zCoord;
 		} else {
-			if (!(ThaumicMastery.activeSpellCoords[0] == xCoord && ThaumicMastery.activeSpellCoords[1] == yCoord && ThaumicMastery.activeSpellCoords[2] == zCoord)) {
-				worldObj.setBlockToAir(xCoord, yCoord, zCoord);
-				worldObj.removeTileEntity(xCoord, yCoord, zCoord);
+			if (!(Core.activeSpellCoords[0] == xCoord && Core.activeSpellCoords[1] == yCoord && Core.activeSpellCoords[2] == zCoord) || seconds >= DURATION) {
+				deleteThis();
 			}
 		}
-
-		// Rendering
-		if (counter == animationLengthTicks && !scaleAnimationFinished) scaleAnimationFinished = true;
 
 		// functionality
 		if (counter % updateSpeed == 0) {
@@ -65,6 +63,7 @@ public class TileEntityMirrorDimension extends TileEntity {
 
 		// counter mechanics
 		if(counter == ticksToReset) {
+			seconds++;
 			counter = 0;
 		}
 		counter++;
