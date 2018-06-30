@@ -1,6 +1,7 @@
 package com.carbon.thaumicmastery.common.entities.tileentities;
 
 import com.carbon.thaumicmastery.ThaumicMastery;
+import com.carbon.thaumicmastery.core.Utils;
 import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.nbt.NBTTagCompound;
 import net.minecraft.network.Packet;
@@ -9,16 +10,17 @@ import net.minecraft.potion.PotionEffect;
 import net.minecraft.tileentity.TileEntity;
 import net.minecraft.util.Vec3;
 
+import java.util.UUID;
+
 public class TileEntityMirrorDimension extends TileEntity {
 	private final int MAX_DISTANCE = 11;
 	private final int ticksToReset = 40; // the number of ticks until the counter resets
 	private final int animationLengthTicks = 40;
 
-	public static String mCaster;
-
 	public static boolean isActive = true;
 
-	private String caster;
+	private static String caster;
+
 	private int counter;
 	private int updateSpeed = 10; // every 5 ticks = 4 times a second
 	private int scale = 0;
@@ -80,7 +82,7 @@ public class TileEntityMirrorDimension extends TileEntity {
 			EntityPlayer player = (EntityPlayer) worldObj.playerEntities.get(i);
 
 			Vec3 position = player.getPosition(1.0F);
-			d = dist(xCoord, yCoord, zCoord, (int)position.xCoord, (int)position.yCoord, (int)position.zCoord);
+			d = Utils.dist(xCoord, yCoord, zCoord, (int)position.xCoord, (int)position.yCoord, (int)position.zCoord);
 
 			if(!(d > MAX_DISTANCE)) {
 				if(startupComplete) casterExited = true;
@@ -142,19 +144,17 @@ public class TileEntityMirrorDimension extends TileEntity {
 		return new S35PacketUpdateTileEntity(xCoord, yCoord, zCoord, 1, nbt);
 	}
 
-	private static int dist(int x, int y, int z, int xx, int yy, int zz) {
-		return (int) Math.sqrt((Math.pow(Math.abs(xx - x), 2) + Math.pow(Math.abs(yy - y), 2) + Math.pow(Math.abs(zz - z), 2)));
-	}
-
-
 	// setters
-	public void setCasterName(String name) {
-		caster = name;
-		mCaster = name;
+	public void setCasterID(String id) {
+		caster = id;
 	}
 
 	// getters
 	public int getCounter() {
 		return counter;
+	}
+
+	public String getCasterID() {
+		return caster;
 	}
 }

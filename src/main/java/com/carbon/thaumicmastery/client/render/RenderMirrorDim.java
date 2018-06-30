@@ -39,7 +39,7 @@ public class RenderMirrorDim extends TileEntitySpecialRenderer {
 		GL11.glDisable(GL11.GL_TEXTURE_2D);
 		//GL11.glDisable(GL11.GL_LIGHTING);
 
-		GL11.glColor4f(0.8F, 1.0F, 0.99F, 0.2F);
+		GL11.glColor4f(0.9F, 1.0F, 0.99F, 0.2F);
 
 		GL11.glBlendFunc(GL11.GL_SRC_ALPHA, GL11.GL_ONE_MINUS_SRC_ALPHA);
 
