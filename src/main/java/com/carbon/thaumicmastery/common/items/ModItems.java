@@ -1,6 +1,7 @@
 package com.carbon.thaumicmastery.common.items;
 
 import com.carbon.thaumicmastery.ThaumicMastery;
+import com.carbon.thaumicmastery.common.items.foci.DecayFocus;
 import cpw.mods.fml.common.registry.GameRegistry;
 import net.minecraft.item.Item;
 
@@ -8,6 +9,9 @@ public class ModItems {
 	public static Item mirrordim_item;
 	public static Item worldeater_item;
 	public static Item novablast_item;
+
+	// Foci
+	public static Item focus_decay;
 
 
 	public static void init() {
@@ -32,5 +36,9 @@ public class ModItems {
 
 		GameRegistry.registerItem(mirrordim_item, mirrordim_item.getUnlocalizedName());
 		GameRegistry.registerItem(worldeater_item, worldeater_item.getUnlocalizedName());
+
+		// foci
+		focus_decay = new DecayFocus().setUnlocalizedName("DecayFocus");
+		GameRegistry.registerItem(focus_decay, focus_decay.getUnlocalizedName());
 	}
 }

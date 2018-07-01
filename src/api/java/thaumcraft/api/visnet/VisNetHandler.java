@@ -243,7 +243,7 @@ public class VisNetHandler {
 
 	 public static boolean canNodeBeSeen(TileVisNode source,TileVisNode target)
 	 {		 
-		 MovingObjectPosition mop = ThaumcraftApiHelper.rayTraceIgnoringSource(source.getWorldObj(),
+		 MovingObjectPosition mop = ThaumcraftApiHelper.rayTraceIgnoringSource(source.getWorldObj(), 
 				 Vec3.createVectorHelper(source.xCoord+.5, source.yCoord+.5,source.zCoord+.5),
 				 Vec3.createVectorHelper(target.xCoord+.5, target.yCoord+.5,target.zCoord+.5),
 				 false, true, false);

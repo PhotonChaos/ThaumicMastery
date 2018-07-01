@@ -101,7 +101,7 @@ public abstract class TileVisNode extends TileThaumcraft {
 	 * @return
 	 */
 	public WeakReference<TileVisNode> getRootSource() {
-		return VisNetHandler.isNodeValid(getParent()) ?
+		return VisNetHandler.isNodeValid(getParent()) ? 
 				getParent().get().getRootSource() : this.isSource() ?
 						new WeakReference(this) : null;
 	}
@@ -160,7 +160,7 @@ public abstract class TileVisNode extends TileThaumcraft {
 				nodeRegged = true;
 			} else 
 			if (!isSource() && !VisNetHandler.isNodeValid(getParent())) {
-				setParent(VisNetHandler.addNode(getWorldObj(), this));
+				setParent(VisNetHandler.addNode(getWorldObj(), this));				
 				nodeRefresh=true;
 			}
 			

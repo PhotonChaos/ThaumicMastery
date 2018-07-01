@@ -29,7 +29,7 @@ public class MainEventHandler {
 
 		if (Keybinds.decay.isPressed()) {
 			try {
-				player.sendChatMessage(ThaumcraftApiHelper.consumeVisFromWand(player.inventory.getCurrentItem(), player, (new AspectList()).add(Aspect.AIR, 1000), true, false) ? "YES":"NO");
+				ThaumcraftApiHelper.consumeVisFromInventory(player, (new AspectList()).add(Aspect.AIR, 1000));
 				//ThaumcraftApiHelper.consumeVisFromInventory(player, (new AspectList()).add(Aspect.AIR, 100));
 
 				//player.sendChatMessage(());

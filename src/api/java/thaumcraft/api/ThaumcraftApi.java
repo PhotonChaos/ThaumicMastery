@@ -6,9 +6,6 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.concurrent.ConcurrentHashMap;
 
-import thaumcraft.api.crafting.InfusionRecipe;
-import thaumcraft.api.internal.IInternalMethodHandler;
-import thaumcraft.api.research.ResearchPage;
 import net.minecraft.block.Block;
 import net.minecraft.enchantment.Enchantment;
 import net.minecraft.entity.player.EntityPlayer;
@@ -22,16 +19,17 @@ import thaumcraft.api.aspects.Aspect;
 import thaumcraft.api.aspects.AspectList;
 import thaumcraft.api.crafting.CrucibleRecipe;
 import thaumcraft.api.crafting.InfusionEnchantmentRecipe;
+import thaumcraft.api.crafting.InfusionRecipe;
 import thaumcraft.api.crafting.ShapedArcaneRecipe;
 import thaumcraft.api.crafting.ShapelessArcaneRecipe;
 import thaumcraft.api.internal.DummyInternalMethodHandler;
+import thaumcraft.api.internal.IInternalMethodHandler;
 import thaumcraft.api.internal.WeightedRandomLoot;
 import thaumcraft.api.research.IScanEventHandler;
 import thaumcraft.api.research.ResearchCategories;
 import thaumcraft.api.research.ResearchCategoryList;
 import thaumcraft.api.research.ResearchItem;
-import thaumcraft.api.crafting.*;
-import thaumcraft.api.research.*;
+import thaumcraft.api.research.ResearchPage;
 
 
 /**
@@ -69,7 +67,7 @@ public class ThaumcraftApi {
 	
 	//Internal (Do not alter this unless you like pretty explosions)
 	//Calling methods from this will only work properly once Thaumcraft is past the FMLPreInitializationEvent phase.
-	public static IInternalMethodHandler internalMethods = new DummyInternalMethodHandler();
+	public static IInternalMethodHandler internalMethods = new DummyInternalMethodHandler();	
 	
 	//RESEARCH/////////////////////////////////////////
 	public static ArrayList<IScanEventHandler> scanEventhandlers = new ArrayList<IScanEventHandler>();
@@ -199,7 +197,7 @@ public class ThaumcraftApi {
 	 * 				Infusion crafting components are automatically "fuzzy" and the oredict will be checked for possible matches.
 	 * 
 	 */
-	public static InfusionRecipe addInfusionCraftingRecipe(String research, Object result, int instability, AspectList aspects, ItemStack input, ItemStack[] recipe)
+	public static InfusionRecipe addInfusionCraftingRecipe(String research, Object result, int instability, AspectList aspects, ItemStack input,ItemStack[] recipe)
     {
 		if (!(result instanceof ItemStack || result instanceof Object[])) return null;
 		InfusionRecipe r= new InfusionRecipe(research, result, instability, aspects, input, recipe);
@@ -299,7 +297,7 @@ public class ThaumcraftApi {
 			else 
 				return null;
 		}
-		for (ResearchCategoryList rcl: ResearchCategories.researchCategories.values()) {
+		for (ResearchCategoryList rcl:ResearchCategories.researchCategories.values()) {
 			for (ResearchItem ri:rcl.research.values()) {
 				if (ri.getPages()==null) continue;
 				for (int a=0;a<ri.getPages().length;a++) {

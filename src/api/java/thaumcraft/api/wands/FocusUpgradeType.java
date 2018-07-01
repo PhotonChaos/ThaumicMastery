@@ -1,11 +1,12 @@
 package thaumcraft.api.wands;
 
-import thaumcraft.api.aspects.Aspect;
-import thaumcraft.api.aspects.AspectList;
 import net.minecraft.util.ResourceLocation;
 import net.minecraft.util.StatCollector;
 
 import org.apache.logging.log4j.LogManager;
+
+import thaumcraft.api.aspects.Aspect;
+import thaumcraft.api.aspects.AspectList;
 
 public class FocusUpgradeType {
 
@@ -41,7 +42,7 @@ public class FocusUpgradeType {
 		// allocate space
 		if (id>=types.length) {
 			FocusUpgradeType[] temp = new FocusUpgradeType[id+1];
-			System.arraycopy(types, 0, temp, 0, id);
+			System.arraycopy(types, 0, temp, 0, types.length);
 			types = temp;
 		}
 		

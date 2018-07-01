@@ -21,7 +21,7 @@ public class StaffRod extends WandRod {
 	}
 
 	public StaffRod(String tag, int capacity, ItemStack item, int craftCost,
-	                IWandRodOnUpdate onUpdate, ResourceLocation texture) {
+			IWandRodOnUpdate onUpdate, ResourceLocation texture) {
 		super(tag+"_staff", capacity, item, craftCost, onUpdate, texture);
 	}
 

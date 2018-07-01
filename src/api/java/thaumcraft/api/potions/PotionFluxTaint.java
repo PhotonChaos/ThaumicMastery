@@ -1,12 +1,12 @@
 package thaumcraft.api.potions;
 
-import thaumcraft.api.damagesource.DamageSourceThaumcraft;
-import thaumcraft.api.entities.ITaintedMob;
 import net.minecraft.client.Minecraft;
 import net.minecraft.entity.EntityLivingBase;
 import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.potion.Potion;
 import net.minecraft.util.ResourceLocation;
+import thaumcraft.api.damagesource.DamageSourceThaumcraft;
+import thaumcraft.api.entities.ITaintedMob;
 import cpw.mods.fml.relauncher.Side;
 import cpw.mods.fml.relauncher.SideOnly;
 

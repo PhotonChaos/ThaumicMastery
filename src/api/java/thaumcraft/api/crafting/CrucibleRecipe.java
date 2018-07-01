@@ -2,11 +2,11 @@ package thaumcraft.api.crafting;
 
 import java.util.ArrayList;
 
+import net.minecraft.item.ItemStack;
+import net.minecraftforge.oredict.OreDictionary;
 import thaumcraft.api.ThaumcraftApiHelper;
 import thaumcraft.api.aspects.Aspect;
 import thaumcraft.api.aspects.AspectList;
-import net.minecraft.item.ItemStack;
-import net.minecraftforge.oredict.OreDictionary;
 
 public class CrucibleRecipe {
 

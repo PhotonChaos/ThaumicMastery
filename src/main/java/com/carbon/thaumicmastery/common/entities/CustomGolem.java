@@ -4,7 +4,7 @@ import net.minecraft.entity.*;
 import net.minecraft.world.World;
 
 public class CustomGolem extends EntityCreature implements IEntityOwnable {
-	private String caster;
+	private String caster = "a";
 	private int visInput;
 	private double attack;
 	private double health;

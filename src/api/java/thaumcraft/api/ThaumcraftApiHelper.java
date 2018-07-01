@@ -3,9 +3,6 @@ package thaumcraft.api;
 import java.util.HashMap;
 import java.util.Iterator;
 
-import thaumcraft.api.aspects.Aspect;
-import thaumcraft.api.aspects.AspectList;
-import thaumcraft.api.aspects.IEssentiaTransport;
 import net.minecraft.block.Block;
 import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.item.Item;
@@ -18,6 +15,9 @@ import net.minecraft.world.IBlockAccess;
 import net.minecraft.world.World;
 import net.minecraftforge.common.util.ForgeDirection;
 import net.minecraftforge.oredict.OreDictionary;
+import thaumcraft.api.aspects.Aspect;
+import thaumcraft.api.aspects.AspectList;
+import thaumcraft.api.aspects.IEssentiaTransport;
 
 public class ThaumcraftApiHelper {
 	
@@ -154,7 +154,7 @@ public class ThaumcraftApiHelper {
     
     public static TileEntity getConnectableTile(World world, int x, int y, int z, ForgeDirection face) {
 		TileEntity te = world.getTileEntity(x+face.offsetX, y+face.offsetY, z+face.offsetZ);
-		if (te instanceof IEssentiaTransport && ((IEssentiaTransport)te).isConnectable(face.getOpposite()))
+		if (te instanceof IEssentiaTransport && ((IEssentiaTransport)te).isConnectable(face.getOpposite())) 
 			return te;
 		else
 			return null;
