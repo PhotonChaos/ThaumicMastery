@@ -34,8 +34,8 @@ public class MasterFocusBase extends ItemFocusBasic {
 	@Override
 	@SideOnly(Side.CLIENT)
 	public void registerIcons(IIconRegister register) {
-		this.icon = register.registerIcon(ThaumicMastery.MODID + ":focus_" + focusName);
-		this.ornament = register.registerIcon(ThaumicMastery.MODID + ":focus_" + focusName + "_orn");
+		this.icon = register.registerIcon(ThaumicMastery.MODID + ":" + "foci/" +"focus_" + focusName);
+		this.ornament = register.registerIcon(ThaumicMastery.MODID + ":" + "foci/orn/" + "focus_" + focusName + "_orn");
 	}
 
 	@Override
