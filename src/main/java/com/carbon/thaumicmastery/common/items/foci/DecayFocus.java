@@ -6,16 +6,18 @@ import cpw.mods.fml.relauncher.Side;
 import cpw.mods.fml.relauncher.SideOnly;
 import net.minecraft.client.renderer.texture.IIconRegister;
 import net.minecraft.entity.player.EntityPlayer;
+import net.minecraft.init.Blocks;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
 import net.minecraft.util.IIcon;
 import net.minecraft.util.MovingObjectPosition;
 import net.minecraft.world.World;
+import thaumcraft.api.ThaumcraftApiHelper;
 import thaumcraft.api.aspects.Aspect;
 import thaumcraft.api.aspects.AspectList;
 
 public class DecayFocus extends MasterFocusBase {
-	private int decaySetLevel = 10;
+	private int decaySetLevel = 10 * 100;
 
 	public DecayFocus() {
 		super();
@@ -30,8 +32,9 @@ public class DecayFocus extends MasterFocusBase {
 			int y = (int)caster.posY;
 			int z = (int)caster.posZ;
 
-			world.setBlock(x, y, z, ThaumicMastery.blockDecay);
-
+			if (ThaumcraftApiHelper.consumeVisFromWand(caster.getHeldItem(), caster, getVisCost(wand), true, false)) {
+				caster.worldObj.setBlock(x, y, z, Blocks.cobblestone);
+			}
 		}
 
 		return wand;
@@ -69,5 +72,10 @@ public class DecayFocus extends MasterFocusBase {
 	@Override
 	public IIcon getOrnament(ItemStack focus) {
 		return ornament;
+	}
+
+	@Override
+	public boolean isVisCostPerTick(ItemStack i) {
+		return false;
 	}
 }
