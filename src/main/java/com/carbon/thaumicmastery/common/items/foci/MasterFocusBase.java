@@ -1,6 +1,7 @@
 package com.carbon.thaumicmastery.common.items.foci;
 
 import com.carbon.thaumicmastery.ThaumicMastery;
+import com.carbon.thaumicmastery.core.lib.LibPaths;
 import cpw.mods.fml.relauncher.Side;
 import cpw.mods.fml.relauncher.SideOnly;
 import net.minecraft.client.renderer.texture.IIconRegister;
@@ -34,8 +35,8 @@ public class MasterFocusBase extends ItemFocusBasic {
 	@Override
 	@SideOnly(Side.CLIENT)
 	public void registerIcons(IIconRegister register) {
-		this.icon = register.registerIcon(ThaumicMastery.MODID + ":" + "foci/" +"focus_" + focusName);
-		this.ornament = register.registerIcon(ThaumicMastery.MODID + ":" + "foci/orn/" + "focus_" + focusName + "_orn");
+		this.icon = register.registerIcon(ThaumicMastery.MODID + ":" + LibPaths.focusTexturePath +"focus_" + focusName);
+		this.ornament = register.registerIcon(ThaumicMastery.MODID + ":" + LibPaths.focusOrnamentPath + "focus_" + focusName + "_orn");
 	}
 
 	@Override

@@ -1,29 +1,26 @@
-[10:04:13] [main/INFO]: Setting user: Player289
-[10:04:16] [Client thread/INFO]: LWJGL Version: 2.9.1
-[10:04:37] [Client thread/INFO]: Reloading ResourceManager: Default, FMLFileResourcePack:Forge Mod Loader, FMLFileResourcePack:Minecraft Forge, FMLFileResourcePack:Thaumic Mastery, FMLFileResourcePack:Thaumcraft, FMLFileResourcePack:Baubles
-[10:04:40] [Sound Library Loader/INFO]: Sound engine started
-[10:04:41] [Client thread/INFO]: Created: 16x16 textures/blocks-atlas
-[10:04:41] [Client thread/INFO]: Created: 16x16 textures/items-atlas
-[10:04:43] [Client thread/INFO]: Reloading ResourceManager: Default, FMLFileResourcePack:Forge Mod Loader, FMLFileResourcePack:Minecraft Forge, FMLFileResourcePack:Thaumic Mastery, FMLFileResourcePack:Thaumcraft, FMLFileResourcePack:Baubles
-[10:04:44] [Client thread/INFO]: Created: 512x512 textures/blocks-atlas
-[10:04:44] [Client thread/INFO]: Created: 512x512 textures/items-atlas
-[10:04:45] [Sound Library Loader/INFO]: Sound engine started
-[10:04:52] [Server thread/INFO]: Starting integrated minecraft server version 1.7.10
-[10:04:52] [Server thread/INFO]: Generating keypair
-[10:04:52] [Server thread/INFO]: Preparing start region for level 0
-[10:04:53] [Server thread/INFO]: Changing view distance to 12, from 10
-[10:04:54] [Server thread/INFO]: Player289[local:E:f2857391] logged in with entity id 128 at (-146.82830245417367, 4.0, -1550.2338355183206)
-[10:04:54] [Server thread/INFO]: Player289 joined the game
-[10:04:57] [Server thread/INFO]: Saving and pausing game...
-[10:04:57] [Server thread/INFO]: Saving chunks for level 'E'/Overworld
-[10:04:57] [Server thread/INFO]: Saving chunks for level 'E'/Nether
-[10:04:57] [Server thread/INFO]: Saving chunks for level 'E'/The End
-[10:04:57] [Server thread/INFO]: Saving chunks for level 'E'/The Outer Lands
-[10:05:12] [Client thread/INFO]: Stopping!
-[10:05:12] [Server thread/INFO]: Stopping server
-[10:05:12] [Server thread/INFO]: Saving players
-[10:05:12] [Server thread/INFO]: Saving worlds
-[10:05:12] [Server thread/INFO]: Saving chunks for level 'E'/Overworld
-[10:05:13] [Server thread/INFO]: Saving chunks for level 'E'/Nether
-[10:05:13] [Server thread/INFO]: Saving chunks for level 'E'/The End
-[10:05:13] [Server thread/INFO]: Saving chunks for level 'E'/The Outer Lands
+[10:56:48] [main/INFO]: Setting user: Player221
+[10:56:51] [Client thread/INFO]: LWJGL Version: 2.9.1
+[10:57:09] [Client thread/INFO]: Reloading ResourceManager: Default, FMLFileResourcePack:Forge Mod Loader, FMLFileResourcePack:Minecraft Forge, FMLFileResourcePack:Thaumic Mastery, FMLFileResourcePack:Thaumcraft, FMLFileResourcePack:Baubles
+[10:57:12] [Sound Library Loader/INFO]: Sound engine started
+[10:57:14] [Client thread/INFO]: Created: 16x16 textures/blocks-atlas
+[10:57:14] [Client thread/INFO]: Created: 16x16 textures/items-atlas
+[10:57:15] [Client thread/INFO]: Reloading ResourceManager: Default, FMLFileResourcePack:Forge Mod Loader, FMLFileResourcePack:Minecraft Forge, FMLFileResourcePack:Thaumic Mastery, FMLFileResourcePack:Thaumcraft, FMLFileResourcePack:Baubles
+[10:57:16] [Client thread/INFO]: Created: 512x512 textures/blocks-atlas
+[10:57:17] [Client thread/INFO]: Created: 512x512 textures/items-atlas
+[10:57:18] [Sound Library Loader/INFO]: Sound engine started
+[10:57:24] [Server thread/INFO]: Starting integrated minecraft server version 1.7.10
+[10:57:24] [Server thread/INFO]: Generating keypair
+[10:57:25] [Server thread/INFO]: Preparing start region for level 0
+[10:57:26] [Server thread/INFO]: Changing view distance to 12, from 10
+[10:57:26] [Server thread/INFO]: Player221[local:E:f52ae953] logged in with entity id 174 at (-135.99381512550443, 6.765675651107962, -1545.300000011921)
+[10:57:26] [Server thread/INFO]: Player221 joined the game
+[10:57:35] [Client thread/INFO]: Stopping!
+[10:57:35] [Server thread/INFO]: Stopping server
+[10:57:35] [Server thread/INFO]: Saving players
+[10:57:35] [Server thread/INFO]: Saving worlds
+[10:57:35] [Server thread/INFO]: Saving chunks for level 'E'/Overworld
+[10:57:35] [Server thread/INFO]: Saving chunks for level 'E'/Nether
+[10:57:35] [Server thread/INFO]: Saving chunks for level 'E'/The End
+[10:57:35] [Server thread/INFO]: Saving chunks for level 'E'/The Outer Lands
+[10:57:35] [Client Shutdown Thread/INFO]: Stopping server
+[10:57:35] [Client Shutdown Thread/INFO]: Saving players
