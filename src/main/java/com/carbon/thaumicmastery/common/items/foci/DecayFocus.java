@@ -1,13 +1,11 @@
 package com.carbon.thaumicmastery.common.items.foci;
 
 import com.carbon.thaumicmastery.ThaumicMastery;
-import com.carbon.thaumicmastery.common.entities.tileentities.TileEntityDecay;
 import cpw.mods.fml.relauncher.Side;
 import cpw.mods.fml.relauncher.SideOnly;
 import net.minecraft.client.renderer.texture.IIconRegister;
 import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.init.Blocks;
-import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
 import net.minecraft.util.IIcon;
 import net.minecraft.util.MovingObjectPosition;
@@ -17,10 +15,12 @@ import thaumcraft.api.aspects.Aspect;
 import thaumcraft.api.aspects.AspectList;
 
 public class DecayFocus extends MasterFocusBase {
-	private int decaySetLevel = 10 * 100;
+	private int decaySetLevel = 2;
+	private int costPerLevel = 5;
 
 	public DecayFocus() {
 		super();
+		this.focusName = "decay";
 	}
 
 	@Override
@@ -28,12 +28,16 @@ public class DecayFocus extends MasterFocusBase {
 		if (caster.isSneaking()) {
 			// OPEN GUI
 		} else {
-			int x = (int)caster.posX;
-			int y = (int)caster.posY;
-			int z = (int)caster.posZ;
+			if (!world.isRemote) {
+				MovingObjectPosition mop = caster.rayTrace(4, 20);
 
-			if (ThaumcraftApiHelper.consumeVisFromWand(caster.getHeldItem(), caster, getVisCost(wand), true, false)) {
-				caster.worldObj.setBlock(x, y, z, Blocks.cobblestone);
+				if (movingObjectPosition != null && ThaumcraftApiHelper.consumeVisFromWand(wand, caster, getVisCost(wand), true, false)) {
+					int x = movingObjectPosition.blockX;
+					int y = movingObjectPosition.blockY;
+					int z = movingObjectPosition.blockZ;
+
+					world.setBlock(x, y, z, Blocks.cobblestone);
+				}
 			}
 		}
 
@@ -42,36 +46,12 @@ public class DecayFocus extends MasterFocusBase {
 
 	@Override
 	public AspectList getVisCost(ItemStack item) {
-		return new AspectList().add(Aspect.ENTROPY, 5*decaySetLevel);
+		return new AspectList().add(Aspect.ENTROPY, costPerLevel * decaySetLevel * 100);
 	}
 
 	@Override
-	@SideOnly(Side.CLIENT)
-	public void registerIcons(IIconRegister register) {
-		this.icon = register.registerIcon(ThaumicMastery.MODID + ":focus_decay");
-		this.ornament = register.registerIcon(ThaumicMastery.MODID + ":focus_decay_orn");
-	}
-
-	@Override
-	@SideOnly(Side.CLIENT)
-	public IIcon getIconFromDamageForRenderPass(int par1, int renderPass) {
-		return renderPass == 1 ? this.icon : this.ornament;
-	}
-
-	@Override
-	@SideOnly(Side.CLIENT)
-	public boolean requiresMultipleRenderPasses() {
-		return true;
-	}
-
-	@Override
-	public int getFocusColor(ItemStack item){
-		return 0x909090;
-	}
-
-	@Override
-	public IIcon getOrnament(ItemStack focus) {
-		return ornament;
+	public int getFocusColor(ItemStack item) {
+		return 0; // no need for a hex code since it's just 0
 	}
 
 	@Override

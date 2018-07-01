@@ -2,6 +2,10 @@
 item.tm_mirrordim_discover.name=Mirror of Balance
 item.tm_worldeater_discover.name=Fractured Mirror
 #
+# Foci
+item.DecayFocus.name=Wand Focus: Fractured Mirror
+item.WaterFocus.name=Wand Focus:
+#
 # blocks
 tile.BlockDecay.name=Decay
 #
@@ -14,7 +18,8 @@ key.vistoessentia=Turn Vis into Essentia
 key.spawngolem=Create Golem
 
 key.categories.thaumicmastery=Thaumic Mastery
-
+#
+# Research
 tc.research_category.THAUMICMASTERY=Thaumic Mastery
 
 tc.research_name.TM_root=The Legend

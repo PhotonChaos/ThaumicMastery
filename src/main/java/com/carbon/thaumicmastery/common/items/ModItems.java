@@ -2,6 +2,7 @@ package com.carbon.thaumicmastery.common.items;
 
 import com.carbon.thaumicmastery.ThaumicMastery;
 import com.carbon.thaumicmastery.common.items.foci.DecayFocus;
+import com.carbon.thaumicmastery.common.items.foci.WaterFocus;
 import cpw.mods.fml.common.registry.GameRegistry;
 import net.minecraft.item.Item;
 
@@ -12,6 +13,7 @@ public class ModItems {
 
 	// Foci
 	public static Item focus_decay;
+	public static Item focus_water;
 
 
 	public static void init() {
@@ -40,5 +42,8 @@ public class ModItems {
 		// foci
 		focus_decay = new DecayFocus().setUnlocalizedName("DecayFocus");
 		GameRegistry.registerItem(focus_decay, focus_decay.getUnlocalizedName());
+
+		focus_water = new WaterFocus().setUnlocalizedName("WaterFocus");
+		GameRegistry.registerItem(focus_water, focus_water.getUnlocalizedName());
 	}
 }

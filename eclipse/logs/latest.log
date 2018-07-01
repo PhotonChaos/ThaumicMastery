@@ -1,31 +1,31 @@
-[08:40:10] [main/INFO]: Setting user: Player881
-[08:40:11] [Client thread/INFO]: LWJGL Version: 2.9.1
-[08:40:29] [Client thread/INFO]: Reloading ResourceManager: Default, FMLFileResourcePack:Forge Mod Loader, FMLFileResourcePack:Minecraft Forge, FMLFileResourcePack:Thaumic Mastery, FMLFileResourcePack:Thaumcraft, FMLFileResourcePack:Baubles
-[08:40:32] [Sound Library Loader/INFO]: Sound engine started
-[08:40:33] [Client thread/INFO]: Created: 16x16 textures/blocks-atlas
-[08:40:33] [Client thread/INFO]: Created: 16x16 textures/items-atlas
-[08:40:34] [Client thread/INFO]: Reloading ResourceManager: Default, FMLFileResourcePack:Forge Mod Loader, FMLFileResourcePack:Minecraft Forge, FMLFileResourcePack:Thaumic Mastery, FMLFileResourcePack:Thaumcraft, FMLFileResourcePack:Baubles
-[08:40:35] [Client thread/INFO]: Created: 512x512 textures/blocks-atlas
-[08:40:36] [Client thread/INFO]: Created: 512x512 textures/items-atlas
-[08:40:36] [Sound Library Loader/INFO]: Sound engine started
-[08:41:52] [Server thread/INFO]: Starting integrated minecraft server version 1.7.10
-[08:41:52] [Server thread/INFO]: Generating keypair
-[08:41:52] [Server thread/INFO]: Preparing start region for level 0
-[08:41:53] [Server thread/INFO]: Changing view distance to 12, from 10
-[08:41:54] [Server thread/INFO]: Player881[local:E:286f068c] logged in with entity id 137 at (-161.23960795534683, 4.0, -1555.0873581128055)
-[08:41:54] [Server thread/INFO]: Player881 joined the game
-[08:42:01] [Server thread/INFO]: Player881 has just earned the achievement [Taking Inventory]
-[08:42:01] [Client thread/INFO]: [CHAT] Player881 has just earned the achievement [Taking Inventory]
-[08:42:17] [Server thread/INFO]: Saving and pausing game...
-[08:42:17] [Server thread/INFO]: Saving chunks for level 'E'/Overworld
-[08:42:17] [Server thread/INFO]: Saving chunks for level 'E'/Nether
-[08:42:17] [Server thread/INFO]: Saving chunks for level 'E'/The End
-[08:42:17] [Server thread/INFO]: Saving chunks for level 'E'/The Outer Lands
-[08:42:18] [Server thread/INFO]: Stopping server
-[08:42:18] [Server thread/INFO]: Saving players
-[08:42:18] [Server thread/INFO]: Saving worlds
-[08:42:18] [Server thread/INFO]: Saving chunks for level 'E'/Overworld
-[08:42:18] [Server thread/INFO]: Saving chunks for level 'E'/Nether
-[08:42:18] [Server thread/INFO]: Saving chunks for level 'E'/The End
-[08:42:18] [Server thread/INFO]: Saving chunks for level 'E'/The Outer Lands
-[08:42:18] [Client thread/INFO]: Stopping!
+[10:00:08] [main/INFO]: Setting user: Player177
+[10:00:11] [Client thread/INFO]: LWJGL Version: 2.9.1
+[10:00:36] [Client thread/INFO]: Reloading ResourceManager: Default, FMLFileResourcePack:Forge Mod Loader, FMLFileResourcePack:Minecraft Forge, FMLFileResourcePack:Thaumic Mastery, FMLFileResourcePack:Thaumcraft, FMLFileResourcePack:Baubles
+[10:00:39] [Sound Library Loader/INFO]: Sound engine started
+[10:00:40] [Client thread/INFO]: Created: 16x16 textures/blocks-atlas
+[10:00:40] [Client thread/INFO]: Created: 16x16 textures/items-atlas
+[10:00:41] [Client thread/INFO]: Reloading ResourceManager: Default, FMLFileResourcePack:Forge Mod Loader, FMLFileResourcePack:Minecraft Forge, FMLFileResourcePack:Thaumic Mastery, FMLFileResourcePack:Thaumcraft, FMLFileResourcePack:Baubles
+[10:00:43] [Client thread/INFO]: Created: 512x512 textures/blocks-atlas
+[10:00:43] [Client thread/INFO]: Created: 512x512 textures/items-atlas
+[10:00:44] [Sound Library Loader/INFO]: Sound engine started
+[10:01:15] [Server thread/INFO]: Starting integrated minecraft server version 1.7.10
+[10:01:15] [Server thread/INFO]: Generating keypair
+[10:01:15] [Server thread/INFO]: Preparing start region for level 0
+[10:01:16] [Server thread/INFO]: Changing view distance to 12, from 10
+[10:01:17] [Server thread/INFO]: Player177[local:E:9a2441c1] logged in with entity id 137 at (-140.55604919155934, 4.0, -1546.9334757735573)
+[10:01:17] [Server thread/INFO]: Player177 joined the game
+[10:01:22] [Server thread/INFO]: Player177 has just earned the achievement [Taking Inventory]
+[10:01:22] [Client thread/INFO]: [CHAT] Player177 has just earned the achievement [Taking Inventory]
+[10:02:44] [Server thread/INFO]: Saving and pausing game...
+[10:02:44] [Server thread/INFO]: Saving chunks for level 'E'/Overworld
+[10:02:44] [Server thread/INFO]: Saving chunks for level 'E'/Nether
+[10:02:44] [Server thread/INFO]: Saving chunks for level 'E'/The End
+[10:02:44] [Server thread/INFO]: Saving chunks for level 'E'/The Outer Lands
+[10:02:45] [Server thread/INFO]: Stopping server
+[10:02:45] [Server thread/INFO]: Saving players
+[10:02:45] [Server thread/INFO]: Saving worlds
+[10:02:45] [Server thread/INFO]: Saving chunks for level 'E'/Overworld
+[10:02:45] [Server thread/INFO]: Saving chunks for level 'E'/Nether
+[10:02:45] [Server thread/INFO]: Saving chunks for level 'E'/The End
+[10:02:45] [Server thread/INFO]: Saving chunks for level 'E'/The Outer Lands
+[10:02:46] [Client thread/INFO]: Stopping!
