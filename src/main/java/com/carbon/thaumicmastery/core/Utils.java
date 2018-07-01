@@ -4,7 +4,7 @@ import net.minecraft.entity.player.EntityPlayer;
 
 public class Utils {
 	public static boolean isShielded(EntityPlayer player) {
-		return Core.isSpellActive && player.getUniqueID().equals(Core.shieldCaster);
+		return player.getUniqueID().equals(Core.shieldCaster);
 	}
 
 	public static int dist(int x, int y, int z, int xx, int yy, int zz) {

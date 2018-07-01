@@ -10,6 +10,5 @@ public class Core {
 	// aqua shield
 	public static UUID shieldCaster;
 
-	// Mirror Dimension
-	public static int[] activeSpellCoords = new int[3];
+	public static int[] activeSpellCoords = new int[3];  // Mirror Dimension
 }

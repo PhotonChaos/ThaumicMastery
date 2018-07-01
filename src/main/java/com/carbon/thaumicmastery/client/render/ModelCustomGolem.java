@@ -12,6 +12,9 @@ public class ModelCustomGolem extends ModelBase {
 	private final double leg_maxRotate = 45.0D;
 	private final double arm_maxRotate = 150.0D;
 
+	private double distanceMovedTotal = 0.0D;
+	private static final double CYCLES_PER_BLOCK = 3.0D;
+
     public ModelRenderer Head;
     public ModelRenderer Torso;
     public ModelRenderer RArm;
@@ -56,6 +59,19 @@ public class ModelCustomGolem extends ModelBase {
         this.LArm.render(f5);
         this.Torso.render(f5);
         this.Waist.render(f5);
+    }
+
+	private void updateDistanceMovedTotal(Entity parEntity) {
+		distanceMovedTotal += parEntity.getDistance(parEntity.prevPosX, parEntity.prevPosY, parEntity.prevPosZ);
+	}
+
+	private double getDistanceMovedTotal() {
+    	return distanceMovedTotal;
+	}
+
+    @Override
+    public void setRotationAngles(float time, float swingSupress, float par3, float headAngleY, float headAngleX, float par6, Entity entity) {
+		updateDistanceMovedTotal(entity);
     }
 
     public void attackAnimate() {

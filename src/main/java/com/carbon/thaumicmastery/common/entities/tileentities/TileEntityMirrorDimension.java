@@ -11,8 +11,6 @@ import net.minecraft.potion.PotionEffect;
 import net.minecraft.tileentity.TileEntity;
 import net.minecraft.util.Vec3;
 
-import java.util.UUID;
-
 public class TileEntityMirrorDimension extends TileEntity {
 	private final int MAX_DISTANCE = 11;
 	private final int ticksToReset = 20; // the number of ticks until the counter resets
@@ -31,6 +29,7 @@ public class TileEntityMirrorDimension extends TileEntity {
 	private boolean casterExited = true;
 	private boolean startupComplete = false;
 	private boolean delete = false;
+	private int duration = 10;
 
 	// TODO: Add checking for other spells
 	// TODO: Fix Flying code
@@ -51,7 +50,7 @@ public class TileEntityMirrorDimension extends TileEntity {
 			Core.activeSpellCoords[1] = yCoord;
 			Core.activeSpellCoords[2] = zCoord;
 		} else {
-			if (!(Core.activeSpellCoords[0] == xCoord && Core.activeSpellCoords[1] == yCoord && Core.activeSpellCoords[2] == zCoord) || seconds >= DURATION) {
+			if (!(Core.activeSpellCoords[0] == xCoord && Core.activeSpellCoords[1] == yCoord && Core.activeSpellCoords[2] == zCoord) || seconds >= duration) {
 				deleteThis();
 			}
 		}
@@ -112,7 +111,6 @@ public class TileEntityMirrorDimension extends TileEntity {
 	private void deleteThis() {
 		worldObj.setBlockToAir(xCoord, yCoord, zCoord);
 		worldObj.removeTileEntity(xCoord, yCoord, zCoord);
-		Core.isSpellActive = false;
 	}
 
 	@Override
@@ -123,6 +121,7 @@ public class TileEntityMirrorDimension extends TileEntity {
 		counter = tag.getInteger("counter");
 		scale = tag.getInteger("scale");
 		updateSpeed = tag.getInteger("updateSpeed");
+		seconds = tag.getInteger("seconds");
 		counterEnabled = tag.getBoolean("counterEnabled");
 	}
 
@@ -134,6 +133,7 @@ public class TileEntityMirrorDimension extends TileEntity {
 		tag.setInteger("counter", counter);
 		tag.setInteger("scale", scale);
 		tag.setInteger("updateSpeed", updateSpeed);
+		tag.setInteger("seconds", seconds);
 		tag.setBoolean("counterEnabled", counterEnabled);
 	}
 
