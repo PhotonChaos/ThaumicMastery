@@ -5,6 +5,7 @@ import com.carbon.thaumicmastery.common.entities.tileentities.TileEntityMirrorDi
 import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
+import net.minecraft.util.ChatComponentText;
 import net.minecraft.util.MovingObjectPosition;
 import net.minecraft.world.World;
 import thaumcraft.api.ThaumcraftApiHelper;
@@ -22,16 +23,22 @@ public class MirrorFocus extends MasterFocusBase {
 
 	@Override
 	public ItemStack onFocusRightClick(ItemStack wand, World world, EntityPlayer player, MovingObjectPosition mop) {
-		if (player != null && ThaumcraftApiHelper.consumeVisFromWand(wand, player, visCost, true, false)) {
-			int x = (int)player.posX;
-			int y = (int)player.posY;
-			int z = (int)player.posZ;
-
+		if (!world.isRemote && mop != null && ThaumcraftApiHelper.consumeVisFromWand(wand, player, visCost, true, false)) {
+			int x = mop.blockX;
+			int y = mop.blockY;
+			int z = mop.blockZ;
+			
+			player.addChatMessage(new ChatComponentText("MIRROR"));
 			world.setBlock(x, y, z, ThaumicMastery.blockMirrorDim);
 			((TileEntityMirrorDimension)world.getTileEntity(x, y, z)).setCasterID(player.getUniqueID().toString());
 		}
 
 		return wand;
+	}
+
+	@Override
+	public int getActivationCooldown(ItemStack item) {
+		return 1000;
 	}
 
 	@Override

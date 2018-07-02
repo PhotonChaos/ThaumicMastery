@@ -36,7 +36,7 @@ public class WaterFocus extends MasterFocusBase {
 
 	@Override
 	public void onUsingFocusTick(ItemStack wand, EntityPlayer player, int count) {
-		if (wand != null && player != null && ThaumcraftApiHelper.consumeVisFromWand(wand, player, getVisCost(wand), true, false)) {
+		if (!player.worldObj.isRemote && wand != null && player != null && ThaumcraftApiHelper.consumeVisFromWand(wand, player, getVisCost(wand), true, false)) {
 			player.getEntityData().setBoolean(LibMisc.TAG_SHIELD, true);
 			deflectProjectiles(player);
 		}

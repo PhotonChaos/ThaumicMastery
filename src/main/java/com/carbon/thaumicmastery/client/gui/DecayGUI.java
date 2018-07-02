@@ -13,6 +13,7 @@ public class DecayGUI extends GuiScreen {
 	}
 
 	@Override
+	@SuppressWarnings("unchecked")
 	public void initGui() {
 		this.buttonList.add(this.submit = new GuiButton(0, this.width/2 - 100, this.height / 2 - 24, "Submit"));
 	}

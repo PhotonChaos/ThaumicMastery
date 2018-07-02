@@ -1,27 +1,37 @@
-[21:07:20] [main/INFO]: Setting user: Player96
-[21:07:24] [Client thread/INFO]: LWJGL Version: 2.9.1
-[21:07:46] [Client thread/INFO]: Reloading ResourceManager: Default, FMLFileResourcePack:Forge Mod Loader, FMLFileResourcePack:Minecraft Forge, FMLFileResourcePack:Thaumic Mastery, FMLFileResourcePack:Thaumcraft, FMLFileResourcePack:Baubles
-[21:07:50] [Sound Library Loader/INFO]: Sound engine started
-[21:07:51] [Client thread/INFO]: Created: 16x16 textures/blocks-atlas
-[21:07:51] [Client thread/INFO]: Created: 16x16 textures/items-atlas
-[21:07:52] [Client thread/INFO]: Reloading ResourceManager: Default, FMLFileResourcePack:Forge Mod Loader, FMLFileResourcePack:Minecraft Forge, FMLFileResourcePack:Thaumic Mastery, FMLFileResourcePack:Thaumcraft, FMLFileResourcePack:Baubles
-[21:07:53] [Client thread/INFO]: Created: 512x512 textures/blocks-atlas
-[21:07:54] [Client thread/INFO]: Created: 512x512 textures/items-atlas
-[21:07:54] [Sound Library Loader/INFO]: Sound engine started
-[21:08:02] [Server thread/INFO]: Starting integrated minecraft server version 1.7.10
-[21:08:02] [Server thread/INFO]: Generating keypair
-[21:08:03] [Server thread/INFO]: Preparing start region for level 0
-[21:08:04] [Server thread/INFO]: Changing view distance to 12, from 10
-[21:08:05] [Server thread/INFO]: Player96[local:E:b62c2912] logged in with entity id 126 at (-177.56434180963856, 9.489400310388548, -1551.982513206541)
-[21:08:05] [Server thread/INFO]: Player96 joined the game
-[21:08:23] [Server thread/INFO]: Player96 has just earned the achievement [Taking Inventory]
-[21:08:23] [Client thread/INFO]: [CHAT] Player96 has just earned the achievement [Taking Inventory]
-[21:08:29] [Server thread/INFO]: [Player96: Set own game mode to Survival Mode]
-[21:08:29] [Client thread/INFO]: [CHAT] Your game mode has been updated
-[21:09:09] [Client thread/INFO]: [CHAT] Couldn't take any effects from Player96 as they do not have any
-[21:09:13] [Server thread/INFO]: Saving and pausing game...
-[21:09:13] [Server thread/INFO]: Saving chunks for level 'E'/Overworld
-[21:09:13] [Server thread/INFO]: Saving chunks for level 'E'/Nether
-[21:09:13] [Server thread/INFO]: Saving chunks for level 'E'/The End
-[21:09:13] [Server thread/INFO]: Saving chunks for level 'E'/The Outer Lands
-[21:10:58] [Client Shutdown Thread/INFO]: Stopping server
+[21:19:56] [main/INFO]: Setting user: Player270
+[21:19:58] [Client thread/INFO]: LWJGL Version: 2.9.1
+[21:20:16] [Client thread/INFO]: Reloading ResourceManager: Default, FMLFileResourcePack:Forge Mod Loader, FMLFileResourcePack:Minecraft Forge, FMLFileResourcePack:Thaumic Mastery, FMLFileResourcePack:Thaumcraft, FMLFileResourcePack:Baubles
+[21:20:19] [Sound Library Loader/INFO]: Sound engine started
+[21:20:21] [Client thread/INFO]: Created: 16x16 textures/blocks-atlas
+[21:20:21] [Client thread/INFO]: Created: 16x16 textures/items-atlas
+[21:20:23] [Client thread/INFO]: Reloading ResourceManager: Default, FMLFileResourcePack:Forge Mod Loader, FMLFileResourcePack:Minecraft Forge, FMLFileResourcePack:Thaumic Mastery, FMLFileResourcePack:Thaumcraft, FMLFileResourcePack:Baubles
+[21:20:24] [Client thread/INFO]: Created: 512x512 textures/blocks-atlas
+[21:20:24] [Client thread/INFO]: Created: 512x512 textures/items-atlas
+[21:20:25] [Sound Library Loader/INFO]: Sound engine started
+[21:20:42] [Server thread/INFO]: Starting integrated minecraft server version 1.7.10
+[21:20:42] [Server thread/INFO]: Generating keypair
+[21:20:42] [Server thread/INFO]: Preparing start region for level 0
+[21:20:43] [Server thread/INFO]: Changing view distance to 12, from 10
+[21:20:43] [Server thread/INFO]: Player270[local:E:5781b622] logged in with entity id 127 at (-160.59646902589319, 4.0, -1542.3127611021964)
+[21:20:43] [Server thread/INFO]: Player270 joined the game
+[21:20:52] [Client thread/INFO]: [CHAT] MIRROR
+[21:20:52] [Client thread/INFO]: [CHAT] MIRROR
+[21:20:57] [Client thread/INFO]: [CHAT] MIRROR
+[21:20:57] [Client thread/INFO]: [CHAT] MIRROR
+[21:20:58] [Client thread/INFO]: [CHAT] MIRROR
+[21:20:58] [Client thread/INFO]: [CHAT] MIRROR
+[21:20:59] [Client thread/INFO]: [CHAT] MIRROR
+[21:20:59] [Client thread/INFO]: [CHAT] MIRROR
+[21:21:00] [Server thread/INFO]: Saving and pausing game...
+[21:21:00] [Server thread/INFO]: Saving chunks for level 'E'/Overworld
+[21:21:00] [Server thread/INFO]: Saving chunks for level 'E'/Nether
+[21:21:00] [Server thread/INFO]: Saving chunks for level 'E'/The End
+[21:21:00] [Server thread/INFO]: Saving chunks for level 'E'/The Outer Lands
+[21:21:00] [Server thread/INFO]: Stopping server
+[21:21:00] [Server thread/INFO]: Saving players
+[21:21:00] [Server thread/INFO]: Saving worlds
+[21:21:00] [Server thread/INFO]: Saving chunks for level 'E'/Overworld
+[21:21:00] [Server thread/INFO]: Saving chunks for level 'E'/Nether
+[21:21:00] [Server thread/INFO]: Saving chunks for level 'E'/The End
+[21:21:00] [Server thread/INFO]: Saving chunks for level 'E'/The Outer Lands
+[21:21:02] [Client thread/INFO]: Stopping!
