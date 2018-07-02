@@ -57,7 +57,7 @@ public class TileEntityMirrorDimension extends TileEntity {
 			d = Utils.dist(xCoord, yCoord, zCoord, (int) position.xCoord, (int) position.yCoord, (int) position.zCoord);
 
 			if (!(d > MAX_DISTANCE)) {
-				if (player.getDisplayName().equals(caster) && casterExited && !player.capabilities.isCreativeMode) {
+				if (player.getUniqueID().toString().equals(caster) && casterExited && !player.capabilities.isCreativeMode) {
 					// if it is the caster
 					casterExited = false;
 					// apply effects
@@ -68,8 +68,6 @@ public class TileEntityMirrorDimension extends TileEntity {
 					player.setAbsorptionAmount(3.0F);
 				} else {
 					// if it is not the caster
-					player.addPotionEffect(new PotionEffect(1, 1, 1));
-
 				}
 			} else {
 				if (player.getDisplayName().equals(caster) && !player.capabilities.isCreativeMode && !casterExited) {
