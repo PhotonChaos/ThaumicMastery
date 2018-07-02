@@ -35,6 +35,11 @@ public class MirrorFocus extends MasterFocusBase {
 	}
 
 	@Override
+	public int getFocusColor(ItemStack focus) {
+		return 0xDDDDDD;
+	}
+
+	@Override
 	public boolean isVisCostPerTick(ItemStack itemStack) {
 		return false;
 	}

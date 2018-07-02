@@ -1,7 +1,5 @@
 package com.carbon.thaumicmastery.common.entities.tileentities;
 
-import com.carbon.thaumicmastery.ThaumicMastery;
-import com.carbon.thaumicmastery.core.Core;
 import com.carbon.thaumicmastery.core.Utils;
 import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.nbt.NBTTagCompound;
@@ -24,35 +22,17 @@ public class TileEntityMirrorDimension extends TileEntity {
 	private int seconds = 0;
 	private int updateSpeed = 10; // every 5 ticks = 4 times a second
 	private int scale = 0;
-	private boolean scaleAnimationFinished = false;
 	private boolean counterEnabled = true;
 	private boolean casterExited = true;
-	private boolean startupComplete = false;
-	private boolean delete = false;
 	private int duration = 10;
 
-	// TODO: Add checking for other spells
 	// TODO: Fix Flying code
-	// TODO: Set the Caster
 	// TODO: Add potion effects
-	// TODO: Add vis cost reduction
-
-	public TileEntityMirrorDimension() {
-		delete = isActive;
-	}
 
 	@Override
 	public void updateEntity() {
-		if (!Core.isSpellActive) {
-			Core.isSpellActive = true;
-
-			Core.activeSpellCoords[0] = xCoord;
-			Core.activeSpellCoords[1] = yCoord;
-			Core.activeSpellCoords[2] = zCoord;
-		} else {
-			if (!(Core.activeSpellCoords[0] == xCoord && Core.activeSpellCoords[1] == yCoord && Core.activeSpellCoords[2] == zCoord) || seconds >= duration) {
-				deleteThis();
-			}
+		if (seconds > duration) {
+			deleteThis();
 		}
 
 		// functionality
@@ -61,37 +41,31 @@ public class TileEntityMirrorDimension extends TileEntity {
 		}
 
 		// counter mechanics
-		if(counter == ticksToReset) {
+		if (counter == ticksToReset) {
 			seconds++;
 			counter = 0;
 		}
 		counter++;
-
 	}
 
 	private void processFunctionality() {
-		if (delete) {
-			deleteThis();
-			return;
-		}
-
 		int d;
 		for (int i = 0; i < worldObj.playerEntities.size(); i++) {
 			EntityPlayer player = (EntityPlayer) worldObj.playerEntities.get(i);
 
 			Vec3 position = player.getPosition(1.0F);
-			d = Utils.dist(xCoord, yCoord, zCoord, (int)position.xCoord, (int)position.yCoord, (int)position.zCoord);
+			d = Utils.dist(xCoord, yCoord, zCoord, (int) position.xCoord, (int) position.yCoord, (int) position.zCoord);
 
-			if(!(d > MAX_DISTANCE)) {
-				if(startupComplete) casterExited = true;
+			if (!(d > MAX_DISTANCE)) {
 				if (player.getDisplayName().equals(caster) && casterExited && !player.capabilities.isCreativeMode) {
 					// if it is the caster
 					casterExited = false;
 					// apply effects
 					player.capabilities.allowFlying = true;
-					player.addPotionEffect(new PotionEffect(10, 3, 2));
+					player.addPotionEffect(new PotionEffect(10, 3, 2, true));
+					player.addPotionEffect(new PotionEffect(11, 3, 1, true));
+					player.addPotionEffect(new PotionEffect(12, 3, 1, true));
 					player.setAbsorptionAmount(3.0F);
-
 				} else {
 					// if it is not the caster
 					player.addPotionEffect(new PotionEffect(1, 1, 1));

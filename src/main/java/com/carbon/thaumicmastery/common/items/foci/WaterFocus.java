@@ -7,6 +7,7 @@ import cpw.mods.fml.relauncher.Side;
 import cpw.mods.fml.relauncher.SideOnly;
 import net.minecraft.client.renderer.texture.IIconRegister;
 import net.minecraft.entity.Entity;
+import net.minecraft.entity.EntityLiving;
 import net.minecraft.entity.IProjectile;
 import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.item.ItemStack;
@@ -25,6 +26,7 @@ public class WaterFocus extends MasterFocusBase {
 	private IIcon modelOrnament;
 
 	private int costPerTick = 0;
+	private int potency = 5;
 	private AspectList visCost = new AspectList().add(Aspect.WATER, costPerTick * 100);
 
 	public WaterFocus() {
@@ -82,9 +84,9 @@ public class WaterFocus extends MasterFocusBase {
 		List<Entity> projectiles = p.worldObj.getEntitiesWithinAABB(IProjectile.class, AxisAlignedBB.getBoundingBox(p.posX - 4, p.posY - 4, p.posZ - 4, p.posX + 3, p.posY + 3, p.posZ + 3));
 
 		for (Entity e : projectiles) {
-			e.motionX -= e.motionX*2;
-			e.motionY -= e.motionY*2;
-			e.motionZ -= e.motionZ*2;
+			e.motionX -= e.motionX*potency;
+			e.motionY -= e.motionY*potency;
+			e.motionZ -= e.motionZ*potency;
 		}
 	}
 }

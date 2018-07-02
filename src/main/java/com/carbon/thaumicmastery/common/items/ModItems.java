@@ -2,6 +2,7 @@ package com.carbon.thaumicmastery.common.items;
 
 import com.carbon.thaumicmastery.ThaumicMastery;
 import com.carbon.thaumicmastery.common.items.foci.DecayFocus;
+import com.carbon.thaumicmastery.common.items.foci.MirrorFocus;
 import com.carbon.thaumicmastery.common.items.foci.WaterFocus;
 import cpw.mods.fml.common.registry.GameRegistry;
 import net.minecraft.item.Item;
@@ -14,7 +15,7 @@ public class ModItems {
 	// Foci
 	public static Item focus_decay;
 	public static Item focus_water;
-
+	public static Item focus_mirror;
 
 	public static void init() {
 		mirrordim_item = new Item()
@@ -45,5 +46,8 @@ public class ModItems {
 
 		focus_water = new WaterFocus().setUnlocalizedName("WaterFocus");
 		GameRegistry.registerItem(focus_water, focus_water.getUnlocalizedName());
+
+		focus_mirror = new MirrorFocus().setUnlocalizedName("MirrorFocus");
+		GameRegistry.registerItem(focus_mirror, focus_mirror.getUnlocalizedName());
 	}
 }

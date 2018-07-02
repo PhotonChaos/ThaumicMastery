@@ -1,42 +1,27 @@
-[18:53:20] [main/INFO]: Setting user: Player938
-[18:53:22] [Client thread/INFO]: LWJGL Version: 2.9.1
-[18:53:40] [Client thread/INFO]: Reloading ResourceManager: Default, FMLFileResourcePack:Forge Mod Loader, FMLFileResourcePack:Minecraft Forge, FMLFileResourcePack:Thaumic Mastery, FMLFileResourcePack:Thaumcraft, FMLFileResourcePack:Baubles
-[18:53:43] [Sound Library Loader/INFO]: Sound engine started
-[18:53:44] [Client thread/INFO]: Created: 16x16 textures/blocks-atlas
-[18:53:44] [Client thread/INFO]: Created: 16x16 textures/items-atlas
-[18:53:46] [Client thread/INFO]: Reloading ResourceManager: Default, FMLFileResourcePack:Forge Mod Loader, FMLFileResourcePack:Minecraft Forge, FMLFileResourcePack:Thaumic Mastery, FMLFileResourcePack:Thaumcraft, FMLFileResourcePack:Baubles
-[18:53:47] [Client thread/INFO]: Created: 512x512 textures/blocks-atlas
-[18:53:47] [Client thread/INFO]: Created: 512x512 textures/items-atlas
-[18:53:48] [Sound Library Loader/INFO]: Sound engine started
-[18:54:42] [Server thread/INFO]: Starting integrated minecraft server version 1.7.10
-[18:54:42] [Server thread/INFO]: Generating keypair
-[18:54:43] [Server thread/INFO]: Preparing start region for level 0
-[18:54:44] [Server thread/INFO]: Preparing spawn area: 89%
-[18:54:45] [Server thread/INFO]: Changing view distance to 12, from 10
-[18:54:45] [Server thread/INFO]: Player938[local:E:60cee604] logged in with entity id 139 at (-130.79770773141084, 4.0, -1542.699999988079)
-[18:54:45] [Server thread/INFO]: Player938 joined the game
-[18:54:46] [Server thread/INFO]: Saving and pausing game...
-[18:54:46] [Server thread/INFO]: Saving chunks for level 'E'/Overworld
-[18:54:46] [Server thread/INFO]: Saving chunks for level 'E'/Nether
-[18:54:46] [Server thread/INFO]: Saving chunks for level 'E'/The End
-[18:54:46] [Server thread/INFO]: Saving chunks for level 'E'/The Outer Lands
-[18:54:57] [Server thread/INFO]: Player938 has just earned the achievement [Taking Inventory]
-[18:54:57] [Client thread/INFO]: [CHAT] Player938 has just earned the achievement [Taking Inventory]
-[18:55:05] [Client thread/INFO]: [CHAT] Unknown command. Try /help for a list of commands
-[18:55:08] [Server thread/INFO]: [Player938: Set own game mode to Creative Mode]
-[18:55:08] [Client thread/INFO]: [CHAT] Your game mode has been updated
-[18:56:48] [Client thread/INFO]: [CHAT] §5Player938 has given you all research.
-[18:56:48] [Client thread/INFO]: [CHAT] §5Success!
-[18:57:17] [Server thread/INFO]: Saving and pausing game...
-[18:57:17] [Server thread/INFO]: Saving chunks for level 'E'/Overworld
-[18:57:17] [Server thread/INFO]: Saving chunks for level 'E'/Nether
-[18:57:17] [Server thread/INFO]: Saving chunks for level 'E'/The End
-[18:57:17] [Server thread/INFO]: Saving chunks for level 'E'/The Outer Lands
-[18:57:17] [Server thread/INFO]: Stopping server
-[18:57:17] [Server thread/INFO]: Saving players
-[18:57:17] [Server thread/INFO]: Saving worlds
-[18:57:17] [Server thread/INFO]: Saving chunks for level 'E'/Overworld
-[18:57:17] [Server thread/INFO]: Saving chunks for level 'E'/Nether
-[18:57:17] [Server thread/INFO]: Saving chunks for level 'E'/The End
-[18:57:17] [Server thread/INFO]: Saving chunks for level 'E'/The Outer Lands
-[18:57:18] [Client thread/INFO]: Stopping!
+[21:07:20] [main/INFO]: Setting user: Player96
+[21:07:24] [Client thread/INFO]: LWJGL Version: 2.9.1
+[21:07:46] [Client thread/INFO]: Reloading ResourceManager: Default, FMLFileResourcePack:Forge Mod Loader, FMLFileResourcePack:Minecraft Forge, FMLFileResourcePack:Thaumic Mastery, FMLFileResourcePack:Thaumcraft, FMLFileResourcePack:Baubles
+[21:07:50] [Sound Library Loader/INFO]: Sound engine started
+[21:07:51] [Client thread/INFO]: Created: 16x16 textures/blocks-atlas
+[21:07:51] [Client thread/INFO]: Created: 16x16 textures/items-atlas
+[21:07:52] [Client thread/INFO]: Reloading ResourceManager: Default, FMLFileResourcePack:Forge Mod Loader, FMLFileResourcePack:Minecraft Forge, FMLFileResourcePack:Thaumic Mastery, FMLFileResourcePack:Thaumcraft, FMLFileResourcePack:Baubles
+[21:07:53] [Client thread/INFO]: Created: 512x512 textures/blocks-atlas
+[21:07:54] [Client thread/INFO]: Created: 512x512 textures/items-atlas
+[21:07:54] [Sound Library Loader/INFO]: Sound engine started
+[21:08:02] [Server thread/INFO]: Starting integrated minecraft server version 1.7.10
+[21:08:02] [Server thread/INFO]: Generating keypair
+[21:08:03] [Server thread/INFO]: Preparing start region for level 0
+[21:08:04] [Server thread/INFO]: Changing view distance to 12, from 10
+[21:08:05] [Server thread/INFO]: Player96[local:E:b62c2912] logged in with entity id 126 at (-177.56434180963856, 9.489400310388548, -1551.982513206541)
+[21:08:05] [Server thread/INFO]: Player96 joined the game
+[21:08:23] [Server thread/INFO]: Player96 has just earned the achievement [Taking Inventory]
+[21:08:23] [Client thread/INFO]: [CHAT] Player96 has just earned the achievement [Taking Inventory]
+[21:08:29] [Server thread/INFO]: [Player96: Set own game mode to Survival Mode]
+[21:08:29] [Client thread/INFO]: [CHAT] Your game mode has been updated
+[21:09:09] [Client thread/INFO]: [CHAT] Couldn't take any effects from Player96 as they do not have any
+[21:09:13] [Server thread/INFO]: Saving and pausing game...
+[21:09:13] [Server thread/INFO]: Saving chunks for level 'E'/Overworld
+[21:09:13] [Server thread/INFO]: Saving chunks for level 'E'/Nether
+[21:09:13] [Server thread/INFO]: Saving chunks for level 'E'/The End
+[21:09:13] [Server thread/INFO]: Saving chunks for level 'E'/The Outer Lands
+[21:10:58] [Client Shutdown Thread/INFO]: Stopping server

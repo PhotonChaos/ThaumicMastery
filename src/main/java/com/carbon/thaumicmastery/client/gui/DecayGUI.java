@@ -3,7 +3,7 @@ package com.carbon.thaumicmastery.client.gui;
 import net.minecraft.client.gui.GuiButton;
 import net.minecraft.client.gui.GuiScreen;
 
-public class DecayGUI extends GuiScreen{
+public class DecayGUI extends GuiScreen {
 	private GuiButton submit;
 
 	@Override
