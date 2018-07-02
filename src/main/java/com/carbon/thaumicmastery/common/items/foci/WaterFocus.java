@@ -25,7 +25,7 @@ import java.util.List;
 public class WaterFocus extends MasterFocusBase {
 	private IIcon modelOrnament;
 
-	private int costPerTick = 0;
+	private int costPerTick = 5;
 	private int potency = 5;
 	private AspectList visCost = new AspectList().add(Aspect.WATER, costPerTick * 100);
 
@@ -36,9 +36,8 @@ public class WaterFocus extends MasterFocusBase {
 
 	@Override
 	public void onUsingFocusTick(ItemStack wand, EntityPlayer player, int count) {
-		if (!player.worldObj.isRemote && wand != null && player != null && ThaumcraftApiHelper.consumeVisFromWand(wand, player, getVisCost(wand), true, false)) {
+		if (!player.worldObj.isRemote && wand != null && ThaumcraftApiHelper.consumeVisFromWand(wand, player, getVisCost(wand), true, false)) {
 			player.getEntityData().setBoolean(LibMisc.TAG_SHIELD, true);
-
 			player.extinguish();
 
 			deflectProjectiles(player);
