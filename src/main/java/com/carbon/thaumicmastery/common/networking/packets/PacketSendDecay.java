@@ -1,7 +1,7 @@
 package com.carbon.thaumicmastery.common.networking.packets;
 
 import com.carbon.thaumicmastery.common.items.foci.DecayFocus;
-import cpw.mods.fml.common.FMLCommonHandler;
+import com.carbon.thaumicmastery.core.lib.LibMisc;
 import cpw.mods.fml.common.network.simpleimpl.IMessage;
 import cpw.mods.fml.common.network.simpleimpl.IMessageHandler;
 import cpw.mods.fml.common.network.simpleimpl.MessageContext;
@@ -11,7 +11,6 @@ import net.minecraft.entity.player.EntityPlayerMP;
 
 public class PacketSendDecay implements IMessage {
 	private int decayLevel;
-	private DecayFocus focus;
 
 	@Override
 	public void fromBytes(ByteBuf buf) {
@@ -23,18 +22,16 @@ public class PacketSendDecay implements IMessage {
 		buf.writeInt(decayLevel);
 	}
 
-	public PacketSendDecay(GuiTextField textField, DecayFocus focusParam) {
-		decayLevel = Integer.parseInt(textField.getText());
-		focus = focusParam;
+	public PacketSendDecay(GuiTextField textField) {
+		this.decayLevel = Integer.parseInt(textField.getText());
 	}
 
 	public static class Handler implements IMessageHandler<PacketSendDecay, IMessage> {
 		@Override
 		public IMessage onMessage(PacketSendDecay message, MessageContext ctx) {
-			EntityPlayerMP serverPlayer = ctx.getServerHandler().playerEntity;
+			EntityPlayerMP sender = ctx.getServerHandler().playerEntity;
 
-			message.focus.setDecaySetLevel(message.decayLevel);
-
+			sender.getEntityData().setInteger(LibMisc.TAG_DECAY_LEVEL, message.decayLevel);
 			return null;
 		}
 	}

@@ -1,24 +1,2 @@
-[00:17:39] [main/INFO]: Setting user: Player344
-[00:17:42] [Client thread/INFO]: LWJGL Version: 2.9.1
-[00:18:04] [Client thread/INFO]: Reloading ResourceManager: Default, FMLFileResourcePack:Forge Mod Loader, FMLFileResourcePack:Minecraft Forge, FMLFileResourcePack:Thaumic Mastery, FMLFileResourcePack:Thaumcraft, FMLFileResourcePack:Baubles
-[00:18:08] [Sound Library Loader/INFO]: Sound engine started
-[00:18:09] [Client thread/INFO]: Created: 16x16 textures/blocks-atlas
-[00:18:09] [Client thread/INFO]: Created: 16x16 textures/items-atlas
-[00:18:10] [Client thread/INFO]: Reloading ResourceManager: Default, FMLFileResourcePack:Forge Mod Loader, FMLFileResourcePack:Minecraft Forge, FMLFileResourcePack:Thaumic Mastery, FMLFileResourcePack:Thaumcraft, FMLFileResourcePack:Baubles
-[00:18:11] [Client thread/INFO]: Created: 512x512 textures/blocks-atlas
-[00:18:11] [Client thread/INFO]: Created: 512x512 textures/items-atlas
-[00:18:12] [Sound Library Loader/INFO]: Sound engine started
-[00:18:19] [Server thread/INFO]: Starting integrated minecraft server version 1.7.10
-[00:18:19] [Server thread/INFO]: Generating keypair
-[00:18:19] [Server thread/INFO]: Preparing start region for level 0
-[00:18:20] [Server thread/INFO]: Changing view distance to 12, from 10
-[00:18:21] [Server thread/INFO]: Player344[local:E:3dab811f] logged in with entity id 178 at (-31.993487401605762, 4.0, 43.67807841575403)
-[00:18:21] [Server thread/INFO]: Player344 joined the game
-[00:18:33] [Client thread/INFO]: Stopping!
-[00:18:33] [Server thread/INFO]: Stopping server
-[00:18:33] [Server thread/INFO]: Saving players
-[00:18:33] [Server thread/INFO]: Saving worlds
-[00:18:33] [Server thread/INFO]: Saving chunks for level 'E'/Overworld
-[00:18:33] [Server thread/INFO]: Saving chunks for level 'E'/Nether
-[00:18:33] [Server thread/INFO]: Saving chunks for level 'E'/The End
-[00:18:33] [Server thread/INFO]: Saving chunks for level 'E'/The Outer Lands
+[15:46:52] [main/INFO]: Setting user: Player576
+[15:46:54] [Client thread/INFO]: LWJGL Version: 2.9.1

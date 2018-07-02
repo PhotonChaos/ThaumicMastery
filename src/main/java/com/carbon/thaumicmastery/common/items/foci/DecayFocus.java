@@ -32,6 +32,7 @@ public class DecayFocus extends MasterFocusBase {
 	public ItemStack onFocusRightClick(ItemStack wand, World world, EntityPlayer player, MovingObjectPosition movingObjectPosition) {
 		if (player.isSneaking()) {
 			if (world.isRemote) {
+				//DecayGUI.focus = this;
 				player.openGui(ThaumicMastery.instance, GUIHandler.DECAY_GUI, world, player.serverPosX, player.serverPosY, player.serverPosZ);
 			}
 		} else {

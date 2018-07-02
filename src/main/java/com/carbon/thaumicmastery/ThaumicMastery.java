@@ -73,6 +73,9 @@ public class ThaumicMastery {
 		// config handling
 		config = new Configuration(event.getSuggestedConfigurationFile());
 
+		// Packets
+		proxy.preInit(event);
+
 		// Items
 		ModItems.init();
 

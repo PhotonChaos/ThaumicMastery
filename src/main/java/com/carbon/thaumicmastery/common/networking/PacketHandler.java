@@ -1,5 +1,6 @@
 package com.carbon.thaumicmastery.common.networking;
 
+import com.carbon.thaumicmastery.ThaumicMastery;
 import com.carbon.thaumicmastery.common.networking.packets.PacketSendDecay;
 import cpw.mods.fml.common.network.NetworkRegistry;
 import cpw.mods.fml.common.network.simpleimpl.SimpleNetworkWrapper;
@@ -7,19 +8,13 @@ import cpw.mods.fml.relauncher.Side;
 
 public class PacketHandler {
 	private static int packetId = 0;
-	public static SimpleNetworkWrapper INSTANCE = null;
-
+	public static final SimpleNetworkWrapper INSTANCE = NetworkRegistry.INSTANCE.newSimpleChannel(ThaumicMastery.MODID);
 	public PacketHandler() {
 
 	}
 
-	public static int nextId() {
+	private static int nextId() {
 		return packetId++;
-	}
-
-	public static void registerMessages(String channelName) {
-		INSTANCE = NetworkRegistry.INSTANCE.newSimpleChannel(channelName);
-		registerMessages();
 	}
 
 	public static void registerMessages() {

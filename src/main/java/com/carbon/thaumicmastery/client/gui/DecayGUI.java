@@ -1,6 +1,11 @@
 package com.carbon.thaumicmastery.client.gui;
 
 import com.carbon.thaumicmastery.ThaumicMastery;
+import com.carbon.thaumicmastery.common.items.foci.DecayFocus;
+import com.carbon.thaumicmastery.common.networking.PacketHandler;
+import com.carbon.thaumicmastery.common.networking.packets.PacketSendDecay;
+import cpw.mods.fml.relauncher.Side;
+import cpw.mods.fml.relauncher.SideOnly;
 import net.minecraft.client.gui.GuiButton;
 import net.minecraft.client.gui.GuiScreen;
 import net.minecraft.client.gui.GuiTextField;
@@ -10,6 +15,8 @@ import org.lwjgl.opengl.GL11;
 public class DecayGUI extends GuiScreen {
 	private GuiButton submit;
 	private GuiTextField levelTextBox;
+
+	public static DecayFocus focus;
 
 	@Override
 	public void drawScreen(int mouseX, int mouseY, float partialTicks) {
@@ -36,9 +43,10 @@ public class DecayGUI extends GuiScreen {
 	}
 
 	@Override
+	@SideOnly(Side.CLIENT)
 	public void actionPerformed(GuiButton button) {
 		if (button == this.submit) {
-
+			PacketHandler.INSTANCE.sendToServer(new PacketSendDecay(this.levelTextBox));
 
 			this.mc.displayGuiScreen(null);
 
