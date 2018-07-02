@@ -1,10 +1,11 @@
 package com.carbon.thaumicmastery.core;
 
+import com.carbon.thaumicmastery.core.lib.LibMisc;
 import net.minecraft.entity.player.EntityPlayer;
 
 public class Utils {
 	public static boolean isShielded(EntityPlayer player) {
-		return false;
+		return player.getEntityData().getBoolean(LibMisc.TAG_SHIELD);
 	}
 
 	public static int dist(int x, int y, int z, int xx, int yy, int zz) {

@@ -1,24 +1,30 @@
 package com.carbon.thaumicmastery.common.items.foci;
 
 import com.carbon.thaumicmastery.ThaumicMastery;
+import com.carbon.thaumicmastery.core.lib.LibMisc;
 import com.carbon.thaumicmastery.core.lib.LibPaths;
 import cpw.mods.fml.relauncher.Side;
 import cpw.mods.fml.relauncher.SideOnly;
 import net.minecraft.client.renderer.texture.IIconRegister;
+import net.minecraft.entity.Entity;
+import net.minecraft.entity.IProjectile;
 import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.item.ItemStack;
-import net.minecraft.nbt.NBTTagCompound;
+import net.minecraft.util.AxisAlignedBB;
 import net.minecraft.util.IIcon;
+import net.minecraft.util.Vec3;
 import net.minecraft.world.World;
+import thaumcraft.api.ThaumcraftApi;
 import thaumcraft.api.ThaumcraftApiHelper;
 import thaumcraft.api.aspects.Aspect;
 import thaumcraft.api.aspects.AspectList;
-import thaumcraft.api.wands.ItemFocusBasic;
+
+import java.util.List;
 
 public class WaterFocus extends MasterFocusBase {
 	private IIcon modelOrnament;
 
-	private int costPerTick = 5;
+	private int costPerTick = 0;
 	private AspectList visCost = new AspectList().add(Aspect.WATER, costPerTick * 100);
 
 	public WaterFocus() {
@@ -29,15 +35,14 @@ public class WaterFocus extends MasterFocusBase {
 	@Override
 	public void onUsingFocusTick(ItemStack wand, EntityPlayer player, int count) {
 		if (wand != null && player != null && ThaumcraftApiHelper.consumeVisFromWand(wand, player, getVisCost(wand), true, false)) {
-			NBTTagCompound tag = new NBTTagCompound();
-			tag.setBoolean("isShielded", true);
-			player.writeToNBT(tag);
+			player.getEntityData().setBoolean(LibMisc.TAG_SHIELD, true);
+			deflectProjectiles(player);
 		}
 	}
 
 	@Override
-	public WandFocusAnimation getAnimation(ItemStack item) {
-		return super.getAnimation(item);
+	public void onPlayerStoppedUsingFocus(ItemStack wand, World world, EntityPlayer player, int count) {
+		player.getEntityData().setBoolean(LibMisc.TAG_SHIELD, false);
 	}
 
 	@Override
@@ -59,11 +64,27 @@ public class WaterFocus extends MasterFocusBase {
 	@SideOnly(Side.CLIENT)
 	public void registerIcons(IIconRegister register) {
 		super.registerIcons(register);
-		modelOrnament = register.registerIcon(ThaumicMastery.MODID + ":" + LibPaths.focusOrnamentPath +"focus_water_model_orn");
+		modelOrnament = register.registerIcon(ThaumicMastery.MODID + ":" + LibPaths.focusOrnamentPath + "focus_water_model_orn");
 	}
 
 	@Override
 	public IIcon getOrnament(ItemStack item) {
 		return modelOrnament;
+	}
+
+	@Override
+	public WandFocusAnimation getAnimation(ItemStack item) {
+		return WandFocusAnimation.CHARGE;
+	}
+
+	@SuppressWarnings("unchecked")
+	private void deflectProjectiles(EntityPlayer p) {
+		List<Entity> projectiles = p.worldObj.getEntitiesWithinAABB(IProjectile.class, AxisAlignedBB.getBoundingBox(p.posX - 4, p.posY - 4, p.posZ - 4, p.posX + 3, p.posY + 3, p.posZ + 3));
+
+		for (Entity e : projectiles) {
+			e.motionX -= e.motionX*2;
+			e.motionY -= e.motionY*2;
+			e.motionZ -= e.motionZ*2;
+		}
 	}
 }

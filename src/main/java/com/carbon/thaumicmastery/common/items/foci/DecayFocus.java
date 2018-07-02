@@ -1,6 +1,7 @@
 package com.carbon.thaumicmastery.common.items.foci;
 
 import com.carbon.thaumicmastery.ThaumicMastery;
+import com.carbon.thaumicmastery.common.entities.tileentities.TileEntityDecay;
 import cpw.mods.fml.relauncher.Side;
 import cpw.mods.fml.relauncher.SideOnly;
 import net.minecraft.client.renderer.texture.IIconRegister;
@@ -36,12 +37,18 @@ public class DecayFocus extends MasterFocusBase {
 					int y = movingObjectPosition.blockY;
 					int z = movingObjectPosition.blockZ;
 
-					world.setBlock(x, y, z, Blocks.cobblestone);
+					world.setBlock(x, y, z, ThaumicMastery.blockDecay);
+					((TileEntityDecay)world.getTileEntity(x, y, z)).setDecayLevel(decaySetLevel);
 				}
 			}
 		}
 
 		return wand;
+	}
+
+	@Override
+	public WandFocusAnimation getAnimation(ItemStack itemStack) {
+		return WandFocusAnimation.CHARGE;
 	}
 
 	@Override

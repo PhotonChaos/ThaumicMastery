@@ -3,8 +3,10 @@ item.tm_mirrordim_discover.name=Mirror of Balance
 item.tm_worldeater_discover.name=Fractured Mirror
 #
 # Foci
-item.DecayFocus.name=Wand Focus: Fractured Mirror
-item.WaterFocus.name=Wand Focus:
+item.DecayFocus.name=Wand Focus: World Eater
+item.MirrorFocus.name=Wand Focus: Mirror Dimension
+item.WaterFocus.name=Wand Focus: Hydro Barrier
+item.FireFocus.name=Wand Focus: Novablast
 #
 # blocks
 tile.BlockDecay.name=Decay
