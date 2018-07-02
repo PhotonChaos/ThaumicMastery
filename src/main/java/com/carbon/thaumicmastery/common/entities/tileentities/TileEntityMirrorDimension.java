@@ -133,4 +133,8 @@ public class TileEntityMirrorDimension extends TileEntity {
 	public String getCasterID() {
 		return caster;
 	}
+
+	public int getDuration() {
+		return duration;
+	}
 }

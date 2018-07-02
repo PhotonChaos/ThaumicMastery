@@ -7,15 +7,12 @@ import cpw.mods.fml.relauncher.Side;
 import cpw.mods.fml.relauncher.SideOnly;
 import net.minecraft.client.renderer.texture.IIconRegister;
 import net.minecraft.entity.Entity;
-import net.minecraft.entity.EntityLiving;
 import net.minecraft.entity.IProjectile;
 import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.item.ItemStack;
 import net.minecraft.util.AxisAlignedBB;
 import net.minecraft.util.IIcon;
-import net.minecraft.util.Vec3;
 import net.minecraft.world.World;
-import thaumcraft.api.ThaumcraftApi;
 import thaumcraft.api.ThaumcraftApiHelper;
 import thaumcraft.api.aspects.Aspect;
 import thaumcraft.api.aspects.AspectList;
@@ -41,6 +38,8 @@ public class WaterFocus extends MasterFocusBase {
 			player.extinguish();
 
 			deflectProjectiles(player);
+		} else {
+			player.getEntityData().setBoolean(LibMisc.TAG_SHIELD, false);
 		}
 	}
 
@@ -86,9 +85,9 @@ public class WaterFocus extends MasterFocusBase {
 		List<Entity> projectiles = p.worldObj.getEntitiesWithinAABB(IProjectile.class, AxisAlignedBB.getBoundingBox(p.posX - 4, p.posY - 4, p.posZ - 4, p.posX + 3, p.posY + 3, p.posZ + 3));
 
 		for (Entity e : projectiles) {
-			e.motionX -= e.motionX*potency;
-			e.motionY -= e.motionY*potency;
-			e.motionZ -= e.motionZ*potency;
+			e.motionX -= e.motionX * potency;
+			e.motionY -= e.motionY * potency;
+			e.motionZ -= e.motionZ * potency;
 		}
 	}
 }
