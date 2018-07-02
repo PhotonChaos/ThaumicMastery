@@ -14,10 +14,10 @@ import thaumcraft.api.aspects.AspectList;
 public class MirrorFocus extends MasterFocusBase {
 	private int cost = 10;
 	private int cooldown = 10;
-	private AspectList visCost = new AspectList().add(Aspect.ORDER, cost * 100);
 
 	public MirrorFocus() {
 		super();
+		visCost = new AspectList().add(Aspect.ORDER, cost * 100);
 		this.focusName = "mirror";
 	}
 
@@ -52,11 +52,6 @@ public class MirrorFocus extends MasterFocusBase {
 	@Override
 	public boolean isVisCostPerTick(ItemStack itemStack) {
 		return false;
-	}
-
-	@Override
-	public AspectList getVisCost(ItemStack itemStack) {
-		return visCost;
 	}
 
 	@Override

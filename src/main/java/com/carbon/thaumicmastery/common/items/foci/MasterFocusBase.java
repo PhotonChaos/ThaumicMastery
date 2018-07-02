@@ -11,6 +11,7 @@ import net.minecraft.item.ItemStack;
 import net.minecraft.util.IIcon;
 import net.minecraft.util.MovingObjectPosition;
 import net.minecraft.world.World;
+import thaumcraft.api.aspects.AspectList;
 import thaumcraft.api.wands.ItemFocusBasic;
 
 public class MasterFocusBase extends ItemFocusBasic {
@@ -19,9 +20,16 @@ public class MasterFocusBase extends ItemFocusBasic {
 
 	protected String focusName;
 
+	protected AspectList visCost;
+
 	public MasterFocusBase() {
 		super();
 		setCreativeTab(ThaumicMastery.tab);
+	}
+
+	@Override
+	public AspectList getVisCost(ItemStack item) {
+		return this.visCost;
 	}
 
 	@Override

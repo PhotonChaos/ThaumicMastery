@@ -22,12 +22,12 @@ import java.util.List;
 public class WaterFocus extends MasterFocusBase {
 	private IIcon modelOrnament;
 
-	private int costPerTick = 5;
+	private int costPerTick = 10;
 	private int potency = 5;
-	private AspectList visCost = new AspectList().add(Aspect.WATER, costPerTick * 100);
 
 	public WaterFocus() {
 		super();
+		this.visCost = new AspectList().add(Aspect.WATER, costPerTick * 100);
 		this.focusName = "water";
 	}
 
@@ -56,11 +56,6 @@ public class WaterFocus extends MasterFocusBase {
 	@Override
 	public boolean isVisCostPerTick(ItemStack item) {
 		return true;
-	}
-
-	@Override
-	public AspectList getVisCost(ItemStack item) {
-		return visCost;
 	}
 
 	@Override

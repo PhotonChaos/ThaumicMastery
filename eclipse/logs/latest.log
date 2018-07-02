@@ -1,42 +1,24 @@
-[22:43:10] [main/INFO]: Setting user: Player926
-[22:43:13] [Client thread/INFO]: LWJGL Version: 2.9.1
-[22:43:34] [Client thread/INFO]: Reloading ResourceManager: Default, FMLFileResourcePack:Forge Mod Loader, FMLFileResourcePack:Minecraft Forge, FMLFileResourcePack:Thaumic Mastery, FMLFileResourcePack:Thaumcraft, FMLFileResourcePack:Baubles
-[22:43:37] [Sound Library Loader/INFO]: Sound engine started
-[22:43:39] [Client thread/INFO]: Created: 16x16 textures/blocks-atlas
-[22:43:39] [Client thread/INFO]: Created: 16x16 textures/items-atlas
-[22:43:40] [Client thread/INFO]: Reloading ResourceManager: Default, FMLFileResourcePack:Forge Mod Loader, FMLFileResourcePack:Minecraft Forge, FMLFileResourcePack:Thaumic Mastery, FMLFileResourcePack:Thaumcraft, FMLFileResourcePack:Baubles
-[22:43:41] [Client thread/INFO]: Created: 512x512 textures/blocks-atlas
-[22:43:41] [Client thread/INFO]: Created: 512x512 textures/items-atlas
-[22:43:42] [Sound Library Loader/INFO]: Sound engine started
-[22:45:08] [Server thread/INFO]: Starting integrated minecraft server version 1.7.10
-[22:45:08] [Server thread/INFO]: Generating keypair
-[22:45:09] [Server thread/INFO]: Preparing start region for level 0
-[22:45:10] [Server thread/INFO]: Changing view distance to 12, from 10
-[22:45:10] [Server thread/INFO]: Player926[local:E:9926db7e] logged in with entity id 123 at (-144.58136019352867, 4.0, -1575.7641219891602)
-[22:45:10] [Server thread/INFO]: Player926 joined the game
-[22:45:14] [Server thread/INFO]: Player926 has just earned the achievement [Taking Inventory]
-[22:45:14] [Client thread/INFO]: [CHAT] Player926 has just earned the achievement [Taking Inventory]
-[22:45:51] [Server thread/INFO]: [Player926: Teleported Player926 to -146.04113565052475,14.0,-1576.155626494443]
-[22:45:51] [Client thread/INFO]: [CHAT] Teleported Player926 to -146.04113565052475,14.0,-1576.155626494443
-[22:45:57] [Server thread/INFO]: [Player926: Teleported Player926 to -146.04113565052475,14.0,-1576.155626494443]
-[22:45:57] [Client thread/INFO]: [CHAT] Teleported Player926 to -146.04113565052475,14.0,-1576.155626494443
-[22:45:59] [Server thread/INFO]: [Player926: Teleported Player926 to -147.89039286934377,14.0,-1575.811528448438]
-[22:45:59] [Client thread/INFO]: [CHAT] Teleported Player926 to -147.89039286934377,14.0,-1575.811528448438
-[22:45:59] [Server thread/INFO]: [Player926: Teleported Player926 to -147.89039286934377,16.44045513047196,-1575.811528448438]
-[22:45:59] [Client thread/INFO]: [CHAT] Teleported Player926 to -147.89039286934377,16.44045513047196,-1575.811528448438
-[22:46:15] [Server thread/INFO]: Player926 fell out of the world
-[22:46:15] [Client thread/INFO]: [CHAT] Player926 fell out of the world
-[22:46:21] [Server thread/INFO]: Player926 fell out of the world
-[22:46:21] [Client thread/INFO]: [CHAT] Player926 fell out of the world
-[22:47:01] [Server thread/INFO]: Saving and pausing game...
-[22:47:01] [Server thread/INFO]: Saving chunks for level 'E'/Overworld
-[22:47:01] [Server thread/INFO]: Saving chunks for level 'E'/Nether
-[22:47:01] [Server thread/INFO]: Saving chunks for level 'E'/The End
-[22:47:01] [Server thread/INFO]: Saving chunks for level 'E'/The Outer Lands
-[22:47:02] [Server thread/INFO]: Stopping server
-[22:47:02] [Server thread/INFO]: Saving players
-[22:47:02] [Server thread/INFO]: Saving worlds
-[22:47:02] [Server thread/INFO]: Saving chunks for level 'E'/Overworld
-[22:47:02] [Server thread/INFO]: Saving chunks for level 'E'/Nether
-[22:47:02] [Server thread/INFO]: Saving chunks for level 'E'/The End
-[22:47:02] [Server thread/INFO]: Saving chunks for level 'E'/The Outer Lands
+[00:17:39] [main/INFO]: Setting user: Player344
+[00:17:42] [Client thread/INFO]: LWJGL Version: 2.9.1
+[00:18:04] [Client thread/INFO]: Reloading ResourceManager: Default, FMLFileResourcePack:Forge Mod Loader, FMLFileResourcePack:Minecraft Forge, FMLFileResourcePack:Thaumic Mastery, FMLFileResourcePack:Thaumcraft, FMLFileResourcePack:Baubles
+[00:18:08] [Sound Library Loader/INFO]: Sound engine started
+[00:18:09] [Client thread/INFO]: Created: 16x16 textures/blocks-atlas
+[00:18:09] [Client thread/INFO]: Created: 16x16 textures/items-atlas
+[00:18:10] [Client thread/INFO]: Reloading ResourceManager: Default, FMLFileResourcePack:Forge Mod Loader, FMLFileResourcePack:Minecraft Forge, FMLFileResourcePack:Thaumic Mastery, FMLFileResourcePack:Thaumcraft, FMLFileResourcePack:Baubles
+[00:18:11] [Client thread/INFO]: Created: 512x512 textures/blocks-atlas
+[00:18:11] [Client thread/INFO]: Created: 512x512 textures/items-atlas
+[00:18:12] [Sound Library Loader/INFO]: Sound engine started
+[00:18:19] [Server thread/INFO]: Starting integrated minecraft server version 1.7.10
+[00:18:19] [Server thread/INFO]: Generating keypair
+[00:18:19] [Server thread/INFO]: Preparing start region for level 0
+[00:18:20] [Server thread/INFO]: Changing view distance to 12, from 10
+[00:18:21] [Server thread/INFO]: Player344[local:E:3dab811f] logged in with entity id 178 at (-31.993487401605762, 4.0, 43.67807841575403)
+[00:18:21] [Server thread/INFO]: Player344 joined the game
+[00:18:33] [Client thread/INFO]: Stopping!
+[00:18:33] [Server thread/INFO]: Stopping server
+[00:18:33] [Server thread/INFO]: Saving players
+[00:18:33] [Server thread/INFO]: Saving worlds
+[00:18:33] [Server thread/INFO]: Saving chunks for level 'E'/Overworld
+[00:18:33] [Server thread/INFO]: Saving chunks for level 'E'/Nether
+[00:18:33] [Server thread/INFO]: Saving chunks for level 'E'/The End
+[00:18:33] [Server thread/INFO]: Saving chunks for level 'E'/The Outer Lands
