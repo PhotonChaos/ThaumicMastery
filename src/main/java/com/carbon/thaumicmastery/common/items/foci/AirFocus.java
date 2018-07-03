@@ -23,7 +23,7 @@ public class AirFocus extends MasterFocusBase {
 	private int destD;
 
 	public AirFocus() {
-		this.focusName = "airTP";
+		this.focusName = "airPort";
 	}
 
 	@Override
