@@ -1,34 +1,25 @@
-[23:52:10] [main/INFO]: Setting user: Player337
-[23:52:12] [Client thread/INFO]: LWJGL Version: 2.9.1
-[23:52:29] [Client thread/INFO]: Reloading ResourceManager: Default, FMLFileResourcePack:Forge Mod Loader, FMLFileResourcePack:Minecraft Forge, FMLFileResourcePack:Thaumic Mastery, FMLFileResourcePack:Thaumcraft, FMLFileResourcePack:Baubles
-[23:52:32] [Sound Library Loader/INFO]: Sound engine started
-[23:52:33] [Client thread/INFO]: Created: 16x16 textures/blocks-atlas
-[23:52:33] [Client thread/INFO]: Created: 16x16 textures/items-atlas
-[23:52:35] [Client thread/INFO]: Reloading ResourceManager: Default, FMLFileResourcePack:Forge Mod Loader, FMLFileResourcePack:Minecraft Forge, FMLFileResourcePack:Thaumic Mastery, FMLFileResourcePack:Thaumcraft, FMLFileResourcePack:Baubles
-[23:52:36] [Client thread/INFO]: Created: 512x512 textures/blocks-atlas
-[23:52:36] [Client thread/INFO]: Created: 512x512 textures/items-atlas
-[23:52:37] [Sound Library Loader/INFO]: Sound engine started
-[23:53:44] [Server thread/INFO]: Starting integrated minecraft server version 1.7.10
-[23:53:44] [Server thread/INFO]: Generating keypair
-[23:53:44] [Server thread/INFO]: Preparing start region for level 0
-[23:53:45] [Server thread/INFO]: Changing view distance to 12, from 10
-[23:53:46] [Server thread/INFO]: Player337[local:E:32e6935b] logged in with entity id 195 at (908.4987315911858, 4.0, -299.44009670672887)
-[23:53:46] [Server thread/INFO]: Player337 joined the game
-[23:53:50] [Server thread/INFO]: Saving and pausing game...
-[23:53:50] [Server thread/INFO]: Saving chunks for level 'New World'/Overworld
-[23:53:50] [Server thread/INFO]: Saving chunks for level 'New World'/Nether
-[23:53:50] [Server thread/INFO]: Saving chunks for level 'New World'/The End
-[23:53:50] [Server thread/INFO]: Saving chunks for level 'New World'/The Outer Lands
-[23:58:17] [Server thread/INFO]: Saving and pausing game...
-[23:58:17] [Server thread/INFO]: Saving chunks for level 'New World'/Overworld
-[23:58:17] [Server thread/INFO]: Saving chunks for level 'New World'/Nether
-[23:58:17] [Server thread/INFO]: Saving chunks for level 'New World'/The End
-[23:58:17] [Server thread/INFO]: Saving chunks for level 'New World'/The Outer Lands
-[23:58:17] [Server thread/INFO]: Stopping server
-[23:58:17] [Server thread/INFO]: Saving players
-[23:58:17] [Server thread/INFO]: Saving worlds
-[23:58:17] [Server thread/INFO]: Saving chunks for level 'New World'/Overworld
-[23:58:17] [Server thread/INFO]: Saving chunks for level 'New World'/Nether
-[23:58:17] [Server thread/INFO]: Saving chunks for level 'New World'/The End
-[23:58:17] [Server thread/INFO]: Saving chunks for level 'New World'/The Outer Lands
-[23:58:19] [Client thread/INFO]: Stopping!
+[09:36:04] [main/INFO]: Setting user: Player140
+[09:36:09] [Client thread/INFO]: LWJGL Version: 2.9.1
+[09:36:36] [Client thread/INFO]: Reloading ResourceManager: Default, FMLFileResourcePack:Forge Mod Loader, FMLFileResourcePack:Minecraft Forge, FMLFileResourcePack:Thaumic Mastery, FMLFileResourcePack:Thaumcraft, FMLFileResourcePack:Baubles
+[09:36:39] [Sound Library Loader/INFO]: Sound engine started
+[09:36:41] [Client thread/INFO]: Created: 16x16 textures/blocks-atlas
+[09:36:41] [Client thread/INFO]: Created: 16x16 textures/items-atlas
+[09:36:42] [Client thread/INFO]: Reloading ResourceManager: Default, FMLFileResourcePack:Forge Mod Loader, FMLFileResourcePack:Minecraft Forge, FMLFileResourcePack:Thaumic Mastery, FMLFileResourcePack:Thaumcraft, FMLFileResourcePack:Baubles
+[09:36:43] [Client thread/INFO]: Created: 512x512 textures/blocks-atlas
+[09:36:43] [Client thread/INFO]: Created: 512x512 textures/items-atlas
+[09:36:44] [Sound Library Loader/INFO]: Sound engine started
+[09:36:54] [Server thread/INFO]: Starting integrated minecraft server version 1.7.10
+[09:36:54] [Server thread/INFO]: Generating keypair
+[09:36:54] [Server thread/INFO]: Preparing start region for level 0
+[09:36:55] [Server thread/INFO]: Changing view distance to 12, from 10
+[09:36:56] [Server thread/INFO]: Player140[local:E:8c591638] logged in with entity id 179 at (94.2542104166105, 4.0, -10.32554148563112)
+[09:36:56] [Server thread/INFO]: Player140 joined the game
+[09:37:13] [Client thread/INFO]: [CHAT] Decay level: 2
+[09:37:20] [Client thread/INFO]: Stopping!
+[09:37:20] [Server thread/INFO]: Stopping server
+[09:37:20] [Server thread/INFO]: Saving players
+[09:37:20] [Server thread/INFO]: Saving worlds
+[09:37:20] [Server thread/INFO]: Saving chunks for level 'New World'/Overworld
+[09:37:20] [Server thread/INFO]: Saving chunks for level 'New World'/Nether
+[09:37:20] [Server thread/INFO]: Saving chunks for level 'New World'/The End
+[09:37:20] [Server thread/INFO]: Saving chunks for level 'New World'/The Outer Lands

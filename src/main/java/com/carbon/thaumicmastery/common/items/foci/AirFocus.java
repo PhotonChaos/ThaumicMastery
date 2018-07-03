@@ -56,7 +56,7 @@ public class AirFocus extends MasterFocusBase {
 				updateDest(player);
 
 				MinecraftServer server = MinecraftServer.getServer();
-				EntityPlayerMP playerMP = (EntityPlayerMP)player;
+				EntityPlayerMP playerMP = (EntityPlayerMP) player;
 
 				if (sourceD != destD) {
 					WorldServer toDim = server.worldServerForDimension(destD);

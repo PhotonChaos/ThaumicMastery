@@ -10,17 +10,24 @@ import net.minecraft.client.gui.GuiButton;
 import net.minecraft.client.gui.GuiScreen;
 import net.minecraft.client.gui.GuiTextField;
 import net.minecraft.util.ResourceLocation;
-import org.lwjgl.input.Keyboard;
 import org.lwjgl.opengl.GL11;
 
 public class DecayGUI extends GuiScreen {
 	private GuiButton submit;
 	private GuiTextField levelTextBox;
 
+	private ResourceLocation backgroundImage;
+
 	@Override
 	public void drawScreen(int mouseX, int mouseY, float partialTicks) {
 		this.drawDefaultBackground();
+
+		GL11.glColor4f(1.0f, 1.0f, 1.0f, 1.0f);
+		this.mc.renderEngine.bindTexture(backgroundImage);
+		this.drawTexturedModalRect(width / 2 - 128, height / 2 - 128, 0, 0, 256, 256);
+
 		this.levelTextBox.drawTextBox();
+
 		super.drawScreen(mouseX, mouseX, partialTicks);
 	}
 
@@ -30,7 +37,9 @@ public class DecayGUI extends GuiScreen {
 		levelTextBox = new GuiTextField(this.fontRendererObj, this.width / 2 - 20, this.height / 2 - 20, 40, 20);
 		levelTextBox.setMaxStringLength(4);
 		this.levelTextBox.setFocused(true);
+
 		this.buttonList.add(this.submit = new GuiButton(0, this.width / 2 - 100, this.height / 2 + 10, "Set Decay Level"));
+		backgroundImage = new ResourceLocation(ThaumicMastery.MODID, "textures/gui/WorldEaterGUI.png");
 	}
 
 	@Override
@@ -58,11 +67,6 @@ public class DecayGUI extends GuiScreen {
 	public void updateScreen() {
 		super.updateScreen();
 		this.levelTextBox.updateCursorCounter();
-
-		GL11.glColor4f(1.0f, 1.0f, 1.0f, 1.0f);
-		this.mc.getTextureManager().bindTexture(new ResourceLocation(ThaumicMastery.MODID, "textures/gui/WorldEaterGUI.png"));
-
-		this.drawTexturedModalRect(width / 2, height / 2, 50, 0, 20, 20);
 	}
 
 	@Override
