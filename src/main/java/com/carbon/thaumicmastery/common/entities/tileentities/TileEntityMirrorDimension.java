@@ -49,7 +49,7 @@ public class TileEntityMirrorDimension extends TileEntity {
 	}
 
 	private void processFunctionality() {
-		int d;
+		double d;
 		for (int i = 0; i < worldObj.playerEntities.size(); i++) {
 			EntityPlayer player = (EntityPlayer) worldObj.playerEntities.get(i);
 

@@ -1,10 +1,7 @@
 package com.carbon.thaumicmastery.common.items;
 
 import com.carbon.thaumicmastery.ThaumicMastery;
-import com.carbon.thaumicmastery.common.items.foci.DecayFocus;
-import com.carbon.thaumicmastery.common.items.foci.MirrorFocus;
-import com.carbon.thaumicmastery.common.items.foci.RefillFocus;
-import com.carbon.thaumicmastery.common.items.foci.WaterFocus;
+import com.carbon.thaumicmastery.common.items.foci.*;
 import cpw.mods.fml.common.registry.GameRegistry;
 import net.minecraft.item.Item;
 
@@ -17,6 +14,7 @@ public class ModItems {
 	public static Item focus_decay;
 	public static Item focus_water;
 	public static Item focus_mirror;
+	public static Item focus_airport;
 
 	public static Item focus_refill;
 
@@ -52,6 +50,9 @@ public class ModItems {
 
 		focus_mirror = new MirrorFocus().setUnlocalizedName("MirrorFocus");
 		GameRegistry.registerItem(focus_mirror, focus_mirror.getUnlocalizedName());
+
+		focus_airport = new AirFocus().setUnlocalizedName("AirportFocus");
+		GameRegistry.registerItem(focus_airport, focus_airport.getUnlocalizedName());
 
 		focus_refill = new RefillFocus().setUnlocalizedName("RefillFocus");
 		GameRegistry.registerItem(focus_refill, focus_refill.getUnlocalizedName());

@@ -24,8 +24,8 @@ public class PacketSendDecay implements IMessage {
 
 	}
 
-	public PacketSendDecay(GuiTextField textField) {
-		this.decayLevel = Integer.parseInt(textField.getText());
+	public PacketSendDecay(int dec) {
+		this.decayLevel = dec;
 	}
 
 	public static class Handler implements IMessageHandler<PacketSendDecay, IMessage> {

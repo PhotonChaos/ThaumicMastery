@@ -44,7 +44,7 @@ public class DecayGUI extends GuiScreen {
 	@SideOnly(Side.CLIENT)
 	public void actionPerformed(GuiButton button) {
 		if (button == this.submit && !this.levelTextBox.getText().isEmpty()) {
-			PacketHandler.INSTANCE.sendToServer(new PacketSendDecay(this.levelTextBox));
+			PacketHandler.INSTANCE.sendToServer(new PacketSendDecay(Integer.parseInt(this.levelTextBox.getText())));
 
 			this.mc.displayGuiScreen(null);
 
