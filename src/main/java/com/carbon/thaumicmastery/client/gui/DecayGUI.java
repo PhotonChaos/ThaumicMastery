@@ -3,6 +3,7 @@ package com.carbon.thaumicmastery.client.gui;
 import com.carbon.thaumicmastery.ThaumicMastery;
 import com.carbon.thaumicmastery.common.networking.PacketHandler;
 import com.carbon.thaumicmastery.common.networking.packets.PacketSendDecay;
+import com.carbon.thaumicmastery.core.Utils;
 import cpw.mods.fml.relauncher.Side;
 import cpw.mods.fml.relauncher.SideOnly;
 import net.minecraft.client.gui.GuiButton;
@@ -34,9 +35,13 @@ public class DecayGUI extends GuiScreen {
 
 	@Override
 	public void keyTyped(char letter, int par2) {
-		if (Character.isDigit(letter) || letter == Keyboard.KEY_DELETE) {
+		if (Character.isDigit(letter) || Utils.isCharDelete(letter, par2)) {
 			super.keyTyped(letter, par2);
 			this.levelTextBox.textboxKeyTyped(letter, par2);
+		} else if (Utils.isCharEsc(letter, par2)) {
+			closeGui();
+		} else {
+			System.out.println("Char: " + Character.getNumericValue(letter) + "\npar2: " + par2);
 		}
 	}
 
@@ -45,12 +50,7 @@ public class DecayGUI extends GuiScreen {
 	public void actionPerformed(GuiButton button) {
 		if (button == this.submit && !this.levelTextBox.getText().isEmpty()) {
 			PacketHandler.INSTANCE.sendToServer(new PacketSendDecay(Integer.parseInt(this.levelTextBox.getText())));
-
-			this.mc.displayGuiScreen(null);
-
-			if (this.mc.currentScreen == null) {
-				this.mc.setIngameFocus();
-			}
+			closeGui();
 		}
 	}
 
@@ -76,4 +76,11 @@ public class DecayGUI extends GuiScreen {
 		return false;
 	}
 
+	private void closeGui() {
+		this.mc.displayGuiScreen(null);
+
+		if (this.mc.currentScreen == null) {
+			this.mc.setIngameFocus();
+		}
+	}
 }

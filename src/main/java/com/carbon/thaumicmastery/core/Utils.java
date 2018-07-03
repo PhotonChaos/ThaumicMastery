@@ -11,4 +11,12 @@ public class Utils {
 	public static double dist(int x, int y, int z, int xx, int yy, int zz) {
 		return Math.sqrt((Math.pow(Math.abs(xx - x), 2) + Math.pow(Math.abs(yy - y), 2) + Math.pow(Math.abs(zz - z), 2)));
 	}
+
+	public static boolean isCharDelete(char c, int i) {
+		return Character.getNumericValue(c) == -1 && i == 14;
+	}
+
+	public static boolean isCharEsc(char c, int i) {
+		return Character.getNumericValue(c) == -1 && i == 1;
+	}
 }
