@@ -13,6 +13,7 @@ public class PacketHandler {
 	private static final int PORTL_ID = 2;
 
 	public static final SimpleNetworkWrapper INSTANCE = NetworkRegistry.INSTANCE.newSimpleChannel(ThaumicMastery.MODID);
+
 	public PacketHandler() {
 
 	}
