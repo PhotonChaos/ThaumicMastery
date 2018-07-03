@@ -16,8 +16,6 @@ public class DecayGUI extends GuiScreen {
 	private GuiButton submit;
 	private GuiTextField levelTextBox;
 
-	public static DecayFocus focus;
-
 	@Override
 	public void drawScreen(int mouseX, int mouseY, float partialTicks) {
 		this.drawDefaultBackground();
@@ -28,7 +26,7 @@ public class DecayGUI extends GuiScreen {
 	@Override
 	@SuppressWarnings("unchecked")
 	public void initGui() {
-		levelTextBox = new GuiTextField(this.fontRendererObj, this.width / 4, this.height / 4, 137, 20);
+		levelTextBox = new GuiTextField(this.fontRendererObj, this.width / 2 - 35, this.height / 2 - 20, 70, 20);
 		levelTextBox.setMaxStringLength(4);
 		this.levelTextBox.setFocused(true);
 		this.buttonList.add(this.submit = new GuiButton(0, this.width / 2 - 100, this.height / 2 - 24, "Set Decay Level"));
