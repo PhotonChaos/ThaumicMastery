@@ -69,6 +69,11 @@ public class MasterFocusBase extends ItemFocusBasic {
 	}
 
 	@Override
+	public boolean onFocusBlockStartBreak(ItemStack wandstack, int x, int y, int z, EntityPlayer player) {
+		return false;
+	}
+
+	@Override
 	public EnumRarity getRarity(ItemStack item) {
 		return EnumRarity.epic;
 	}

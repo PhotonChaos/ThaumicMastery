@@ -1,10 +1,18 @@
 package com.carbon.thaumicmastery.common.items.foci;
 
+import com.carbon.thaumicmastery.ThaumicMastery;
 import com.carbon.thaumicmastery.core.Utils;
+import com.carbon.thaumicmastery.core.lib.LibPaths;
+import net.minecraft.client.renderer.texture.IIconRegister;
 import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.item.ItemStack;
+import net.minecraft.util.IIcon;
 import net.minecraft.util.MovingObjectPosition;
+import net.minecraft.world.Teleporter;
 import net.minecraft.world.World;
+import net.minecraft.world.WorldServer;
+import net.minecraftforge.common.DimensionManager;
+import scala.Int;
 import thaumcraft.api.aspects.Aspect;
 import thaumcraft.api.aspects.AspectList;
 
@@ -12,15 +20,17 @@ public class AirFocus extends MasterFocusBase {
 	private static final int COST_PER_KILOMETER = 10;
 	private static final int DIM_COST = 20;
 
+	private IIcon model_orn;
+
 	private int sourceX;
 	private int sourceY;
 	private int sourceZ;
 	private int sourceD;
 
-	private int destX;
-	private int destY;
-	private int destZ;
-	private int destD;
+	private int destX = 0;
+	private int destY = 0;
+	private int destZ = 0;
+	private int destD = 0;
 
 	public AirFocus() {
 		this.focusName = "airPort";
@@ -34,6 +44,15 @@ public class AirFocus extends MasterFocusBase {
 
 		sourceD = player.dimension;
 
+		if (player.isSneaking()) {
+
+		} else {
+			if (DimensionManager.isDimensionRegistered(destD)) {
+
+			}
+		}
+
+
 		return wand;
 	}
 
@@ -45,6 +64,17 @@ public class AirFocus extends MasterFocusBase {
 	@Override
 	public int getFocusColor(ItemStack focus) {
 		return 0xDBC949;
+	}
+
+	@Override
+	public void registerIcons(IIconRegister register) {
+		super.registerIcons(register);
+		model_orn = register.registerIcon(ThaumicMastery.MODID + ":" + LibPaths.focusOrnamentPath + "focus_airPort_model_orn");
+	}
+
+	@Override
+	public IIcon getOrnament(ItemStack focus) {
+		return model_orn;
 	}
 
 	@Override

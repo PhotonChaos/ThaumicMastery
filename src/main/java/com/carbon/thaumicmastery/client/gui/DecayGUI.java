@@ -1,7 +1,6 @@
 package com.carbon.thaumicmastery.client.gui;
 
 import com.carbon.thaumicmastery.ThaumicMastery;
-import com.carbon.thaumicmastery.common.items.foci.DecayFocus;
 import com.carbon.thaumicmastery.common.networking.PacketHandler;
 import com.carbon.thaumicmastery.common.networking.packets.PacketSendDecay;
 import cpw.mods.fml.relauncher.Side;
@@ -10,6 +9,7 @@ import net.minecraft.client.gui.GuiButton;
 import net.minecraft.client.gui.GuiScreen;
 import net.minecraft.client.gui.GuiTextField;
 import net.minecraft.util.ResourceLocation;
+import org.lwjgl.input.Keyboard;
 import org.lwjgl.opengl.GL11;
 
 public class DecayGUI extends GuiScreen {
@@ -26,15 +26,15 @@ public class DecayGUI extends GuiScreen {
 	@Override
 	@SuppressWarnings("unchecked")
 	public void initGui() {
-		levelTextBox = new GuiTextField(this.fontRendererObj, this.width / 2 - 35, this.height / 2 - 20, 70, 20);
+		levelTextBox = new GuiTextField(this.fontRendererObj, this.width / 2 - 20, this.height / 2 - 20, 40, 20);
 		levelTextBox.setMaxStringLength(4);
 		this.levelTextBox.setFocused(true);
-		this.buttonList.add(this.submit = new GuiButton(0, this.width / 2 - 100, this.height / 2 - 24, "Set Decay Level"));
+		this.buttonList.add(this.submit = new GuiButton(0, this.width / 2 - 100, this.height / 2 + 10, "Set Decay Level"));
 	}
 
 	@Override
 	public void keyTyped(char letter, int par2) {
-		if (Character.isDigit(letter)) {
+		if (Character.isDigit(letter) || letter == Keyboard.KEY_DELETE) {
 			super.keyTyped(letter, par2);
 			this.levelTextBox.textboxKeyTyped(letter, par2);
 		}

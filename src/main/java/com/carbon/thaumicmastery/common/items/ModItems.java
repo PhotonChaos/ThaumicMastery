@@ -9,6 +9,10 @@ public class ModItems {
 	public static Item mirrordim_item;
 	public static Item worldeater_item;
 	public static Item novablast_item;
+	public static Item hydroshield_item;
+	public static Item airport_item;
+	public static Item golem_item;
+
 
 	// Foci
 	public static Item focus_decay;
