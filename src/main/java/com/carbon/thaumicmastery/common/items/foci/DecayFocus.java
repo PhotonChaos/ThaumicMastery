@@ -1,17 +1,12 @@
 package com.carbon.thaumicmastery.common.items.foci;
 
 import com.carbon.thaumicmastery.ThaumicMastery;
-import com.carbon.thaumicmastery.client.gui.DecayGUI;
 import com.carbon.thaumicmastery.client.gui.GUIHandler;
 import com.carbon.thaumicmastery.common.entities.tileentities.TileEntityDecay;
-import cpw.mods.fml.relauncher.Side;
-import cpw.mods.fml.relauncher.SideOnly;
-import net.minecraft.client.renderer.texture.IIconRegister;
+import com.carbon.thaumicmastery.core.lib.LibMisc;
 import net.minecraft.entity.player.EntityPlayer;
-import net.minecraft.init.Blocks;
 import net.minecraft.item.ItemStack;
 import net.minecraft.util.ChatComponentText;
-import net.minecraft.util.IIcon;
 import net.minecraft.util.MovingObjectPosition;
 import net.minecraft.world.World;
 import thaumcraft.api.ThaumcraftApiHelper;
@@ -24,28 +19,26 @@ public class DecayFocus extends MasterFocusBase {
 
 	public DecayFocus() {
 		super();
-		this.visCost = new AspectList().add(Aspect.ENTROPY, costPerLevel * decaySetLevel * 100);
 		this.focusName = "decay";
 	}
 
 	@Override
 	public ItemStack onFocusRightClick(ItemStack wand, World world, EntityPlayer player, MovingObjectPosition movingObjectPosition) {
+		this.decaySetLevel = player.getEntityData().getInteger(LibMisc.TAG_DECAY_LEVEL);
+
 		if (player.isSneaking()) {
 			if (world.isRemote) {
-				//DecayGUI.focus = this;
 				player.openGui(ThaumicMastery.instance, GUIHandler.DECAY_GUI, world, player.serverPosX, player.serverPosY, player.serverPosZ);
 			}
 		} else {
 			if (!world.isRemote) {
-				MovingObjectPosition mop = player.rayTrace(4, 20);
-
 				if (movingObjectPosition != null && ThaumcraftApiHelper.consumeVisFromWand(wand, player, getVisCost(wand), true, false)) {
 					int x = movingObjectPosition.blockX;
 					int y = movingObjectPosition.blockY;
 					int z = movingObjectPosition.blockZ;
 
 					world.setBlock(x, y, z, ThaumicMastery.blockDecay);
-					((TileEntityDecay)world.getTileEntity(x, y, z)).setDecayLevel(decaySetLevel);
+					((TileEntityDecay) world.getTileEntity(x, y, z)).setDecayLevel(decaySetLevel);
 					player.addChatMessage(new ChatComponentText("Decay level: " + decaySetLevel));
 				}
 			}
@@ -61,7 +54,7 @@ public class DecayFocus extends MasterFocusBase {
 
 	@Override
 	public AspectList getVisCost(ItemStack item) {
-		return visCost;
+		return new AspectList().add(Aspect.ENTROPY, costPerLevel * decaySetLevel * 100);
 	}
 
 	@Override

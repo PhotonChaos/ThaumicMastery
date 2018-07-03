@@ -28,7 +28,7 @@ public class DecayGUI extends GuiScreen {
 	@Override
 	@SuppressWarnings("unchecked")
 	public void initGui() {
-		levelTextBox = new GuiTextField(this.fontRendererObj, this.width / 2 - 68, this.height / 2 - 46, 137, 20);
+		levelTextBox = new GuiTextField(this.fontRendererObj, this.width / 4, this.height / 4, 137, 20);
 		levelTextBox.setMaxStringLength(4);
 		this.levelTextBox.setFocused(true);
 		this.buttonList.add(this.submit = new GuiButton(0, this.width / 2 - 100, this.height / 2 - 24, "Set Decay Level"));
@@ -45,7 +45,7 @@ public class DecayGUI extends GuiScreen {
 	@Override
 	@SideOnly(Side.CLIENT)
 	public void actionPerformed(GuiButton button) {
-		if (button == this.submit) {
+		if (button == this.submit && !this.levelTextBox.getText().isEmpty()) {
 			PacketHandler.INSTANCE.sendToServer(new PacketSendDecay(this.levelTextBox));
 
 			this.mc.displayGuiScreen(null);

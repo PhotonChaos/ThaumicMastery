@@ -1,5 +1,6 @@
 package com.carbon.thaumicmastery.common.networking.packets;
 
+import com.carbon.thaumicmastery.client.gui.DecayGUI;
 import com.carbon.thaumicmastery.common.items.foci.DecayFocus;
 import com.carbon.thaumicmastery.core.lib.LibMisc;
 import cpw.mods.fml.common.network.simpleimpl.IMessage;
@@ -22,6 +23,10 @@ public class PacketSendDecay implements IMessage {
 		buf.writeInt(decayLevel);
 	}
 
+	public PacketSendDecay() {
+
+	}
+
 	public PacketSendDecay(GuiTextField textField) {
 		this.decayLevel = Integer.parseInt(textField.getText());
 	}
@@ -29,9 +34,7 @@ public class PacketSendDecay implements IMessage {
 	public static class Handler implements IMessageHandler<PacketSendDecay, IMessage> {
 		@Override
 		public IMessage onMessage(PacketSendDecay message, MessageContext ctx) {
-			EntityPlayerMP sender = ctx.getServerHandler().playerEntity;
-
-			sender.getEntityData().setInteger(LibMisc.TAG_DECAY_LEVEL, message.decayLevel);
+			ctx.getServerHandler().playerEntity.getEntityData().setInteger(LibMisc.TAG_DECAY_LEVEL, message.decayLevel);
 			return null;
 		}
 	}

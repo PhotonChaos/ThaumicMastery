@@ -1,2 +1,33 @@
-[15:46:52] [main/INFO]: Setting user: Player576
-[15:46:54] [Client thread/INFO]: LWJGL Version: 2.9.1
+[16:22:13] [main/INFO]: Setting user: Player508
+[16:22:15] [Client thread/INFO]: LWJGL Version: 2.9.1
+[16:22:33] [Client thread/INFO]: Reloading ResourceManager: Default, FMLFileResourcePack:Forge Mod Loader, FMLFileResourcePack:Minecraft Forge, FMLFileResourcePack:Thaumic Mastery, FMLFileResourcePack:Thaumcraft, FMLFileResourcePack:Baubles
+[16:22:36] [Sound Library Loader/INFO]: Sound engine started
+[16:22:37] [Client thread/INFO]: Created: 16x16 textures/blocks-atlas
+[16:22:37] [Client thread/INFO]: Created: 16x16 textures/items-atlas
+[16:22:39] [Client thread/INFO]: Reloading ResourceManager: Default, FMLFileResourcePack:Forge Mod Loader, FMLFileResourcePack:Minecraft Forge, FMLFileResourcePack:Thaumic Mastery, FMLFileResourcePack:Thaumcraft, FMLFileResourcePack:Baubles
+[16:22:40] [Client thread/INFO]: Created: 512x512 textures/blocks-atlas
+[16:22:40] [Client thread/INFO]: Created: 512x512 textures/items-atlas
+[16:22:41] [Sound Library Loader/INFO]: Sound engine started
+[16:22:56] [Client thread/INFO]: Deleting level E
+[16:22:56] [Client thread/INFO]: Attempt 1...
+[16:23:03] [Server thread/INFO]: Starting integrated minecraft server version 1.7.10
+[16:23:03] [Server thread/INFO]: Generating keypair
+[16:23:03] [Server thread/INFO]: Converting map!
+[16:23:03] [Server thread/INFO]: Scanning folders...
+[16:23:03] [Server thread/INFO]: Total conversion count is 0
+[16:23:04] [Server thread/INFO]: Preparing start region for level 0
+[16:23:05] [Server thread/INFO]: Changing view distance to 12, from 10
+[16:23:05] [Server thread/INFO]: Player508[local:E:7f294dde] logged in with entity id 13 at (915.5, 4.0, -309.5)
+[16:23:05] [Server thread/INFO]: Player508 joined the game
+[16:23:09] [Server thread/INFO]: Player508 has just earned the achievement [Taking Inventory]
+[16:23:09] [Client thread/INFO]: [CHAT] Player508 has just earned the achievement [Taking Inventory]
+[16:23:49] [Client thread/INFO]: [CHAT] Decay level: 10
+[16:24:11] [Client thread/INFO]: [CHAT] Decay level: 10
+[16:24:15] [Client thread/INFO]: Stopping!
+[16:24:15] [Server thread/INFO]: Stopping server
+[16:24:15] [Server thread/INFO]: Saving players
+[16:24:15] [Server thread/INFO]: Saving worlds
+[16:24:15] [Server thread/INFO]: Saving chunks for level 'New World'/Overworld
+[16:24:15] [Server thread/INFO]: Saving chunks for level 'New World'/Nether
+[16:24:15] [Server thread/INFO]: Saving chunks for level 'New World'/The End
+[16:24:15] [Server thread/INFO]: Saving chunks for level 'New World'/The Outer Lands
