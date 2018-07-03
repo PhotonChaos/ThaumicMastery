@@ -2,11 +2,15 @@
 item.tm_mirrordim_discover.name=Mirror of Balance
 item.tm_worldeater_discover.name=Fractured Mirror
 #
+# Creative Tab
+itemGroup.ThaumicMastery=Thaumic Mastery
+#
 # Foci
 item.DecayFocus.name=Wand Focus: World Eater
 item.MirrorFocus.name=Wand Focus: Mirror Dimension
 item.WaterFocus.name=Wand Focus: Hydro Barrier
 item.FireFocus.name=Wand Focus: Novablast
+item.AirportFocus.name=Wand Focus: Wind Warp
 #
 # blocks
 tile.BlockDecay.name=Decay
