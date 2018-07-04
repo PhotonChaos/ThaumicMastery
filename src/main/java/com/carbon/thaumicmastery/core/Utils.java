@@ -97,6 +97,14 @@ public class Utils {
 		return ret;
 	}
 
+	public static ItemStack getTCEldritchObject(int meta) {
+		return new ItemStack(ConfigItems.itemEldritchObject, 1, meta);
+	}
+
+	public static ItemStack getTCResource(int meta) {
+		return new ItemStack(ConfigItems.itemResource, 1, meta);
+	}
+
 	private static Block getTTBlock(Class c) {
 		return ThaumicTinkerer.registry.getBlockFromClass(c).get(0);
 	}
