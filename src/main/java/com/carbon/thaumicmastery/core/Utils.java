@@ -1,8 +1,10 @@
 package com.carbon.thaumicmastery.core;
 
 import com.carbon.thaumicmastery.core.lib.LibMisc;
+import cpw.mods.fml.common.registry.GameRegistry;
 import net.minecraft.client.gui.GuiScreen;
 import net.minecraft.entity.player.EntityPlayer;
+import net.minecraft.item.ItemStack;
 
 public class Utils {
 	public static boolean isShielded(EntityPlayer player) {
@@ -27,5 +29,9 @@ public class Utils {
 		if (gui.mc.currentScreen == null) {
 			gui.mc.setIngameFocus();
 		}
+	}
+
+	public static ItemStack getKami(int metadata) {
+		return GameRegistry.findItemStack(LibMisc.ThaumicTinkerer_MODID, "kamiResource", metadata);
 	}
 }
