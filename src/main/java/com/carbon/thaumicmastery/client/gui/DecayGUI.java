@@ -48,10 +48,10 @@ public class DecayGUI extends GuiScreen {
 			super.keyTyped(letter, par2);
 			this.levelTextBox.textboxKeyTyped(letter, par2);
 		} else if (Utils.isCharEsc(letter, par2)) {
-			closeGui();
-		} else {
+			Utils.closeGui(this);
+		}/* else {
 			System.out.println("Char: " + Character.getNumericValue(letter) + "\npar2: " + par2);
-		}
+		}*/
 	}
 
 	@Override
@@ -59,7 +59,7 @@ public class DecayGUI extends GuiScreen {
 	public void actionPerformed(GuiButton button) {
 		if (button == this.submit && !this.levelTextBox.getText().isEmpty()) {
 			PacketHandler.INSTANCE.sendToServer(new PacketSendDecay(Integer.parseInt(this.levelTextBox.getText())));
-			closeGui();
+			Utils.closeGui(this);
 		}
 	}
 
@@ -80,11 +80,5 @@ public class DecayGUI extends GuiScreen {
 		return false;
 	}
 
-	private void closeGui() {
-		this.mc.displayGuiScreen(null);
 
-		if (this.mc.currentScreen == null) {
-			this.mc.setIngameFocus();
-		}
-	}
 }

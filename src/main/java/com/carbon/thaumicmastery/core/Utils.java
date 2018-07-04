@@ -1,6 +1,7 @@
 package com.carbon.thaumicmastery.core;
 
 import com.carbon.thaumicmastery.core.lib.LibMisc;
+import net.minecraft.client.gui.GuiScreen;
 import net.minecraft.entity.player.EntityPlayer;
 
 public class Utils {
@@ -18,5 +19,13 @@ public class Utils {
 
 	public static boolean isCharEsc(char c, int i) {
 		return Character.getNumericValue(c) == -1 && i == 1;
+	}
+
+	public static void closeGui(GuiScreen gui) {
+		gui.mc.displayGuiScreen(null);
+
+		if (gui.mc.currentScreen == null) {
+			gui.mc.setIngameFocus();
+		}
 	}
 }

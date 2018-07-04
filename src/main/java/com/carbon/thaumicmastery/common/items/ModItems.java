@@ -41,9 +41,31 @@ public class ModItems {
 				.setMaxStackSize(1)
 				.setCreativeTab(ThaumicMastery.tab);
 
+		hydroshield_item = new Item()
+				.setUnlocalizedName("tm_hydroshield_discover")
+				.setTextureName(ThaumicMastery.MODID + ":aqua")
+				.setMaxStackSize(1)
+				.setCreativeTab(ThaumicMastery.tab);
+
+		golem_item = new Item()
+				.setUnlocalizedName("tm_golem_discover")
+				.setTextureName(ThaumicMastery.MODID + ":terra")
+				.setMaxStackSize(1)
+				.setCreativeTab(ThaumicMastery.tab);
+
+		airport_item = new Item()
+				.setUnlocalizedName("tm_airport_discover")
+				.setTextureName(ThaumicMastery.MODID + ":aer")
+				.setMaxStackSize(1)
+				.setCreativeTab(ThaumicMastery.tab);
+
 
 		GameRegistry.registerItem(mirrordim_item, mirrordim_item.getUnlocalizedName());
 		GameRegistry.registerItem(worldeater_item, worldeater_item.getUnlocalizedName());
+		GameRegistry.registerItem(novablast_item, novablast_item.getUnlocalizedName());
+		GameRegistry.registerItem(hydroshield_item, hydroshield_item.getUnlocalizedName());
+		GameRegistry.registerItem(golem_item, golem_item.getUnlocalizedName());
+		GameRegistry.registerItem(airport_item, airport_item.getUnlocalizedName());
 
 		// foci
 		focus_decay = new DecayFocus().setUnlocalizedName("DecayFocus");
