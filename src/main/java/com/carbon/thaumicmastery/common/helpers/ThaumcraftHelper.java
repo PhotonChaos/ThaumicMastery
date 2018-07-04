@@ -3,11 +3,10 @@ package com.carbon.thaumicmastery.common.helpers;
 import com.carbon.thaumicmastery.ThaumicMastery;
 import com.carbon.thaumicmastery.common.items.ModItems;
 import com.carbon.thaumicmastery.core.Utils;
-import com.carbon.thaumicmastery.core.lib.LibMisc;
 import com.carbon.thaumicmastery.core.lib.LibResearchKeys;
-import cpw.mods.fml.common.registry.GameRegistry;
-import net.minecraft.init.Items;
 import net.minecraft.item.ItemStack;
+import net.minecraft.util.ResourceLocation;
+import net.minecraft.util.StatCollector;
 import thaumcraft.api.ItemApi;
 import thaumcraft.api.ThaumcraftApi;
 import thaumcraft.api.aspects.Aspect;
@@ -16,8 +15,6 @@ import thaumcraft.api.crafting.InfusionRecipe;
 import thaumcraft.api.research.ResearchCategories;
 import thaumcraft.api.research.ResearchItem;
 import thaumcraft.api.research.ResearchPage;
-import net.minecraft.util.ResourceLocation;
-import net.minecraft.util.StatCollector;
 
 import java.util.HashMap;
 
@@ -39,7 +36,7 @@ public class ThaumcraftHelper {
 
 	private static void initResearch() {
 		String category = "THAUMICMASTERY";
-		ResourceLocation bg   = new ResourceLocation(ThaumicMastery.MODID, "textures/research/category/background.png");
+		ResourceLocation bg = new ResourceLocation(ThaumicMastery.MODID, "textures/research/category/background.png");
 		ResourceLocation logo = ThaumicMastery.logo;
 		//ResourceLocation ordo = new ResourceLocation("textures/items/ordo.png");
 
@@ -73,10 +70,10 @@ public class ThaumcraftHelper {
 	@SuppressWarnings("unchecked")
 	private static void initRecipes() {
 		recipes.put("orderDiscover", ThaumcraftApi.addInfusionCraftingRecipe(LibResearchKeys.KEY_ORDER, new ItemStack(ModItems.mirrordim_item), 12,
-		new AspectList().add(Aspect.MAGIC, 64).add(Aspect.ORDER, 128).add(Aspect.AURA, 128),
+				new AspectList().add(Aspect.MAGIC, 64).add(Aspect.ORDER, 128).add(Aspect.AURA, 128),
 				ItemApi.getBlock("blockMirror", 0),
-				new ItemStack[] {
-				ItemApi.getItem("itemShard", 6),
+				new ItemStack[]{
+						ItemApi.getItem("itemShard", 6),
 						Utils.getKami(2),
 						ItemApi.getBlock("fireOrder", 0),
 						Utils.getKami(2),
@@ -90,7 +87,7 @@ public class ThaumcraftHelper {
 				new AspectList().add(Aspect.MAGIC, 64).add(Aspect.ENTROPY, 128).add(Aspect.TAINT, 128),
 				ItemApi.getBlock("blockMirror", 0),
 				new ItemStack[]{
-				ItemApi.getItem("itemShard", 6),
+						ItemApi.getItem("itemShard", 6),
 						ItemApi.getItem("itemShard", 6),
 						Utils.getKami(6),
 						Utils.getKami(2),

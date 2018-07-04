@@ -1,10 +1,10 @@
 package com.carbon.thaumicmastery.core;
 
 import com.carbon.thaumicmastery.core.lib.LibMisc;
-import cpw.mods.fml.common.registry.GameRegistry;
 import net.minecraft.client.gui.GuiScreen;
 import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.item.ItemStack;
+import thaumic.tinkerer.common.item.kami.ItemKamiResource;
 
 public class Utils {
 	public static boolean isShielded(EntityPlayer player) {
@@ -32,6 +32,6 @@ public class Utils {
 	}
 
 	public static ItemStack getKami(int metadata) {
-		return new ItemStack(GameRegistry.findItem(LibMisc.ThaumicTinkerer_MODID, "kamiResource"), 1, metadata);
+		return new ItemStack(new ItemKamiResource(), 1, metadata);
 	}
 }
