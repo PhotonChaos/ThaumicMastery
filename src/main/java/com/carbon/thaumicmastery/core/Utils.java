@@ -105,11 +105,11 @@ public class Utils {
 		return new ItemStack(ConfigItems.itemResource, 1, meta);
 	}
 
-	private static Block getTTBlock(Class c) {
+	public static Block getTTBlock(Class c) {
 		return ThaumicTinkerer.registry.getBlockFromClass(c).get(0);
 	}
 
-	private static Item getTTItem(Class c) {
+	public static Item getTTItem(Class c) {
 		return ThaumicTinkerer.registry.getItemFromClass(c).get(0);
 	}
 }

@@ -15,7 +15,10 @@ import thaumcraft.api.research.ResearchCategories;
 import thaumcraft.api.research.ResearchItem;
 import thaumcraft.api.research.ResearchPage;
 import thaumcraft.common.Thaumcraft;
+import thaumcraft.common.config.ConfigItems;
 import thaumcraft.common.config.ConfigBlocks;
+import thaumic.tinkerer.common.item.foci.ItemFocusHeal;
+import thaumic.tinkerer.common.item.kami.foci.ItemFocusXPDrain;
 
 import java.util.HashMap;
 
@@ -107,7 +110,18 @@ public class ThaumcraftHelper {
 				new AspectList().add(Aspect.ORDER, 256).add(Aspect.AURA, 128).add(Aspect.CRYSTAL, 64),
 				new ItemStack(ModItems.mirrordim_item),
 				new ItemStack[]{
-
+					new ItemStack(ConfigItems.itemFocusPortableHole),
+						Utils.getTCResource(0),
+						Utils.getTCResource(1),
+						new ItemStack(ConfigItems.itemFocusPrimal),
+						Utils.getTCResource(14),
+						Utils.getShard("balanced"),
+						new ItemStack(Utils.getTTItem(ItemFocusXPDrain.class)),
+						Utils.getTCEldritchObject(3),
+						Utils.getKami(0),
+						new ItemStack(Utils.getTTItem(ItemFocusHeal.class)),
+						new ItemStack(ConfigItems.itemSanitySoap),
+						new ItemStack(ConfigItems.itemBathSalts)
 				}));
 	}
 
