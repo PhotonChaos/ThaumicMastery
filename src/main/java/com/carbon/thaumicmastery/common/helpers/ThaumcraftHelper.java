@@ -4,9 +4,11 @@ import com.carbon.thaumicmastery.ThaumicMastery;
 import com.carbon.thaumicmastery.common.items.ModItems;
 import com.carbon.thaumicmastery.core.Utils;
 import com.carbon.thaumicmastery.core.lib.LibResearchKeys;
+import net.minecraft.init.Items;
 import net.minecraft.item.ItemStack;
 import net.minecraft.util.ResourceLocation;
 import net.minecraft.util.StatCollector;
+import net.minecraft.util.Util;
 import thaumcraft.api.ItemApi;
 import thaumcraft.api.ThaumcraftApi;
 import thaumcraft.api.aspects.Aspect;
@@ -53,11 +55,11 @@ public class ThaumcraftHelper {
 				.setSpecial().setConcealed().setParents(LibResearchKeys.KEY_ROOT)
 				.setPages(getPage("TM_Ordo.1"), getPage("TM_Ordo.2"))
 				.registerResearchItem();
-
+		/*
 		(new ResearchItem(LibResearchKeys.KEY_ENTROPY, category, new AspectList().add(Aspect.ENTROPY, 1), 0, 2, 3, new ItemStack(ModItems.worldeater_item)))
 				.setSpecial().setConcealed().setLost().setParents(LibResearchKeys.KEY_ROOT)
 				.setPages(getPage("TM_Perditio.1"), new ResearchPage((InfusionRecipe) recipes.get("entropyDiscover")))
-				.registerResearchItem();
+				.registerResearchItem();*/
 
 		/*
 		(new ResearchItem(LibResearchKeys.KEY_AIR, category, new AspectList().add(Aspect.AIR, 3), -1, -1, 3, new ItemStack(ModItems.airport_item)))
@@ -69,20 +71,24 @@ public class ThaumcraftHelper {
 
 	@SuppressWarnings("unchecked")
 	private static void initRecipes() {
+		final String o = "order";
+		final String e = "Entropy";
+
 		recipes.put("orderDiscover", ThaumcraftApi.addInfusionCraftingRecipe(LibResearchKeys.KEY_ORDER, new ItemStack(ModItems.mirrordim_item), 12,
 				new AspectList().add(Aspect.MAGIC, 64).add(Aspect.ORDER, 128).add(Aspect.AURA, 128),
-				ItemApi.getBlock("blockMirror", 0),
+				new ItemStack(Items.diamond, 1, 0),
+				//ItemApi.getBlock("blockMirror", 0),
 				new ItemStack[]{
-						ItemApi.getItem("itemShard", 6),
+					Utils.getShard(o),
 						Utils.getKami(2),
-						ItemApi.getBlock("fireOrder", 0),
+						Utils.getFire(o),
 						Utils.getKami(2),
-						ItemApi.getItem("itemShard", 6),
+						Utils.getShard(o),
 						Utils.getKami(2),
-						ItemApi.getBlock("fireOrder", 0),
+						Utils.getFire(o),
 						Utils.getKami(2)
 				}));
-
+		/*
 		recipes.put("entropyDiscover", ThaumcraftApi.addInfusionCraftingRecipe(LibResearchKeys.KEY_ENTROPY, new ItemStack(ModItems.worldeater_item), 12,
 				new AspectList().add(Aspect.MAGIC, 64).add(Aspect.ENTROPY, 128).add(Aspect.TAINT, 128),
 				ItemApi.getBlock("blockMirror", 0),
@@ -97,7 +103,7 @@ public class ThaumcraftHelper {
 						Utils.getKami(2),
 						ItemApi.getBlock("fireChaos", 0),
 						Utils.getKami(2)
-				}));
+				}));*/
 	}
 
 	private static ResearchPage getPage(String ident) {
