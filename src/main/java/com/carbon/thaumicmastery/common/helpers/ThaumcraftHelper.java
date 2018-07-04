@@ -92,7 +92,6 @@ public class ThaumcraftHelper {
 				new ItemStack[]{
 				ItemApi.getItem("itemShard", 6),
 						ItemApi.getItem("itemShard", 6),
-						new ItemStack(Items.nether_star),
 						Utils.getKami(6),
 						Utils.getKami(2),
 						ItemApi.getBlock("fireChaos", 0),

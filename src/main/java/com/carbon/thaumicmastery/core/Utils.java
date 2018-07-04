@@ -32,6 +32,6 @@ public class Utils {
 	}
 
 	public static ItemStack getKami(int metadata) {
-		return new ItemStack(GameRegistry.findItem(LibMisc.ThaumicTinkerer_MODID, "kamiResource"), metadata);
+		return new ItemStack(GameRegistry.findItem(LibMisc.ThaumicTinkerer_MODID, "kamiResource"), 1, metadata);
 	}
 }

@@ -10,6 +10,7 @@ import cpw.mods.fml.common.FMLLog;
 import cpw.mods.fml.common.Mod;
 import cpw.mods.fml.common.eventhandler.SubscribeEvent;
 import cpw.mods.fml.common.gameevent.InputEvent.KeyInputEvent;
+import cpw.mods.fml.common.registry.GameRegistry;
 import net.minecraft.client.Minecraft;
 import net.minecraft.client.entity.EntityClientPlayerMP;
 import net.minecraft.entity.player.EntityPlayer;
@@ -18,6 +19,7 @@ import net.minecraft.util.Util;
 import net.minecraft.util.Vec3;
 import net.minecraftforge.event.entity.living.LivingAttackEvent;
 import net.minecraftforge.event.entity.living.LivingDeathEvent;
+import net.minecraftforge.oredict.OreDictionary;
 import thaumcraft.api.ThaumcraftApiHelper;
 import thaumcraft.api.aspects.Aspect;
 import thaumcraft.api.aspects.AspectList;
@@ -28,43 +30,11 @@ public class MainEventHandler {
 		EntityClientPlayerMP player = Minecraft.getMinecraft().thePlayer;
 
 		if (Keybinds.decay.isPressed()) {
-			try {
-				ThaumcraftApiHelper.consumeVisFromInventory(player, (new AspectList()).add(Aspect.AIR, 1000));
-				//ThaumcraftApiHelper.consumeVisFromInventory(player, (new AspectList()).add(Aspect.AIR, 100));
-
-				//player.sendChatMessage(());
-
-				Vec3 v = player.getLookVec();
-
-				int x = (int)v.xCoord;
-				int y = (int)v.yCoord;
-				int z = (int)v.zCoord;
-
-
-
-				player.worldObj.setBlock(x, y, z, ThaumicMastery.blockDecay);
-				TileEntityDecay dec = (TileEntityDecay)player.worldObj.getTileEntity(x, y, z);
-				dec.setDecayLevel(10);
-
-			} catch (NullPointerException e) {
-				FMLLog.warning("The player " + player.getDisplayName() + " is not holding a wand!");
-			}
-
 			player.sendChatMessage(player.getHeldItem().getUnlocalizedName());
 
 		}
 		else if (Keybinds.mirrorDimension.isPressed()) {
-			int x = player.serverPosX;
-			int y = player.serverPosY;
-			int z = player.serverPosZ;
-
-			player.worldObj.setBlock(x, y, z, ThaumicMastery.blockMirrorDim);
-			TileEntity te = player.worldObj.getTileEntity(x, y, z);
-
-			if (te instanceof TileEntityMirrorDimension) {
-				TileEntityMirrorDimension md = (TileEntityMirrorDimension)te;
-				md.setCasterID(player.getUniqueID().toString());
-			}
+			player.sendChatMessage(GameRegistry.findUniqueIdentifierFor(player.getHeldItem().getItem()).toString());
 		}
 		else if (Keybinds.waterShield.isPressed()) {
 			Core.shieldCaster = player.getUniqueID();
