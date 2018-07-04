@@ -5,7 +5,6 @@ import com.carbon.thaumicmastery.common.networking.PacketHandler;
 import com.carbon.thaumicmastery.common.networking.packets.PacketSendAir;
 import com.carbon.thaumicmastery.core.Utils;
 import net.minecraft.client.gui.GuiButton;
-import net.minecraft.client.gui.GuiLabel;
 import net.minecraft.client.gui.GuiScreen;
 import net.minecraft.client.gui.GuiTextField;
 import net.minecraft.util.ResourceLocation;
@@ -13,12 +12,6 @@ import org.lwjgl.opengl.GL11;
 
 public class AirportGUI extends GuiScreen {
 	private ResourceLocation backgroundImage;
-
-	private GuiLabel xLab;
-	private GuiLabel yLab;
-	private GuiLabel zLab;
-	private GuiLabel dLab;
-
 
 	private GuiButton enter;
 
@@ -38,15 +31,24 @@ public class AirportGUI extends GuiScreen {
 		final int tbWidth = 70;
 		final int halfW = tbWidth / 2;
 		final int halfH = tbHeight / 2;
-		final int buttonW = 70;
+		final int buttonW = 100;
 		final int buttonH = 20;
 
+		final int adj = 20;
+
+		xField = new GuiTextField(this.fontRendererObj, this.width / 2 - halfW, this.height / 2 - halfH - (tbHeight * 3 + buttonH + 16) + adj, tbWidth, tbHeight);
+		yField = new GuiTextField(this.fontRendererObj, this.width / 2 - halfW, this.height / 2 - halfH - (tbHeight * 2 + buttonH + 12) + adj, tbWidth, tbHeight);
+		zField = new GuiTextField(this.fontRendererObj, this.width / 2 - halfW, this.height / 2 - halfH - (tbHeight + buttonH + 8) + adj, tbWidth, tbHeight);
+		dField = new GuiTextField(this.fontRendererObj, this.width / 2 - halfW, this.height / 2 - halfH - (buttonH + 4) + adj, tbWidth, tbHeight);
+
+		// One day, but not today.
+		/*
 		xField = new GuiTextField(this.fontRendererObj, quarterWidth - halfW, quarterHeight * 3 - halfH, tbWidth, tbHeight);
 		yField = new GuiTextField(this.fontRendererObj, this.width / 2 - halfW, quarterHeight - halfH, tbWidth, tbHeight);
 		zField = new GuiTextField(this.fontRendererObj, quarterWidth * 3 - halfW, quarterHeight * 3 - halfH, tbWidth, tbHeight);
 		dField = new GuiTextField(this.fontRendererObj, this.width / 2 - halfW, this.height / 2 - halfH, tbWidth, tbHeight);
-
-		this.buttonList.add(this.enter = new GuiButton(0, this.width / 2 - buttonW / 2, this.height / 2 - buttonH / 2 + 40, buttonW, buttonH, "Teleport"));
+        */
+		this.buttonList.add(this.enter = new GuiButton(0, this.width / 2 - buttonW / 2, this.height / 2 - buttonH / 2 + 10 + adj, buttonW, buttonH, "Set Coordinates"));
 		super.initGui();
 	}
 
@@ -54,7 +56,7 @@ public class AirportGUI extends GuiScreen {
 	public void drawScreen(int mouseX, int mouseY, float partialticks) {
 		this.drawDefaultBackground();
 
-		GL11.glColor4f(1,1,1,1);
+		GL11.glColor4f(1, 1, 1, 1);
 		this.mc.renderEngine.bindTexture(backgroundImage);
 		this.drawTexturedModalRect(width / 2 - 128, height / 2 - 128, 0, 0, 256, 256);
 

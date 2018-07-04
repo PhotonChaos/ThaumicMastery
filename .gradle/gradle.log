@@ -16,8 +16,6 @@ Note: Recompile with -Xlint:unchecked for details.
 :apiClasses
 :sourceMainJava
 :compileJavawarning: [options] bootstrap class path not set in conjunction with -source 1.6
-Note: /Users/calum/IdeaProjects/ThaumicMastery/build/sources/java/com/carbon/thaumicmastery/gui/DecayGUI.java uses unchecked or unsafe operations.
-Note: Recompile with -Xlint:unchecked for details.
 1 warning
 
 :processResources
@@ -38,4 +36,4 @@ Note: Recompile with -Xlint:unchecked for details.
 
 BUILD SUCCESSFUL
 
-Total time: 14.257 secs
+Total time: 1 mins 37.337 secs
