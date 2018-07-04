@@ -130,6 +130,8 @@ public class ThaumicMastery {
 		} finally {
 			if (config.hasChanged()) config.save();
 		}
+
+		ThaumcraftHelper.postInit();
 	}
 
 	@SuppressWarnings("unchecked")

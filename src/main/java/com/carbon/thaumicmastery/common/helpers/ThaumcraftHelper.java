@@ -62,10 +62,11 @@ public class ThaumcraftHelper {
 				.setPages(getPage("TM_Perditio.1"), new ResearchPage((InfusionRecipe) recipes.get("entropyDiscover")))
 				.registerResearchItem();
 
+		/*
 		(new ResearchItem(LibResearchKeys.KEY_AIR, category, new AspectList().add(Aspect.AIR, 3), -1, -1, 3, new ItemStack(ModItems.airport_item)))
 				.setSpecial().setConcealed().setPages(LibResearchKeys.KEY_ROOT)
 				.setPages(getPage("TM_Aer.1"), new ResearchPage((InfusionRecipe) recipes.get("airDiscover")))
-				.registerResearchItem();
+				.registerResearchItem();*/
 
 	}
 
@@ -76,13 +77,13 @@ public class ThaumcraftHelper {
 				ItemApi.getBlock("blockMirror", 0),
 				new ItemStack[] {
 				ItemApi.getItem("itemShard", 6),
-						GameRegistry.findItemStack(LibMisc.ThaumicTinkerer_MODID, "kamiResource", 2),
+						Utils.getKami(2),
 						ItemApi.getBlock("fireOrder", 0),
-						GameRegistry.findItemStack(LibMisc.ThaumicTinkerer_MODID, "kamiResource", 2),
+						Utils.getKami(2),
 						ItemApi.getItem("itemShard", 6),
-						GameRegistry.findItemStack(LibMisc.ThaumicTinkerer_MODID, "kamiResource", 2),
+						Utils.getKami(2),
 						ItemApi.getBlock("fireOrder", 0),
-						GameRegistry.findItemStack(LibMisc.ThaumicTinkerer_MODID, "kamiResource", 2)
+						Utils.getKami(2)
 				}));
 
 		recipes.put("entropyDiscover", ThaumcraftApi.addInfusionCraftingRecipe(LibResearchKeys.KEY_ENTROPY, new ItemStack(ModItems.worldeater_item), 12,
