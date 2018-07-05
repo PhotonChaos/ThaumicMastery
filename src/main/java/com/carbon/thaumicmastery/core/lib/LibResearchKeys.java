@@ -9,4 +9,5 @@ public class LibResearchKeys {
 	public static final String KEY_ENTROPY = "TM_entropy";
 	public static final String KEY_FIRE = "";
 	public static final String KEY_EARTH = "";
+	public static final String KEY_WATER = "TM_water";
 }

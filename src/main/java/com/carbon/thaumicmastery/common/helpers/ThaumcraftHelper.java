@@ -17,11 +17,10 @@ import thaumcraft.api.research.ResearchPage;
 import thaumcraft.common.config.ConfigBlocks;
 import thaumcraft.common.config.ConfigItems;
 import thaumcraft.common.items.ItemCompassStone;
-import thaumic.tinkerer.common.item.foci.ItemFocusDislocation;
-import thaumic.tinkerer.common.item.foci.ItemFocusEnderChest;
-import thaumic.tinkerer.common.item.foci.ItemFocusHeal;
+import thaumic.tinkerer.common.item.foci.*;
 import thaumic.tinkerer.common.item.kami.ItemBlockTalisman;
 import thaumic.tinkerer.common.item.kami.ItemPlacementMirror;
+import thaumic.tinkerer.common.item.kami.armor.ItemIchorclothArmorAdv;
 import thaumic.tinkerer.common.item.kami.foci.ItemFocusShadowbeam;
 import thaumic.tinkerer.common.item.kami.foci.ItemFocusXPDrain;
 
@@ -54,7 +53,11 @@ public class ThaumcraftHelper {
 
 		research.put(LibResearchKeys.KEY_ROOT, new ResearchItem(LibResearchKeys.KEY_ROOT, category, new AspectList(), 0, 0, 0, logo)
 				.setAutoUnlock().setRound().setStub()
-				.setPages(getPage("TM_Root.1"), new ResearchPage(recipes.get("orderDiscover")))
+				.setPages(getPage("TM_Root.1"),
+						new ResearchPage(recipes.get("orderDiscover")),
+						new ResearchPage(recipes.get("entropyDiscover")),
+						new ResearchPage(recipes.get("airDiscover")),
+						new ResearchPage(recipes.get("waterDiscover")))
 				.registerResearchItem());
 
 
@@ -74,13 +77,15 @@ public class ThaumcraftHelper {
 				.setPages(getPage("TM_Aer.1"), new ResearchPage(recipes.get("AirFocus")))
 				.registerResearchItem());
 
+		research.put(LibResearchKeys.KEY_WATER, new ResearchItem(LibResearchKeys.KEY_WATER, category, new AspectList().add(Aspect.WATER, 2).add(Aspect.ARMOR, 2), 1, 1, 3, new ItemStack(ModItems.hydroshield_item))
+				.setSpecial().setConcealed().setParents(LibResearchKeys.KEY_ROOT)
+				.setPages(getPage("TM_Water.1"), new ResearchPage(recipes.get("WaterFocus")))
+				.registerResearchItem());
 	}
 
 	@SuppressWarnings("unchecked")
 	private static void initRecipes() {
 		final String o = "order";
-		final String e = "entropy";
-		final String a = "air";
 
 		recipes.put("orderDiscover", ThaumcraftApi.addInfusionCraftingRecipe(LibResearchKeys.KEY_ROOT,
 				new ItemStack(ModItems.mirrordim_item), 12,
@@ -112,13 +117,13 @@ public class ThaumcraftHelper {
 						Utils.getKami(2)
 				}));
 
-		recipes.put("aerDiscover", ThaumcraftApi.addInfusionCraftingRecipe(LibResearchKeys.KEY_ROOT,
+		recipes.put("airDiscover", ThaumcraftApi.addInfusionCraftingRecipe(LibResearchKeys.KEY_ROOT,
 				new ItemStack(ModItems.airport_item), 12,
 				new AspectList().add(Aspect.MAGIC, 64).add(Aspect.AIR, 128).add(Aspect.TRAVEL, 128),
 				new ItemStack(ConfigBlocks.blockLifter),
 				new ItemStack[] {
-						Utils.getKami(6),
 						Utils.getTCResource(9),
+						Utils.getKami(2),
 						Utils.getFire("air"),
 						Utils.getKami(2),
 						Utils.getTCResource(9),
@@ -127,7 +132,7 @@ public class ThaumcraftHelper {
 						Utils.getKami(2)
 				}));
 
-		recipes.put("airDiscover", ThaumcraftApi.addInfusionCraftingRecipe(LibResearchKeys.KEY_ROOT,
+		recipes.put("waterDiscover", ThaumcraftApi.addInfusionCraftingRecipe(LibResearchKeys.KEY_ROOT,
 				new ItemStack(ModItems.hydroshield_item), 12,
 				new AspectList().add(Aspect.MAGIC, 64).add(Aspect.WATER, 128).add(Aspect.ARMOR, 128),
 				new ItemStack(ConfigItems.itemRingRunic, 1, 1),
@@ -180,6 +185,33 @@ public class ThaumcraftHelper {
 						new ItemStack(Utils.getTTItem(ItemFocusDislocation.class)),
 						new ItemStack(Utils.getTTItem(ItemPlacementMirror.class)),
 						new ItemStack(Utils.getTTItem(ItemCompassStone.class))
+				}));
+
+		recipes.put("AirFocus", ThaumcraftApi.addInfusionCraftingRecipe(LibResearchKeys.KEY_AIR,
+				new ItemStack(ModItems.focus_airport), 13,
+				new AspectList().add(Aspect.AIR, 256).add(Aspect.TRAVEL, 128).add(Aspect.ELDRITCH, 128),
+				new ItemStack(ModItems.airport_item),
+				new ItemStack[]{
+
+				}));
+
+		recipes.put("WaterFocus", ThaumcraftApi.addInfusionCraftingRecipe(LibResearchKeys.KEY_WATER,
+				new ItemStack(ModItems.focus_water), 13,
+				new AspectList().add(Aspect.WATER, 512).add(Aspect.ARMOR, 256).add(Aspect.HEAL, 64),
+				new ItemStack(ModItems.hydroshield_item),
+				new ItemStack[]{
+						new ItemStack(ConfigItems.itemFocusWarding),
+						new ItemStack(ConfigItems.itemRingRunic, 1, 1),
+						new ItemStack(ConfigItems.itemAmuletRunic),
+						new ItemStack(Utils.getTTItem(ItemFocusDeflect.class)),
+						new ItemStack(ConfigItems.itemGirdleRunic),
+						new ItemStack(ConfigItems.itemAmuletRunic,1, 1),
+						new ItemStack(Utils.getTTItem(ItemFocusTelekinesis.class)),
+						new ItemStack(ConfigBlocks.blockWoodenDevice, 1, 5),
+						Utils.getTCEldritchObject(3),
+						new ItemStack(Utils.getTTItem(ItemFocusHeal.class)),
+						Utils.getKami(1),
+						Utils.getKami(2)
 				}));
 	}
 
