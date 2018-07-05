@@ -35,7 +35,7 @@ tc.research_category.THAUMICMASTERY=Thaumic Mastery
 
 tc.research_name.TM_root=The Legend
 tc.research_text.TM_root=[TM] The power of the Master Thaumaturge
-thaumicmastery.research_text.TM_Root.1=It's time to see how far you can push this magic.
+thaumicmastery.research_text.TM_Root.1=There was once a mage who tried to push the boundaries of what thaumaturgy could do. He discovered powers that nobody had ever dreamed of. His name? Terrencius Hollowfield.
 
 tc.research_name.TM_order=Mirror Dimension
 tc.research_text.TM_order=[TM] Perfect balance
