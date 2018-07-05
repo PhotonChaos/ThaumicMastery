@@ -1,6 +1,11 @@
 # items
 item.tm_mirrordim_discover.name=Mirror of Balance
 item.tm_worldeater_discover.name=Fractured Mirror
+item.tm_novablast_discover.name=Nova Core [WIP]
+item.tm_airport_discover.name=Sphere of Winds
+item.tm_hydroshield_discover.name=Oceanic Shield
+item.tm_golem_discover.name=Heart of Life [WIP]
+item.RefillFocus.name=Wand Focus: Refill [WIP] [May Cause Bugs]
 #
 # Creative Tab
 itemGroup.ThaumicMastery=Thaumic Mastery
@@ -39,4 +44,13 @@ thaumicmastery.research_text.TM_Ordo.2=You have found a way to bring a small par
 
 tc.research_name.TM_entropy=World Eater
 tc.research_text.TM_entropy=[TM] The End of the World
-# thaumicmastery.research_text.TM_Perditio.1=
+thaumicmastery.research_text.TM_Perditio.1=For many long years the Taint has pestered you, it spreads like wildfire, and just won't seem to leave you alone. The taint thinks that it is the most corrupt being in the universe. It thinks that it can destroy worlds like no other. Well You'll show it. By combining pure entropy, you have fractured the mirror, and created a wand focus of pure chaos. This research has resulted in the discovery of a new type of corruption, Decay.
+thaumicmastery.research_text.TM_Perditio.2=Shift right clicking with this focus will allow you to set the decay magnitude, and right clicking a block will replace it with decay. The decay will spread, and eventually disappear. It seems that even warding is not enough to protect from the decay. WARNING: Setting a high decay magnitude will not fair well for your CPU.
+
+tc.research_name.TM_air=Wind Warp
+tc.research_text.TM_air=[TM] Total Recall
+tc.research_text.TM_Aer.1=It turns out that Aer vis is good for mich more than flying. By combining the power of the dimension-tearing portable hole, and the teleportation power of the Celestial Gateway, the Celestial Pearl, and the Recall focus, you have created something that can take you anywhere. As long as the dimension exists, you can go there. Shift right click opens the GUI, right click teleports to the coordinates. The coordinates are inputted in order from top to bottom: X, Y, Z, Dimension ID. The vis cost scales per 1000 blocks, and for the dimension travel. If you don't input a dimension, it will just use your current one.
+
+tc.research_name.TM_water=Hydro Barrier
+tc.research_text.TM_water=[TM] Infinite Protection
+tc.research_text.TM_Water.1=You have tried warding solids, and have been successful in creating blocks that can only be destroyed by reality-warping fores. But shields made out of those are inefficient, and are not portable. Luckily, Aqua blends quite nicely with Tutamen. This combination created an invincible shield, which protects the user from even the powers of gods.

@@ -14,16 +14,18 @@ public class PacketSendAir implements IMessage {
 	private int y;
 	private int z;
 	private int d;
+	private boolean hasD;
 
 	public PacketSendAir() {
 		// NO-OP
 	}
 
-	public PacketSendAir(int x, int y, int z, int d) {
+	public PacketSendAir(int x, int y, int z, int d, boolean hasD) {
 		this.x = x;
 		this.y = y;
 		this.z = z;
 		this.d = d;
+		this.hasD = hasD;
 	}
 
 	@Override
@@ -32,6 +34,7 @@ public class PacketSendAir implements IMessage {
 		y = buf.readInt();
 		z = buf.readInt();
 		d = buf.readInt();
+		hasD = buf.readBoolean();
 	}
 
 	@Override
@@ -40,6 +43,7 @@ public class PacketSendAir implements IMessage {
 		buf.writeInt(y);
 		buf.writeInt(z);
 		buf.writeInt(d);
+		buf.writeBoolean(hasD);
 	}
 
 	public static class Handler implements IMessageHandler<PacketSendAir, IMessage> {
@@ -50,7 +54,11 @@ public class PacketSendAir implements IMessage {
 			player.getEntityData().setInteger(LibMisc.TAG_AIR_X, message.x);
 			player.getEntityData().setInteger(LibMisc.TAG_AIR_Y, message.y);
 			player.getEntityData().setInteger(LibMisc.TAG_AIR_Z, message.z);
-			player.getEntityData().setInteger(LibMisc.TAG_AIR_D, message.d);
+			if (message.hasD) {
+				player.getEntityData().setInteger(LibMisc.TAG_AIR_D, message.d);
+			} else {
+				player.getEntityData().setInteger(LibMisc.TAG_AIR_D, player.dimension);
+			}
 
 			return null;
 		}

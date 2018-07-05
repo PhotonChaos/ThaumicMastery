@@ -28,11 +28,11 @@ public class MirrorFocus extends MasterFocusBase {
 			int y = (int) player.posY;
 			int z = (int) player.posZ;
 
-			player.addChatMessage(new ChatComponentText("X:" + x + " Y:" + y + " Z:" + z + " MIRROR"));
-
 			if (world.isAirBlock(x, y, z)) {
 				world.setBlock(x, y, z, ThaumicMastery.blockMirrorDim);
 				((TileEntityMirrorDimension) world.getTileEntity(x, y, z)).setCasterID(player.getUniqueID().toString());
+				((TileEntityMirrorDimension) world.getTileEntity(x, y, z)).setCasterName(player.getDisplayName());
+				((TileEntityMirrorDimension) world.getTileEntity(x, y, z)).updateCaster();
 			}
 		}
 

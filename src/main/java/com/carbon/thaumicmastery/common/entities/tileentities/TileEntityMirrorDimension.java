@@ -8,23 +8,47 @@ import net.minecraft.network.play.server.S35PacketUpdateTileEntity;
 import net.minecraft.potion.PotionEffect;
 import net.minecraft.tileentity.TileEntity;
 import net.minecraft.util.Vec3;
+import thaumcraft.api.ThaumcraftApi;
+import thaumcraft.api.ThaumcraftApiHelper;
+import thaumcraft.api.aspects.Aspect;
+import thaumcraft.api.aspects.AspectList;
+import thaumcraft.common.items.wands.ItemWandCasting;
+
+import java.util.Random;
 
 public class TileEntityMirrorDimension extends TileEntity {
 	private final int MAX_DISTANCE = 11;
 	private final int ticksToReset = 20; // the number of ticks until the counter resets
 	private final int DURATION = 10; // seconds
+	private final int VIS_REGEN_MAX_VALUE = 200;
+	private final int VIS_REGEN_MIN_VALUE = 100;
+
+	private static Random randy = new Random();
 
 	public static boolean isActive = true;
 
-	private static String caster;
+	private String caster;
+	private String casterName;
 
 	private int counter;
 	private int seconds = 0;
-	private int updateSpeed = 10; // every 5 ticks = 4 times a second
+	private int updateSpeed = 5; // every 5 ticks = 4 times a second
 	private int scale = 0;
 	private boolean counterEnabled = true;
 	private boolean casterExited = true;
 	private int duration = 10;
+	private int visRegen = randy.nextInt(VIS_REGEN_MIN_VALUE) + VIS_REGEN_MIN_VALUE;
+	private final int amount = -1;
+	private EntityPlayer casterP;
+	private boolean casterSet = false;
+
+
+	private AspectList vis = new AspectList()
+			.add(Aspect.AIR, amount)
+			.add(Aspect.FIRE, amount)
+			.add(Aspect.WATER, amount)
+			.add(Aspect.EARTH, amount)
+			.add(Aspect.ENTROPY, amount);
 
 	// TODO: Fix Flying code
 	// TODO: Add potion effects
@@ -35,17 +59,19 @@ public class TileEntityMirrorDimension extends TileEntity {
 			deleteThis();
 		}
 
-		// functionality
-		if (counter % updateSpeed == 0) {
-			processFunctionality();
-		}
+		if (casterSet) {
+			// functionality
+			if (counter % updateSpeed == 0) {
+				processFunctionality();
+			}
 
-		// counter mechanics
-		if (counter == ticksToReset) {
-			seconds++;
-			counter = 0;
+			// counter mechanics
+			if (counter == ticksToReset) {
+				seconds++;
+				counter = 0;
+			}
+			counter++;
 		}
-		counter++;
 	}
 
 	private void processFunctionality() {
@@ -58,14 +84,15 @@ public class TileEntityMirrorDimension extends TileEntity {
 
 			if (!(d > MAX_DISTANCE)) {
 				if (player.getUniqueID().toString().equals(caster) && casterExited && !player.capabilities.isCreativeMode) {
-					// if it is the caster
 					casterExited = false;
 					// apply effects
+					visRegenerate();
+
 					player.capabilities.allowFlying = true;
 
-					player.addPotionEffect(new PotionEffect(10, 3, 2, true));
-					player.addPotionEffect(new PotionEffect(11, 3, 1, true));
-					player.addPotionEffect(new PotionEffect(12, 3, 1, true));
+					player.addPotionEffect(new PotionEffect(10, 3, 2, false));
+					player.addPotionEffect(new PotionEffect(11, 3, 1, false));
+					player.addPotionEffect(new PotionEffect(12, 3, 1, false));
 
 					player.extinguish();
 
@@ -78,8 +105,17 @@ public class TileEntityMirrorDimension extends TileEntity {
 					casterExited = true;
 
 					player.capabilities.allowFlying = false;
-					player.setJumping(true);
+					player.capabilities.isFlying = false;
 				}
+			}
+		}
+	}
+
+	private void visRegenerate() {
+		if (casterP != null && casterP.getHeldItem().getItem() instanceof ItemWandCasting) {
+			visRegen -= amount;
+			for (Aspect aspect : vis.getAspects()) {
+				((ItemWandCasting) casterP.getHeldItem().getItem()).addVis(casterP.getHeldItem(), aspect, amount, true);
 			}
 		}
 	}
@@ -123,6 +159,15 @@ public class TileEntityMirrorDimension extends TileEntity {
 	// setters
 	public void setCasterID(String id) {
 		caster = id;
+	}
+
+	public void setCasterName(String name) {
+		casterName = name;
+	}
+
+	public void updateCaster() {
+		casterP = worldObj.getPlayerEntityByName(casterName);
+		casterSet = true;
 	}
 
 	// getters

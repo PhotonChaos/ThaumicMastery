@@ -111,13 +111,20 @@ public class AirportGUI extends GuiScreen {
 
 	@Override
 	protected void actionPerformed(GuiButton button) {
-		if (button == this.enter && !(xField.getText().isEmpty() || yField.getText().isEmpty() || zField.getText().isEmpty() || dField.getText().isEmpty())) {
+		if (button == this.enter && !(xField.getText().isEmpty() || yField.getText().isEmpty() || zField.getText().isEmpty())) {
 			int x = Integer.parseInt(this.xField.getText());
 			int y = Integer.parseInt(this.yField.getText());
 			int z = Integer.parseInt(this.zField.getText());
-			int d = Integer.parseInt(this.dField.getText());
+			int d = 0;
+			boolean hasD = true;
 
-			PacketHandler.INSTANCE.sendToServer(new PacketSendAir(x, y, z, d));
+			if (dField.getText().isEmpty()) {
+				hasD = false;
+			} else {
+				d = Integer.parseInt(this.dField.getText());
+			}
+
+			PacketHandler.INSTANCE.sendToServer(new PacketSendAir(x, y, z, d, hasD));
 
 			Utils.closeGui(this);
 		}

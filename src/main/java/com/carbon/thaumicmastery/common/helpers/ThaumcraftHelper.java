@@ -7,6 +7,8 @@ import com.carbon.thaumicmastery.core.lib.LibResearchKeys;
 import net.minecraft.item.ItemStack;
 import net.minecraft.util.ResourceLocation;
 import net.minecraft.util.StatCollector;
+import thaumic.tinkerer.common.item.kami.ItemProtoclay;
+import thaumic.tinkerer.common.lib.LibResearch;
 import thaumcraft.api.ThaumcraftApi;
 import thaumcraft.api.aspects.Aspect;
 import thaumcraft.api.aspects.AspectList;
@@ -33,6 +35,16 @@ public class ThaumcraftHelper {
 	private static HashMap<String, InfusionRecipe> recipes = new HashMap<String, InfusionRecipe>();
 	public static HashMap<String, ResearchItem> research = new HashMap<String, ResearchItem>();
 
+	private static final AspectList root_aspect = new AspectList()
+			.add(Aspect.AIR, 1)
+			.add(Aspect.WATER, 1)
+			.add(Aspect.EARTH, 1)
+			.add(Aspect.FIRE, 1)
+			.add(Aspect.ORDER, 1)
+			.add(Aspect.ENTROPY, 1)
+			.add(Aspect.MAGIC, 1)
+			.add(Aspect.MAN, 1);
+
 	public static void preInit() {
 
 	}
@@ -54,8 +66,8 @@ public class ThaumcraftHelper {
 
 		ResearchCategories.registerCategory(category, logo, bg);
 
-		research.put(LibResearchKeys.KEY_ROOT, new ResearchItem(LibResearchKeys.KEY_ROOT, category, new AspectList(), 0, 0, 0, logo)
-				.setAutoUnlock().setRound().setStub()
+		research.put(LibResearchKeys.KEY_ROOT, new ResearchItem(LibResearchKeys.KEY_ROOT, category, root_aspect, 0, 0, 3, logo)
+				.setRound().setStub().setParents(LibResearch.KEY_ICHORCLOTH_ROD)
 				.setPages(getPage("TM_Root.1"),
 						new ResearchPage(recipes.get("orderDiscover")),
 						new ResearchPage(recipes.get("entropyDiscover")),
@@ -72,15 +84,15 @@ public class ThaumcraftHelper {
 
 		research.put(LibResearchKeys.KEY_ENTROPY, new ResearchItem(LibResearchKeys.KEY_ENTROPY, category, new AspectList().add(Aspect.ENTROPY, 1), 0, 2, 3, new ItemStack(ModItems.worldeater_item))
 				.setSpecial().setConcealed().setLost().setParents(LibResearchKeys.KEY_ROOT)
-				.setPages(getPage("TM_Perditio.1"), new ResearchPage(recipes.get("DecayFocus")))
+				.setPages(getPage("TM_Perditio.1"), getPage("TM_Perditio.2"), new ResearchPage(recipes.get("DecayFocus")))
 				.registerResearchItem());
 
-		research.put(LibResearchKeys.KEY_AIR, new ResearchItem(LibResearchKeys.KEY_AIR, category, new AspectList().add(Aspect.AIR, 3), -1, -1, 3, new ItemStack(ModItems.airport_item))
+		research.put(LibResearchKeys.KEY_AIR, new ResearchItem(LibResearchKeys.KEY_AIR, category, new AspectList().add(Aspect.AIR, 3), -2, -1, 3, new ItemStack(ModItems.airport_item))
 				.setSpecial().setConcealed().setParents(LibResearchKeys.KEY_ROOT)
 				.setPages(getPage("TM_Aer.1"), new ResearchPage(recipes.get("AirFocus")))
 				.registerResearchItem());
 
-		research.put(LibResearchKeys.KEY_WATER, new ResearchItem(LibResearchKeys.KEY_WATER, category, new AspectList().add(Aspect.WATER, 2).add(Aspect.ARMOR, 2), 1, 1, 3, new ItemStack(ModItems.hydroshield_item))
+		research.put(LibResearchKeys.KEY_WATER, new ResearchItem(LibResearchKeys.KEY_WATER, category, new AspectList().add(Aspect.WATER, 2).add(Aspect.ARMOR, 2), 2, 1, 3, new ItemStack(ModItems.hydroshield_item))
 				.setSpecial().setConcealed().setParents(LibResearchKeys.KEY_ROOT)
 				.setPages(getPage("TM_Water.1"), new ResearchPage(recipes.get("WaterFocus")))
 				.registerResearchItem());
@@ -187,7 +199,7 @@ public class ThaumcraftHelper {
 						new ItemStack(Utils.getTTItem(ItemBlockTalisman.class)),
 						new ItemStack(Utils.getTTItem(ItemFocusDislocation.class)),
 						new ItemStack(Utils.getTTItem(ItemPlacementMirror.class)),
-						new ItemStack(Utils.getTTItem(ItemCompassStone.class))
+						new ItemStack(Utils.getTTItem(ItemProtoclay.class))
 				}));
 
 		recipes.put("AirFocus", ThaumcraftApi.addInfusionCraftingRecipe(LibResearchKeys.KEY_AIR,
