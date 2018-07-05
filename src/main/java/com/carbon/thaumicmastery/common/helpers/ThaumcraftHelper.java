@@ -17,10 +17,13 @@ import thaumcraft.api.research.ResearchPage;
 import thaumcraft.common.config.ConfigBlocks;
 import thaumcraft.common.config.ConfigItems;
 import thaumcraft.common.items.ItemCompassStone;
+import thaumic.tinkerer.common.block.kami.BlockWarpGate;
 import thaumic.tinkerer.common.item.foci.*;
 import thaumic.tinkerer.common.item.kami.ItemBlockTalisman;
 import thaumic.tinkerer.common.item.kami.ItemPlacementMirror;
+import thaumic.tinkerer.common.item.kami.ItemSkyPearl;
 import thaumic.tinkerer.common.item.kami.armor.ItemIchorclothArmorAdv;
+import thaumic.tinkerer.common.item.kami.foci.ItemFocusRecall;
 import thaumic.tinkerer.common.item.kami.foci.ItemFocusShadowbeam;
 import thaumic.tinkerer.common.item.kami.foci.ItemFocusXPDrain;
 
@@ -192,7 +195,18 @@ public class ThaumcraftHelper {
 				new AspectList().add(Aspect.AIR, 256).add(Aspect.TRAVEL, 128).add(Aspect.ELDRITCH, 128),
 				new ItemStack(ModItems.airport_item),
 				new ItemStack[]{
-
+						new ItemStack(Utils.getTTItem(ItemFocusRecall.class)),
+						new ItemStack(Utils.getTTBlock(BlockWarpGate.class)),
+						new ItemStack(Utils.getTTBlock(BlockWarpGate.class)),
+						new ItemStack(ConfigItems.itemFocusPortableHole),
+						new ItemStack(ConfigItems.itemHoverHarness),
+						new ItemStack(ConfigItems.itemGirdleHover),
+						new ItemStack(Utils.getTTItem(ItemFocusFlight.class)),
+						new ItemStack(Utils.getTTItem(ItemSkyPearl.class)),
+						new ItemStack(Utils.getTTItem(ItemSkyPearl.class)),
+						new ItemStack(Utils.getTTItem(ItemFocusDislocation.class)),
+						new ItemStack(ConfigBlocks.blockWoodenDevice),
+						new ItemStack(ConfigBlocks.blockMetalDevice, 1, 7)
 				}));
 
 		recipes.put("WaterFocus", ThaumcraftApi.addInfusionCraftingRecipe(LibResearchKeys.KEY_WATER,
