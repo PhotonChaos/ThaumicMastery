@@ -11,4 +11,8 @@ public class LibMisc {
 	public static final String TAG_AIR_Y = "destY";
 	public static final String TAG_AIR_Z = "destZ";
 	public static final String TAG_AIR_D = "destD";
+
+	public static final String TAG_MD_X = "MirrorDimX";
+	public static final String TAG_MD_Y = "MirrorDimY";
+	public static final String TAG_MD_Z = "MirrorDimZ";
 }

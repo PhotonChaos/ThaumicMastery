@@ -1,20 +1,20 @@
-[08:06:20] [main/INFO]: Setting user: Player101
-[08:06:22] [Client thread/INFO]: LWJGL Version: 2.9.1
-[08:06:46] [Client thread/INFO]: Reloading ResourceManager: Default, FMLFileResourcePack:Forge Mod Loader, FMLFileResourcePack:Minecraft Forge, FMLFileResourcePack:Thaumic Mastery, FMLFileResourcePack:Thaumcraft, FMLFileResourcePack:Thaumic Tinkerer, FMLFileResourcePack:Baubles
-[08:06:50] [Sound Library Loader/INFO]: Sound engine started
-[08:06:51] [Client thread/INFO]: Created: 16x16 textures/blocks-atlas
-[08:06:51] [Client thread/INFO]: Created: 16x16 textures/items-atlas
-[08:06:53] [Client thread/INFO]: Reloading ResourceManager: Default, FMLFileResourcePack:Forge Mod Loader, FMLFileResourcePack:Minecraft Forge, FMLFileResourcePack:Thaumic Mastery, FMLFileResourcePack:Thaumcraft, FMLFileResourcePack:Thaumic Tinkerer, FMLFileResourcePack:Baubles
-[08:06:54] [Client thread/INFO]: Created: 512x512 textures/blocks-atlas
-[08:06:54] [Client thread/INFO]: Created: 512x512 textures/items-atlas
-[08:06:55] [Sound Library Loader/INFO]: Sound engine started
-[08:07:17] [Server thread/INFO]: Starting integrated minecraft server version 1.7.10
-[08:07:17] [Server thread/INFO]: Generating keypair
-[08:07:17] [Server thread/INFO]: Preparing start region for level 0
-[08:07:18] [Server thread/INFO]: Changing view distance to 12, from 10
-[08:07:19] [Server thread/INFO]: Player101[local:E:6f88b1e9] logged in with entity id 232 at (100.0, 4.0, 100.0)
-[08:07:19] [Server thread/INFO]: Player101 joined the game
-[08:07:25] [Server thread/ERROR]: Encountered an unexpected exception
+[21:35:16] [main/INFO]: Setting user: Player875
+[21:35:19] [Client thread/INFO]: LWJGL Version: 2.9.1
+[21:35:39] [Client thread/INFO]: Reloading ResourceManager: Default, FMLFileResourcePack:Forge Mod Loader, FMLFileResourcePack:Minecraft Forge, FMLFileResourcePack:Thaumic Mastery, FMLFileResourcePack:Thaumcraft, FMLFileResourcePack:Thaumic Tinkerer, FMLFileResourcePack:Baubles
+[21:35:43] [Sound Library Loader/INFO]: Sound engine started
+[21:35:44] [Client thread/INFO]: Created: 16x16 textures/blocks-atlas
+[21:35:44] [Client thread/INFO]: Created: 16x16 textures/items-atlas
+[21:35:46] [Client thread/INFO]: Reloading ResourceManager: Default, FMLFileResourcePack:Forge Mod Loader, FMLFileResourcePack:Minecraft Forge, FMLFileResourcePack:Thaumic Mastery, FMLFileResourcePack:Thaumcraft, FMLFileResourcePack:Thaumic Tinkerer, FMLFileResourcePack:Baubles
+[21:35:47] [Client thread/INFO]: Created: 512x512 textures/blocks-atlas
+[21:35:48] [Client thread/INFO]: Created: 512x512 textures/items-atlas
+[21:35:48] [Sound Library Loader/INFO]: Sound engine started
+[21:37:08] [Server thread/INFO]: Starting integrated minecraft server version 1.7.10
+[21:37:08] [Server thread/INFO]: Generating keypair
+[21:37:09] [Server thread/INFO]: Preparing start region for level 0
+[21:37:10] [Server thread/INFO]: Changing view distance to 12, from 10
+[21:37:10] [Server thread/INFO]: Player875[local:E:8655a049] logged in with entity id 234 at (100.0, 4.0, 100.0)
+[21:37:10] [Server thread/INFO]: Player875 joined the game
+[21:37:18] [Server thread/ERROR]: Encountered an unexpected exception
 net.minecraft.util.ReportedException: Ticking player
 	at net.minecraft.network.NetworkSystem.networkTick(NetworkSystem.java:198) ~[NetworkSystem.class:?]
 	at net.minecraft.server.MinecraftServer.updateTimeLightAndEntities(MinecraftServer.java:726) ~[MinecraftServer.class:?]
@@ -37,16 +37,16 @@ Caused by: java.lang.IllegalAccessError: tried to access field net.minecraft.ent
 	at net.minecraft.network.NetworkManager.processReceivedPackets(NetworkManager.java:241) ~[NetworkManager.class:?]
 	at net.minecraft.network.NetworkSystem.networkTick(NetworkSystem.java:182) ~[NetworkSystem.class:?]
 	... 5 more
-[08:07:25] [Server thread/ERROR]: This crash report has been saved to: /Users/calum/IdeaProjects/ThaumicMastery/eclipse/./crash-reports/crash-2018-07-04_08.07.25-server.txt
-[08:07:25] [Server thread/INFO]: Stopping server
-[08:07:25] [Server thread/INFO]: Saving players
-[08:07:25] [Server thread/INFO]: Saving worlds
-[08:07:25] [Server thread/INFO]: Saving chunks for level 'New World'/Overworld
-[08:07:25] [Server thread/INFO]: Saving chunks for level 'New World'/Nether
-[08:07:25] [Server thread/INFO]: Saving chunks for level 'New World'/The End
-[08:07:25] [Server thread/INFO]: Saving chunks for level 'New World'/Bedrock
-[08:07:25] [Server thread/INFO]: Saving chunks for level 'New World'/The Outer Lands
-[08:07:27] [Client thread/FATAL]: Unreported exception thrown!
+[21:37:18] [Server thread/ERROR]: This crash report has been saved to: /Users/calum/IdeaProjects/ThaumicMastery/eclipse/./crash-reports/crash-2018-07-05_21.37.18-server.txt
+[21:37:18] [Server thread/INFO]: Stopping server
+[21:37:18] [Server thread/INFO]: Saving players
+[21:37:18] [Server thread/INFO]: Saving worlds
+[21:37:18] [Server thread/INFO]: Saving chunks for level 'New World'/Overworld
+[21:37:18] [Server thread/INFO]: Saving chunks for level 'New World'/Nether
+[21:37:18] [Server thread/INFO]: Saving chunks for level 'New World'/The End
+[21:37:18] [Server thread/INFO]: Saving chunks for level 'New World'/Bedrock
+[21:37:18] [Server thread/INFO]: Saving chunks for level 'New World'/The Outer Lands
+[21:37:21] [Client thread/FATAL]: Unreported exception thrown!
 java.lang.ClassCastException: thaumcraft.common.items.armor.ItemCultistLeaderArmor cannot be cast to thaumcraft.api.wands.ItemFocusBasic
 	at thaumcraft.common.items.wands.ItemWandCasting.getFocus(ItemWandCasting.java:433) ~[ItemWandCasting.class:?]
 	at thaumcraft.client.renderers.models.gear.ModelWand.render(ModelWand.java:136) ~[ModelWand.class:?]

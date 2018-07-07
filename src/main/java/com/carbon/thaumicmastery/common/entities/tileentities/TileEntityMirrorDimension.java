@@ -38,17 +38,11 @@ public class TileEntityMirrorDimension extends TileEntity {
 	private boolean casterExited = true;
 	private int duration = 10;
 	private int visRegen = randy.nextInt(VIS_REGEN_MIN_VALUE) + VIS_REGEN_MIN_VALUE;
-	private final int amount = -1;
 	private EntityPlayer casterP;
 	private boolean casterSet = false;
 
 
-	private AspectList vis = new AspectList()
-			.add(Aspect.AIR, amount)
-			.add(Aspect.FIRE, amount)
-			.add(Aspect.WATER, amount)
-			.add(Aspect.EARTH, amount)
-			.add(Aspect.ENTROPY, amount);
+
 
 	// TODO: Fix Flying code
 	// TODO: Add potion effects
@@ -86,7 +80,6 @@ public class TileEntityMirrorDimension extends TileEntity {
 				if (player.getUniqueID().toString().equals(caster) && casterExited && !player.capabilities.isCreativeMode) {
 					casterExited = false;
 					// apply effects
-					visRegenerate();
 
 					player.capabilities.allowFlying = true;
 
@@ -111,14 +104,6 @@ public class TileEntityMirrorDimension extends TileEntity {
 		}
 	}
 
-	private void visRegenerate() {
-		if (casterP != null && casterP.getHeldItem().getItem() instanceof ItemWandCasting) {
-			visRegen -= amount;
-			for (Aspect aspect : vis.getAspects()) {
-				((ItemWandCasting) casterP.getHeldItem().getItem()).addVis(casterP.getHeldItem(), aspect, amount, true);
-			}
-		}
-	}
 
 	private void deleteThis() {
 		worldObj.setBlockToAir(xCoord, yCoord, zCoord);
@@ -130,6 +115,7 @@ public class TileEntityMirrorDimension extends TileEntity {
 		super.readFromNBT(tag);
 
 		caster = tag.getString("caster");
+		casterName = tag.getString("casterName");
 		counter = tag.getInteger("counter");
 		scale = tag.getInteger("scale");
 		updateSpeed = tag.getInteger("updateSpeed");
@@ -142,6 +128,7 @@ public class TileEntityMirrorDimension extends TileEntity {
 		super.writeToNBT(tag);
 
 		tag.setString("caster", caster);
+		tag.setString("casterName", casterName);
 		tag.setInteger("counter", counter);
 		tag.setInteger("scale", scale);
 		tag.setInteger("updateSpeed", updateSpeed);
@@ -157,12 +144,14 @@ public class TileEntityMirrorDimension extends TileEntity {
 	}
 
 	// setters
-	public void setCasterID(String id) {
+	public TileEntityMirrorDimension setCasterID(String id) {
 		caster = id;
+		return this;
 	}
 
-	public void setCasterName(String name) {
+	public TileEntityMirrorDimension setCasterName(String name) {
 		casterName = name;
+		return this;
 	}
 
 	public void updateCaster() {

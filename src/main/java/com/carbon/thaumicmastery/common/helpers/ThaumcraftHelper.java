@@ -76,12 +76,12 @@ public class ThaumcraftHelper {
 
 		// ASPECT RESEARCH
 		research.put(LibResearchKeys.KEY_ORDER, new ResearchItem(LibResearchKeys.KEY_ORDER, category, new AspectList().add(Aspect.AURA, 1).add(Aspect.ORDER, 1).add(Aspect.MAGIC, 1), 0, -2, 3, new ItemStack(ModItems.mirrordim_item))
-				.setSpecial().setConcealed().setParents(LibResearchKeys.KEY_ROOT)
+				.setSpecial().setConcealed().setParents(LibResearchKeys.KEY_ROOT, LibResearch.KEY_FOCUS_XP_DRAIN)
 				.setPages(getPage("TM_Ordo.1"), getPage("TM_Ordo.2"), new ResearchPage(recipes.get("MirrorFocus")))
 				.registerResearchItem());
 
 		research.put(LibResearchKeys.KEY_ENTROPY, new ResearchItem(LibResearchKeys.KEY_ENTROPY, category, new AspectList().add(Aspect.ENTROPY, 1).add(Aspect.TAINT, 1).add(Aspect.MAGIC, 1), 0, 2, 3, new ItemStack(ModItems.worldeater_item))
-				.setSpecial().setConcealed().setParents(LibResearchKeys.KEY_ROOT)
+				.setSpecial().setConcealed().setParents(LibResearchKeys.KEY_ROOT, LibResearch.KEY_PROTOCLAY)
 				.setPages(getPage("TM_Perditio.1"), getPage("TM_Perditio.2"), new ResearchPage(recipes.get("DecayFocus")))
 				.registerResearchItem());
 

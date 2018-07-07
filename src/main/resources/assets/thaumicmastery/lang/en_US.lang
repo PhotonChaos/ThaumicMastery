@@ -21,12 +21,8 @@ item.AirportFocus.name=Wand Focus: Wind Warp
 tile.BlockDecay.name=Decay
 #
 # Keybinds
-key.decay=Use World Eater
-key.mirrordimension=Use Mirror Dimension
-key.novablast=Cast Novablast
-key.airteleport=Teleport
-key.vistoessentia=Turn Vis into Essentia
-key.spawngolem=Create Golem
+key.debug=Debug
+key.printdim=Reveal Dimension ID
 
 key.categories.thaumicmastery=Thaumic Mastery
 #

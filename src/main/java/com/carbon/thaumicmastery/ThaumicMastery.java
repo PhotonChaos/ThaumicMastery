@@ -8,7 +8,7 @@ import com.carbon.thaumicmastery.common.entities.tileentities.TileEntityMirrorDi
 import com.carbon.thaumicmastery.common.eventhandlers.MainEventHandler;
 import com.carbon.thaumicmastery.common.helpers.ThaumcraftHelper;
 import com.carbon.thaumicmastery.common.items.ModItems;
-import com.carbon.thaumicmastery.common.keybinds.Keybinds;
+import com.carbon.thaumicmastery.client.keybinds.Keybinds;
 import cpw.mods.fml.common.FMLCommonHandler;
 import cpw.mods.fml.common.Mod;
 import cpw.mods.fml.common.Mod.EventHandler;
@@ -99,7 +99,7 @@ public class ThaumicMastery {
 
 		// Tile Entities
 		GameRegistry.registerTileEntity(TileEntityMirrorDimension.class, "MirrorDimension");
-		GameRegistry.registerTileEntity(TileEntityDecay.class, "decay");
+		GameRegistry.registerTileEntity(TileEntityDecay.class, "debug");
 		proxy.registerRendering();
 
 		// Events
@@ -123,7 +123,7 @@ public class ThaumicMastery {
 	public static void syncConfig() {
 		try {
 			config.load();
-			Property isDecayEnabled = config.get(Configuration.CATEGORY_GENERAL, "decayEnabled", "true", "Determined whether the decay will spread");
+			Property isDecayEnabled = config.get(Configuration.CATEGORY_GENERAL, "decayEnabled", "true", "Determined whether the debug will spread");
 			TileEntityDecay.doDecay = isDecayEnabled.getBoolean();
 		} catch (Exception e) {
 			System.err.println("There was an error reading the Thaumic Mastery config.");

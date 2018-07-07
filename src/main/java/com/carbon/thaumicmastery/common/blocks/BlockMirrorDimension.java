@@ -12,17 +12,15 @@ import net.minecraft.world.World;
 import thaumcraft.api.crafting.IInfusionStabiliser;
 
 public class BlockMirrorDimension extends BlockContainer implements IInfusionStabiliser {
-	private String casterName;
-
 	public BlockMirrorDimension() {
-		super(Material.rock);
+		super(Material.air);
 		setBlockTextureName(ThaumicMastery.MODID + ":MirrorDimBlock");
 		setBlockName("BlockMirrorDimension");
 		setBlockUnbreakable();
-		setResistance(1000000F);
-		setCreativeTab(CreativeTabs.tabCombat);
+		setResistance(6000000.0F);
+		setCreativeTab(ThaumicMastery.tab);
 		setLightLevel(1.0F);
-		setBlockBounds(0,0,0,1F,1F,1F);
+		setBlockBounds(0,0,0,0,0,0);
 	}
 
 	@Override
@@ -60,7 +58,6 @@ public class BlockMirrorDimension extends BlockContainer implements IInfusionSta
 	public TileEntity createNewTileEntity(World world, int n) {
 		return new TileEntityMirrorDimension();
 	}
-
 
 	@Override
 	public boolean canStabaliseInfusion(World world, int x, int y, int z) {

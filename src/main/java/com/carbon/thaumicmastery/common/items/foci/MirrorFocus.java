@@ -2,7 +2,9 @@ package com.carbon.thaumicmastery.common.items.foci;
 
 import com.carbon.thaumicmastery.ThaumicMastery;
 import com.carbon.thaumicmastery.common.entities.tileentities.TileEntityMirrorDimension;
+import com.carbon.thaumicmastery.core.lib.LibMisc;
 import net.minecraft.entity.player.EntityPlayer;
+import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
 import net.minecraft.util.ChatComponentText;
 import net.minecraft.util.MovingObjectPosition;
@@ -10,10 +12,18 @@ import net.minecraft.world.World;
 import thaumcraft.api.ThaumcraftApiHelper;
 import thaumcraft.api.aspects.Aspect;
 import thaumcraft.api.aspects.AspectList;
+import thaumcraft.common.items.wands.ItemWandCasting;
 
 public class MirrorFocus extends MasterFocusBase {
-	private int cost = 10;
+	private final int cost = 10;
 	private int cooldown = 10;
+
+	private AspectList vis = new AspectList()
+			.add(Aspect.AIR, cost)
+			.add(Aspect.FIRE, cost)
+			.add(Aspect.WATER, cost)
+			.add(Aspect.EARTH, cost)
+			.add(Aspect.ENTROPY, cost);
 
 	public MirrorFocus() {
 		super();
@@ -28,11 +38,23 @@ public class MirrorFocus extends MasterFocusBase {
 			int y = (int) player.posY;
 			int z = (int) player.posZ;
 
+			ItemWandCasting w = (ItemWandCasting)wand.getItem();
+
+			for (Aspect aspect : vis.getAspects()) {
+				w.addRealVis(new ItemStack(w), aspect, cost, true);
+			}
+
 			if (world.isAirBlock(x, y, z)) {
 				world.setBlock(x, y, z, ThaumicMastery.blockMirrorDim);
-				((TileEntityMirrorDimension) world.getTileEntity(x, y, z)).setCasterID(player.getUniqueID().toString());
-				((TileEntityMirrorDimension) world.getTileEntity(x, y, z)).setCasterName(player.getDisplayName());
-				((TileEntityMirrorDimension) world.getTileEntity(x, y, z)).updateCaster();
+
+				player.getEntityData().setInteger(LibMisc.TAG_MD_X, x);
+				player.getEntityData().setInteger(LibMisc.TAG_MD_Y, y);
+				player.getEntityData().setInteger(LibMisc.TAG_MD_Z, z);
+
+				TileEntityMirrorDimension mirrorDimension = (TileEntityMirrorDimension)world.getTileEntity(x, y, z);
+				mirrorDimension.setCasterID(player.getUniqueID().toString())
+						.setCasterName(player.getDisplayName())
+						.updateCaster();
 			}
 		}
 

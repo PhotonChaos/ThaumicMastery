@@ -6,6 +6,7 @@ import net.minecraft.client.gui.GuiScreen;
 import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
+import net.minecraft.nbt.NBTTagCompound;
 import thaumcraft.common.config.ConfigItems;
 import thaumic.tinkerer.common.ThaumicTinkerer;
 import thaumic.tinkerer.common.block.fire.*;
@@ -27,6 +28,11 @@ public class Utils {
 
 	public static boolean isCharEsc(char c, int i) {
 		return Character.getNumericValue(c) == -1 && i == 1;
+	}
+
+	public static boolean isMirrorDimCaster(EntityPlayer player, int x, int y, int z) {
+		NBTTagCompound tag = player.getEntityData();
+		return tag.getInteger(LibMisc.TAG_MD_X) == x && tag.getInteger(LibMisc.TAG_MD_Y) == y && tag.getInteger(LibMisc.TAG_MD_Z) == z;
 	}
 
 	public static void closeGui(GuiScreen gui) {
