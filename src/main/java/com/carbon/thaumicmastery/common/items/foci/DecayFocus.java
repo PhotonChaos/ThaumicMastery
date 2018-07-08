@@ -15,7 +15,7 @@ import thaumcraft.api.aspects.AspectList;
 
 public class DecayFocus extends MasterFocusBase {
 	private int decaySetLevel = 2;
-	private int costPerLevel = 5;
+	private int costPerLevel = 10;
 
 	public DecayFocus() {
 		super();
@@ -24,7 +24,7 @@ public class DecayFocus extends MasterFocusBase {
 
 	@Override
 	public ItemStack onFocusRightClick(ItemStack wand, World world, EntityPlayer player, MovingObjectPosition movingObjectPosition) {
-		this.decaySetLevel = player.getEntityData().getInteger(LibMisc.TAG_DECAY_LEVEL);
+		decaySetLevel = player.getEntityData().getInteger(LibMisc.TAG_DECAY_LEVEL);
 
 		if (player.isSneaking()) {
 			if (world.isRemote) {

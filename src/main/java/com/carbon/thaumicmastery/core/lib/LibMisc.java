@@ -2,6 +2,8 @@ package com.carbon.thaumicmastery.core.lib;
 
 public class LibMisc {
 	public static final String ThaumicTinkerer_MODID = "ThaumicTinkerer";
+
+	// Tags
 	public static final String TAG_SHIELD = "isShielded";
 	public static final String TAG_DECAY_LEVEL = "decayLevel";
 	public static final String TAG_GOLEM_VIS = "golemVis";
@@ -12,6 +14,7 @@ public class LibMisc {
 	public static final String TAG_AIR_Z = "destZ";
 	public static final String TAG_AIR_D = "destD";
 
+	// Mirror Dim Focus
 	public static final String TAG_MD_X = "MirrorDimX";
 	public static final String TAG_MD_Y = "MirrorDimY";
 	public static final String TAG_MD_Z = "MirrorDimZ";
