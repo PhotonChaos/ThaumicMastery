@@ -15,4 +15,5 @@ public class LibMisc {
 	public static final String TAG_MD_X = "MirrorDimX";
 	public static final String TAG_MD_Y = "MirrorDimY";
 	public static final String TAG_MD_Z = "MirrorDimZ";
+	public static final String TAG_MD_CASTED = "MirrorDimCasted";
 }

@@ -50,11 +50,7 @@ public class MirrorFocus extends MasterFocusBase {
 				player.getEntityData().setInteger(LibMisc.TAG_MD_X, x);
 				player.getEntityData().setInteger(LibMisc.TAG_MD_Y, y);
 				player.getEntityData().setInteger(LibMisc.TAG_MD_Z, z);
-
-				TileEntityMirrorDimension mirrorDimension = (TileEntityMirrorDimension)world.getTileEntity(x, y, z);
-				mirrorDimension.setCasterID(player.getUniqueID().toString())
-						.setCasterName(player.getDisplayName())
-						.updateCaster();
+				player.getEntityData().setBoolean(LibMisc.TAG_MD_CASTED, true);
 			}
 		}
 

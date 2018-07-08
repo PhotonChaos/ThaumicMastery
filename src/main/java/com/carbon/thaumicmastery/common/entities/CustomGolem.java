@@ -1,9 +1,11 @@
 package com.carbon.thaumicmastery.common.entities;
 
 import net.minecraft.entity.*;
+import net.minecraft.entity.monster.EntityGolem;
+import net.minecraft.entity.passive.IAnimals;
 import net.minecraft.world.World;
 
-public class CustomGolem extends EntityCreature implements IEntityOwnable {
+public class CustomGolem extends EntityGolem {
 	private String caster = "a";
 	private int visInput;
 	private double attack;
@@ -31,20 +33,13 @@ public class CustomGolem extends EntityCreature implements IEntityOwnable {
 		getEntityAttribute(SharedMonsterAttributes.attackDamage).setBaseValue(attack);
 	}
 
-
-
 	@Override
-	public boolean attackEntityAsMob(Entity e) {
+	protected boolean isAIEnabled() {
 		return true;
 	}
 
 	@Override
-	public String func_152113_b() {
-		return null;
-	}
-
-	@Override
-	public Entity getOwner() {
-		return worldObj.getPlayerEntityByName(caster);
+	public boolean attackEntityAsMob(Entity e) {
+		return true;
 	}
 }

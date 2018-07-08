@@ -1,6 +1,7 @@
 package com.carbon.thaumicmastery.common.entities.tileentities;
 
 import com.carbon.thaumicmastery.core.Utils;
+import com.carbon.thaumicmastery.core.lib.LibMisc;
 import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.nbt.NBTTagCompound;
 import net.minecraft.network.Packet;
@@ -8,41 +9,24 @@ import net.minecraft.network.play.server.S35PacketUpdateTileEntity;
 import net.minecraft.potion.PotionEffect;
 import net.minecraft.tileentity.TileEntity;
 import net.minecraft.util.Vec3;
-import thaumcraft.api.ThaumcraftApi;
-import thaumcraft.api.ThaumcraftApiHelper;
-import thaumcraft.api.aspects.Aspect;
-import thaumcraft.api.aspects.AspectList;
-import thaumcraft.common.items.wands.ItemWandCasting;
 
 import java.util.Random;
 
 public class TileEntityMirrorDimension extends TileEntity {
-	private final int MAX_DISTANCE = 11;
+	public static int SCALE = 10;
+
+	private final int MAX_DISTANCE = SCALE+1;
 	private final int ticksToReset = 20; // the number of ticks until the counter resets
-	private final int DURATION = 10; // seconds
-	private final int VIS_REGEN_MAX_VALUE = 200;
-	private final int VIS_REGEN_MIN_VALUE = 100;
 
-	private static Random randy = new Random();
-
-	public static boolean isActive = true;
-
-	private String caster;
 	private String casterName;
+	private boolean casterAssigned = false;
 
 	private int counter;
 	private int seconds = 0;
 	private int updateSpeed = 5; // every 5 ticks = 4 times a second
-	private int scale = 0;
 	private boolean counterEnabled = true;
 	private boolean casterExited = true;
 	private int duration = 10;
-	private int visRegen = randy.nextInt(VIS_REGEN_MIN_VALUE) + VIS_REGEN_MIN_VALUE;
-	private EntityPlayer casterP;
-	private boolean casterSet = false;
-
-
-
 
 	// TODO: Fix Flying code
 	// TODO: Add potion effects
@@ -50,22 +34,20 @@ public class TileEntityMirrorDimension extends TileEntity {
 	@Override
 	public void updateEntity() {
 		if (seconds > duration) {
-			deleteThis();
+			deleteThis(worldObj.getPlayerEntityByName(casterName));
 		}
 
-		if (casterSet) {
-			// functionality
-			if (counter % updateSpeed == 0) {
-				processFunctionality();
-			}
-
-			// counter mechanics
-			if (counter == ticksToReset) {
-				seconds++;
-				counter = 0;
-			}
-			counter++;
+		// functionality
+		if (counter % updateSpeed == 0) {
+			processFunctionality();
 		}
+
+		// counter mechanics
+		if (counter == ticksToReset) {
+			seconds++;
+			counter = 0;
+		}
+		counter++;
 	}
 
 	private void processFunctionality() {
@@ -77,11 +59,17 @@ public class TileEntityMirrorDimension extends TileEntity {
 			d = Utils.dist(xCoord, yCoord, zCoord, (int) position.xCoord, (int) position.yCoord, (int) position.zCoord);
 
 			if (!(d > MAX_DISTANCE)) {
-				if (player.getUniqueID().toString().equals(caster) && casterExited && !player.capabilities.isCreativeMode) {
+				if (Utils.isMirrorDimCaster(player, xCoord, yCoord, zCoord)) {
 					casterExited = false;
-					// apply effects
 
+					if (!casterAssigned) {
+						casterName = player.getDisplayName();
+						casterAssigned = true;
+					}
+
+					// apply effects
 					player.capabilities.allowFlying = true;
+					player.capabilities.setFlySpeed(2.0F);
 
 					player.addPotionEffect(new PotionEffect(10, 3, 2, false));
 					player.addPotionEffect(new PotionEffect(11, 3, 1, false));
@@ -90,11 +78,9 @@ public class TileEntityMirrorDimension extends TileEntity {
 					player.extinguish();
 
 					player.setAbsorptionAmount(10.0F);
-				} else {
-					// if it is not the caster
 				}
 			} else {
-				if (player.getDisplayName().equals(caster) && !player.capabilities.isCreativeMode && !casterExited) {
+				if (Utils.isMirrorDimCaster(player, xCoord, yCoord, zCoord) && !player.capabilities.isCreativeMode && !casterExited) {
 					casterExited = true;
 
 					player.capabilities.allowFlying = false;
@@ -105,19 +91,19 @@ public class TileEntityMirrorDimension extends TileEntity {
 	}
 
 
-	private void deleteThis() {
+	private void deleteThis(EntityPlayer player) {
 		worldObj.setBlockToAir(xCoord, yCoord, zCoord);
 		worldObj.removeTileEntity(xCoord, yCoord, zCoord);
+
+		player.getEntityData().setBoolean(LibMisc.TAG_MD_CASTED, false);
 	}
 
 	@Override
 	public void readFromNBT(NBTTagCompound tag) {
 		super.readFromNBT(tag);
 
-		caster = tag.getString("caster");
 		casterName = tag.getString("casterName");
 		counter = tag.getInteger("counter");
-		scale = tag.getInteger("scale");
 		updateSpeed = tag.getInteger("updateSpeed");
 		seconds = tag.getInteger("seconds");
 		counterEnabled = tag.getBoolean("counterEnabled");
@@ -127,10 +113,8 @@ public class TileEntityMirrorDimension extends TileEntity {
 	public void writeToNBT(NBTTagCompound tag) {
 		super.writeToNBT(tag);
 
-		tag.setString("caster", caster);
 		tag.setString("casterName", casterName);
 		tag.setInteger("counter", counter);
-		tag.setInteger("scale", scale);
 		tag.setInteger("updateSpeed", updateSpeed);
 		tag.setInteger("seconds", seconds);
 		tag.setBoolean("counterEnabled", counterEnabled);
@@ -143,29 +127,9 @@ public class TileEntityMirrorDimension extends TileEntity {
 		return new S35PacketUpdateTileEntity(xCoord, yCoord, zCoord, 1, nbt);
 	}
 
-	// setters
-	public TileEntityMirrorDimension setCasterID(String id) {
-		caster = id;
-		return this;
-	}
-
-	public TileEntityMirrorDimension setCasterName(String name) {
-		casterName = name;
-		return this;
-	}
-
-	public void updateCaster() {
-		casterP = worldObj.getPlayerEntityByName(casterName);
-		casterSet = true;
-	}
-
 	// getters
 	public int getCounter() {
 		return counter;
-	}
-
-	public String getCasterID() {
-		return caster;
 	}
 
 	public int getDuration() {

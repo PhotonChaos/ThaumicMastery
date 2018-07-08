@@ -2,7 +2,6 @@ package com.carbon.thaumicmastery.client.render;
 
 import com.carbon.thaumicmastery.ThaumicMastery;
 import com.carbon.thaumicmastery.common.entities.tileentities.TileEntityMirrorDimension;
-import net.minecraft.client.Minecraft;
 import net.minecraft.client.renderer.tileentity.TileEntitySpecialRenderer;
 import net.minecraft.tileentity.TileEntity;
 import net.minecraft.util.ResourceLocation;
@@ -14,7 +13,7 @@ import org.lwjgl.opengl.GL12;
 public class RenderMirrorDim extends TileEntitySpecialRenderer {
 	//private static final ResourceLocation model_texture = new ResourceLocation(ThaumicMastery.MODID, "textures/models/MirrorDimensionUV.png"); // model texture
 	private IModelCustom model;
-	private float sScale = 10;
+	private int sScale = TileEntityMirrorDimension.SCALE;
 
 	public RenderMirrorDim() {
 		model = AdvancedModelLoader.loadModel(new ResourceLocation(ThaumicMastery.MODID, "models/MD_NEW.obj"));
@@ -23,13 +22,9 @@ public class RenderMirrorDim extends TileEntitySpecialRenderer {
 	@Override
 	public void renderTileEntityAt(TileEntity tile, double x, double y, double z, float timeSinceLastTick) {
 		if (tile  == null || !(tile instanceof TileEntityMirrorDimension)) return;
-		TileEntityMirrorDimension mirrorDimension = (TileEntityMirrorDimension) tile;
-		if (!mirrorDimension.isActive) return;
-
 		// start of rendering
-		//sScale = 1;
-		float rotation = 0; // the entity should not rotate
-		float brightness = (float) Math.abs(Math.sin((float) Minecraft.getSystemTime() / 3000f) * 100f);
+		// float rotation = 0; // the entity should not rotate
+		//float brightness = (float) Math.abs(Math.sin((float) Minecraft.getSystemTime() / 3000f) * 100f);
 
 		GL11.glPushMatrix();
 		GL11.glEnable(GL12.GL_RESCALE_NORMAL);
