@@ -19,6 +19,8 @@ public class ModItems {
 	public static Item focus_water;
 	public static Item focus_mirror;
 	public static Item focus_airport;
+	public static Item focus_nova;
+	public static Item focus_golem;
 
 	public static Item focus_refill;
 
@@ -79,6 +81,9 @@ public class ModItems {
 
 		focus_airport = new AirFocus().setUnlocalizedName("AirportFocus");
 		GameRegistry.registerItem(focus_airport, focus_airport.getUnlocalizedName());
+
+		focus_nova = new NovaFocus().setUnlocalizedName("NovaFocus");
+		GameRegistry.registerItem(focus_nova, focus_nova.getUnlocalizedName());
 
 		focus_refill = new RefillFocus().setUnlocalizedName("RefillFocus");
 		GameRegistry.registerItem(focus_refill, focus_refill.getUnlocalizedName());

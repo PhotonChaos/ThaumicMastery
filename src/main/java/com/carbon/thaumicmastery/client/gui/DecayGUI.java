@@ -49,9 +49,9 @@ public class DecayGUI extends GuiScreen {
 			this.levelTextBox.textboxKeyTyped(letter, par2);
 		} else if (Utils.isCharEsc(letter, par2)) {
 			Utils.closeGui(this);
-		}/* else {
+		} else {
 			System.out.println("Char: " + Character.getNumericValue(letter) + "\npar2: " + par2);
-		}*/
+		}
 	}
 
 	@Override

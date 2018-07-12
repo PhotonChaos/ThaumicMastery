@@ -1,21 +1,20 @@
-<<<<<<< Updated upstream
-[02:37:15] [main/INFO]: Setting user: Player877
-[02:37:17] [Client thread/INFO]: LWJGL Version: 2.9.1
-[02:37:34] [Client thread/INFO]: Reloading ResourceManager: Default, FMLFileResourcePack:Forge Mod Loader, FMLFileResourcePack:Minecraft Forge, FMLFileResourcePack:Thaumic Mastery, FMLFileResourcePack:Thaumcraft, FMLFileResourcePack:Thaumic Tinkerer, FMLFileResourcePack:Baubles
-[02:37:38] [Sound Library Loader/INFO]: Sound engine started
-[02:37:40] [Client thread/INFO]: Created: 16x16 textures/blocks-atlas
-[02:37:40] [Client thread/INFO]: Created: 16x16 textures/items-atlas
-[02:37:42] [Client thread/INFO]: Reloading ResourceManager: Default, FMLFileResourcePack:Forge Mod Loader, FMLFileResourcePack:Minecraft Forge, FMLFileResourcePack:Thaumic Mastery, FMLFileResourcePack:Thaumcraft, FMLFileResourcePack:Thaumic Tinkerer, FMLFileResourcePack:Baubles
-[02:37:43] [Client thread/INFO]: Created: 512x512 textures/blocks-atlas
-[02:37:43] [Client thread/INFO]: Created: 512x512 textures/items-atlas
-[02:37:44] [Sound Library Loader/INFO]: Sound engine started
-[02:38:00] [Server thread/INFO]: Starting integrated minecraft server version 1.7.10
-[02:38:00] [Server thread/INFO]: Generating keypair
-[02:38:01] [Server thread/INFO]: Preparing start region for level 0
-[02:38:02] [Server thread/INFO]: Changing view distance to 12, from 10
-[02:38:03] [Server thread/INFO]: Player877[local:E:80c237cc] logged in with entity id 183 at (198.5, 4.0, -1305.5)
-[02:38:03] [Server thread/INFO]: Player877 joined the game
-[02:38:03] [Server thread/ERROR]: Encountered an unexpected exception
+[22:22:25] [main/INFO]: Setting user: Player522
+[22:22:26] [Client thread/INFO]: LWJGL Version: 2.9.1
+[22:22:35] [Client thread/INFO]: Reloading ResourceManager: Default, FMLFileResourcePack:Forge Mod Loader, FMLFileResourcePack:Minecraft Forge, FMLFileResourcePack:Thaumic Mastery, FMLFileResourcePack:Thaumcraft, FMLFileResourcePack:Thaumic Tinkerer, FMLFileResourcePack:Baubles
+[22:22:37] [Sound Library Loader/INFO]: Sound engine started
+[22:22:38] [Client thread/INFO]: Created: 16x16 textures/blocks-atlas
+[22:22:38] [Client thread/INFO]: Created: 16x16 textures/items-atlas
+[22:22:39] [Client thread/INFO]: Reloading ResourceManager: Default, FMLFileResourcePack:Forge Mod Loader, FMLFileResourcePack:Minecraft Forge, FMLFileResourcePack:Thaumic Mastery, FMLFileResourcePack:Thaumcraft, FMLFileResourcePack:Thaumic Tinkerer, FMLFileResourcePack:Baubles
+[22:22:39] [Client thread/INFO]: Created: 512x512 textures/blocks-atlas
+[22:22:40] [Client thread/INFO]: Created: 512x512 textures/items-atlas
+[22:22:40] [Sound Library Loader/INFO]: Sound engine started
+[22:22:44] [Server thread/INFO]: Starting integrated minecraft server version 1.7.10
+[22:22:44] [Server thread/INFO]: Generating keypair
+[22:22:45] [Server thread/INFO]: Preparing start region for level 0
+[22:22:45] [Server thread/INFO]: Changing view distance to 12, from 10
+[22:22:45] [Server thread/INFO]: Player522[local:E:0680b6a3] logged in with entity id 154 at (27.640788770134545, 10.0, -389.12241450023595)
+[22:22:45] [Server thread/INFO]: Player522 joined the game
+[22:22:46] [Server thread/ERROR]: Encountered an unexpected exception
 net.minecraft.util.ReportedException: Ticking player
 	at net.minecraft.network.NetworkSystem.networkTick(NetworkSystem.java:198) ~[NetworkSystem.class:?]
 	at net.minecraft.server.MinecraftServer.updateTimeLightAndEntities(MinecraftServer.java:726) ~[MinecraftServer.class:?]
@@ -25,7 +24,7 @@ net.minecraft.util.ReportedException: Ticking player
 	at net.minecraft.server.MinecraftServer$2.run(MinecraftServer.java:752) [MinecraftServer$2.class:?]
 Caused by: java.lang.IllegalAccessError: tried to access field net.minecraft.entity.player.EntityPlayer.itemInUse from class thaumic.tinkerer.common.enchantment.ModEnchantmentHandler
 	at thaumic.tinkerer.common.enchantment.ModEnchantmentHandler.onEntityUpdate(ModEnchantmentHandler.java:147) ~[ModEnchantmentHandler.class:?]
-	at cpw.mods.fml.common.eventhandler.ASMEventHandler_78_ModEnchantmentHandler_onEntityUpdate_LivingUpdateEvent.invoke(.dynamic) ~[?:?]
+	at cpw.mods.fml.common.eventhandler.ASMEventHandler_80_ModEnchantmentHandler_onEntityUpdate_LivingUpdateEvent.invoke(.dynamic) ~[?:?]
 	at cpw.mods.fml.common.eventhandler.ASMEventHandler.invoke(ASMEventHandler.java:54) ~[ASMEventHandler.class:?]
 	at cpw.mods.fml.common.eventhandler.EventBus.post(EventBus.java:140) ~[EventBus.class:?]
 	at net.minecraftforge.common.ForgeHooks.onLivingUpdate(ForgeHooks.java:289) ~[ForgeHooks.class:?]
@@ -38,71 +37,12 @@ Caused by: java.lang.IllegalAccessError: tried to access field net.minecraft.ent
 	at net.minecraft.network.NetworkManager.processReceivedPackets(NetworkManager.java:241) ~[NetworkManager.class:?]
 	at net.minecraft.network.NetworkSystem.networkTick(NetworkSystem.java:182) ~[NetworkSystem.class:?]
 	... 5 more
-[02:38:03] [Server thread/ERROR]: This crash report has been saved to: /Users/calum/IdeaProjects/ThaumicMastery/eclipse/./crash-reports/crash-2018-07-07_02.38.03-server.txt
-[02:38:03] [Server thread/INFO]: Stopping server
-[02:38:03] [Server thread/INFO]: Saving players
-[02:38:03] [Server thread/INFO]: Saving worlds
-[02:38:03] [Server thread/INFO]: Saving chunks for level 'New World'/Overworld
-[02:38:04] [Server thread/INFO]: Saving chunks for level 'New World'/Nether
-[02:38:04] [Server thread/INFO]: Saving chunks for level 'New World'/The End
-[02:38:04] [Server thread/INFO]: Saving chunks for level 'New World'/Bedrock
-[02:38:04] [Server thread/INFO]: Saving chunks for level 'New World'/The Outer Lands
-[02:38:04] [pool-2-thread-1/WARN]: Couldn't look up profile properties for com.mojang.authlib.GameProfile@4a25fa61[id=90bb5d97-9dd4-3b7b-a71d-c51bbf8a4878,name=Player877,properties={},legacy=false]
-com.mojang.authlib.exceptions.AuthenticationUnavailableException: Cannot contact authentication server
-	at com.mojang.authlib.yggdrasil.YggdrasilAuthenticationService.makeRequest(YggdrasilAuthenticationService.java:71) ~[YggdrasilAuthenticationService.class:?]
-	at com.mojang.authlib.yggdrasil.YggdrasilMinecraftSessionService.fillGameProfile(YggdrasilMinecraftSessionService.java:158) [YggdrasilMinecraftSessionService.class:?]
-	at com.mojang.authlib.yggdrasil.YggdrasilMinecraftSessionService$1.load(YggdrasilMinecraftSessionService.java:53) [YggdrasilMinecraftSessionService$1.class:?]
-	at com.mojang.authlib.yggdrasil.YggdrasilMinecraftSessionService$1.load(YggdrasilMinecraftSessionService.java:50) [YggdrasilMinecraftSessionService$1.class:?]
-	at com.google.common.cache.LocalCache$LoadingValueReference.loadFuture(LocalCache.java:3524) [guava-17.0.jar:?]
-	at com.google.common.cache.LocalCache$Segment.loadSync(LocalCache.java:2317) [guava-17.0.jar:?]
-	at com.google.common.cache.LocalCache$Segment.lockedGetOrLoad(LocalCache.java:2280) [guava-17.0.jar:?]
-	at com.google.common.cache.LocalCache$Segment.get(LocalCache.java:2195) [guava-17.0.jar:?]
-	at com.google.common.cache.LocalCache.get(LocalCache.java:3934) [guava-17.0.jar:?]
-	at com.google.common.cache.LocalCache.getOrLoad(LocalCache.java:3938) [guava-17.0.jar:?]
-	at com.google.common.cache.LocalCache$LocalLoadingCache.get(LocalCache.java:4821) [guava-17.0.jar:?]
-	at com.google.common.cache.LocalCache$LocalLoadingCache.getUnchecked(LocalCache.java:4827) [guava-17.0.jar:?]
-	at com.mojang.authlib.yggdrasil.YggdrasilMinecraftSessionService.fillProfileProperties(YggdrasilMinecraftSessionService.java:148) [YggdrasilMinecraftSessionService.class:?]
-	at net.minecraft.client.resources.SkinManager$3.run(SkinManager.java:133) [SkinManager$3.class:?]
-	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511) [?:1.8.0_101]
-	at java.util.concurrent.FutureTask.run(FutureTask.java:266) [?:1.8.0_101]
-	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142) [?:1.8.0_101]
-	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617) [?:1.8.0_101]
-	at java.lang.Thread.run(Thread.java:745) [?:1.8.0_101]
-Caused by: java.net.UnknownHostException: sessionserver.mojang.com
-	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:184) ~[?:1.8.0_101]
-	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392) ~[?:1.8.0_101]
-	at java.net.Socket.connect(Socket.java:589) ~[?:1.8.0_101]
-	at sun.security.ssl.SSLSocketImpl.connect(SSLSocketImpl.java:668) ~[?:1.8.0_101]
-	at sun.net.NetworkClient.doConnect(NetworkClient.java:175) ~[?:1.8.0_101]
-	at sun.net.www.http.HttpClient.openServer(HttpClient.java:432) ~[?:1.8.0_101]
-	at sun.net.www.http.HttpClient.openServer(HttpClient.java:527) ~[?:1.8.0_101]
-	at sun.net.www.protocol.https.HttpsClient.<init>(HttpsClient.java:264) ~[?:1.8.0_101]
-	at sun.net.www.protocol.https.HttpsClient.New(HttpsClient.java:367) ~[?:1.8.0_101]
-	at sun.net.www.protocol.https.AbstractDelegateHttpsURLConnection.getNewHttpClient(AbstractDelegateHttpsURLConnection.java:191) ~[?:1.8.0_101]
-	at sun.net.www.protocol.http.HttpURLConnection.plainConnect0(HttpURLConnection.java:1148) ~[?:1.8.0_101]
-	at sun.net.www.protocol.http.HttpURLConnection$6.run(HttpURLConnection.java:989) ~[?:1.8.0_101]
-	at sun.net.www.protocol.http.HttpURLConnection$6.run(HttpURLConnection.java:987) ~[?:1.8.0_101]
-	at java.security.AccessController.doPrivileged(Native Method) ~[?:1.8.0_101]
-	at java.security.AccessController.doPrivilegedWithCombiner(AccessController.java:782) ~[?:1.8.0_101]
-	at sun.net.www.protocol.http.HttpURLConnection.plainConnect(HttpURLConnection.java:986) ~[?:1.8.0_101]
-	at sun.net.www.protocol.https.AbstractDelegateHttpsURLConnection.connect(AbstractDelegateHttpsURLConnection.java:177) ~[?:1.8.0_101]
-	at sun.net.www.protocol.http.HttpURLConnection.getInputStream0(HttpURLConnection.java:1513) ~[?:1.8.0_101]
-	at sun.net.www.protocol.http.HttpURLConnection.access$200(HttpURLConnection.java:90) ~[?:1.8.0_101]
-	at sun.net.www.protocol.http.HttpURLConnection$9.run(HttpURLConnection.java:1433) ~[?:1.8.0_101]
-	at sun.net.www.protocol.http.HttpURLConnection$9.run(HttpURLConnection.java:1431) ~[?:1.8.0_101]
-	at java.security.AccessController.doPrivileged(Native Method) ~[?:1.8.0_101]
-	at java.security.AccessController.doPrivilegedWithCombiner(AccessController.java:782) ~[?:1.8.0_101]
-	at sun.net.www.protocol.http.HttpURLConnection.getInputStream(HttpURLConnection.java:1430) ~[?:1.8.0_101]
-	at sun.net.www.protocol.https.HttpsURLConnectionImpl.getInputStream(HttpsURLConnectionImpl.java:254) ~[?:1.8.0_101]
-	at com.mojang.authlib.HttpAuthenticationService.performGetRequest(HttpAuthenticationService.java:126) ~[HttpAuthenticationService.class:?]
-	at com.mojang.authlib.yggdrasil.YggdrasilAuthenticationService.makeRequest(YggdrasilAuthenticationService.java:54) ~[YggdrasilAuthenticationService.class:?]
-	... 18 more
-=======
-[09:59:34] [main/INFO]: Setting user: Player858
-[09:59:36] [Client thread/INFO]: LWJGL Version: 2.9.1
-[09:59:46] [Client thread/INFO]: Reloading ResourceManager: Default, FMLFileResourcePack:Forge Mod Loader, FMLFileResourcePack:Minecraft Forge, FMLFileResourcePack:Thaumic Mastery, FMLFileResourcePack:Thaumcraft, FMLFileResourcePack:Thaumic Tinkerer
-[09:59:46] [Sound Library Loader/INFO]: Sound engine started
-[09:59:48] [Client thread/INFO]: Created: 16x16 textures/blocks-atlas
-[09:59:48] [Client thread/INFO]: Created: 16x16 textures/items-atlas
-[09:59:54] [Client thread/INFO]: Stopping!
->>>>>>> Stashed changes
+[22:22:46] [Server thread/ERROR]: This crash report has been saved to: C:\Users\Admin\Desktop\Thaumic Mastery\eclipse\.\crash-reports\crash-2018-07-11_22.22.46-server.txt
+[22:22:46] [Server thread/INFO]: Stopping server
+[22:22:46] [Server thread/INFO]: Saving players
+[22:22:46] [Server thread/INFO]: Saving worlds
+[22:22:46] [Server thread/INFO]: Saving chunks for level 'Flat'/Overworld
+[22:22:46] [Server thread/INFO]: Saving chunks for level 'Flat'/Nether
+[22:22:46] [Server thread/INFO]: Saving chunks for level 'Flat'/The End
+[22:22:46] [Server thread/INFO]: Saving chunks for level 'Flat'/Bedrock
+[22:22:46] [Server thread/INFO]: Saving chunks for level 'Flat'/The Outer Lands

@@ -1,12 +1,9 @@
 package com.carbon.thaumicmastery.common.items.foci;
 
 import com.carbon.thaumicmastery.ThaumicMastery;
-import com.carbon.thaumicmastery.common.entities.tileentities.TileEntityMirrorDimension;
 import com.carbon.thaumicmastery.core.lib.LibMisc;
 import net.minecraft.entity.player.EntityPlayer;
-import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
-import net.minecraft.util.ChatComponentText;
 import net.minecraft.util.MovingObjectPosition;
 import net.minecraft.world.World;
 import thaumcraft.api.ThaumcraftApiHelper;

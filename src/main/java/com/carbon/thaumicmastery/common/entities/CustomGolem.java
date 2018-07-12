@@ -1,19 +1,22 @@
 package com.carbon.thaumicmastery.common.entities;
 
 import com.carbon.thaumicmastery.common.entities.AI.AIGolem;
+import com.carbon.thaumicmastery.core.lib.LibMisc;
 import javafx.beans.DefaultProperty;
 import net.minecraft.entity.*;
 import net.minecraft.entity.ai.*;
 import net.minecraft.entity.monster.EntityGolem;
+import net.minecraft.entity.passive.EntityAnimal;
 import net.minecraft.entity.passive.EntityTameable;
 import net.minecraft.entity.passive.EntityWolf;
 import net.minecraft.entity.passive.IAnimals;
+import net.minecraft.nbt.NBTTagCompound;
 import net.minecraft.util.DamageSource;
 import net.minecraft.world.World;
 
 public class CustomGolem extends EntityTameable {
 	private String caster;
-	private int visInput;
+	private int visInput = 1;
 
 	public CustomGolem(World world) {
 		super(world);
@@ -35,11 +38,6 @@ public class CustomGolem extends EntityTameable {
 		this.setTamed(true);
 	}
 
-	@Override
-	public EntityAgeable createChild(EntityAgeable p_90011_1_) {
-		return null;
-	}
-
 	private void clearAITasks() {
 		tasks.taskEntries.clear();
 		targetTasks.taskEntries.clear();
@@ -47,7 +45,7 @@ public class CustomGolem extends EntityTameable {
 
 	@Override
 	public boolean attackEntityFrom(DamageSource damageSource, float par2) {
-		return super.attackEntityFrom(damageSource, par2);
+		return !isEntityInvulnerable() && super.attackEntityFrom(damageSource, par2);
 	}
 
 	@Override
@@ -73,6 +71,24 @@ public class CustomGolem extends EntityTameable {
 		return true;
 	}
 
+	@Override
+	protected boolean canDespawn() {
+		return false;
+	}
+
+	// disabling unwanted stuff
+	@Override
+	public EntityAgeable createChild(EntityAgeable p_90011_1_) {
+		return null;
+	}
+
+	@Override
+	public boolean canMateWith(EntityAnimal p_70878_1_) {
+		return false;
+	}
+
+
+	// utility methods
 	public String getCaster() {
 		return caster;
 	}
@@ -85,5 +101,28 @@ public class CustomGolem extends EntityTameable {
 	@Override
 	public String func_152113_b() {
 		return null;
+	}
+
+
+	// NBT and Packet sync
+	@Override
+	public void readEntityFromNBT(NBTTagCompound tag) {
+		super.readEntityFromNBT(tag);
+		visInput = tag.getInteger(LibMisc.TAG_GOLEM_VIS);
+		updateStats(visInput);
+	}
+
+	@Override
+	public void writeEntityToNBT(NBTTagCompound tag) {
+		super.writeEntityToNBT(tag);
+
+		tag.setInteger(LibMisc.TAG_GOLEM_VIS, visInput);
+	}
+
+	// Getters and setters
+
+
+	public int getVis() {
+		return visInput;
 	}
 }

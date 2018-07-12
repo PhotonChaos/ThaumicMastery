@@ -30,6 +30,10 @@ public class Utils {
 		return Character.getNumericValue(c) == -1 && i == 1;
 	}
 
+	public static boolean isCharEnter(char c, int i) {
+		return false;
+	}
+
 	public static boolean isMirrorDimCaster(EntityPlayer player, int x, int y, int z) {
 		NBTTagCompound tag = player.getEntityData();
 		return tag.getInteger(LibMisc.TAG_MD_X) == x && tag.getInteger(LibMisc.TAG_MD_Y) == y && tag.getInteger(LibMisc.TAG_MD_Z) == z && tag.getBoolean(LibMisc.TAG_MD_CASTED);
