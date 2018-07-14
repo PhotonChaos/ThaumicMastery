@@ -13,7 +13,7 @@ import org.lwjgl.opengl.GL12;
 public class RenderMirrorDim extends TileEntitySpecialRenderer {
 	//private static final ResourceLocation model_texture = new ResourceLocation(ThaumicMastery.MODID, "textures/models/MirrorDimensionUV.png"); // model texture
 	private IModelCustom model;
-	private int sScale = TileEntityMirrorDimension.SCALE;
+	private int SCALE = TileEntityMirrorDimension.SCALE;
 
 	public RenderMirrorDim() {
 		model = AdvancedModelLoader.loadModel(new ResourceLocation(ThaumicMastery.MODID, "models/MD_NEW.obj"));
@@ -30,9 +30,7 @@ public class RenderMirrorDim extends TileEntitySpecialRenderer {
 		GL11.glEnable(GL12.GL_RESCALE_NORMAL);
 		GL11.glEnable(GL11.GL_BLEND);
 
-
 		GL11.glDisable(GL11.GL_TEXTURE_2D);
-		//GL11.glDisable(GL11.GL_LIGHTING);
 
 		GL11.glColor4f(0.9F, 1.0F, 0.99F, 0.2F);
 
@@ -40,7 +38,7 @@ public class RenderMirrorDim extends TileEntitySpecialRenderer {
 
 		GL11.glTranslatef((float) x + 0.5F, (float) y + 0.0F, (float) z + 0.5F);
 
-		GL11.glScalef(sScale, sScale, sScale);
+		GL11.glScalef(SCALE, SCALE, SCALE);
 
 		model.renderAll();
 		GL11.glEnable(GL11.GL_TEXTURE_2D);

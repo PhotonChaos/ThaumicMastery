@@ -18,7 +18,7 @@ public class Utils {
 		return player.getEntityData().getBoolean(LibMisc.TAG_SHIELD);
 	}
 
-	public static double dist(int x, int y, int z, int xx, int yy, int zz) {
+	public static double dist(double x, double y, double z, double xx, double yy, double zz) {
 		return Math.sqrt((Math.pow(Math.abs(xx - x), 2) + Math.pow(Math.abs(yy - y), 2) + Math.pow(Math.abs(zz - z), 2)));
 	}
 

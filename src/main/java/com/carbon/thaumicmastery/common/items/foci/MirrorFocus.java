@@ -1,6 +1,7 @@
 package com.carbon.thaumicmastery.common.items.foci;
 
 import com.carbon.thaumicmastery.ThaumicMastery;
+import com.carbon.thaumicmastery.common.entities.tileentities.TileEntityMirrorDimension;
 import com.carbon.thaumicmastery.core.lib.LibMisc;
 import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.item.ItemStack;
@@ -43,6 +44,8 @@ public class MirrorFocus extends MasterFocusBase {
 
 			if (world.isAirBlock(x, y, z)) {
 				world.setBlock(x, y, z, ThaumicMastery.blockMirrorDim);
+
+				((TileEntityMirrorDimension)world.getTileEntity(x, y, z)).casterName = player.getDisplayName();
 
 				player.getEntityData().setInteger(LibMisc.TAG_MD_X, x);
 				player.getEntityData().setInteger(LibMisc.TAG_MD_Y, y);
