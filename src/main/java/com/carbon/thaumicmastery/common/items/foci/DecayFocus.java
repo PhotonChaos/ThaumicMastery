@@ -19,7 +19,7 @@ public class DecayFocus extends MasterFocusBase {
 
 	public DecayFocus() {
 		super();
-		this.focusName = "debug";
+		this.focusName = "decay";
 	}
 
 	@Override

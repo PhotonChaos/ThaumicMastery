@@ -10,98 +10,90 @@ import net.minecraft.potion.Potion;
 import net.minecraft.potion.PotionEffect;
 import net.minecraft.tileentity.TileEntity;
 
+import java.util.Iterator;
+import java.util.List;
+
 public class TileEntityMirrorDimension extends TileEntity {
 	public static int SCALE = 10;
 	private final int MAX_DISTANCE = SCALE+1;
 	private final int ticksToReset = 20; // the number of ticks until the counter resets
 
-	public String casterName;
+	public String casterName = "";
 	// private boolean casterAssigned = false;
 	private boolean exited = false;
-	private boolean hadFlyingBefore;
+	//private boolean hadFlyingBefore;
 	private boolean initialized = false;
 
 	private int counter;
 	private int seconds = 0;
-	private int updateSpeed = 10; // every 10 ticks = 2 times a second
+	private int updateSpeed = 20; // every 20 ticks = every second
 	private boolean counterEnabled = true;
 	private int duration = 10;
 
-	EntityPlayer casterF;
+	private EntityPlayer caster;
 
 	// TODO: Fix Flying code
 	// TODO: Add potion effects
 
 	@Override
 	public void updateEntity() {
-		if (casterName.isEmpty()) return;
+			if (seconds > duration) {
+				deleteThis(caster, "TIME EXPIRED");
+				return;
+			}
 
-		if (!initialized) {
-			casterF = worldObj.getPlayerEntityByName(casterName);
-			hadFlyingBefore = casterF.capabilities.allowFlying;
+			if (!worldObj.isRemote) {
+				caster = getCaster();
+				initialized = true;
+			}
 
-			initialized = true;
-		}
+			// functionality
+			if (counter % updateSpeed == 0 && initialized) {
+				processFunctionality(caster);
+			}
 
-		if (seconds > duration) {
-			deleteThis(worldObj.getPlayerEntityByName(casterName));
-		}
-
-		// functionality
-		if (counter % updateSpeed == 0) {
-			processFunctionality();
-		}
-
-		// counter mechanics
-		if (counter == ticksToReset) {
-			seconds++;
-			counter = 0;
-		}
-		counter++;
+			// counter mechanics
+			if (counter == ticksToReset) {
+				seconds++;
+				counter = 0;
+			}
+			counter++;
 	}
 
-	private void processFunctionality() {
-		EntityPlayer player = worldObj.getPlayerEntityByName(casterName);
-
+	private void processFunctionality(EntityPlayer player) {
 		if (Utils.dist(player.posX, player.posY, player.posZ, xCoord, yCoord, zCoord) <= MAX_DISTANCE) {
+			player.capabilities.allowFlying = true;
+			if (worldObj.isRemote) return;
+
 			if (exited) exited = false;
 
-			player.capabilities.allowFlying = true;
-			player.capabilities.setFlySpeed(player.capabilities.getFlySpeed()+0.5F);
+			System.out.println("PLAYER IS HERE");
+			//player.capabilities.setFlySpeed(player.capabilities.getFlySpeed()+0.5F);
 
 			// Potion Effects
-			if (!worldObj.isRemote) {
-				player.addPotionEffect(new PotionEffect(Potion.regeneration.getId(), 5, 2));
-				player.addPotionEffect(new PotionEffect(Potion.resistance.getId(), 5, 1));
-			}
+			player.addPotionEffect(new PotionEffect(Potion.regeneration.getId(), 5*20, 2));
+			player.addPotionEffect(new PotionEffect(Potion.resistance.getId(), 5*20, 1));
 
 			player.extinguish();
-
-			float abs = player.getAbsorptionAmount();
-
-			if (abs*2 > 10.0F) {
-				player.setAbsorptionAmount(abs*2);
-			} else {
-				player.setAbsorptionAmount(10.0F);
-			}
 		} else {
 			if (!exited) {
 				exited = true;
-
-				if (!hadFlyingBefore && !player.capabilities.isCreativeMode) {
+				System.out.println("PLAYER IS GONE");
+				if (!player.capabilities.isCreativeMode) {
 					player.capabilities.allowFlying = false;
 					player.capabilities.isFlying = false;
 				}
-
-				player.capabilities.setFlySpeed(player.capabilities.getFlySpeed() - 0.5F); // slow the speed back to normal
 			}
 		}
 	}
 
-	private void deleteThis(EntityPlayer player) {
+	private void deleteThis(EntityPlayer player, String location) {
+		System.out.println("!!!!!!!! ERROR:"+location);
+
 		worldObj.setBlockToAir(xCoord, yCoord, zCoord);
 		worldObj.removeTileEntity(xCoord, yCoord, zCoord);
 
+		if (player == null) return;
 		player.getEntityData().setBoolean(LibMisc.TAG_MD_CASTED, false);
 	}
 
@@ -141,5 +133,21 @@ public class TileEntityMirrorDimension extends TileEntity {
 
 	public int getDuration() {
 		return duration;
+	}
+
+	private EntityPlayer getCaster() {
+		for (int i = 0; i < worldObj.playerEntities.size(); i++) {
+			EntityPlayer p = (EntityPlayer) worldObj.playerEntities.get(i);
+
+			if (isMirrorDimCaster(p)) {
+				return p;
+			}
+		}
+		return null;
+	}
+
+	private boolean isMirrorDimCaster(EntityPlayer player) {
+		NBTTagCompound tag = player.getEntityData();
+		return tag.getInteger(LibMisc.TAG_MD_X) == xCoord && tag.getInteger(LibMisc.TAG_MD_Y) == yCoord && tag.getInteger(LibMisc.TAG_MD_Z) == zCoord && tag.getBoolean(LibMisc.TAG_MD_CASTED);
 	}
 }

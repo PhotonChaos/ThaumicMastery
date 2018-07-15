@@ -34,11 +34,6 @@ public class Utils {
 		return false;
 	}
 
-	public static boolean isMirrorDimCaster(EntityPlayer player, int x, int y, int z) {
-		NBTTagCompound tag = player.getEntityData();
-		return tag.getInteger(LibMisc.TAG_MD_X) == x && tag.getInteger(LibMisc.TAG_MD_Y) == y && tag.getInteger(LibMisc.TAG_MD_Z) == z && tag.getBoolean(LibMisc.TAG_MD_CASTED);
-	}
-
 	public static void closeGui(GuiScreen gui) {
 		gui.mc.displayGuiScreen(null);
 

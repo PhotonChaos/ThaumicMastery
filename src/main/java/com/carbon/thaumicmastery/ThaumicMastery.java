@@ -9,6 +9,7 @@ import com.carbon.thaumicmastery.common.eventhandlers.MainEventHandler;
 import com.carbon.thaumicmastery.common.helpers.ThaumcraftHelper;
 import com.carbon.thaumicmastery.common.items.ModItems;
 import com.carbon.thaumicmastery.client.keybinds.Keybinds;
+import com.carbon.thaumicmastery.common.misc.commands.SetMDScale;
 import cpw.mods.fml.common.FMLCommonHandler;
 import cpw.mods.fml.common.Mod;
 import cpw.mods.fml.common.Mod.EventHandler;
@@ -16,6 +17,7 @@ import cpw.mods.fml.common.SidedProxy;
 import cpw.mods.fml.common.event.FMLInitializationEvent;
 import cpw.mods.fml.common.event.FMLPostInitializationEvent;
 import cpw.mods.fml.common.event.FMLPreInitializationEvent;
+import cpw.mods.fml.common.event.FMLServerStartingEvent;
 import cpw.mods.fml.common.network.NetworkRegistry;
 import cpw.mods.fml.common.registry.GameRegistry;
 import net.minecraft.block.Block;
@@ -118,6 +120,11 @@ public class ThaumicMastery {
 	@EventHandler
 	public void postInit(FMLPostInitializationEvent event) {
 		ThaumcraftHelper.postInit();
+	}
+
+	@EventHandler
+	public void serverLoad(FMLServerStartingEvent event) {
+		event.registerServerCommand(new SetMDScale());
 	}
 
 	public static void syncConfig() {

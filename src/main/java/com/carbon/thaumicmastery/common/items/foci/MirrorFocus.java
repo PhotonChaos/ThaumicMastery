@@ -45,8 +45,6 @@ public class MirrorFocus extends MasterFocusBase {
 			if (world.isAirBlock(x, y, z)) {
 				world.setBlock(x, y, z, ThaumicMastery.blockMirrorDim);
 
-				((TileEntityMirrorDimension)world.getTileEntity(x, y, z)).casterName = player.getDisplayName();
-
 				player.getEntityData().setInteger(LibMisc.TAG_MD_X, x);
 				player.getEntityData().setInteger(LibMisc.TAG_MD_Y, y);
 				player.getEntityData().setInteger(LibMisc.TAG_MD_Z, z);

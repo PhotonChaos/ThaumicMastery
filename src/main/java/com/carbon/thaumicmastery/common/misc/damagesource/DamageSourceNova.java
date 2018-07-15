@@ -1,4 +1,4 @@
-package com.carbon.thaumicmastery.common.damagesource;
+package com.carbon.thaumicmastery.common.misc.damagesource;
 
 import net.minecraft.util.DamageSource;
 

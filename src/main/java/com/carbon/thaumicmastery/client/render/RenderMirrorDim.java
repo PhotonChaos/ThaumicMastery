@@ -25,6 +25,7 @@ public class RenderMirrorDim extends TileEntitySpecialRenderer {
 		// start of rendering
 		// float rotation = 0; // the entity should not rotate
 		//float brightness = (float) Math.abs(Math.sin((float) Minecraft.getSystemTime() / 3000f) * 100f);
+		System.out.println("EEE");
 
 		GL11.glPushMatrix();
 		GL11.glEnable(GL12.GL_RESCALE_NORMAL);
