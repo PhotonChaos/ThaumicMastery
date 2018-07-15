@@ -2,6 +2,7 @@ package com.carbon.thaumicmastery.common.entities.tileentities;
 
 import com.carbon.thaumicmastery.core.Utils;
 import com.carbon.thaumicmastery.core.lib.LibMisc;
+import cpw.mods.fml.client.FMLClientHandler;
 import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.nbt.NBTTagCompound;
 import net.minecraft.network.Packet;
@@ -42,13 +43,11 @@ public class TileEntityMirrorDimension extends TileEntity {
 				return;
 			}
 
-			if (!worldObj.isRemote) {
-				caster = getCaster();
-				initialized = true;
-			}
+			caster = getCaster();
+			if (!worldObj.isRemote && caster == null) deleteThis(null, "NULL CASTER");
 
 			// functionality
-			if (counter % updateSpeed == 0 && initialized) {
+			if (counter % updateSpeed == 0) {
 				processFunctionality(caster);
 			}
 
@@ -61,6 +60,8 @@ public class TileEntityMirrorDimension extends TileEntity {
 	}
 
 	private void processFunctionality(EntityPlayer player) {
+		if (worldObj.isRemote && player == null) return;
+
 		if (Utils.dist(player.posX, player.posY, player.posZ, xCoord, yCoord, zCoord) <= MAX_DISTANCE) {
 			player.capabilities.allowFlying = true;
 			if (worldObj.isRemote) return;
@@ -136,14 +137,21 @@ public class TileEntityMirrorDimension extends TileEntity {
 	}
 
 	private EntityPlayer getCaster() {
-		for (int i = 0; i < worldObj.playerEntities.size(); i++) {
-			EntityPlayer p = (EntityPlayer) worldObj.playerEntities.get(i);
-
-			if (isMirrorDimCaster(p)) {
-				return p;
+		if (worldObj.isRemote) {
+			if (FMLClientHandler.instance().getClient().thePlayer.getDisplayName().equals(casterName)) {
+				return FMLClientHandler.instance().getClient().thePlayer;
 			}
+			return null;
+		} else {
+			for (int i = 0; i < worldObj.playerEntities.size(); i++) {
+				EntityPlayer p = (EntityPlayer) worldObj.playerEntities.get(i);
+
+				if (isMirrorDimCaster(p)) {
+					return p;
+				}
+			}
+			return null;
 		}
-		return null;
 	}
 
 	private boolean isMirrorDimCaster(EntityPlayer player) {
