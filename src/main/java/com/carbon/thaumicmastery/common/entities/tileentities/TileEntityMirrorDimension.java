@@ -38,13 +38,14 @@ public class TileEntityMirrorDimension extends TileEntity {
 
 	@Override
 	public void updateEntity() {
+		if (!worldObj.isRemote) {
 			if (seconds > duration) {
 				deleteThis(caster, "TIME EXPIRED");
 				return;
 			}
 
 			caster = getCaster();
-			if (!worldObj.isRemote && caster == null) deleteThis(null, "NULL CASTER");
+			if (caster == null) deleteThis(null, "NULL CASTER");
 
 			// functionality
 			if (counter % updateSpeed == 0) {
@@ -57,6 +58,7 @@ public class TileEntityMirrorDimension extends TileEntity {
 				counter = 0;
 			}
 			counter++;
+		}
 	}
 
 	private void processFunctionality(EntityPlayer player) {
@@ -64,7 +66,7 @@ public class TileEntityMirrorDimension extends TileEntity {
 
 		if (Utils.dist(player.posX, player.posY, player.posZ, xCoord, yCoord, zCoord) <= MAX_DISTANCE) {
 			player.capabilities.allowFlying = true;
-			if (worldObj.isRemote) return;
+			player.sendPlayerAbilities();
 
 			if (exited) exited = false;
 
@@ -84,6 +86,7 @@ public class TileEntityMirrorDimension extends TileEntity {
 					player.capabilities.allowFlying = false;
 					player.capabilities.isFlying = false;
 				}
+				player.sendPlayerAbilities();
 			}
 		}
 	}
@@ -137,21 +140,14 @@ public class TileEntityMirrorDimension extends TileEntity {
 	}
 
 	private EntityPlayer getCaster() {
-		if (worldObj.isRemote) {
-			if (FMLClientHandler.instance().getClient().thePlayer.getDisplayName().equals(casterName)) {
-				return FMLClientHandler.instance().getClient().thePlayer;
-			}
-			return null;
-		} else {
-			for (int i = 0; i < worldObj.playerEntities.size(); i++) {
-				EntityPlayer p = (EntityPlayer) worldObj.playerEntities.get(i);
+		for (int i = 0; i < worldObj.playerEntities.size(); i++) {
+			EntityPlayer p = (EntityPlayer) worldObj.playerEntities.get(i);
 
-				if (isMirrorDimCaster(p)) {
-					return p;
-				}
+			if (isMirrorDimCaster(p)) {
+				return p;
 			}
-			return null;
 		}
+		return null;
 	}
 
 	private boolean isMirrorDimCaster(EntityPlayer player) {
