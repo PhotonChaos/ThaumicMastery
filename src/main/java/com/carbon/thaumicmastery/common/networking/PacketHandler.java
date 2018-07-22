@@ -12,7 +12,6 @@ public class PacketHandler {
 	private static final int DECAY_ID = 0;
 	private static final int GOLEM_ID = 1;
 	private static final int PORTL_ID = 2;
-	private static final int MIRRD_ID = 3;
 
 	public static final SimpleNetworkWrapper INSTANCE = NetworkRegistry.INSTANCE.newSimpleChannel(ThaumicMastery.MODID);
 
@@ -23,6 +22,5 @@ public class PacketHandler {
 	public static void registerMessages() {
 		INSTANCE.registerMessage(PacketSendDecay.Handler.class, PacketSendDecay.class, DECAY_ID, Side.SERVER);
 		INSTANCE.registerMessage(PacketSendAir.Handler.class, PacketSendAir.class, PORTL_ID, Side.SERVER);
-		INSTANCE.registerMessage(PacketSendMD.Handler.class, PacketSendMD.class, MIRRD_ID, Side.SERVER);
 	}
 }

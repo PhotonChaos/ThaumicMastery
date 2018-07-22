@@ -13,7 +13,7 @@ import org.lwjgl.opengl.GL12;
 public class RenderMirrorDim extends TileEntitySpecialRenderer {
 	//private static final ResourceLocation model_texture = new ResourceLocation(ThaumicMastery.MODID, "textures/models/MirrorDimensionUV.png"); // model texture
 	private IModelCustom model;
-	private int SCALE = TileEntityMirrorDimension.SCALE;
+	private int SCALE = 10;
 
 	public RenderMirrorDim() {
 		model = AdvancedModelLoader.loadModel(new ResourceLocation(ThaumicMastery.MODID, "models/MD_NEW.obj"));
@@ -25,7 +25,6 @@ public class RenderMirrorDim extends TileEntitySpecialRenderer {
 		// start of rendering
 		// float rotation = 0; // the entity should not rotate
 		//float brightness = (float) Math.abs(Math.sin((float) Minecraft.getSystemTime() / 3000f) * 100f);
-		System.out.println("EEE");
 
 		GL11.glPushMatrix();
 		GL11.glEnable(GL12.GL_RESCALE_NORMAL);

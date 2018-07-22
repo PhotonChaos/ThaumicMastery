@@ -92,12 +92,17 @@ public class TileEntityMirrorDimension extends TileEntity {
 	}
 
 	private void deleteThis(EntityPlayer player, String location) {
-		System.out.println("!!!!!!!! ERROR:"+location);
+		System.out.println("MIRROR DIM DELETED: "+location);
 
 		worldObj.setBlockToAir(xCoord, yCoord, zCoord);
 		worldObj.removeTileEntity(xCoord, yCoord, zCoord);
 
 		if (player == null) return;
+		if (!player.capabilities.isCreativeMode) {
+			player.capabilities.allowFlying = false;
+			player.capabilities.isFlying = false;
+		}
+		player.sendPlayerAbilities();
 		player.getEntityData().setBoolean(LibMisc.TAG_MD_CASTED, false);
 	}
 
