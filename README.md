@@ -31,11 +31,9 @@ These spells require you to press a hotkey while holding a wand or staff.
 ### Cleanliness
 - Massive Refactor
 
-## Important Dev Notes:
-- All GUI textures should be 256x256
-- All Thaumonomicon backgrounds must be 512x512
-- Style guide for adding research pages:
-  - `new ResearchPage()`
-  - `.noParameterMethods()`
-  - `.setPages()`
-  - `.registerResearchItem();`
+### Stuf that isn't working
+[Main Mod Class](https://github.com/PhotonChaos/ThaumicMastery/blob/master/src/main/java/com/carbon/thaumicmastery/ThaumicMastery.java)
+[ClientProxy](https://github.com/PhotonChaos/ThaumicMastery/blob/master/src/main/java/com/carbon/thaumicmastery/ClientProxy.java)
+[TileEntity](https://github.com/PhotonChaos/ThaumicMastery/blob/master/src/main/java/com/carbon/thaumicmastery/client/render/RenderMirrorDim.java)
+[Block](https://github.com/PhotonChaos/ThaumicMastery/blob/master/src/main/java/com/carbon/thaumicmastery/common/blocks/BlockMirrorDimension.java)
+[Render](https://github.com/PhotonChaos/ThaumicMastery/blob/master/src/main/java/com/carbon/thaumicmastery/common/entities/tileentities/TileEntityMirrorDimension.java)
