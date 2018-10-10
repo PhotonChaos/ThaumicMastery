@@ -1,6 +1,6 @@
 # Thaumic Mastery
 
-Progress: 60%
+Progress: 60% (Most likely to stay Incomplete)
 
 ## Info
 Thaumic Mastery is an addon for Thaumcraft which adds endgame spells.
